@@ -16,7 +16,11 @@ on:
         type: boolean
         default: true
       test_week:
-        description: 'Dry run only: pretend it is reminder time for this pool week (1-13)'
+        description: 'Pretend it is reminder time for this pool week (1-13)'
+        type: string
+        default: ''
+      only:
+        description: 'Send to just this player id or email (not logged, real reminder still fires)'
         type: string
         default: ''
 
@@ -47,4 +51,5 @@ jobs:
           SITE_URL: https://pepelespokane.github.io/p4-survivor/
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
           TEST_WEEK: ${{ inputs.test_week }}
+          ONLY: ${{ inputs.only }}
         run: python send_reminders.py

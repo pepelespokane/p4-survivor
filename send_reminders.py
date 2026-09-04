@@ -18,8 +18,10 @@ Environment:
   SMTP_PASS             app password for that address
   SITE_URL              default https://pepelespokane.github.io/p4-survivor/
   DRY_RUN               set to 1 to print instead of send
-  TEST_WEEK             dry run only: pretend it is reminder time for this pool
-                        week, so the whole chain can be exercised out of season
+  TEST_WEEK             pretend it is reminder time for this pool week, so the
+                        whole chain can be exercised out of season
+  ONLY                  send to just this player id or email. Sending is not
+                        logged, so the real weekly reminder still goes out.
 """
 
 import json
@@ -53,6 +55,7 @@ SITE = os.environ.get("SITE_URL", "https://pepelespokane.github.io/p4-survivor/"
 SB_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
 SB_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
 DRY = os.environ.get("DRY_RUN") == "1"
+ONLY = os.environ.get("ONLY", "").strip().lower()
 
 
 # ----------------------------------------------------------------- supabase
@@ -216,12 +219,13 @@ def main():
     # Dry-run escape hatch: aim at a specific week and skip the timing gate, so the
     # Supabase read and the email text can be checked without waiting for Thursday.
     test_week = os.environ.get("TEST_WEEK", "").strip()
-    if test_week and DRY:
+    if test_week and (DRY or ONLY):
         wk = next((w for w in sched["weeks"] if str(w["poolWeek"]) == test_week), None)
         if not wk:
             print("No pool week " + test_week)
             return 1
-        print("TEST MODE: pretending it is reminder time for pool week " + test_week)
+        print("TEST MODE: pretending it is reminder time for pool week " + test_week
+              + (" | only: " + ONLY if ONLY else ""))
         opens = week_opens(wk)
         run_for_week(sched, wk, opens, now, forced=True)
         return 0
@@ -262,6 +266,14 @@ def run_for_week(sched, wk, opens, now, forced):
     for pk in all_picks:
         weeks = by_player.setdefault(pk["player_id"], {})
         weeks.setdefault(pk["week"], {})[pk["conf"]] = pk
+
+    if ONLY:
+        players = [p for p in players
+                   if p["id"].lower() == ONLY
+                   or (p.get("email") or "").lower() == ONLY]
+        if not players:
+            print("No player matched ONLY=" + ONLY)
+            return
 
     sent = 0
     for p in players:
@@ -318,7 +330,7 @@ def run_for_week(sched, wk, opens, now, forced):
 
         try:
             send(p["email"], subject, body)
-            if not DRY:
+            if not DRY and not ONLY:
                 sb("POST", "survivor_reminders",
                    body={"week": wk["week"], "player_id": p["id"], "kind": "picks-due"})
             sent += 1
