@@ -445,8 +445,12 @@ function renderBoard() {
         `<div class="lhead"><span class="dot" style="background:${c.color}"></span>` +
         `<b>${c.name}</b></div>` +
         `<div class="lbody"><div class="lname">${names}</div>` +
-        `<small>${alive.length ? alive.length + ' still alive' : 'all out - ' +
-          (leaders.length > 1 ? leaders.length + ' way tie' : 'winner')}</small></div>`;
+        `<small>${alive.length
+          ? alive.length + ' still alive'
+          : 'all out &middot; ' +
+            (leaders.length > 1 ? leaders.length + ' way tie' : 'winner') +
+            ' &middot; lasted ' + leaders[0].survived +
+            ' week' + (leaders[0].survived === 1 ? '' : 's')}</small></div>`;
       strip.append(card);
     }
     t.append(strip);
@@ -503,9 +507,10 @@ function renderBoard() {
             `<small>${esc(row.out.reason)}</small></td>`;
         } else {
           n++;
-          // No rank among the living: everyone still alive is tied for the lead.
-          cells += `<td class="pk"><span class="pill win">Alive</span>` +
-            `<small>${row.survived} week${row.survived === 1 ? '' : 's'} clean</small></td>`;
+          // Nothing else to say: everyone still alive has survived the same weeks,
+          // so a count and a rank would both be noise. The week only matters on
+          // the way out.
+          cells += `<td class="pk"><span class="pill win">Alive</span></td>`;
         }
       }
       cells += `<td class="num"><b>${n}</b> / 4</td>`;
