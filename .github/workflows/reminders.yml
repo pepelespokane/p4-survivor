@@ -36,6 +36,10 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          # Optional. Only set these if you are not using Gmail; the script
+          # defaults to smtp.gmail.com on port 587.
+          SMTP_HOST: ${{ vars.SMTP_HOST }}
+          SMTP_PORT: ${{ vars.SMTP_PORT }}
           SITE_URL: https://pepelespokane.github.io/p4-survivor/
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
         run: python send_reminders.py

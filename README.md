@@ -220,8 +220,16 @@ repo can never see them.
    The app works either way: it tries the view and the function first, and falls back
    to reading the table directly if they are not there yet. So the site never breaks
    waiting on this. Emails just cannot be stored until it runs.
-2. **Make a Gmail app password.** Google Account -> Security -> 2-Step Verification
-   (must be on) -> App passwords -> name it "survivor pool" -> copy the 16 characters.
+2. **Make a Gmail app password.** Google hides this page; the Security menu usually
+   does not link to it even with 2-Step on. Go straight to
+   **https://myaccount.google.com/apppasswords**, or search "app passwords" in the
+   search bar at the top of myaccount.google.com. Type a name, click Create, copy the
+   16 characters. Spaces are cosmetic. A normal Gmail password will not work.
+
+   If that page is unavailable: you are on a Workspace account whose admin disabled
+   app passwords, or Advanced Protection is on. Use a personal Gmail, or any other SMTP
+   provider by setting the repo **variables** `SMTP_HOST` and `SMTP_PORT`
+   (Settings -> Secrets and variables -> Actions -> Variables). No code changes needed.
 3. **Add four repo secrets.** GitHub repo -> Settings -> Secrets and variables ->
    Actions -> New repository secret:
    - `SUPABASE_URL` - the bare project url

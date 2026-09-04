@@ -182,8 +182,8 @@ def fmt_local(dt):
 
 # -------------------------------------------------------------------- email
 def send(to_addr, subject, body):
-    host = os.environ.get("SMTP_HOST", "smtp.gmail.com")
-    port = int(os.environ.get("SMTP_PORT", "587"))
+    host = os.environ.get("SMTP_HOST") or "smtp.gmail.com"
+    port = int(os.environ.get("SMTP_PORT") or "587")
     user = os.environ["SMTP_USER"]
     pw = os.environ["SMTP_PASS"]
 
