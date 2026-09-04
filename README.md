@@ -213,6 +213,10 @@ repo can never see them.
    and, importantly, takes the players table away from the public key entirely. After
    it runs, the browser can only read id and name through a view, and sign-in happens
    inside a database function.
+
+   The app works either way: it tries the view and the function first, and falls back
+   to reading the table directly if they are not there yet. So the site never breaks
+   waiting on this. Emails just cannot be stored until it runs.
 2. **Make a Gmail app password.** Google Account -> Security -> 2-Step Verification
    (must be on) -> App passwords -> name it "survivor pool" -> copy the 16 characters.
 3. **Add four repo secrets.** GitHub repo -> Settings -> Secrets and variables ->
