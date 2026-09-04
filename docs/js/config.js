@@ -23,16 +23,6 @@ const POOL = {
   // Set to 'hide' to make it a Saturday-only pool.
   weekdayGames: 'allow',
 
-  // Asked once at signup, tallied on the Rules tab. Not enforced by the app,
-  // it just collects everyone's answer in one place.
-  payoutVote: {
-    question: 'How should the money work?',
-    options: [
-      { key: 'pot', label: 'Most points at the end wins the pot' },
-      { key: 'rollover', label: 'Nobody wins it. Invest it and roll it to next year' },
-    ],
-  },
-
   // Each pick stays hidden from other players until that team kicks off.
   // Your own picks are always visible to you.
   hidePicksUntilKickoff: true,

@@ -101,11 +101,9 @@ To force a refresh: repo -> **Actions** tab -> **Update schedule and results** -
   A pick reads "submitted" to everyone else until that team kicks off, so a Friday
   night game never leaks somebody's Saturday plan. You always see your own.
 - **Make Picks** - sign in with a name and a 4-digit PIN. First sign-in creates the
-  entry and asks the money question once. Then one team per conference; used teams,
-  byes and kicked-off teams are greyed out and cannot be selected.
-- **Rules** - the rules, plus the running tally of the money question: most points
-  wins the pot, or nobody wins and it gets invested and rolled to next year. The app
-  only collects the answers, it does not act on them.
+  entry. Then one team per conference; used teams, byes and kicked-off teams are
+  greyed out and cannot be selected.
+- **Rules** - how it works, in plain language, for anyone joining cold.
 - **Teams Used** - the full 67-team board for any player, showing what is burned,
   which week it was used, and whether it hit.
 - **Schedule** - every P4 game that week with kickoff times, TV and final scores.
@@ -151,6 +149,24 @@ True survivor elimination, where the first loss ends your season, would empty th
 pool by mid-October: you are making four picks a week, so surviving 13 weeks means
 going 52-0. Points is the version that stays fun in November. If you want
 elimination anyway, `POOL.scoring` in `config.js` is where that decision lives.
+
+## How many people can join
+
+There is no cap in the app and nothing in the Supabase free tier that a pool like
+this can reach. A full season for one player is 52 rows of about 120 bytes. A
+hundred players is roughly 5,200 rows, well under a megabyte, against a 500 MB limit.
+The page pulls every pick on load, so a hundred players is around 700 KB per visit
+against 5 GB of monthly egress, which is thousands of page loads a month.
+
+Three things break before capacity does:
+
+1. **Duplicate names.** The player id is a slug of the display name, so two people
+   entering "Mike" collide and the second is told the name is taken. The sign-in
+   message says to add a last initial. Tell people to use first name plus last
+   initial from the start and this never comes up.
+2. **The picks table gets wide to read** past roughly 40 players. It scrolls, so it
+   still works, it just stops being scannable at a glance.
+3. **Nothing stops someone claiming a name that is not theirs.** See the PIN note above.
 
 ## Feasibility note
 

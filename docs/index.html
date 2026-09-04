@@ -52,20 +52,6 @@
           <input type="password" id="pinIn" placeholder="4-digit PIN" inputmode="numeric"
                  pattern="\d{4}" maxlength="4" required>
         </div>
-
-        <fieldset class="votebox">
-          <legend>New players only: how should the money work?</legend>
-          <label class="voteopt">
-            <input type="radio" name="payout" value="pot">
-            <span>Most points at the end <b>wins the pot</b></span>
-          </label>
-          <label class="voteopt">
-            <input type="radio" name="payout" value="rollover">
-            <span>Nobody wins it. <b>Invest it and roll it to next year</b></span>
-          </label>
-          <p class="muted" style="margin:6px 0 0">Just a poll. Results are on the Rules tab.</p>
-        </fieldset>
-
         <div class="row">
           <button class="btn" type="submit">Sign in / Join</button>
           <span class="muted" id="signinMsg"></span>
@@ -123,13 +109,6 @@
       </ul>
       <p class="muted">Schedule, kickoff times and results come from ESPN and refresh
          automatically through the weekend. Scores can lag a live finish by a few minutes.</p>
-    </div>
-
-    <div class="panel">
-      <h2>The money question</h2>
-      <p class="muted">Everyone answers this when they join. Nothing is decided yet,
-         this is just where the answers land.</p>
-      <div id="voteTally"></div>
     </div>
   </section>
 </main>

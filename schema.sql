@@ -10,14 +10,8 @@ create table if not exists survivor_players (
   id          text primary key,            -- slug of the display name
   name        text not null,
   pin         text not null,
-  -- Answered once at signup: 'pot' = most points wins it,
-  -- 'rollover' = nobody wins, it gets invested and carries to next year.
-  payout_vote text check (payout_vote in ('pot','rollover')),
   created_at  timestamptz not null default now()
 );
-
--- If the players table already exists from an earlier run, add the column.
-alter table survivor_players add column if not exists payout_vote text;
 
 create table if not exists survivor_picks (
   player_id    text not null references survivor_players(id) on delete cascade,

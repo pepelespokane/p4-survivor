@@ -183,7 +183,7 @@ function saveSession() {
   } catch (e) { /* fine, they just sign in again */ }
 }
 
-async function signIn(name, pin, vote) {
+async function signIn(name, pin) {
   const id = slug(name);
   if (!id) throw new Error('Enter your name.');
   if (!/^\d{4}$/.test(pin)) throw new Error('PIN must be 4 digits.');
@@ -192,12 +192,17 @@ async function signIn(name, pin, vote) {
   if (error) throw error;
 
   if (data) {
-    if (data.pin !== pin) throw new Error('Wrong PIN for that name.');
+    if (data.pin !== pin) {
+      // Two different people with the same name land here too, since the id is a
+      // slug of the name. Say both things, because the second case is not obvious.
+      throw new Error(
+        `That name is taken. If it is you, check the PIN. If you are a different ` +
+        `${data.name.split(' ')[0]}, add a last initial and try again.`);
+    }
     state.me = { id: data.id, name: data.name };
   } else {
-    if (!vote) throw new Error('Answer the money question to join.');
     const ins = await sb.from('survivor_players')
-      .insert({ id, name: name.trim(), pin, payout_vote: vote }).select().single();
+      .insert({ id, name: name.trim(), pin }).select().single();
     if (ins.error) throw ins.error;
     state.me = { id: ins.data.id, name: ins.data.name };
     state.players.push(ins.data);
@@ -547,35 +552,6 @@ function renderSchedule() {
   }
 }
 
-/* ---------------- view: money question tally ---------------- */
-
-function renderVotes() {
-  const host = $('#voteTally');
-  host.innerHTML = '';
-  const opts = POOL.payoutVote.options;
-  const counts = {};
-  let answered = 0;
-  for (const o of opts) counts[o.key] = 0;
-  for (const p of state.players) {
-    if (counts[p.payout_vote] !== undefined) { counts[p.payout_vote]++; answered++; }
-  }
-
-  host.append(el('p', 'muted',
-    answered
-      ? `${answered} of ${state.players.length} players have answered.`
-      : 'Nobody has joined yet.'));
-
-  for (const o of opts) {
-    const n = counts[o.key];
-    const pct = answered ? Math.round((n / answered) * 100) : 0;
-    const row = el('div', 'voterow');
-    row.innerHTML =
-      `<div class="votelabel">${esc(o.label)} <b>${n}</b></div>` +
-      `<div class="votebar"><span style="width:${pct}%"></span></div>`;
-    host.append(row);
-  }
-}
-
 /* ---------------- wiring ---------------- */
 
 function renderAll() {
@@ -584,7 +560,6 @@ function renderAll() {
   renderPicks();
   renderTeams();
   renderSchedule();
-  renderVotes();
 }
 
 function showTab(name) {
@@ -624,9 +599,8 @@ async function boot() {
     e.preventDefault();
     const msg = $('#signinMsg');
     msg.textContent = '';
-    const picked = document.querySelector('input[name=payout]:checked');
     try {
-      await signIn($('#nameIn').value, $('#pinIn').value, picked ? picked.value : null);
+      await signIn($('#nameIn').value, $('#pinIn').value);
       state.draft = {};
       renderAll();
     } catch (err) {
