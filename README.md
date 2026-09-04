@@ -160,37 +160,72 @@ Supabase anon key sits in the page, so anyone determined enough could read the
 picks table directly. Fine for a pool among friends. Do not put money on the honor
 of the PIN.
 
-## Scoring: last one standing
+## Scoring: four separate survivor pools
 
-Classic survivor. **All four of your picks have to win.** One loss in any conference
-ends your run. So does a week where you did not submit all four; that is treated as a
-miss once the week's games are final.
+**Each conference is its own race.** Lose your SEC pick and your SEC run is over; you
+are still alive in the ACC, Big Ten and Big 12. Four independent eliminations running
+at the same time.
 
-Last player standing wins. If nobody runs all 13 weeks, whoever survived the most
-weeks wins, and everyone knocked out in the same week ties and splits the pot.
-The standings show alive players first, then the eliminated ranked by how far they
-got, with tied players sharing a rank.
+- **$20 to enter, which is $5 per league.** Last one standing in a conference takes
+  that conference's pot. With 15 entries that is $75 per league.
+- **Skipping a league ends your run in it.** No pick for a conference counts as a loss
+  there, applied once that week's games are final.
+- **If nobody survives all 13 weeks in a league**, whoever lasted longest in it wins,
+  and everyone knocked out of that league in the same week ties and splits its share.
+- Once you are out of a league you can keep picking in it for bragging rights; it does
+  not affect the standings. `POOL.zombiePicks` in `config.js` turns that off.
 
-Once you are out you can keep making picks for bragging rights; it has no effect on
-the standings. `POOL.zombiePicks` in `config.js` turns that off.
+Picking is unchanged: still one team per conference per week, still no team twice all
+season. Only the elimination and the leaderboard changed.
 
-Thursday and Friday games count the same as Saturday games. They lock at their own
-kickoff, which is earlier, so a Friday pick is a commitment made with less information.
-`POOL.weekdayGames` in `config.js` flips this to Saturday-only.
+The standings show a money line, a card per conference naming who is leading it, and a
+table with one row per player and one column per league. **Every column header sorts**,
+including each conference, so you can rank the table by any league.
 
-### How fast this ends
+Thursday and Friday games count the same as Saturday. They lock at their own kickoff,
+so a Friday pick is a commitment made with less information. `POOL.weekdayGames`
+flips this to Saturday-only.
 
-Needing four correct picks a week compounds hard. At a 80% hit rate per pick, a week
-is 0.8^4 = 41%, so from 15 entrants you get roughly 6 alive after week 1, 2 after
-week 2, and 1 after week 3. Even at a very strong 90% per pick, only about 12% reach
-week 5.
+## Pick reminders by email
 
-That is the format the group chose and it works fine; it just means the pool likely
-resolves in single-digit weeks and the tie-split rule will probably decide it. If you
-ever want it to run longer, the usual fix is one mulligan per player, a single week
-where a loss does not knock you out.
+`send_reminders.py`, run hourly by `.github/workflows/reminders.yml`, emails everyone
+who still has an open pick. It fires once a week, **Thursday 8am Pacific**, or 8 hours
+before the first kickoff if a week ever opens earlier than that. Every send is logged
+in `survivor_reminders`, so a re-run can never double-mail.
 
-## Feasibility note
+It only nags about leagues you are **still alive in**, and it names them:
+
+```
+Week 3 picks lock as each team kicks off. The first game of the week is
+Thursday at 4:30 PM Pacific.
+
+Still need a pick in: ACC, Big 12
+Already out in: SEC
+```
+
+### Turning it on
+
+The job reads email addresses, so it needs Supabase's **secret** key, and it needs a
+mailbox to send from. Both live in GitHub Actions secrets, where the browser and this
+repo can never see them.
+
+1. **Run `migration_email.sql`** in Supabase -> SQL Editor. This adds the email column
+   and, importantly, takes the players table away from the public key entirely. After
+   it runs, the browser can only read id and name through a view, and sign-in happens
+   inside a database function.
+2. **Make a Gmail app password.** Google Account -> Security -> 2-Step Verification
+   (must be on) -> App passwords -> name it "survivor pool" -> copy the 16 characters.
+3. **Add four repo secrets.** GitHub repo -> Settings -> Secrets and variables ->
+   Actions -> New repository secret:
+   - `SUPABASE_URL` - the bare project url
+   - `SUPABASE_SERVICE_KEY` - Supabase -> Project Settings -> API Keys -> **secret**
+     key. This one bypasses every access rule, so it goes here and nowhere else.
+   - `SMTP_USER` - the Gmail address sending the reminders
+   - `SMTP_PASS` - the app password from step 2
+4. **Test it.** Actions tab -> Pick reminders -> Run workflow, leave "dry run" checked.
+   It prints the emails it would send without sending any.
+
+## Feasibility note## Feasibility note
 
 The Big 12 and the SEC have 16 teams and you burn 13 of them. Most teams have a bye
 somewhere in the 13-week window, and the Big 12 has a thin week 6 (only 11 teams

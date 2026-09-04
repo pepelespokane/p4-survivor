@@ -15,10 +15,15 @@ const POOL = {
     { key: 'sec', name: 'SEC', short: 'SEC', color: '#1e2c58' },
   ],
 
-  // Classic survivor. One losing pick, or a week where you did not submit all
-  // four, ends your run. Last player standing wins; if everyone is out, whoever
-  // lasted longest wins, and people knocked out in the same week tie and split.
-  scoring: 'elimination',
+  // Four independent survivor pools, one per conference. A loss in the SEC ends
+  // your SEC run and nothing else. Last one standing in each conference takes that
+  // conference's pot; if everyone in a league is out, the deepest survivors tie
+  // and split it.
+  scoring: 'elimination-per-conference',
+
+  // $20 in, split evenly across the four leagues.
+  buyIn: 20,
+  buyInPerLeague: 5,
 
   // Knocked-out players can keep making picks for bragging rights. It has no
   // effect on the standings. Set false to lock them out entirely.

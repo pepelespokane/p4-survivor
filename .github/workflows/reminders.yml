@@ -1,0 +1,41 @@
+name: Pick reminders
+
+# Runs hourly through the back half of the week. send_reminders.py decides whether
+# this is actually the hour to send: it fires once, 8 hours before the first
+# kickoff of the pool week, and logs every send so a re-run cannot double-mail.
+
+on:
+  schedule:
+    # Wednesday through Saturday, hourly. Covers every kickoff pattern in the
+    # season, including Thursday night openers.
+    - cron: '5 * * * 3,4,5,6'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Print the emails instead of sending them'
+        type: boolean
+        default: true
+
+concurrency:
+  group: pick-reminders
+  cancel-in-progress: false
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Send reminders if the window is open
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          SITE_URL: https://pepelespokane.github.io/p4-survivor/
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+        run: python send_reminders.py

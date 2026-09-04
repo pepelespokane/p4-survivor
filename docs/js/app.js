@@ -16,6 +16,7 @@ const state = {
   week: 1,
   draft: {},      // conf -> teamId, the unsaved selection in the Picks tab
   boardWeek: 1,
+  sort: { key: 'leagues', dir: -1 },   // standings column + direction
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -136,7 +137,7 @@ async function loadSchedule() {
 
 async function loadPool() {
   const [p, k] = await Promise.all([
-    sb.from('survivor_players').select('*').order('name'),
+    sb.from('survivor_players_public').select('*').order('name'),
     sb.from('survivor_picks').select('*'),
   ]);
   if (p.error) throw p.error;
@@ -156,51 +157,74 @@ function usedBy(playerId) {
   return m;
 }
 
-/** True once every game a player could still be waiting on that week is final. */
-function weekResolvedFor(playerId, w) {
-  const picks = POOL.conferences.map((c) => pickAt(playerId, w, c.key));
-  if (picks.some((pk) => pk && outcome(w, pk.team_id) === 'pending')) return false;
-  // No pick for a conference: only counts once that week's games are done.
-  const wk = weekData(w);
-  const allDone = wk && wk.games.every((g) => g.completed);
-  if (picks.some((pk) => !pk)) return !!allDone;
-  return true;
-}
-
-/** Classic survivor: the first week you drop a pick, or fail to submit all four,
- *  ends your run. Returns the week you went out, or null if still alive. */
-function elimination(playerId) {
+/** Four independent survivor pools, one per conference. Losing your SEC pick ends
+ *  your SEC run and touches nothing else.
+ *
+ *  Returns { week, reason } for the week that conference run ended, or null if the
+ *  player is still alive in it. */
+function elimConf(playerId, conf) {
   for (const wk of state.sched.weeks) {
     const w = wk.week;
-    const picks = POOL.conferences.map((c) => pickAt(playerId, w, c.key));
+    const pk = pickAt(playerId, w, conf);
 
-    const losers = picks
-      .filter((pk) => pk && outcome(w, pk.team_id) === 'loss')
-      .map((pk) => pk.team_name);
-    if (losers.length) return { week: w, reason: losers.join(', ') };
-
-    if (!weekResolvedFor(playerId, w)) return null;  // still in progress, survived so far
-
-    const missing = picks.filter((pk) => !pk).length;
-    if (missing) {
-      return { week: w, reason: missing === 4 ? 'no picks submitted'
-        : `${missing} pick${missing > 1 ? 's' : ''} not submitted` };
+    if (pk) {
+      const o = outcome(w, pk.team_id);
+      if (o === 'loss') return { week: w, reason: pk.team_name + ' lost' };
+      if (o === 'pending') return null;      // still riding on this one
+    } else {
+      // A missing pick only counts against you once that week is actually over.
+      if (!wk.games.every((g) => g.completed)) return null;
+      return { week: w, reason: 'no pick submitted' };
     }
   }
   return null;
 }
 
-/** Weeks fully survived, used to rank people who are out. */
-function weeksSurvived(playerId, out) {
+/** Weeks fully survived in one conference. */
+function survivedConf(playerId, conf, out) {
   if (out) return out.week - 1;
   let n = 0;
   for (const wk of state.sched.weeks) {
-    const picks = POOL.conferences.map((c) => pickAt(playerId, wk.week, c.key));
-    if (picks.length === 4 && picks.every((pk) => pk && outcome(wk.week, pk.team_id) === 'win')) n++;
+    const pk = pickAt(playerId, wk.week, conf);
+    if (pk && outcome(wk.week, pk.team_id) === 'win') n++;
     else break;
   }
   return n;
 }
+
+/** One conference's league table: everyone ranked, plus who is currently winning
+ *  it. Alive players share the lead; if all are out, the deepest survivors tie. */
+function leagueTable(conf) {
+  const rows = state.players.map((p) => {
+    const out = elimConf(p.id, conf);
+    return { p, out, survived: survivedConf(p.id, conf, out) };
+  });
+  rows.sort((a, b) =>
+    (a.out ? 1 : 0) - (b.out ? 1 : 0) ||
+    b.survived - a.survived ||
+    a.p.name.localeCompare(b.p.name));
+
+  const alive = rows.filter((x) => !x.out);
+  const best = rows.length ? Math.max(...rows.map((x) => x.survived)) : 0;
+  const leaders = alive.length ? alive : rows.filter((x) => x.survived === best);
+
+  // Shared rank: same alive-state and same weeks survived means the same number.
+  let rank = 0, lastKey = null;
+  rows.forEach((x, i) => {
+    const key = (x.out ? 'out' : 'alive') + ':' + x.survived;
+    if (key !== lastKey) { rank = i + 1; lastKey = key; }
+    x.rank = rank;
+  });
+
+  return { rows, alive, leaders };
+}
+
+/** How many of the four leagues a player is still alive in. */
+function leaguesAlive(playerId) {
+  return POOL.conferences.filter((c) => !elimConf(playerId, c.key)).length;
+}
+
+const potPerLeague = () => state.players.length * POOL.buyInPerLeague;
 
 function record(playerId) {
   let w = 0, l = 0, pend = 0;
@@ -262,29 +286,39 @@ function readSignInFields() {
   throw new Error('This page is out of date. Reload it (Ctrl+Shift+R) and try again.');
 }
 
-async function signIn(first, last, pin) {
+async function signIn(first, last, pin, email) {
   const { id, name } = buildIdentity(first, last);
   if (!/^\d{4}$/.test(pin)) throw new Error('PIN must be 4 digits.');
-
-  const { data, error } = await sb.from('survivor_players').select('*').eq('id', id).maybeSingle();
-  if (error) throw error;
-
-  if (data) {
-    if (data.pin !== pin) {
-      // A genuinely different person with the same first name and initial also
-      // lands here, so name both cases.
-      throw new Error(
-        `${data.name} is taken. If that is you, check your PIN. If you are a ` +
-        `different ${data.name.split(' ')[0]}, add another letter of your last name.`);
-    }
-    state.me = { id: data.id, name: data.name };
-  } else {
-    const ins = await sb.from('survivor_players')
-      .insert({ id, name, pin }).select().single();
-    if (ins.error) throw ins.error;
-    state.me = { id: ins.data.id, name: ins.data.name };
-    state.players.push(ins.data);
+  email = (email || '').trim();
+  if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email)) {
+    throw new Error('That email does not look right.');
   }
+
+  // Sign-in and registration both happen server side, so the browser never gets
+  // to read anyone's PIN or email back out of the database.
+  const { data, error } = await sb.rpc('survivor_signin', {
+    p_id: id, p_name: name, p_pin: pin, p_email: email || null,
+  });
+
+  if (error) {
+    const m = String(error.message || '');
+    if (m.includes('BAD_PIN_FORMAT')) throw new Error('PIN must be 4 digits.');
+    if (m.includes('BAD_PIN')) {
+      throw new Error(
+        `${name} is taken. If that is you, check your PIN. If you are a ` +
+        `different ${name.split(' ')[0]}, add another letter of your last name.`);
+    }
+    if (m.includes('survivor_signin')) {
+      throw new Error('The pool database is not set up for sign-in yet. ' +
+        'Run migration_email.sql in Supabase.');
+    }
+    throw error;
+  }
+
+  const row = Array.isArray(data) ? data[0] : data;
+  if (!row) throw new Error('Sign-in failed. Try again.');
+  state.me = { id: row.id, name: row.name };
+  await loadPool();
   saveSession();
 }
 
@@ -318,61 +352,101 @@ function weekBar(container, selected, onPick) {
 /* ---------------- view: standings + board ---------------- */
 
 function renderBoard() {
-  const rows = state.players.map((p) => {
-    const out = elimination(p.id);
-    return { p, out, survived: weeksSurvived(p.id, out), r: record(p.id) };
-  });
-  // Alive first, then whoever lasted longest. Same week out means a tie.
-  rows.sort((a, b) =>
-    (a.out ? 1 : 0) - (b.out ? 1 : 0) ||
-    b.survived - a.survived ||
-    a.p.name.localeCompare(b.p.name));
-
-  const alive = rows.filter((x) => !x.out);
-  const leadSurvived = rows.length ? rows[0].survived : 0;
-  // Everyone still alive shares first. If all are out, everyone tied at the deepest
-  // week shares the win.
-  const winners = alive.length ? alive
-    : rows.filter((x) => x.survived === leadSurvived);
-
   const t = $('#standings');
   t.innerHTML = '';
-  if (!rows.length) {
+
+  if (!state.players.length) {
     t.append(el('p', 'muted', 'No one has joined yet. Open the Make Picks tab to sign up.'));
   } else {
-    const summary = alive.length
-      ? `${alive.length} still alive of ${rows.length}`
-      : `Everyone is out. ${winners.length > 1 ? winners.length + ' way tie' : 'Winner'}: ` +
-        winners.map((x) => x.p.name).join(', ');
-    t.append(el('p', 'muted', esc(summary)));
+    const tables = {};
+    for (const c of POOL.conferences) tables[c.key] = leagueTable(c.key);
+
+    // ---- the money line ----
+    const pot = potPerLeague();
+    t.append(el('p', 'muted',
+      `${state.players.length} entries &middot; $${POOL.buyIn} each &middot; ` +
+      `$${POOL.buyInPerLeague} per league &middot; ` +
+      `<b>$${pot}</b> to the last one standing in each conference`));
+
+    // ---- who is winning each league ----
+    const strip = el('div', 'leagues');
+    for (const c of POOL.conferences) {
+      const { alive, leaders } = tables[c.key];
+      const card = el('div', 'league');
+      const names = leaders.map((x) => esc(x.p.name)).join(', ') || '-';
+      card.innerHTML =
+        `<div class="lhead"><span class="dot" style="background:${c.color}"></span>` +
+        `<b>${c.name}</b><span class="spacer"></span><span class="pill">$${pot}</span></div>` +
+        `<div class="lbody"><div class="lname">${names}</div>` +
+        `<small>${alive.length ? alive.length + ' still alive' : 'all out - ' +
+          (leaders.length > 1 ? leaders.length + ' way tie' : 'winner')}</small></div>`;
+      strip.append(card);
+    }
+    t.append(strip);
+
+    // ---- one row per player, one column per league ----
+    const cols = [{ key: 'name', label: 'Player' }]
+      .concat(POOL.conferences.map((c) => ({ key: c.key, label: c.short })))
+      .concat([{ key: 'leagues', label: 'Leagues alive' }]);
 
     const tb = el('table');
-    tb.innerHTML = `<thead><tr>
-      <th></th><th>Player</th><th>Status</th><th>Weeks survived</th>
-      <th>Record</th><th>Teams left</th></tr></thead>`;
+    const head = el('thead');
+    const hrow = el('tr');
+    for (const col of cols) {
+      const on = state.sort.key === col.key;
+      const th = el('th', 'sortable' + (on ? ' on' : ''),
+        `${col.label}<span class="arrow">${on ? (state.sort.dir < 0 ? '▾' : '▴') : ''}</span>`);
+      th.onclick = () => {
+        if (state.sort.key === col.key) state.sort.dir *= -1;
+        // Names read best A to Z; everything else best-first.
+        else state.sort = { key: col.key, dir: col.key === 'name' ? 1 : -1 };
+        renderBoard();
+      };
+      hrow.append(th);
+    }
+    head.append(hrow);
+    tb.append(head);
     const body = el('tbody');
 
-    // Shared rank: everyone on the same survived total gets the same number.
-    let rank = 0, lastKey = null;
-    rows.forEach((x, i) => {
-      const key = (x.out ? 'out' : 'alive') + ':' + x.survived;
-      if (key !== lastKey) { rank = i + 1; lastKey = key; }
+    // Sort value for one player under the currently selected column. Alive always
+    // outranks eliminated in a league column; deeper survival breaks the tie.
+    const sortVal = (p) => {
+      const k = state.sort.key;
+      if (k === 'name') return p.name.toLowerCase();
+      if (k === 'leagues') return leaguesAlive(p.id);
+      const row = tables[k].rows.find((x) => x.p.id === p.id);
+      return (row.out ? 0 : 1000) + row.survived;
+    };
 
-      const status = x.out
-        ? `<span class="pill loss">Out &middot; Week ${weekData(x.out.week).poolWeek}</span>` +
-          `<small>${esc(x.out.reason)}</small>`
-        : `<span class="pill win">Alive</span>`;
-
-      const tr = el('tr', x.out ? 'dead' : '');
-      tr.innerHTML = `
-        <td><span class="rank${winners.includes(x) ? ' top' : ''}">${rank}</span></td>
-        <td><b>${esc(x.p.name)}</b></td>
-        <td class="pk">${status}</td>
-        <td class="num">${x.survived}</td>
-        <td class="num">${x.r.w}-${x.r.l}${x.r.pend ? ' (' + x.r.pend + ' pending)' : ''}</td>
-        <td class="num">${totalTeams() - Object.keys(usedBy(x.p.id)).length}</td>`;
-      body.append(tr);
+    const ordered = state.players.slice().sort((a, b) => {
+      const va = sortVal(a), vb = sortVal(b);
+      const cmp = typeof va === 'string' ? va.localeCompare(vb) : va - vb;
+      return (cmp * state.sort.dir) || a.name.localeCompare(b.name);
     });
+
+    for (const p of ordered) {
+      const tr = el('tr');
+      let cells = `<td><b>${esc(p.name)}</b></td>`;
+      let n = 0;
+      for (const c of POOL.conferences) {
+        const row = tables[c.key].rows.find((x) => x.p.id === p.id);
+        if (row.out) {
+          cells += `<td class="pk"><span class="pill loss">Out &middot; W` +
+            `${weekData(row.out.week).poolWeek}</span>` +
+            `<small>${esc(row.out.reason)}</small></td>`;
+        } else {
+          n++;
+          const lead = tables[c.key].leaders.includes(row);
+          cells += `<td class="pk"><span class="pill win">Alive</span>` +
+            `<small>${row.survived} week${row.survived === 1 ? '' : 's'}` +
+            `${lead ? ' &middot; leading' : ''}</small></td>`;
+        }
+      }
+      cells += `<td class="num"><b>${n}</b> / 4</td>`;
+      tr.innerHTML = cells;
+      tr.className = n === 0 ? 'dead' : '';
+      body.append(tr);
+    }
     tb.append(body);
     const wrap = el('div', 'scroll');
     wrap.append(tb);
@@ -458,20 +532,28 @@ function renderPicks() {
     }
   }
 
-  const out = elimination(state.me.id);
-  const banner = out
-    ? `<div class="notice"><b>You went out in week ${weekData(out.week).poolWeek}</b> ` +
-      `(${esc(out.reason)}). ` +
+  const outByConf = {};
+  for (const c of POOL.conferences) outByConf[c.key] = elimConf(state.me.id, c.key);
+  const deadConfs = POOL.conferences.filter((c) => outByConf[c.key]);
+
+  const banner = deadConfs.length
+    ? `<div class="notice">You are out of ` +
+      deadConfs.map((c) => `<b>${c.name}</b> (week ` +
+        `${weekData(outByConf[c.key].week).poolWeek})`).join(', ') + `. ` +
+      (deadConfs.length === POOL.conferences.length
+        ? 'All four of your runs are over. '
+        : 'Your other leagues are still live. ') +
       (POOL.zombiePicks
-        ? 'You can keep picking for bragging rights, but it does not affect the standings.'
-        : 'Picks are closed for you.') + `</div>`
+        ? 'You can keep picking in a dead league for bragging rights; it does not ' +
+          'affect the standings.'
+        : 'Picks are closed in those leagues.') + `</div>`
     : '';
 
   $('#pickHead').innerHTML = banner +
     `<h2>Week ${wk.poolWeek} picks</h2>` +
-    `<p class="muted">Pick one team from each conference. All four have to win or ` +
-    `your run ends. A team you have already used is greyed out, and so is any team ` +
-    `whose game has kicked off.</p>`;
+    `<p class="muted">Each conference is its own survivor pool. A loss ends your run ` +
+    `in that conference only. Teams you have already used are greyed out, and so is ` +
+    `any team whose game has kicked off.</p>`;
 
   const grid = $('#pickGrid');
   grid.innerHTML = '';
@@ -484,6 +566,9 @@ function renderPicks() {
     hd.lastChild.style.background = c.color;
     hd.append(el('b', '', c.name));
     hd.append(el('span', 'spacer'));
+    const dead = outByConf[c.key];
+    hd.append(el('span', dead ? 'pill loss' : 'pill win',
+      dead ? `Out W${weekData(dead.week).poolWeek}` : 'Alive'));
     card.append(hd);
 
     const opts = el('div', 'opts');
@@ -532,12 +617,15 @@ function renderPicks() {
   }
 
   const chosen = POOL.conferences.filter((c) => state.draft[c.key]).length;
-  const locked = out && !POOL.zombiePicks;
-  $('#saveBtn').disabled = chosen === 0 || !!locked;
-  $('#saveNote').textContent = locked
-    ? 'You are out of the pool.'
-    : `${chosen} of 4 conferences selected` +
-      (chosen > 0 && chosen < 4 ? ' - all four must win, so a missing pick ends your run' : '');
+  const live = POOL.conferences.filter((c) => !outByConf[c.key]);
+  const liveChosen = live.filter((c) => state.draft[c.key]).length;
+  $('#saveBtn').disabled = chosen === 0;
+  $('#saveNote').textContent = live.length === 0
+    ? 'All four of your runs are over. Picks are just for fun now.'
+    : `${liveChosen} of ${live.length} live league${live.length === 1 ? '' : 's'} selected` +
+      (liveChosen < live.length
+        ? ' - skipping one ends your run in that league'
+        : '');
 }
 
 async function savePicks() {
@@ -723,7 +811,8 @@ async function boot() {
     msg.textContent = '';
     try {
       const [first, last] = readSignInFields();
-      await signIn(first, last, $('#pinIn').value);
+      const emailEl = $('#emailIn');
+      await signIn(first, last, $('#pinIn').value, emailEl ? emailEl.value : '');
       state.draft = {};
       renderAll();
     } catch (err) {
