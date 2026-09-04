@@ -15,6 +15,10 @@ on:
         description: 'Print the emails instead of sending them'
         type: boolean
         default: true
+      test_week:
+        description: 'Dry run only: pretend it is reminder time for this pool week (1-13)'
+        type: string
+        default: ''
 
 concurrency:
   group: pick-reminders
@@ -42,4 +46,5 @@ jobs:
           SMTP_PORT: ${{ vars.SMTP_PORT }}
           SITE_URL: https://pepelespokane.github.io/p4-survivor/
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+          TEST_WEEK: ${{ inputs.test_week }}
         run: python send_reminders.py

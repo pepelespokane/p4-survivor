@@ -18,6 +18,8 @@ Environment:
   SMTP_PASS             app password for that address
   SITE_URL              default https://pepelespokane.github.io/p4-survivor/
   DRY_RUN               set to 1 to print instead of send
+  TEST_WEEK             dry run only: pretend it is reminder time for this pool
+                        week, so the whole chain can be exercised out of season
 """
 
 import json
@@ -210,6 +212,20 @@ def send(to_addr, subject, body):
 def main():
     now = datetime.now(timezone.utc)
     sched = load_schedule()
+
+    # Dry-run escape hatch: aim at a specific week and skip the timing gate, so the
+    # Supabase read and the email text can be checked without waiting for Thursday.
+    test_week = os.environ.get("TEST_WEEK", "").strip()
+    if test_week and DRY:
+        wk = next((w for w in sched["weeks"] if str(w["poolWeek"]) == test_week), None)
+        if not wk:
+            print("No pool week " + test_week)
+            return 1
+        print("TEST MODE: pretending it is reminder time for pool week " + test_week)
+        opens = week_opens(wk)
+        run_for_week(sched, wk, opens, now, forced=True)
+        return 0
+
     wk = current_week(sched, now)
     if not wk:
         print("Season is over. Nothing to send.")
@@ -229,6 +245,11 @@ def main():
         print("First game has kicked off. Not sending a 'picks due' note now.")
         return 0
 
+    run_for_week(sched, wk, opens, now, forced=False)
+    return 0
+
+
+def run_for_week(sched, wk, opens, now, forced):
     players = sb("GET", "survivor_players", params={"select": "id,name,email"})
     all_picks = sb("GET", "survivor_picks",
                    params={"select": "player_id,week,conf,team_id,team_name"})
@@ -244,7 +265,7 @@ def main():
 
     sent = 0
     for p in players:
-        if p["id"] in already:
+        if p["id"] in already and not forced:
             print("  " + p["name"] + ": already reminded for this week")
             continue
         if not p.get("email"):
