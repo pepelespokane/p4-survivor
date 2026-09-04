@@ -21,7 +21,8 @@ const POOL = {
   // and split it.
   scoring: 'elimination-per-conference',
 
-  // $20 in, split evenly across the four leagues.
+  // Buy-in is deliberately NOT shown anywhere on the site. Kept here only so the
+  // numbers live somewhere; nothing renders them.
   buyIn: 20,
   buyInPerLeague: 5,
 

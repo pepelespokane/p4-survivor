@@ -166,19 +166,19 @@ of the PIN.
 are still alive in the ACC, Big Ten and Big 12. Four independent eliminations running
 at the same time.
 
-- **$20 to enter, which is $5 per league.** Last one standing in a conference takes
-  that conference's pot. With 15 entries that is $75 per league.
+- **Each league has its own winner**, the last one standing in that conference.
 - **Skipping a league ends your run in it.** No pick for a conference counts as a loss
   there, applied once that week's games are final.
-- **If nobody survives all 13 weeks in a league**, whoever lasted longest in it wins,
-  and everyone knocked out of that league in the same week ties and splits its share.
+- **If nobody survives all 13 weeks in a league**, whoever lasted longest in it wins it,
+  and everyone knocked out of that league in the same week ties.
 - Once you are out of a league you can keep picking in it for bragging rights; it does
   not affect the standings. `POOL.zombiePicks` in `config.js` turns that off.
 
 Picking is unchanged: still one team per conference per week, still no team twice all
 season. Only the elimination and the leaderboard changed.
 
-The standings show a money line, a card per conference naming who is leading it, and a
+The site never mentions the buy-in; that stays between you and the players. The
+standings show a card per conference naming who is leading it, and a
 table with one row per player and one column per league. **Every column header sorts**,
 including each conference, so you can rank the table by any league.
 

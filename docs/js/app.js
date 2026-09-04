@@ -224,8 +224,6 @@ function leaguesAlive(playerId) {
   return POOL.conferences.filter((c) => !elimConf(playerId, c.key)).length;
 }
 
-const potPerLeague = () => state.players.length * POOL.buyInPerLeague;
-
 function record(playerId) {
   let w = 0, l = 0, pend = 0;
   for (const p of picksOf(playerId)) {
@@ -361,12 +359,9 @@ function renderBoard() {
     const tables = {};
     for (const c of POOL.conferences) tables[c.key] = leagueTable(c.key);
 
-    // ---- the money line ----
-    const pot = potPerLeague();
     t.append(el('p', 'muted',
-      `${state.players.length} entries &middot; $${POOL.buyIn} each &middot; ` +
-      `$${POOL.buyInPerLeague} per league &middot; ` +
-      `<b>$${pot}</b> to the last one standing in each conference`));
+      `${state.players.length} ${state.players.length === 1 ? 'entry' : 'entries'} ` +
+      `&middot; four separate races &middot; last one standing wins each conference`));
 
     // ---- who is winning each league ----
     const strip = el('div', 'leagues');
@@ -376,7 +371,7 @@ function renderBoard() {
       const names = leaders.map((x) => esc(x.p.name)).join(', ') || '-';
       card.innerHTML =
         `<div class="lhead"><span class="dot" style="background:${c.color}"></span>` +
-        `<b>${c.name}</b><span class="spacer"></span><span class="pill">$${pot}</span></div>` +
+        `<b>${c.name}</b></div>` +
         `<div class="lbody"><div class="lname">${names}</div>` +
         `<small>${alive.length ? alive.length + ' still alive' : 'all out - ' +
           (leaders.length > 1 ? leaders.length + ' way tie' : 'winner')}</small></div>`;
