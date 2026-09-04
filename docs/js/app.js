@@ -135,11 +135,18 @@ async function loadSchedule() {
   }
 }
 
+/** True once migration_email.sql has been run. Until then the app falls back to
+ *  talking to the players table directly, so the site keeps working either way. */
+let LOCKED_DOWN = true;
+
 async function loadPool() {
-  const [p, k] = await Promise.all([
-    sb.from('survivor_players_public').select('*').order('name'),
-    sb.from('survivor_picks').select('*'),
-  ]);
+  let p = await sb.from('survivor_players_public').select('*').order('name');
+  if (p.error) {
+    // View is missing, so the migration has not run yet.
+    LOCKED_DOWN = false;
+    p = await sb.from('survivor_players').select('id,name').order('name');
+  }
+  const k = await sb.from('survivor_picks').select('*');
   if (p.error) throw p.error;
   if (k.error) throw k.error;
   state.players = p.data || [];
@@ -292,30 +299,47 @@ async function signIn(first, last, pin, email) {
     throw new Error('That email does not look right.');
   }
 
-  // Sign-in and registration both happen server side, so the browser never gets
-  // to read anyone's PIN or email back out of the database.
+  const taken = () => new Error(
+    `${name} is taken. If that is you, check your PIN. If you are a ` +
+    `different ${name.split(' ')[0]}, add another letter of your last name.`);
+
+  // Preferred path: sign-in and registration happen server side, so the browser
+  // never gets to read anyone's PIN or email back out of the database.
   const { data, error } = await sb.rpc('survivor_signin', {
     p_id: id, p_name: name, p_pin: pin, p_email: email || null,
   });
 
-  if (error) {
-    const m = String(error.message || '');
-    if (m.includes('BAD_PIN_FORMAT')) throw new Error('PIN must be 4 digits.');
-    if (m.includes('BAD_PIN')) {
-      throw new Error(
-        `${name} is taken. If that is you, check your PIN. If you are a ` +
-        `different ${name.split(' ')[0]}, add another letter of your last name.`);
-    }
-    if (m.includes('survivor_signin')) {
-      throw new Error('The pool database is not set up for sign-in yet. ' +
-        'Run migration_email.sql in Supabase.');
-    }
-    throw error;
+  if (!error) {
+    const row = Array.isArray(data) ? data[0] : data;
+    if (!row) throw new Error('Sign-in failed. Try again.');
+    state.me = { id: row.id, name: row.name };
+    await loadPool();
+    saveSession();
+    return;
   }
 
-  const row = Array.isArray(data) ? data[0] : data;
-  if (!row) throw new Error('Sign-in failed. Try again.');
-  state.me = { id: row.id, name: row.name };
+  const m = String(error.message || '') + ' ' + String(error.code || '');
+  if (m.includes('BAD_PIN_FORMAT')) throw new Error('PIN must be 4 digits.');
+  if (m.includes('BAD_PIN')) throw taken();
+
+  const missing = m.includes('PGRST202') || m.includes('survivor_signin')
+    || m.includes('Could not find') || m.includes('404');
+  if (!missing) throw error;
+
+  // Fallback for a database where migration_email.sql has not been run yet.
+  // Same rules, just enforced in the browser instead of in Postgres.
+  LOCKED_DOWN = false;
+  const q = await sb.from('survivor_players').select('*').eq('id', id).maybeSingle();
+  if (q.error) throw q.error;
+  if (q.data) {
+    if (q.data.pin !== pin) throw taken();
+    state.me = { id: q.data.id, name: q.data.name };
+  } else {
+    const ins = await sb.from('survivor_players')
+      .insert({ id, name, pin }).select().single();
+    if (ins.error) throw ins.error;
+    state.me = { id: ins.data.id, name: ins.data.name };
+  }
   await loadPool();
   saveSession();
 }
