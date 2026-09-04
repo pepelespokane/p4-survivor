@@ -123,9 +123,9 @@ To force a refresh: repo -> **Actions** tab -> **Update schedule and results** -
 - **Standings & Picks** - the leaderboard plus everyone's picks for a chosen week.
   A pick reads "submitted" to everyone else until that team kicks off, so a Friday
   night game never leaks somebody's Saturday plan. You always see your own.
-- **Make Picks** - sign in with a name and a 4-digit PIN. First sign-in creates the
-  entry. Then one team per conference; used teams, byes and kicked-off teams are
-  greyed out and cannot be selected.
+- **Make Picks** - sign in with first name, last initial, and a 4-digit PIN. First
+  sign-in creates the entry. Then one team per conference; used teams, byes and
+  kicked-off teams are greyed out and cannot be selected.
 - **Rules** - how it works, in plain language, for anyone joining cold.
 - **Teams Used** - the full 67-team board for any player, showing what is burned,
   which week it was used, and whether it hit.
@@ -183,10 +183,10 @@ against 5 GB of monthly egress, which is thousands of page loads a month.
 
 Three things break before capacity does:
 
-1. **Duplicate names.** The player id is a slug of the display name, so two people
-   entering "Mike" collide and the second is told the name is taken. The sign-in
-   message says to add a last initial. Tell people to use first name plus last
-   initial from the start and this never comes up.
+1. **Duplicate names.** The player id is built from first name plus last initial,
+   both required fields, so "Mike S" and "Mike T" never collide. Two people who are
+   genuinely both "Mike S" still would; the sign-in message tells the second one to
+   add another letter of their last name, and the field takes up to three.
 2. **The picks table gets wide to read** past roughly 40 players. It scrolls, so it
    still works, it just stops being scannable at a glance.
 3. **Nothing stops someone claiming a name that is not theirs.** See the PIN note above.

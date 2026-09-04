@@ -183,9 +183,24 @@ function saveSession() {
   } catch (e) { /* fine, they just sign in again */ }
 }
 
-async function signIn(name, pin) {
-  const id = slug(name);
-  if (!id) throw new Error('Enter your name.');
+/** First name plus at least one letter of the last name. Requiring the second
+ *  field is what keeps two Mikes from fighting over the same entry. */
+function buildIdentity(first, last) {
+  first = (first || '').trim();
+  last = (last || '').trim();
+  if (first.length < 2) throw new Error('Enter your first name.');
+  if (!/^[A-Za-z]{1,3}$/.test(last)) {
+    throw new Error('Last initial: just the first letter or two of your last name.');
+  }
+  const id = slug(first) + '-' + last.toLowerCase();
+  if (!slug(first)) throw new Error('First name needs at least one letter.');
+  const cap = (x) => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase();
+  const name = first.charAt(0).toUpperCase() + first.slice(1) + ' ' + cap(last);
+  return { id, name };
+}
+
+async function signIn(first, last, pin) {
+  const { id, name } = buildIdentity(first, last);
   if (!/^\d{4}$/.test(pin)) throw new Error('PIN must be 4 digits.');
 
   const { data, error } = await sb.from('survivor_players').select('*').eq('id', id).maybeSingle();
@@ -193,16 +208,16 @@ async function signIn(name, pin) {
 
   if (data) {
     if (data.pin !== pin) {
-      // Two different people with the same name land here too, since the id is a
-      // slug of the name. Say both things, because the second case is not obvious.
+      // A genuinely different person with the same first name and initial also
+      // lands here, so name both cases.
       throw new Error(
-        `That name is taken. If it is you, check the PIN. If you are a different ` +
-        `${data.name.split(' ')[0]}, add a last initial and try again.`);
+        `${data.name} is taken. If that is you, check your PIN. If you are a ` +
+        `different ${data.name.split(' ')[0]}, add another letter of your last name.`);
     }
     state.me = { id: data.id, name: data.name };
   } else {
     const ins = await sb.from('survivor_players')
-      .insert({ id, name: name.trim(), pin }).select().single();
+      .insert({ id, name, pin }).select().single();
     if (ins.error) throw ins.error;
     state.me = { id: ins.data.id, name: ins.data.name };
     state.players.push(ins.data);
@@ -600,7 +615,7 @@ async function boot() {
     const msg = $('#signinMsg');
     msg.textContent = '';
     try {
-      await signIn($('#nameIn').value, $('#pinIn').value);
+      await signIn($('#firstIn').value, $('#lastIn').value, $('#pinIn').value);
       state.draft = {};
       renderAll();
     } catch (err) {

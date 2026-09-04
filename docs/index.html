@@ -44,13 +44,17 @@
   <section class="view" id="view-picks">
     <div class="panel" id="signin">
       <h2>Sign in</h2>
-      <p class="muted">First time here? Enter your name and pick a 4-digit PIN.
-        That creates your entry. After that, the same name and PIN gets you back in.</p>
+      <p class="muted">First time here? First name, last initial, and a 4-digit PIN of
+        your choosing. That creates your entry. The same three get you back in later.
+        The initial is required so two Mikes do not end up fighting over one spot.</p>
       <form id="signinForm">
         <div class="row">
-          <input type="text" id="nameIn" placeholder="Your name" autocomplete="name" required>
+          <input type="text" id="firstIn" placeholder="First name" autocomplete="given-name"
+                 style="flex:1 1 160px" required>
+          <input type="text" id="lastIn" placeholder="Last initial" autocomplete="off"
+                 pattern="[A-Za-z]{1,3}" maxlength="3" style="width:110px" required>
           <input type="password" id="pinIn" placeholder="4-digit PIN" inputmode="numeric"
-                 pattern="\d{4}" maxlength="4" required>
+                 pattern="\d{4}" maxlength="4" style="width:130px" required>
         </div>
         <div class="row">
           <button class="btn" type="submit">Sign in / Join</button>
