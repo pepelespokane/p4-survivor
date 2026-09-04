@@ -199,6 +199,23 @@ function buildIdentity(first, last) {
   return { id, name };
 }
 
+/** Read the sign-in fields, tolerating a stale cached page.
+ *  GitHub Pages caches HTML for ten minutes, so a browser can end up running new
+ *  JS against an old form. Rather than throw, fall back to the old single field
+ *  and split it, so an out-of-date page still signs people in. */
+function readSignInFields() {
+  const f = $('#firstIn'), l = $('#lastIn');
+  if (f && l) return [f.value, l.value];
+
+  const n = $('#nameIn');
+  if (n) {
+    const parts = String(n.value || '').trim().split(/\s+/).filter(Boolean);
+    if (parts.length > 1) return [parts.slice(0, -1).join(' '), parts[parts.length - 1]];
+    return [parts[0] || '', ''];
+  }
+  throw new Error('This page is out of date. Reload it (Ctrl+Shift+R) and try again.');
+}
+
 async function signIn(first, last, pin) {
   const { id, name } = buildIdentity(first, last);
   if (!/^\d{4}$/.test(pin)) throw new Error('PIN must be 4 digits.');
@@ -615,7 +632,8 @@ async function boot() {
     const msg = $('#signinMsg');
     msg.textContent = '';
     try {
-      await signIn($('#firstIn').value, $('#lastIn').value, $('#pinIn').value);
+      const [first, last] = readSignInFields();
+      await signIn(first, last, $('#pinIn').value);
       state.draft = {};
       renderAll();
     } catch (err) {
