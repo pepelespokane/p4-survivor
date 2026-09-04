@@ -106,6 +106,16 @@ def week_opens(wk):
     return min(kick(g) for g in (live or wk["games"]))
 
 
+def eastern():
+    """Most of the pool is east of Spokane, so times are quoted ET first."""
+    if ZoneInfo is not None:
+        try:
+            return ZoneInfo("America/New_York")
+        except Exception:  # noqa: BLE001 - no tzdata installed
+            pass
+    return timezone(timedelta(hours=-4))
+
+
 def pacific():
     """America/Los_Angeles, or a fixed offset if the tz database is missing.
     The season runs Sep-Nov, so the only transition inside it is Nov 1 2026."""
@@ -179,10 +189,15 @@ def elim_conf(sched, picks_by_week, conf, now):
 
 
 def fmt_local(dt):
-    """'Saturday at 9:00 AM Pacific'. Built by hand because %-I is not portable."""
-    local = dt.astimezone(pacific())
-    hour = local.hour % 12 or 12
-    return local.strftime("%A at ") + str(hour) + local.strftime(":%M %p Pacific")
+    """'Thursday at 8:00 PM ET / 5:00 PM PT'. The pool is spread across several
+    time zones, and ET/PT is the pairing everyone can translate. Built by hand
+    because %-I is not portable off glibc."""
+    def clock(local):
+        return str(local.hour % 12 or 12) + local.strftime(":%M %p")
+
+    et = dt.astimezone(eastern())
+    pt = dt.astimezone(pacific())
+    return et.strftime("%A at ") + clock(et) + " ET / " + clock(pt) + " PT"
 
 
 # -------------------------------------------------------------------- email
