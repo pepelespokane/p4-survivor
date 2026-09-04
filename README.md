@@ -6,6 +6,9 @@ No team can be used twice all season. 52 picks out of 67 available teams.
 Static site. Schedule and results come from ESPN and ship as a JSON file.
 Players and picks live in Supabase, so everyone sees the same board.
 
+**Live at https://pepelespokane.github.io/p4-survivor/**
+Repo: https://github.com/pepelespokane/p4-survivor
+
 ## What's here
 
 ```
@@ -75,22 +78,11 @@ const SUPABASE_KEY = 'sb_publishable_...';
 5. Save, then `git add -A`, `git commit -m "Point at the survivor Supabase project"`,
    `git push`.
 
-### 4. Turn on GitHub Pages
+### 4. Already done
 
-1. Go to the repo on github.com, click **Settings**.
-2. Left sidebar, **Pages**.
-3. **Source:** Deploy from a branch. **Branch:** `main`, folder: **`/docs`**. Click **Save**.
-4. Wait a minute, then reload. The URL appears at the top of that page.
-
-The repo has to be **public** for Pages on the free plan. Nothing sensitive is in it.
-
-### 5. Let the Action write to the repo
-
-The results job commits back to the repo, which needs one permission flipped.
-
-1. Repo **Settings** -> **Actions** -> **General**.
-2. Scroll to **Workflow permissions**.
-3. Select **Read and write permissions**. Click **Save**.
+GitHub Pages is on and serving from `main` / `/docs`, and Actions has read-write
+permission so the results job can commit back. The repo is public, which Pages on
+the free plan requires. Nothing sensitive is in it.
 
 ## Every week
 
@@ -117,6 +109,20 @@ To force a refresh: repo -> **Actions** tab -> **Update schedule and results** -
 - **Teams Used** - the full 67-team board for any player, showing what is burned,
   which week it was used, and whether it hit.
 - **Schedule** - every P4 game that week with kickoff times, TV and final scores.
+
+## ESPN, and why the code talks to two hosts
+
+`site.api.espn.com` is the clean endpoint and it is what runs locally. It has two
+traps:
+
+- A long User-Agent string gets a **403**. `Mozilla/5.0` works; adding
+  `(Windows NT 10.0; Win64; x64)` does not. This is not documented anywhere.
+- It **refuses datacenter IPs**, so it 403s every time from a GitHub Actions runner.
+
+So `build_schedule.py` falls back to `cdn.espn.com/core/college-football/schedule`,
+which answers from anywhere and carries the same data: ids, kickoff times, TV,
+venues, ranks, scores and winners. Verified identical game sets for weeks 1, 3 and 13.
+If the Action ever starts failing, that fallback is the first place to look.
 
 ## Rules the code enforces
 
