@@ -43,6 +43,10 @@ begin
   select f.fails, f.last_fail into v_fails, v_last
     from survivor_signin_fails f where f.player_id = p_id;
 
+  -- SELECT INTO sets the variable to NULL when no row matches, so a first-time
+  -- failure would otherwise try to write NULL into a not-null column.
+  v_fails := coalesce(v_fails, 0);
+
   -- Old failures age out, so an honest mistake yesterday does not count today.
   if v_last is not null and v_last < now() - c_window then
     v_fails := 0;
@@ -64,7 +68,7 @@ begin
       insert into survivor_signin_fails (player_id, fails, last_fail)
       values (p_id, v_fails + 1, now())
       on conflict (player_id) do update
-        set fails = v_fails + 1, last_fail = now();
+        set fails = coalesce(v_fails, 0) + 1, last_fail = now();
       return query select null::text, null::text, null::uuid, 'BAD_PIN'::text;
       return;
     end if;
