@@ -17,6 +17,7 @@ const state = {
   draft: {},      // conf -> teamId, the unsaved selection in the Picks tab
   boardWeek: 1,
   sort: { key: 'leagues', dir: -1 },   // standings column + direction
+  teamFilter: 'left',                  // Teams tab: left | used | all
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -169,6 +170,18 @@ function usedBy(playerId) {
  *
  *  Returns { week, reason } for the week that conference run ended, or null if the
  *  player is still alive in it. */
+/** 'Wake Forest lost 17-24 at Duke' - the game that ended a run. */
+function lossDetail(w, teamId) {
+  const g = gameFor(w, teamId);
+  const name = state.teams[teamId] ? state.teams[teamId].name : 'Pick';
+  if (!g) return name + ' lost';
+  const me = sideOf(g, teamId), opp = oppOf(g, teamId);
+  const where = g.neutral ? 'vs' : (g.home.id === teamId ? 'vs' : 'at');
+  const score = (me.score !== undefined && opp.score !== undefined)
+    ? ` ${me.score}-${opp.score}` : '';
+  return `${name} lost${score} ${where} ${opp.name}`;
+}
+
 function elimConf(playerId, conf) {
   for (const wk of state.sched.weeks) {
     const w = wk.week;
@@ -176,7 +189,7 @@ function elimConf(playerId, conf) {
 
     if (pk) {
       const o = outcome(w, pk.team_id);
-      if (o === 'loss') return { week: w, reason: pk.team_name + ' lost' };
+      if (o === 'loss') return { week: w, reason: lossDetail(w, pk.team_id) };
       if (o === 'pending') return null;      // still riding on this one
     } else {
       // A missing pick only counts against you once that week is actually over.
@@ -710,10 +723,6 @@ function renderTeams() {
   const host = $('#teamsView');
   host.innerHTML = '';
 
-  if (!state.me) {
-    host.append(el('div', 'notice', 'Sign in on the Make Picks tab to see your own team board.'));
-  }
-
   const sel = $('#teamsWho');
   const prev = sel.value;
   sel.innerHTML = '';
@@ -730,37 +739,75 @@ function renderTeams() {
   const who = ids.includes(prev) ? prev
     : (state.me && ids.includes(state.me.id) ? state.me.id : ids[0]);
   sel.value = who;
+  const isMe = state.me && who === state.me.id;
 
-  // Someone else's board only shows picks that have already kicked off.
+  // Another player's board only shows picks that have already kicked off, so it
+  // cannot be used to scout what they are sitting on this week.
   const used = {};
   let hiddenCount = 0;
   for (const x of picksOf(who)) {
     if (pickVisible(x)) used[x.team_id] = x.week;
     else hiddenCount++;
   }
+
+  // Show all / only what is left / only what is burned.
+  const modes = [['left', 'Still available'], ['used', 'Used'], ['all', 'All teams']];
+  const bar = el('div', 'weekbar');
+  for (const [key, label] of modes) {
+    const b = el('button', state.teamFilter === key ? 'on' : '', label);
+    b.onclick = () => { state.teamFilter = key; renderTeams(); };
+    bar.append(b);
+  }
+  host.append(bar);
+
   const total = Object.keys(used).length;
   host.append(el('p', 'muted',
-    `${total} of ${totalTeams()} teams used · ${totalTeams() - total} still available` +
-    (hiddenCount ? ` · ${hiddenCount} pick${hiddenCount > 1 ? 's' : ''} hidden until kickoff` : '')));
+    `${total} of ${totalTeams()} used &middot; <b>${totalTeams() - total} still available</b>` +
+    (hiddenCount ? ` &middot; ${hiddenCount} pick${hiddenCount > 1 ? 's' : ''} hidden until kickoff`
+                 : '') +
+    (isMe ? '' : ' &middot; showing only picks that have kicked off')));
 
   for (const c of POOL.conferences) {
     const conf = state.sched.conferences.find((x) => x.key === c.key);
-    const panel = el('div', 'panel');
+    const dead = elimConf(who, c.key);
     const usedHere = conf.teams.filter((t) => used[t.id] !== undefined).length;
-    panel.append(el('h3', '', `${esc(c.name)} · ${usedHere}/${conf.teams.length} used`));
+    const leftHere = conf.teams.length - usedHere;
+
+    const panel = el('div', 'panel');
+    const head = el('div', 'row');
+    head.append(el('span', 'dot'));
+    head.lastChild.style.background = c.color;
+    head.append(el('h3', '', `${esc(c.name)}`));
+    head.append(el('span', 'muted', `${leftHere} left &middot; ${usedHere} used`));
+    head.append(el('span', 'spacer'));
+    head.append(el('span', dead ? 'pill loss' : 'pill win',
+      dead ? `Out W${weekData(dead.week).poolWeek}` : 'Alive'));
+    panel.append(head);
+
     const grid = el('div', 'teamgrid');
+    let shown = 0;
     for (const t of conf.teams) {
       const u = used[t.id];
-      const chip = el('div', 'tchip' + (u !== undefined ? ' used' : ''));
+      const isUsed = u !== undefined;
+      if (state.teamFilter === 'left' && isUsed) continue;
+      if (state.teamFilter === 'used' && !isUsed) continue;
+      shown++;
+
+      const chip = el('div', 'tchip' + (isUsed ? ' used' : ''));
       chip.append(el('span', '', esc(t.name)));
-      if (u !== undefined) {
+      if (isUsed) {
         const o = outcome(u, t.id);
         chip.append(el('span', 'wk',
           `W${weekData(u).poolWeek} ${o === 'win' ? '✓' : o === 'loss' ? '✗' : ''}`));
       }
       grid.append(chip);
     }
-    panel.append(grid);
+    if (!shown) {
+      panel.append(el('p', 'muted',
+        state.teamFilter === 'used' ? 'Nothing used here yet.' : 'Every team here is used.'));
+    } else {
+      panel.append(grid);
+    }
     host.append(panel);
   }
 }

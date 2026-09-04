@@ -127,8 +127,11 @@ To force a refresh: repo -> **Actions** tab -> **Update schedule and results** -
   sign-in creates the entry. Then one team per conference; used teams, byes and
   kicked-off teams are greyed out and cannot be selected.
 - **Rules** - how it works, in plain language, for anyone joining cold.
-- **Teams Used** - the full 67-team board for any player, showing what is burned,
-  which week it was used, and whether it hit.
+- **Teams Left** - the board for any player, defaulting to what they still have
+  available, with filters for Used and All. Per conference it shows how many are left,
+  how many are burned, and whether that league is still alive for them. Another
+  player's board only reveals picks that have already kicked off, so it cannot be used
+  to scout what they are sitting on this week.
 - **Schedule** - every P4 game that week with kickoff times, TV and final scores.
 
 ## ESPN, and why the code talks to two hosts
