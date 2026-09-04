@@ -1,0 +1,47 @@
+name: Update schedule and results
+
+# Repulls the ESPN data and commits docs/schedule.json when anything changed:
+# final scores, kickoff times that moved, TV assignments.
+# Times are UTC. Pacific is UTC-7 during the season.
+
+on:
+  schedule:
+    # Saturday 9am to 11pm Pacific, hourly.
+    - cron: '0 16-23 * * 6'
+    # Saturday 11pm Pacific through Sunday 5am Pacific, hourly (rolls into Sunday UTC).
+    - cron: '0 0-12 * * 0'
+    # Once a day the rest of the week, to catch schedule and kickoff-time changes.
+    - cron: '15 14 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-results
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Pull ESPN schedule and results
+        run: python build_schedule.py
+
+      - name: Commit if the data changed
+        run: |
+          if git diff --quiet -- docs/schedule.json; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name  "survivor-bot"
+          git config user.email "actions@github.com"
+          git add docs/schedule.json
+          git commit -m "Refresh schedule and results ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+          git push

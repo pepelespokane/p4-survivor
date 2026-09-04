@@ -1,0 +1,5 @@
+# Weekly game caches are transient. The conference rosters are committed so the
+# GitHub Action does not refetch 67 team pages on every run.
+.cache/week_*.json
+__pycache__/
+*.pyc

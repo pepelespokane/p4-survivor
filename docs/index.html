@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Power 4 Survivor</title>
+<meta name="description" content="Pick one team from the ACC, Big Ten, Big 12 and SEC every week. No repeats.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Power 4 <span>Survivor</span></h1>
+  <span class="season" id="seasonTag">loading</span>
+  <span class="spacer"></span>
+  <span class="who" id="who"></span>
+</header>
+
+<nav>
+  <button data-tab="board" class="on">Standings &amp; Picks</button>
+  <button data-tab="picks">Make Picks</button>
+  <button data-tab="teams">Teams Used</button>
+  <button data-tab="sched">Schedule</button>
+  <button data-tab="rules">Rules</button>
+</nav>
+
+<main>
+  <div id="boot"></div>
+
+  <!-- ---------- standings + everyone's picks ---------- -->
+  <section class="view on" id="view-board">
+    <div class="panel">
+      <h2>Standings</h2>
+      <div id="standings"></div>
+    </div>
+    <div class="panel">
+      <h2>Everyone's picks</h2>
+      <div class="weekbar" id="boardWeeks"></div>
+      <div id="boardGrid"></div>
+    </div>
+  </section>
+
+  <!-- ---------- make picks ---------- -->
+  <section class="view" id="view-picks">
+    <div class="panel" id="signin">
+      <h2>Sign in</h2>
+      <p class="muted">First time here? Enter your name and pick a 4-digit PIN.
+        That creates your entry. After that, the same name and PIN gets you back in.</p>
+      <form id="signinForm">
+        <div class="row">
+          <input type="text" id="nameIn" placeholder="Your name" autocomplete="name" required>
+          <input type="password" id="pinIn" placeholder="4-digit PIN" inputmode="numeric"
+                 pattern="\d{4}" maxlength="4" required>
+        </div>
+
+        <fieldset class="votebox">
+          <legend>New players only: how should the money work?</legend>
+          <label class="voteopt">
+            <input type="radio" name="payout" value="pot">
+            <span>Most points at the end <b>wins the pot</b></span>
+          </label>
+          <label class="voteopt">
+            <input type="radio" name="payout" value="rollover">
+            <span>Nobody wins it. <b>Invest it and roll it to next year</b></span>
+          </label>
+          <p class="muted" style="margin:6px 0 0">Just a poll. Results are on the Rules tab.</p>
+        </fieldset>
+
+        <div class="row">
+          <button class="btn" type="submit">Sign in / Join</button>
+          <span class="muted" id="signinMsg"></span>
+        </div>
+      </form>
+    </div>
+
+    <div id="pickArea" style="display:none">
+      <div class="weekbar" id="pickWeeks"></div>
+      <div id="pickHead"></div>
+      <div class="confgrid" id="pickGrid"></div>
+      <div class="panel row" style="margin-top:18px">
+        <button class="btn" id="saveBtn">Save picks</button>
+        <span class="muted" id="saveNote"></span>
+        <span class="spacer"></span>
+        <span class="muted" id="saveMsg"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- teams used ---------- -->
+  <section class="view" id="view-teams">
+    <div class="panel row">
+      <h2 style="margin:0">Teams used</h2>
+      <span class="spacer"></span>
+      <select id="teamsWho"></select>
+    </div>
+    <div id="teamsView"></div>
+  </section>
+
+  <!-- ---------- schedule ---------- -->
+  <section class="view" id="view-sched">
+    <div class="panel">
+      <h2>Week schedule</h2>
+      <div class="weekbar" id="schedWeeks"></div>
+      <div id="schedList"></div>
+    </div>
+  </section>
+
+  <!-- ---------- rules ---------- -->
+  <section class="view" id="view-rules">
+    <div class="panel">
+      <h2>How it works</h2>
+      <ul>
+        <li>Every week you pick <b>one team from each of the four Power 4 conferences</b>:
+            ACC, Big Ten, Big 12, SEC. Four picks a week.</li>
+        <li><b>No team can be used twice all season.</b> 13 weeks, 52 picks, out of
+            67 P4 teams (ACC 17, Big Ten 18, Big 12 16, SEC 16). In the Big 12 and the
+            SEC you burn 13 of 16, and most teams have a bye somewhere in the window,
+            so the last few weeks get tight. Think ahead.</li>
+        <li>A pick locks when that team kicks off, and stays hidden from everyone
+            else until then. You can always see your own.</li>
+        <li>Scoring is one point per correct pick, 52 possible. Ties break on fewest misses.</li>
+        <li>Teams on a bye cannot be picked. Neither can a team whose game has started.</li>
+      </ul>
+      <p class="muted">Schedule, kickoff times and results come from ESPN and refresh
+         automatically through the weekend. Scores can lag a live finish by a few minutes.</p>
+    </div>
+
+    <div class="panel">
+      <h2>The money question</h2>
+      <p class="muted">Everyone answers this when they join. Nothing is decided yet,
+         this is just where the answers land.</p>
+      <div id="voteTally"></div>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
