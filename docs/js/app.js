@@ -106,6 +106,16 @@ function weekOpens(w) {
   return Math.min(...pool.map((g) => kickoff(g).getTime()));
 }
 
+/** A pick is committed once the team you chose has kicked off. After that the whole
+ *  conference is frozen for that week, otherwise you could watch your team lose and
+ *  swap to a later game. */
+function confLocked(playerId, w, conf) {
+  const pk = pickAt(playerId, w, conf);
+  if (!pk) return null;
+  const g = gameFor(w, pk.team_id);
+  return g && started(g) ? pk : null;
+}
+
 /** Can this pick be shown to everyone yet? Hidden until that team kicks off, so
  *  a Friday-night pick never leaks a Saturday one. Your own picks always show. */
 function pickVisible(pick) {
@@ -620,8 +630,9 @@ function renderPicks() {
     hd.append(el('b', '', c.name));
     hd.append(el('span', 'spacer'));
     const dead = outByConf[c.key];
-    hd.append(el('span', dead ? 'pill loss' : 'pill win',
-      dead ? `Out W${weekData(dead.week).poolWeek}` : 'Alive'));
+    const frozen = confLocked(state.me.id, w, c.key);
+    hd.append(el('span', frozen ? 'pill' : (dead ? 'pill loss' : 'pill win'),
+      frozen ? 'Locked' : (dead ? `Out W${weekData(dead.week).poolWeek}` : 'Alive')));
     card.append(hd);
 
     const opts = el('div', 'opts');
@@ -637,7 +648,7 @@ function renderPicks() {
       if (bye && POOL.weekdayGames === 'hide') { /* still show bye as dead */ }
       if (weekday && POOL.weekdayGames === 'hide') continue;
 
-      const dead = bye || locked || usedElsewhere;
+      const dead = bye || locked || usedElsewhere || !!frozen;
       if (!dead) available++;
 
       const row = el('label', 'opt' + (dead ? ' dead' : '') +
@@ -663,9 +674,12 @@ function renderPicks() {
     card.append(opts);
 
     const cur = state.draft[c.key];
-    card.append(el('div', 'chosen', cur
-      ? `Selected: <b>${esc(state.teams[cur].name)}</b>`
-      : `<span class="muted">Nothing selected · ${available} available</span>`));
+    card.append(el('div', 'chosen', frozen
+      ? `Locked in: <b>${esc(frozen.team_name)}</b><br>` +
+        `<span class="muted">Kicked off, so this one is final.</span>`
+      : cur
+        ? `Selected: <b>${esc(state.teams[cur].name)}</b>`
+        : `<span class="muted">Nothing selected · ${available} available</span>`));
     grid.append(card);
   }
 
@@ -690,6 +704,16 @@ async function savePicks() {
   for (const c of POOL.conferences) {
     const tid = state.draft[c.key];
     if (!tid) continue;
+
+    // Already committed in this league this week? Then it is final.
+    const committed = confLocked(state.me.id, w, c.key);
+    if (committed) {
+      if (committed.team_id === tid) continue;   // unchanged, nothing to write
+      throw new Error(
+        `Your ${c.name} pick (${committed.team_name}) has already kicked off ` +
+        `and cannot be changed.`);
+    }
+
     if (seen.has(tid)) throw new Error('Same team picked twice this week.');
     seen.add(tid);
     if (used[tid] !== undefined && used[tid] !== w) {
@@ -704,7 +728,10 @@ async function savePicks() {
       submitted_at: new Date().toISOString(),
     });
   }
-  if (!rows.length) throw new Error('Nothing to save.');
+  if (!rows.length) {
+    await loadPool();
+    return;                       // every league unchanged, which is not an error
+  }
 
   const { error } = await sb.from('survivor_picks')
     .upsert(rows, { onConflict: 'player_id,week,conf' });

@@ -151,6 +151,9 @@ If the Action ever starts failing, that fallback is the first place to look.
 ## Rules the code enforces
 
 - One pick per conference per week.
+- **Picks can be changed freely until the chosen team kicks off.** After that the whole
+  conference is frozen for that week, so you cannot watch your team lose and swap to a
+  later game. Checked against the pick you are leaving, not just the one you are taking.
 - A team cannot be used twice, checked in the browser and again by a unique index
   in Postgres so a double-submit cannot slip through.
 - A team whose game has kicked off cannot be picked.
