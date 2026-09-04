@@ -42,7 +42,13 @@ grant select on survivor_games to anon;   -- kickoff times are not a secret
 
 -- ------------------------------------------------------------ 3. sign in v2
 -- Same as before, but hands back a token the app uses for everything after.
-create or replace function survivor_signin(
+-- Postgres refuses to change a function's return type in place, and this one
+-- gains a third output column, so the old version has to go first.
+drop function if exists survivor_signin(text, text, text, text);
+drop function if exists survivor_picks_read(uuid);
+drop function if exists survivor_save_picks(uuid, int, jsonb);
+
+create function survivor_signin(
   p_id text, p_name text, p_pin text, p_email text default null
 )
 returns table (id text, name text, token uuid)
@@ -82,7 +88,7 @@ $$;
 -- Everyone's picks once their team has kicked off, plus all of your own.
 -- A pick with no matching game row stays visible, matching how the app behaves
 -- when it cannot find a game.
-create or replace function survivor_picks_read(p_token uuid default null)
+create function survivor_picks_read(p_token uuid default null)
 returns table (player_id text, week int, conf text, team_id text, team_name text)
 language sql
 security definer
@@ -98,7 +104,7 @@ $$;
 
 -- --------------------------------------------------------- 5. writing picks
 -- p_picks looks like: [{"conf":"acc","team_id":"52"}, {"conf":"sec","team_id":"333"}]
-create or replace function survivor_save_picks(
+create function survivor_save_picks(
   p_token uuid, p_week int, p_picks jsonb
 )
 returns int
