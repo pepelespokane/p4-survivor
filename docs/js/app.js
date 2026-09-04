@@ -258,6 +258,26 @@ function saveSession() {
   } catch (e) { /* fine, they just sign in again */ }
 }
 
+/** Signing in should be a once-per-device thing. The session below keeps people
+ *  signed in; this keeps their details in the boxes if the session ever goes. */
+function rememberDetails(first, last, email) {
+  try {
+    localStorage.setItem('survivor.last',
+      JSON.stringify({ first: first, last: last, email: email || '' }));
+  } catch (e) { /* private mode */ }
+}
+
+function prefillSignIn() {
+  let d = null;
+  try { d = JSON.parse(localStorage.getItem('survivor.last') || 'null'); }
+  catch (e) { d = null; }
+  if (!d) return;
+  const set = (sel, v) => { const n = $(sel); if (n && !n.value && v) n.value = v; };
+  set('#firstIn', d.first);
+  set('#lastIn', d.last);
+  set('#emailIn', d.email);
+}
+
 /** First name plus at least one letter of the last name. Requiring the second
  *  field is what keeps two Mikes from fighting over the same entry. */
 function buildIdentity(first, last) {
@@ -532,6 +552,7 @@ function renderPicks() {
   if (!state.me) {
     gate.style.display = '';
     area.style.display = 'none';
+    prefillSignIn();
     return;
   }
   gate.style.display = 'none';
@@ -831,7 +852,9 @@ async function boot() {
     try {
       const [first, last] = readSignInFields();
       const emailEl = $('#emailIn');
-      await signIn(first, last, $('#pinIn').value, emailEl ? emailEl.value : '');
+      const emailVal = emailEl ? emailEl.value : '';
+      await signIn(first, last, $('#pinIn').value, emailVal);
+      rememberDetails(first, last, emailVal);
       state.draft = {};
       renderAll();
     } catch (err) {
