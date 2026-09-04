@@ -151,10 +151,6 @@ async function loadSchedule() {
  *  talking to the players table directly, so the site keeps working either way. */
 let LOCKED_DOWN = true;
 
-/** True once migration_secure.sql has been run, meaning Postgres is enforcing the
- *  pick rules rather than the browser. */
-let SECURED = true;
-
 async function loadPool() {
   let p = await sb.from('survivor_players_public').select('*').order('name');
   if (p.error) {
@@ -166,19 +162,11 @@ async function loadPool() {
   state.players = p.data || [];
 
   // Picks come back filtered by the database: everyone's once their team has
-  // kicked off, plus all of your own. The browser is no longer trusted to hide
-  // anything, because anyone could read the table directly before.
+  // kicked off, plus all of your own. There is deliberately no fallback to
+  // reading the table directly. That path was the vulnerability.
   const r = await sb.rpc('survivor_picks_read', { p_token: state.token || null });
-  if (!r.error) {
-    SECURED = true;
-    state.picks = r.data || [];
-    return;
-  }
-  // Fallback for a database where migration_secure.sql has not run yet.
-  SECURED = false;
-  const k = await sb.from('survivor_picks').select('*');
-  if (k.error) throw k.error;
-  state.picks = k.data || [];
+  if (r.error) throw r.error;
+  state.picks = r.data || [];
 }
 
 const picksOf = (playerId) => state.picks.filter((x) => x.player_id === playerId);
@@ -379,6 +367,17 @@ async function signIn(first, last, pin, email) {
   if (!error) {
     const row = Array.isArray(data) ? data[0] : data;
     if (!row) throw new Error('Sign-in failed. Try again.');
+
+    // Rate limiting means a bad PIN comes back as a value rather than an
+    // exception, so the failed-attempt counter survives the transaction.
+    if (row.err) {
+      if (row.err === 'BAD_PIN_FORMAT') throw new Error('PIN must be 4 digits.');
+      if (row.err === 'LOCKED_OUT') {
+        throw new Error('Too many wrong PINs for that name. Wait 15 minutes and try again.');
+      }
+      throw taken();
+    }
+
     state.me = { id: row.id, name: row.name };
     state.token = row.token || null;
     await loadPool();
@@ -386,30 +385,11 @@ async function signIn(first, last, pin, email) {
     return;
   }
 
+  // Older schema still raises instead of returning an error column.
   const m = String(error.message || '') + ' ' + String(error.code || '');
   if (m.includes('BAD_PIN_FORMAT')) throw new Error('PIN must be 4 digits.');
   if (m.includes('BAD_PIN')) throw taken();
-
-  const missing = m.includes('PGRST202') || m.includes('survivor_signin')
-    || m.includes('Could not find') || m.includes('404');
-  if (!missing) throw error;
-
-  // Fallback for a database where migration_email.sql has not been run yet.
-  // Same rules, just enforced in the browser instead of in Postgres.
-  LOCKED_DOWN = false;
-  const q = await sb.from('survivor_players').select('*').eq('id', id).maybeSingle();
-  if (q.error) throw q.error;
-  if (q.data) {
-    if (q.data.pin !== pin) throw taken();
-    state.me = { id: q.data.id, name: q.data.name };
-  } else {
-    const ins = await sb.from('survivor_players')
-      .insert({ id, name, pin }).select().single();
-    if (ins.error) throw ins.error;
-    state.me = { id: ins.data.id, name: ins.data.name };
-  }
-  await loadPool();
-  saveSession();
+  throw error;
 }
 
 /* ---------------- rendering: chrome ---------------- */
@@ -523,10 +503,9 @@ function renderBoard() {
             `<small>${esc(row.out.reason)}</small></td>`;
         } else {
           n++;
-          const lead = tables[c.key].leaders.includes(row);
+          // No rank among the living: everyone still alive is tied for the lead.
           cells += `<td class="pk"><span class="pill win">Alive</span>` +
-            `<small>${row.survived} week${row.survived === 1 ? '' : 's'}` +
-            `${lead ? ' &middot; leading' : ''}</small></td>`;
+            `<small>${row.survived} week${row.survived === 1 ? '' : 's'} clean</small></td>`;
         }
       }
       cells += `<td class="num"><b>${n}</b> / 4</td>`;
@@ -758,15 +737,19 @@ async function savePicks() {
     return;                       // every league unchanged, which is not an error
   }
 
-  // Preferred path: Postgres re-checks every rule. The browser checks above are
-  // only there to give a friendlier message before the round trip.
-  if (state.token) {
-    const payload = rows.map((r) => ({ conf: r.conf, team_id: r.team_id }));
-    const { error } = await sb.rpc('survivor_save_picks', {
-      p_token: state.token, p_week: w, p_picks: payload,
-    });
-    if (!error) { SECURED = true; await loadPool(); return; }
+  // Every rule is re-checked in Postgres. The browser checks above only exist to
+  // give a friendlier message before the round trip; they are not the enforcement.
+  if (!state.token) {
+    state.me = null; saveSession();
+    throw new Error('Please sign in again to save picks.');
+  }
 
+  const payload = rows.map((r) => ({ conf: r.conf, team_id: r.team_id }));
+  const { error } = await sb.rpc('survivor_save_picks', {
+    p_token: state.token, p_week: w, p_picks: payload,
+  });
+
+  if (error) {
     const m = String(error.message || '');
     const named = (tag) => (m.split(tag)[1] || '').trim();
     if (m.includes('LOCKED:')) {
@@ -781,21 +764,9 @@ async function savePicks() {
       state.me = null; state.token = null; saveSession();
       throw new Error('Your session expired. Sign in again.');
     }
-    const missing = m.includes('PGRST202') || m.includes('survivor_save_picks')
-      || m.includes('Could not find');
-    if (!missing) throw error;
-  }
-
-  // Fallback for a database where migration_secure.sql has not run yet.
-  SECURED = false;
-  const { error } = await sb.from('survivor_picks')
-    .upsert(rows, { onConflict: 'player_id,week,conf' });
-  if (error) {
-    if (String(error.message).includes('survivor_picks_no_reuse')) {
-      throw new Error('One of those teams is already used somewhere this season.');
-    }
     throw error;
   }
+
   await loadPool();
 }
 
