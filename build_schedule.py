@@ -30,7 +30,16 @@ P4 = [
     ("sec", "SEC", 8),
 ]
 
-UA = {"User-Agent": "Mozilla/5.0"}
+# ESPN is picky. A long User-Agent string gets a hard 403 on site.api, and so do
+# bare requests from datacenter IPs such as GitHub Actions runners. These headers
+# are what a browser actually sends.
+UA = {
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.espn.com/college-football/scoreboard",
+    "Origin": "https://www.espn.com",
+}
 OUT = Path(__file__).parent / "docs" / "schedule.json"
 CACHE = Path(__file__).parent / ".cache"
 
