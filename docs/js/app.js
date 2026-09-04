@@ -13,6 +13,7 @@ const state = {
   players: [],
   picks: [],      // every pick from every player
   me: null,       // { id, name }
+  token: null,    // per-player secret from sign-in, authorises pick writes
   week: 1,
   draft: {},      // conf -> teamId, the unsaved selection in the Picks tab
   boardWeek: 1,
@@ -150,17 +151,33 @@ async function loadSchedule() {
  *  talking to the players table directly, so the site keeps working either way. */
 let LOCKED_DOWN = true;
 
+/** True once migration_secure.sql has been run, meaning Postgres is enforcing the
+ *  pick rules rather than the browser. */
+let SECURED = true;
+
 async function loadPool() {
   let p = await sb.from('survivor_players_public').select('*').order('name');
   if (p.error) {
-    // View is missing, so the migration has not run yet.
+    // View is missing, so migration_email.sql has not run yet.
     LOCKED_DOWN = false;
     p = await sb.from('survivor_players').select('id,name').order('name');
   }
-  const k = await sb.from('survivor_picks').select('*');
   if (p.error) throw p.error;
-  if (k.error) throw k.error;
   state.players = p.data || [];
+
+  // Picks come back filtered by the database: everyone's once their team has
+  // kicked off, plus all of your own. The browser is no longer trusted to hide
+  // anything, because anyone could read the table directly before.
+  const r = await sb.rpc('survivor_picks_read', { p_token: state.token || null });
+  if (!r.error) {
+    SECURED = true;
+    state.picks = r.data || [];
+    return;
+  }
+  // Fallback for a database where migration_secure.sql has not run yet.
+  SECURED = false;
+  const k = await sb.from('survivor_picks').select('*');
+  if (k.error) throw k.error;
   state.picks = k.data || [];
 }
 
@@ -270,13 +287,20 @@ function record(playerId) {
 function restoreSession() {
   try {
     const raw = localStorage.getItem('survivor.me');
-    if (raw) state.me = JSON.parse(raw);
+    if (raw) {
+      const me = JSON.parse(raw);
+      state.me = { id: me.id, name: me.name };
+      state.token = me.token || null;
+    }
   } catch (e) { /* private mode, no session */ }
 }
 
 function saveSession() {
   try {
-    if (state.me) localStorage.setItem('survivor.me', JSON.stringify(state.me));
+    if (state.me) {
+      localStorage.setItem('survivor.me',
+        JSON.stringify({ id: state.me.id, name: state.me.name, token: state.token }));
+    }
     else localStorage.removeItem('survivor.me');
   } catch (e) { /* fine, they just sign in again */ }
 }
@@ -356,6 +380,7 @@ async function signIn(first, last, pin, email) {
     const row = Array.isArray(data) ? data[0] : data;
     if (!row) throw new Error('Sign-in failed. Try again.');
     state.me = { id: row.id, name: row.name };
+    state.token = row.token || null;
     await loadPool();
     saveSession();
     return;
@@ -395,7 +420,7 @@ function renderHeader() {
   if (state.me) {
     box.append(el('span', '', `Signed in as <b>${esc(state.me.name)}</b>`));
     const out = el('button', 'ghost', 'Sign out');
-    out.onclick = () => { state.me = null; saveSession(); renderAll(); };
+    out.onclick = () => { state.me = null; state.token = null; saveSession(); renderAll(); };
     box.append(out);
   } else {
     box.append(el('span', 'muted', 'Not signed in'));
@@ -733,6 +758,36 @@ async function savePicks() {
     return;                       // every league unchanged, which is not an error
   }
 
+  // Preferred path: Postgres re-checks every rule. The browser checks above are
+  // only there to give a friendlier message before the round trip.
+  if (state.token) {
+    const payload = rows.map((r) => ({ conf: r.conf, team_id: r.team_id }));
+    const { error } = await sb.rpc('survivor_save_picks', {
+      p_token: state.token, p_week: w, p_picks: payload,
+    });
+    if (!error) { SECURED = true; await loadPool(); return; }
+
+    const m = String(error.message || '');
+    const named = (tag) => (m.split(tag)[1] || '').trim();
+    if (m.includes('LOCKED:')) {
+      throw new Error(`${named('LOCKED:')} has already kicked off, so that league is ` +
+        `locked for the week.`);
+    }
+    if (m.includes('KICKED_OFF:')) throw new Error(`${named('KICKED_OFF:')} has already kicked off.`);
+    if (m.includes('ALREADY_USED:')) throw new Error(`${named('ALREADY_USED:')} is already used this season.`);
+    if (m.includes('NO_GAME:')) throw new Error('That team is not playing this week.');
+    if (m.includes('WRONG_CONF:')) throw new Error(`${named('WRONG_CONF:')} is not in that conference.`);
+    if (m.includes('BAD_TOKEN')) {
+      state.me = null; state.token = null; saveSession();
+      throw new Error('Your session expired. Sign in again.');
+    }
+    const missing = m.includes('PGRST202') || m.includes('survivor_save_picks')
+      || m.includes('Could not find');
+    if (!missing) throw error;
+  }
+
+  // Fallback for a database where migration_secure.sql has not run yet.
+  SECURED = false;
   const { error } = await sb.from('survivor_picks')
     .upsert(rows, { onConflict: 'player_id,week,conf' });
   if (error) {

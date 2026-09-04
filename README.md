@@ -148,6 +148,28 @@ which answers from anywhere and carries the same data: ids, kickoff times, TV,
 venues, ranks, scores and winners. Verified identical game sets for weeks 1, 3 and 13.
 If the Action ever starts failing, that fallback is the first place to look.
 
+## Where the rules are enforced
+
+Originally all of it lived in the browser, which meant none of it was real: the page
+carries a publishable key, and that key had full read and write on the picks table.
+Anyone could read picks that had not kicked off, rewrite a pick after their team lost,
+or delete the pool.
+
+`migration_secure.sql` moves it into Postgres. The publishable key can no longer touch
+`survivor_picks` at all. Instead:
+
+- `survivor_signin()` hands back a per-player **token**, kept in the browser.
+- `survivor_picks_read(token)` returns everyone's picks **only once their team has
+  kicked off**, plus all of your own. The hiding is now done by the database.
+- `survivor_save_picks(token, week, picks)` re-checks every rule server side: the token
+  is real, the team plays in that conference that week, its game has not started, that
+  league is not already committed for the week, and the team has not been used before.
+- `survivor_games` holds the kickoff times, pushed by `sync_games.py` from the results
+  workflow, because Postgres cannot read `schedule.json`.
+
+The app falls back to the old direct-table path when those functions are missing, so a
+deploy can never outrun a migration.
+
 ## Rules the code enforces
 
 - One pick per conference per week.

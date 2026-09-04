@@ -34,6 +34,12 @@ jobs:
       - name: Pull ESPN schedule and results
         run: python build_schedule.py
 
+      - name: Push kickoff times into the database
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python sync_games.py
+
       - name: Commit if the data changed
         run: |
           if git diff --quiet -- docs/schedule.json; then
