@@ -111,14 +111,40 @@ def conference_teams(group_id):
     return teams
 
 
-def week_games(week):
+def scoreboard_events(week):
+    """Preferred source. Clean and already filtered to FBS, but ESPN blocks this
+    host from datacenter IPs, so it fails on a GitHub Actions runner."""
     url = (
         "https://site.api.espn.com/apis/site/v2/sports/football/college-football/"
         f"scoreboard?dates={SEASON}&seasontype=2&week={week}&groups=80&limit=400"
     )
-    data = get(url)
+    return get(url, tries=2).get("events", [])
+
+
+def cdn_events(week):
+    """Fallback that answers from anywhere, including CI. Same event shape, but
+    keyed by date and not filtered to FBS. The P4 filter downstream sorts that out."""
+    url = (
+        "https://cdn.espn.com/core/college-football/schedule"
+        f"?xhr=1&year={SEASON}&week={week}&seasontype=2"
+    )
+    sched = get(url).get("content", {}).get("schedule", {})
+    events = []
+    for day in sched.values():
+        events.extend(day.get("games", []))
+    return events
+
+
+def week_games(week):
+    try:
+        events = scoreboard_events(week)
+    except RuntimeError:
+        events = cdn_events(week)
+    if not events:
+        events = cdn_events(week)
+
     games = []
-    for ev in data.get("events", []):
+    for ev in events:
         comp = ev["competitions"][0]
         home = away = None
         for c in comp["competitors"]:
