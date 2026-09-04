@@ -62,21 +62,44 @@ anything that matters.
 
 ### 3. Copy the two keys into the app
 
+Get the values:
+
 1. Left sidebar, bottom: **Project Settings** (gear icon).
 2. Click **Data API**. Copy the **Project URL**. It looks like
-   `https://abcdefghijkl.supabase.co`.
+   `https://abcdefghijkl.supabase.co`. If you copied it from a page that shows
+   `.../rest/v1/` on the end, drop that part. The app wants the bare project URL.
 3. Click **API Keys** in the same settings menu. Copy the **publishable** key
-   (starts `sb_publishable_`). Do **not** use the secret or service_role key.
-   Never put that one in a web page.
-4. Open `docs/js/config.js` and replace the two placeholder lines:
+   (starts `sb_publishable_`).
+
+⚠️ That page also has a **secret** key, sometimes labeled `service_role`. Never put
+that one in a web page, a repo, or a chat. It ignores every access rule on the
+database. Only the publishable key belongs in this app.
+
+Then get them into the file. Two ways:
+
+**Easiest: hand them to Claude.** Paste both values into the chat and ask it to update
+`docs/js/config.js` and publish. That is it.
+
+**Or do it yourself:**
+
+1. Open `C:\Users\sfpug\Projects\personal\SurvivorPool\docs\js\config.js` in Notepad
+   or VS Code.
+2. Replace the two placeholder lines near the bottom:
 
 ```js
 const SUPABASE_URL = 'https://abcdefghijkl.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_...';
 ```
 
-5. Save, then `git add -A`, `git commit -m "Point at the survivor Supabase project"`,
-   `git push`.
+3. Save the file.
+4. Publish it. In the Claude Code terminal, type `!` followed by the command, which
+   runs it right in the session:
+
+```
+! git add -A && git commit -m "Point at the survivor Supabase project" && git push
+```
+
+   Give GitHub Pages about a minute to rebuild, then reload the site.
 
 ### 4. Already done
 
