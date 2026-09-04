@@ -6,12 +6,13 @@ name: Update schedule and results
 
 on:
   schedule:
-    # Saturday 9am to 11pm Pacific, hourly.
-    - cron: '0 16-23 * * 6'
-    # Saturday 11pm Pacific through Sunday 5am Pacific, hourly (rolls into Sunday UTC).
-    - cron: '0 0-12 * * 0'
-    # Once a day the rest of the week, to catch schedule and kickoff-time changes.
-    - cron: '15 14 * * 1-5'
+    # Hourly Thursday through Monday (UTC), which covers every day games are
+    # played: Thursday and Friday nights, all of Saturday, and the occasional
+    # Sunday or Monday game. Pacific runs behind UTC, so a Wednesday-evening PT
+    # kickoff falls inside the Thursday UTC window too.
+    - cron: '0 * * * 4,5,6,0,1'
+    # Tuesday and Wednesday, once a day, just to catch kickoff times moving.
+    - cron: '15 14 * * 2,3'
   workflow_dispatch:
 
 permissions:

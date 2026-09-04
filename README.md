@@ -110,9 +110,11 @@ the free plan requires. Nothing sensitive is in it.
 ## Every week
 
 Nothing, if the Action is running. `.github/workflows/update-results.yml` repulls ESPN
-hourly through Saturday and Saturday night, once a day the rest of the week, and
-commits `docs/schedule.json` only when something actually changed. Standings recompute
-in the browser from that file.
+**hourly from Thursday through Monday**, covering Thursday and Friday night games, all
+of Saturday, and the occasional Sunday or Monday game. Tuesday and Wednesday it runs
+once a day, only to catch kickoff times moving. It commits `docs/schedule.json` only
+when something actually changed, and pushes kickoff times into the database so the
+pick rules can be enforced there. Standings recompute in the browser from that file.
 
 To force a refresh: repo -> **Actions** tab -> **Update schedule and results** ->
 **Run workflow**. Or locally, run `python build_schedule.py` (or double-click
