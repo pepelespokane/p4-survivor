@@ -134,6 +134,16 @@ To force a refresh: repo -> **Actions** tab -> **Update schedule and results** -
   to scout what they are sitting on this week.
 - **Schedule** - every P4 game that week with kickoff times, TV and final scores.
 
+## After changing any file in docs/
+
+Run `python bump_version.py` before committing. It stamps `index.html` with a hash of
+the asset contents, so the `?v=` cache buster changes whenever the files do.
+
+This is not optional politeness. GitHub Pages caches HTML for ten minutes, and a change
+shipped under a version that is already cached is invisible to anyone who has loaded the
+page before, no matter how many times they refresh. That happened twice before this
+script existed.
+
 ## ESPN, and why the code talks to two hosts
 
 `site.api.espn.com` is the clean endpoint and it is what runs locally. It has two
