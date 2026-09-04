@@ -156,6 +156,52 @@ function usedBy(playerId) {
   return m;
 }
 
+/** True once every game a player could still be waiting on that week is final. */
+function weekResolvedFor(playerId, w) {
+  const picks = POOL.conferences.map((c) => pickAt(playerId, w, c.key));
+  if (picks.some((pk) => pk && outcome(w, pk.team_id) === 'pending')) return false;
+  // No pick for a conference: only counts once that week's games are done.
+  const wk = weekData(w);
+  const allDone = wk && wk.games.every((g) => g.completed);
+  if (picks.some((pk) => !pk)) return !!allDone;
+  return true;
+}
+
+/** Classic survivor: the first week you drop a pick, or fail to submit all four,
+ *  ends your run. Returns the week you went out, or null if still alive. */
+function elimination(playerId) {
+  for (const wk of state.sched.weeks) {
+    const w = wk.week;
+    const picks = POOL.conferences.map((c) => pickAt(playerId, w, c.key));
+
+    const losers = picks
+      .filter((pk) => pk && outcome(w, pk.team_id) === 'loss')
+      .map((pk) => pk.team_name);
+    if (losers.length) return { week: w, reason: losers.join(', ') };
+
+    if (!weekResolvedFor(playerId, w)) return null;  // still in progress, survived so far
+
+    const missing = picks.filter((pk) => !pk).length;
+    if (missing) {
+      return { week: w, reason: missing === 4 ? 'no picks submitted'
+        : `${missing} pick${missing > 1 ? 's' : ''} not submitted` };
+    }
+  }
+  return null;
+}
+
+/** Weeks fully survived, used to rank people who are out. */
+function weeksSurvived(playerId, out) {
+  if (out) return out.week - 1;
+  let n = 0;
+  for (const wk of state.sched.weeks) {
+    const picks = POOL.conferences.map((c) => pickAt(playerId, wk.week, c.key));
+    if (picks.length === 4 && picks.every((pk) => pk && outcome(wk.week, pk.team_id) === 'win')) n++;
+    else break;
+  }
+  return n;
+}
+
 function record(playerId) {
   let w = 0, l = 0, pend = 0;
   for (const p of picksOf(playerId)) {
@@ -272,29 +318,59 @@ function weekBar(container, selected, onPick) {
 /* ---------------- view: standings + board ---------------- */
 
 function renderBoard() {
-  const rows = state.players.map((p) => ({ p, r: record(p.id) }));
-  rows.sort((a, b) => b.r.w - a.r.w || a.r.l - b.r.l || a.p.name.localeCompare(b.p.name));
+  const rows = state.players.map((p) => {
+    const out = elimination(p.id);
+    return { p, out, survived: weeksSurvived(p.id, out), r: record(p.id) };
+  });
+  // Alive first, then whoever lasted longest. Same week out means a tie.
+  rows.sort((a, b) =>
+    (a.out ? 1 : 0) - (b.out ? 1 : 0) ||
+    b.survived - a.survived ||
+    a.p.name.localeCompare(b.p.name));
+
+  const alive = rows.filter((x) => !x.out);
+  const leadSurvived = rows.length ? rows[0].survived : 0;
+  // Everyone still alive shares first. If all are out, everyone tied at the deepest
+  // week shares the win.
+  const winners = alive.length ? alive
+    : rows.filter((x) => x.survived === leadSurvived);
 
   const t = $('#standings');
   t.innerHTML = '';
   if (!rows.length) {
     t.append(el('p', 'muted', 'No one has joined yet. Open the Make Picks tab to sign up.'));
   } else {
+    const summary = alive.length
+      ? `${alive.length} still alive of ${rows.length}`
+      : `Everyone is out. ${winners.length > 1 ? winners.length + ' way tie' : 'Winner'}: ` +
+        winners.map((x) => x.p.name).join(', ');
+    t.append(el('p', 'muted', esc(summary)));
+
     const tb = el('table');
     tb.innerHTML = `<thead><tr>
-      <th></th><th>Player</th><th>Correct</th><th>Missed</th>
-      <th>Pending</th><th>Picks made</th><th>Teams left</th></tr></thead>`;
+      <th></th><th>Player</th><th>Status</th><th>Weeks survived</th>
+      <th>Record</th><th>Teams left</th></tr></thead>`;
     const body = el('tbody');
-    rows.forEach(({ p, r }, i) => {
-      const tr = el('tr');
+
+    // Shared rank: everyone on the same survived total gets the same number.
+    let rank = 0, lastKey = null;
+    rows.forEach((x, i) => {
+      const key = (x.out ? 'out' : 'alive') + ':' + x.survived;
+      if (key !== lastKey) { rank = i + 1; lastKey = key; }
+
+      const status = x.out
+        ? `<span class="pill loss">Out &middot; Week ${weekData(x.out.week).poolWeek}</span>` +
+          `<small>${esc(x.out.reason)}</small>`
+        : `<span class="pill win">Alive</span>`;
+
+      const tr = el('tr', x.out ? 'dead' : '');
       tr.innerHTML = `
-        <td><span class="rank${i === 0 && r.w > 0 ? ' top' : ''}">${i + 1}</span></td>
-        <td><b>${esc(p.name)}</b></td>
-        <td class="num"><span class="pill win">${r.w}</span></td>
-        <td class="num"><span class="pill loss">${r.l}</span></td>
-        <td class="num"><span class="pill pend">${r.pend}</span></td>
-        <td class="num">${r.made} / ${POOL.weeks * 4}</td>
-        <td class="num">${totalTeams() - Object.keys(usedBy(p.id)).length}</td>`;
+        <td><span class="rank${winners.includes(x) ? ' top' : ''}">${rank}</span></td>
+        <td><b>${esc(x.p.name)}</b></td>
+        <td class="pk">${status}</td>
+        <td class="num">${x.survived}</td>
+        <td class="num">${x.r.w}-${x.r.l}${x.r.pend ? ' (' + x.r.pend + ' pending)' : ''}</td>
+        <td class="num">${totalTeams() - Object.keys(usedBy(x.p.id)).length}</td>`;
       body.append(tr);
     });
     tb.append(body);
@@ -382,10 +458,20 @@ function renderPicks() {
     }
   }
 
-  $('#pickHead').innerHTML =
+  const out = elimination(state.me.id);
+  const banner = out
+    ? `<div class="notice"><b>You went out in week ${weekData(out.week).poolWeek}</b> ` +
+      `(${esc(out.reason)}). ` +
+      (POOL.zombiePicks
+        ? 'You can keep picking for bragging rights, but it does not affect the standings.'
+        : 'Picks are closed for you.') + `</div>`
+    : '';
+
+  $('#pickHead').innerHTML = banner +
     `<h2>Week ${wk.poolWeek} picks</h2>` +
-    `<p class="muted">Pick one team from each conference. A team you have already ` +
-    `used is greyed out, and so is any team whose game has kicked off.</p>`;
+    `<p class="muted">Pick one team from each conference. All four have to win or ` +
+    `your run ends. A team you have already used is greyed out, and so is any team ` +
+    `whose game has kicked off.</p>`;
 
   const grid = $('#pickGrid');
   grid.innerHTML = '';
@@ -446,8 +532,12 @@ function renderPicks() {
   }
 
   const chosen = POOL.conferences.filter((c) => state.draft[c.key]).length;
-  $('#saveBtn').disabled = chosen === 0;
-  $('#saveNote').textContent = `${chosen} of 4 conferences selected`;
+  const locked = out && !POOL.zombiePicks;
+  $('#saveBtn').disabled = chosen === 0 || !!locked;
+  $('#saveNote').textContent = locked
+    ? 'You are out of the pool.'
+    : `${chosen} of 4 conferences selected` +
+      (chosen > 0 && chosen < 4 ? ' - all four must win, so a missing pick ends your run' : '');
 }
 
 async function savePicks() {

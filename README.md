@@ -160,36 +160,35 @@ Supabase anon key sits in the page, so anyone determined enough could read the
 picks table directly. Fine for a pool among friends. Do not put money on the honor
 of the PIN.
 
-## Scoring
+## Scoring: last one standing
 
-One point per correct pick, 52 possible over the season. Ties break on fewest misses.
+Classic survivor. **All four of your picks have to win.** One loss in any conference
+ends your run. So does a week where you did not submit all four; that is treated as a
+miss once the week's games are final.
+
+Last player standing wins. If nobody runs all 13 weeks, whoever survived the most
+weeks wins, and everyone knocked out in the same week ties and splits the pot.
+The standings show alive players first, then the eliminated ranked by how far they
+got, with tied players sharing a rank.
+
+Once you are out you can keep making picks for bragging rights; it has no effect on
+the standings. `POOL.zombiePicks` in `config.js` turns that off.
 
 Thursday and Friday games count the same as Saturday games. They lock at their own
 kickoff, which is earlier, so a Friday pick is a commitment made with less information.
-`POOL.weekdayGames` in `config.js` flips this to Saturday-only if the group hates it.
+`POOL.weekdayGames` in `config.js` flips this to Saturday-only.
 
-True survivor elimination, where the first loss ends your season, would empty the
-pool by mid-October: you are making four picks a week, so surviving 13 weeks means
-going 52-0. Points is the version that stays fun in November. If you want
-elimination anyway, `POOL.scoring` in `config.js` is where that decision lives.
+### How fast this ends
 
-## How many people can join
+Needing four correct picks a week compounds hard. At a 80% hit rate per pick, a week
+is 0.8^4 = 41%, so from 15 entrants you get roughly 6 alive after week 1, 2 after
+week 2, and 1 after week 3. Even at a very strong 90% per pick, only about 12% reach
+week 5.
 
-There is no cap in the app and nothing in the Supabase free tier that a pool like
-this can reach. A full season for one player is 52 rows of about 120 bytes. A
-hundred players is roughly 5,200 rows, well under a megabyte, against a 500 MB limit.
-The page pulls every pick on load, so a hundred players is around 700 KB per visit
-against 5 GB of monthly egress, which is thousands of page loads a month.
-
-Three things break before capacity does:
-
-1. **Duplicate names.** The player id is built from first name plus last initial,
-   both required fields, so "Mike S" and "Mike T" never collide. Two people who are
-   genuinely both "Mike S" still would; the sign-in message tells the second one to
-   add another letter of their last name, and the field takes up to three.
-2. **The picks table gets wide to read** past roughly 40 players. It scrolls, so it
-   still works, it just stops being scannable at a glance.
-3. **Nothing stops someone claiming a name that is not theirs.** See the PIN note above.
+That is the format the group chose and it works fine; it just means the pool likely
+resolves in single-digit weeks and the tie-split rule will probably decide it. If you
+ever want it to run longer, the usual fix is one mulligan per player, a single week
+where a loss does not knock you out.
 
 ## Feasibility note
 

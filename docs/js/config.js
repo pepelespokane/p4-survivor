@@ -15,9 +15,14 @@ const POOL = {
     { key: 'sec', name: 'SEC', short: 'SEC', color: '#1e2c58' },
   ],
 
-  // Scoring. 'points' = one point per winning pick, 52 possible over the season.
-  // Switch to 'elimination' only if you want people out after their first loss.
-  scoring: 'points',
+  // Classic survivor. One losing pick, or a week where you did not submit all
+  // four, ends your run. Last player standing wins; if everyone is out, whoever
+  // lasted longest wins, and people knocked out in the same week tie and split.
+  scoring: 'elimination',
+
+  // Knocked-out players can keep making picks for bragging rights. It has no
+  // effect on the standings. Set false to lock them out entirely.
+  zombiePicks: true,
 
   // Thursday and Friday games count the same as Saturday games.
   // Set to 'hide' to make it a Saturday-only pool.
