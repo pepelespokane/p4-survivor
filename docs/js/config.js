@@ -31,8 +31,8 @@ const POOL = {
 // Fill these in from Supabase -> Project Settings -> API Keys.
 // See README.md, "Setup, once". The publishable key is designed to sit in
 // client-side code; access is governed by the policies in schema.sql.
-const SUPABASE_URL = 'https://YOURPROJECT.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_REPLACE_ME';
+const SUPABASE_URL = 'https://zaunmubozapvjmnigmqj.supabase.co/rest/v1/';
+const SUPABASE_KEY = 'sb_publishable_cQxgG1XHPjjb_oeVW4NB-A_f2czaY_R';
 
 // eslint-disable-next-line no-undef
 const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
