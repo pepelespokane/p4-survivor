@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-05T20:56:47+00:00",
+ "generated": "2026-09-05T21:25:41+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -1514,9 +1514,9 @@
      "tv": "ESPN+",
      "state": "in",
      "completed": false,
-     "detail": "3:27 - 4th",
+     "detail": "6:35 - 4th",
      "period": 4,
-     "clock": "3:27",
+     "clock": "6:35",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -1607,9 +1607,9 @@
      "tv": "CBS",
      "state": "in",
      "completed": false,
-     "detail": "7:27 - 2nd",
+     "detail": "10:09 - 2nd",
      "period": 2,
-     "clock": "7:27",
+     "clock": "10:09",
      "home": {
       "id": "2483",
       "abbr": "ORE",
@@ -1638,9 +1638,9 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "3:59 - 2nd",
+     "detail": "5:56 - 2nd",
      "period": 2,
-     "clock": "3:59",
+     "clock": "5:56",
      "home": {
       "id": "251",
       "abbr": "TEX",
@@ -1654,7 +1654,7 @@
       "abbr": "TXST",
       "name": "Texas State",
       "rank": 99,
-      "score": "7",
+      "score": "0",
       "winner": null
      },
      "homeConf": "sec",
@@ -1669,9 +1669,9 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "6:27 - 2nd",
+     "detail": "10:47 - 2nd",
      "period": 2,
-     "clock": "6:27",
+     "clock": "10:47",
      "home": {
       "id": "213",
       "abbr": "PSU",
@@ -1700,15 +1700,15 @@
      "tv": "SECN+",
      "state": "in",
      "completed": false,
-     "detail": "3:05 - 2nd",
+     "detail": "3:48 - 2nd",
      "period": 2,
-     "clock": "3:05",
+     "clock": "3:48",
      "home": {
       "id": "2633",
       "abbr": "TENN",
       "name": "Tennessee",
       "rank": 20,
-      "score": "21",
+      "score": "14",
       "winner": null
      },
      "away": {
@@ -1731,9 +1731,9 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "7:13 - 2nd",
+     "detail": "8:09 - 2nd",
      "period": 2,
-     "clock": "7:13",
+     "clock": "8:09",
      "home": {
       "id": "2",
       "abbr": "AUB",
@@ -1762,9 +1762,9 @@
      "tv": "FOX",
      "state": "in",
      "completed": false,
-     "detail": "3:46 - 2nd",
+     "detail": "5:15 - 2nd",
      "period": 2,
-     "clock": "3:46",
+     "clock": "5:15",
      "home": {
       "id": "2132",
       "abbr": "CIN",
@@ -1824,9 +1824,9 @@
      "tv": "ESPNU",
      "state": "in",
      "completed": false,
-     "detail": "7:31 - 2nd",
+     "detail": "8:47 - 2nd",
      "period": 2,
-     "clock": "7:31",
+     "clock": "8:47",
      "home": {
       "id": "202",
       "abbr": "TLSA",
@@ -1855,9 +1855,9 @@
      "tv": "BTN",
      "state": "in",
      "completed": false,
-     "detail": "5:30 - 1st",
+     "detail": "6:42 - 1st",
      "period": 1,
-     "clock": "5:30",
+     "clock": "6:42",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
@@ -1886,9 +1886,9 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "6:37 - 1st",
+     "detail": "7:28 - 1st",
      "period": 1,
-     "clock": "6:37",
+     "clock": "7:28",
      "home": {
       "id": "8",
       "abbr": "ARK",
