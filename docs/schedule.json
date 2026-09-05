@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-05T00:31:50+00:00",
+ "generated": "2026-09-05T05:15:42+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -1047,26 +1047,26 @@
      "neutral": false,
      "venue": "Ross-Ade Stadium",
      "tv": "BTN",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "2509",
       "abbr": "PUR",
       "name": "Purdue",
       "rank": 99,
-      "score": "16",
-      "winner": null
+      "score": "44",
+      "winner": true
      },
      "away": {
       "id": "282",
       "abbr": "INST",
       "name": "Indiana State",
       "rank": 99,
-      "score": "6",
-      "winner": null
+      "score": "19",
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": null,
@@ -1078,18 +1078,18 @@
      "neutral": false,
      "venue": "Memorial Stadium (Norman, OK)",
      "tv": "SECN+",
-     "state": "in",
-     "completed": false,
-     "detail": "3:40 - 1st",
-     "period": 1,
-     "clock": "3:40",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "201",
       "abbr": "OU",
       "name": "Oklahoma",
       "rank": 10,
-      "score": "14",
-      "winner": null
+      "score": "51",
+      "winner": true
      },
      "away": {
       "id": "2638",
@@ -1097,7 +1097,7 @@
       "name": "UTEP",
       "rank": 99,
       "score": "0",
-      "winner": null
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": null,
@@ -1109,26 +1109,26 @@
      "neutral": false,
      "venue": "David Booth Kansas Memorial Stadium",
      "tv": "ESPNU",
-     "state": "in",
-     "completed": false,
-     "detail": "5:59 - 1st",
-     "period": 1,
-     "clock": "5:59",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2305",
       "abbr": "KU",
       "name": "Kansas",
       "rank": 99,
-      "score": "6",
-      "winner": null
+      "score": "51",
+      "winner": true
      },
      "away": {
       "id": "2341",
       "abbr": "LIU",
       "name": "Long Island University",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "6",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": null,
@@ -1140,26 +1140,26 @@
      "neutral": false,
      "venue": "Spartan Stadium",
      "tv": "FS1",
-     "state": "in",
-     "completed": false,
-     "detail": "5:40 - 1st",
-     "period": 1,
-     "clock": "5:40",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "127",
       "abbr": "MSU",
       "name": "Michigan State",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "30",
+      "winner": true
      },
      "away": {
       "id": "2649",
       "abbr": "TOL",
       "name": "Toledo",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "20",
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": null,
@@ -1171,26 +1171,26 @@
      "neutral": false,
      "venue": "Stanford Stadium",
      "tv": "ESPN",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/4 - 9:00 PM EDT",
-     "period": 0,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "24",
       "abbr": "STAN",
       "name": "Stanford",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "6",
+      "winner": false
      },
      "away": {
       "id": "2390",
       "abbr": "MIA",
       "name": "Miami",
       "rank": 7,
-      "score": "0",
-      "winner": null
+      "score": "45",
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -1202,18 +1202,18 @@
      "neutral": false,
      "venue": "Los Angeles Memorial Coliseum",
      "tv": "FOX",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/4 - 9:00 PM EDT",
-     "period": 0,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "30",
       "abbr": "USC",
       "name": "USC",
       "rank": 14,
-      "score": "0",
-      "winner": null
+      "score": "39",
+      "winner": true
      },
      "away": {
       "id": "278",
@@ -1221,7 +1221,7 @@
       "name": "Fresno State",
       "rank": 99,
       "score": "0",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": null,
