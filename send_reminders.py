@@ -22,6 +22,9 @@ Environment:
                         whole chain can be exercised out of season
   ONLY                  send to just this player id or email. Sending is not
                         logged, so the real weekly reminder still goes out.
+  MODE                  "digest" sends the commissioner one summary of who has
+                        not picked yet, instead of nagging the players.
+  DIGEST_TO             where the digest goes. Defaults to SMTP_USER.
 """
 
 import json
@@ -56,6 +59,7 @@ SB_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
 SB_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
 DRY = os.environ.get("DRY_RUN") == "1"
 ONLY = os.environ.get("ONLY", "").strip().lower()
+MODE = os.environ.get("MODE", "").strip().lower()
 
 
 # ----------------------------------------------------------------- supabase
@@ -226,6 +230,69 @@ def send(to_addr, subject, body):
         server.send_message(msg)
 
 
+# ------------------------------------------------------------------ digest
+def run_digest(sched, wk, opens, now):
+    """One email to the commissioner: who still has an open pick, and where.
+    Saturday morning, when there is still time to chase people."""
+    to = (os.environ.get("DIGEST_TO") or os.environ.get("SMTP_USER", "")).strip()
+    if not to:
+        print("No DIGEST_TO or SMTP_USER. Nothing to send.")
+        return
+
+    players = sb("GET", "survivor_players", params={"select": "id,name,email"})
+    all_picks = sb("GET", "survivor_picks",
+                   params={"select": "player_id,week,conf,team_id,team_name"})
+    log = sb("GET", "survivor_reminders",
+             params={"select": "player_id", "week": "eq." + str(wk["week"]),
+                     "kind": "eq.digest"})
+    if log and not ONLY:
+        print("Digest already sent for week " + str(wk["poolWeek"]) + ".")
+        return
+
+    by_player = {}
+    for pk in all_picks:
+        by_player.setdefault(pk["player_id"], {}).setdefault(pk["week"], {})[pk["conf"]] = pk
+
+    lines, chased = [], 0
+    for p in sorted(players, key=lambda x: x["name"]):
+        picks_by_week = by_player.get(p["id"], {})
+        live = [(k, lb) for k, lb in CONFS
+                if elim_conf(sched, picks_by_week, k, now) is None]
+        if not live:
+            continue
+        have = picks_by_week.get(wk["week"], {})
+        missing = [lb for k, lb in live if k not in have]
+        if missing:
+            chased += 1
+            lines.append("  " + p["name"] + " - missing " + ", ".join(missing))
+
+    NL = chr(10)
+    if not chased:
+        body = ("Everyone still alive has all their picks in for week "
+                + str(wk["poolWeek"]) + ". Nothing to chase." + NL)
+        subject = "Week " + str(wk["poolWeek"]) + " picks: everyone is in"
+    else:
+        body = ("These players are still missing picks for week "
+                + str(wk["poolWeek"]) + ":" + NL + NL
+                + NL.join(lines) + NL + NL
+                + "First kickoff of the week: " + fmt_local(opens) + NL
+                + "A missing pick ends that player's run in that league." + NL + NL
+                + SITE + NL)
+        subject = ("Week " + str(wk["poolWeek"]) + " picks: "
+                   + str(chased) + " player" + ("" if chased == 1 else "s")
+                   + " still missing")
+
+    send(to, subject, body)
+    print(("Digest sent to " + to + ": " + str(chased) + " player(s) missing."))
+
+    if not DRY and not ONLY:
+        me = next((p for p in players
+                   if (p.get("email") or "").lower() == to.lower()), None)
+        if me:
+            sb("POST", "survivor_reminders",
+               body={"week": wk["week"], "player_id": me["id"], "kind": "digest"})
+
+
 # --------------------------------------------------------------------- main
 def main():
     now = datetime.now(timezone.utc)
@@ -251,6 +318,12 @@ def main():
         return 0
 
     opens = week_opens(wk)
+
+    if MODE == "digest":
+        print("Digest mode, pool week " + str(wk["poolWeek"]) + ".")
+        run_digest(sched, wk, opens, now)
+        return 0
+
     due = reminder_time(opens)
     print("Pool week " + str(wk["poolWeek"])
           + " first kickoff " + opens.strftime("%a %Y-%m-%d %H:%M UTC")

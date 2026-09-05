@@ -419,6 +419,65 @@ function weekBar(container, selected, onPick) {
   }
 }
 
+/* ---------------- view: live scoreboard ---------------- */
+
+/** Games this week that somebody's pick is riding on, in the order that matters:
+ *  in progress at the top, then what has not kicked off, then finals at the bottom.
+ *  Only picks the viewer is allowed to see appear, so upcoming games show your own
+ *  picks and nobody else's. */
+function renderScoreboard() {
+  const host = $('#scoreboard');
+  host.innerHTML = '';
+  const w = state.boardWeek;
+
+  // game id -> { game, byTeam: { teamId: [names] } }
+  const byGame = new Map();
+  for (const pk of state.picks) {
+    if (pk.week !== w || !pickVisible(pk)) continue;
+    const g = gameFor(w, pk.team_id);
+    if (!g) continue;
+    if (!byGame.has(g.id)) byGame.set(g.id, { g, byTeam: {} });
+    const who = state.players.find((x) => x.id === pk.player_id);
+    (byGame.get(g.id).byTeam[pk.team_id] ||= []).push(who ? who.name : pk.player_id);
+  }
+
+  if (!byGame.size) {
+    host.append(el('p', 'muted', 'No games to follow yet. Picks appear here once they kick off.'));
+    return;
+  }
+
+  const rank = (g) => (g.state === 'in' ? 0 : g.state === 'pre' ? 1 : 2);
+  const rows = [...byGame.values()].sort((a, b) =>
+    rank(a.g) - rank(b.g) || kickoff(a.g).getTime() - kickoff(b.g).getTime());
+
+  for (const { g, byTeam } of rows) {
+    const live = g.state === 'in';
+    const done = g.state === 'post';
+    const row = el('div', 'sb' + (live ? ' live' : done ? ' done' : ''));
+
+    const side = (t, other) => {
+      const names = byTeam[t.id] || [];
+      const winning = done ? t.winner === true : Number(t.score) > Number(other.score);
+      const score = (live || done)
+        ? `<b class="${winning ? 'up' : ''}">${esc(t.score)}</b>` : '';
+      return `<div class="sbteam${winning && (live || done) ? ' up' : ''}">` +
+        `<span class="sbname">${esc(t.name)}</span>${score}` +
+        (names.length ? `<div class="sbwho">${names.map(esc).join(', ')}</div>` : '') +
+        `</div>`;
+    };
+
+    const tag = live ? `<span class="pill live">${esc(g.detail || 'Live')}</span>`
+      : done ? `<span class="pill">Final</span>`
+      : `<span class="pill pend">${esc(timeLabel(g))}</span>`;
+
+    row.innerHTML = `<div class="sbhead">${tag}${g.tv ? `<span class="muted"> ${esc(g.tv)}</span>` : ''}</div>` +
+      `<div class="sbbody">${side(g.away, g.home)}` +
+      `<span class="sbat">${g.neutral ? 'vs' : 'at'}</span>` +
+      `${side(g.home, g.away)}</div>`;
+    host.append(row);
+  }
+}
+
 /* ---------------- view: standings + board ---------------- */
 
 function renderBoard() {
@@ -525,7 +584,9 @@ function renderBoard() {
   }
 
   // Everyone's picks for the selected week.
-  weekBar($('#boardWeeks'), state.boardWeek, (w) => { state.boardWeek = w; renderBoard(); });
+  weekBar($('#boardWeeks'), state.boardWeek, (w) => {
+    state.boardWeek = w; renderBoard(); renderScoreboard();
+  });
 
   const g = $('#boardGrid');
   g.innerHTML = '';
@@ -897,11 +958,15 @@ function renderSchedule() {
         const b = g.completed && side.winner ? `<b class="w">${nm}</b>` : nm;
         return `${rank}${b}${cf ? ` <span class="pill">${cf.short}</span>` : ''}`;
       };
-      const score = g.completed
-        ? ` <span class="meta">${g.away.score}-${g.home.score}</span>` : '';
+      const playing = g.state === 'in' || g.state === 'post';
+      const score = playing
+        ? ` <span class="meta">${esc(g.away.score)}-${esc(g.home.score)}</span>` : '';
       row.append(el('div', 'matchup',
         `${tag(g.away)} ${g.neutral ? 'vs' : 'at'} ${tag(g.home)}${score}`));
-      row.append(el('div', 'meta', esc(timeLabel(g)) + (g.venue ? ` · ${esc(g.venue)}` : '')));
+      // Live games show the clock instead of a kickoff time.
+      row.append(el('div', 'meta', g.state === 'in'
+        ? `<span class="pill live">${esc(g.detail || 'Live')}</span>`
+        : esc(timeLabel(g)) + (g.venue ? ` · ${esc(g.venue)}` : '')));
       host.append(row);
     }
   }
@@ -912,6 +977,7 @@ function renderSchedule() {
 function renderAll() {
   renderHeader();
   renderBoard();
+  renderScoreboard();
   renderPicks();
   renderTeams();
   renderSchedule();

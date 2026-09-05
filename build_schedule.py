@@ -163,7 +163,8 @@ def week_games(week):
         if not home or not away:
             continue
 
-        status = comp.get("status", {}).get("type", {})
+        st = comp.get("status", {}) or {}
+        status = st.get("type", {}) or {}
         bcast = ""
         for b in comp.get("broadcasts", []):
             if b.get("names"):
@@ -179,6 +180,10 @@ def week_games(week):
                 "tv": bcast,
                 "state": status.get("state", "pre"),  # pre | in | post
                 "completed": bool(status.get("completed")),
+                # Live clock, so the site can show "2nd 0:26" while a game runs.
+                "detail": status.get("shortDetail", ""),   # "2nd 0:26", "Final", "7:00 PM ET"
+                "period": st.get("period"),
+                "clock": st.get("displayClock", ""),
                 "home": home,
                 "away": away,
             }

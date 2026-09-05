@@ -9,6 +9,9 @@ on:
     # Wednesday through Saturday, hourly. Covers every kickoff pattern in the
     # season, including Thursday night openers.
     - cron: '5 * * * 3,4,5,6'
+    # Saturday 7:00am Pacific: one digest to the commissioner naming anyone who
+    # still has an open pick, while there is time to chase them.
+    - cron: '0 14 * * 6'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -21,6 +24,10 @@ on:
         default: ''
       only:
         description: 'Send to just this player id or email (not logged, real reminder still fires)'
+        type: string
+        default: ''
+      mode:
+        description: 'Leave blank for player reminders, or "digest" for the commissioner summary'
         type: string
         default: ''
 
@@ -52,4 +59,7 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
           TEST_WEEK: ${{ inputs.test_week }}
           ONLY: ${{ inputs.only }}
+          # The 14:00 UTC cron is the Saturday digest; every other trigger nags players.
+          MODE: ${{ inputs.mode || (github.event.schedule == '0 14 * * 6' && 'digest' || '') }}
+          DIGEST_TO: ${{ secrets.SMTP_USER }}
         run: python send_reminders.py

@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-04T17:10:59+00:00",
+ "generated": "2026-09-05T00:31:50+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -646,6 +646,9 @@
      "tv": "ESPN",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -674,6 +677,9 @@
      "tv": "NBC",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "30",
       "abbr": "USC",
@@ -702,6 +708,9 @@
      "tv": "ESPN",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
@@ -730,6 +739,9 @@
      "tv": "ACC Network",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "24",
       "abbr": "STAN",
@@ -758,6 +770,9 @@
      "tv": "CW",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "52",
       "abbr": "FSU",
@@ -786,6 +801,9 @@
      "tv": "BTN",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
@@ -814,6 +832,9 @@
      "tv": "ESPN+",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2116",
       "abbr": "UCF",
@@ -842,6 +863,9 @@
      "tv": "ACC Network",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "154",
       "abbr": "WAKE",
@@ -870,6 +894,9 @@
      "tv": "SEC Network",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "142",
       "abbr": "MIZ",
@@ -898,6 +925,9 @@
      "tv": "ESPN",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "59",
       "abbr": "GT",
@@ -926,6 +956,9 @@
      "tv": "Peacock",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "135",
       "abbr": "MINN",
@@ -954,6 +987,9 @@
      "tv": "ESPNU",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "254",
       "abbr": "UTAH",
@@ -982,6 +1018,9 @@
      "tv": "BTN",
      "state": "post",
      "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "356",
       "abbr": "ILL",
@@ -1008,14 +1047,17 @@
      "neutral": false,
      "venue": "Ross-Ade Stadium",
      "tv": "BTN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
+     "detail": "Halftime",
+     "period": 2,
+     "clock": "0:00",
      "home": {
       "id": "2509",
       "abbr": "PUR",
       "name": "Purdue",
       "rank": 99,
-      "score": "0",
+      "score": "16",
       "winner": null
      },
      "away": {
@@ -1023,7 +1065,7 @@
       "abbr": "INST",
       "name": "Indiana State",
       "rank": 99,
-      "score": "0",
+      "score": "6",
       "winner": null
      },
      "homeConf": "big10",
@@ -1036,14 +1078,17 @@
      "neutral": false,
      "venue": "Memorial Stadium (Norman, OK)",
      "tv": "SECN+",
-     "state": "pre",
+     "state": "in",
      "completed": false,
+     "detail": "3:40 - 1st",
+     "period": 1,
+     "clock": "3:40",
      "home": {
       "id": "201",
       "abbr": "OU",
       "name": "Oklahoma",
       "rank": 10,
-      "score": "0",
+      "score": "14",
       "winner": null
      },
      "away": {
@@ -1064,14 +1109,17 @@
      "neutral": false,
      "venue": "David Booth Kansas Memorial Stadium",
      "tv": "ESPNU",
-     "state": "pre",
+     "state": "in",
      "completed": false,
+     "detail": "5:59 - 1st",
+     "period": 1,
+     "clock": "5:59",
      "home": {
       "id": "2305",
       "abbr": "KU",
       "name": "Kansas",
       "rank": 99,
-      "score": "0",
+      "score": "6",
       "winner": null
      },
      "away": {
@@ -1092,14 +1140,17 @@
      "neutral": false,
      "venue": "Spartan Stadium",
      "tv": "FS1",
-     "state": "pre",
+     "state": "in",
      "completed": false,
+     "detail": "5:40 - 1st",
+     "period": 1,
+     "clock": "5:40",
      "home": {
       "id": "127",
       "abbr": "MSU",
       "name": "Michigan State",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "away": {
@@ -1122,6 +1173,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/4 - 9:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "24",
       "abbr": "STAN",
@@ -1150,6 +1204,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/4 - 9:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "30",
       "abbr": "USC",
@@ -1178,6 +1235,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "84",
       "abbr": "IU",
@@ -1206,6 +1266,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "333",
       "abbr": "ALA",
@@ -1234,6 +1297,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "248",
       "abbr": "HOU",
@@ -1262,6 +1328,9 @@
      "tv": "TNT",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "277",
       "abbr": "WVU",
@@ -1290,6 +1359,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "183",
       "abbr": "SYR",
@@ -1318,6 +1390,9 @@
      "tv": "FS1",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "158",
       "abbr": "NEB",
@@ -1346,6 +1421,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 12:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "194",
       "abbr": "OSU",
@@ -1374,6 +1452,9 @@
      "tv": "CW",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 12:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "221",
       "abbr": "PITT",
@@ -1402,6 +1483,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 12:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2579",
       "abbr": "SC",
@@ -1430,6 +1514,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 1:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
@@ -1458,6 +1545,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 1:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -1486,6 +1576,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 3:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "61",
       "abbr": "UGA",
@@ -1514,6 +1607,9 @@
      "tv": "CBS",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2483",
       "abbr": "ORE",
@@ -1542,6 +1638,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "251",
       "abbr": "TEX",
@@ -1570,6 +1669,9 @@
      "tv": "FS1",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "213",
       "abbr": "PSU",
@@ -1598,6 +1700,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2633",
       "abbr": "TENN",
@@ -1626,6 +1731,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2",
       "abbr": "AUB",
@@ -1654,6 +1762,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2132",
       "abbr": "CIN",
@@ -1682,6 +1793,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "150",
       "abbr": "DUKE",
@@ -1710,6 +1824,9 @@
      "tv": "ESPNU",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 3:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "202",
       "abbr": "TLSA",
@@ -1738,6 +1855,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 4:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
@@ -1766,6 +1886,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 4:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "8",
       "abbr": "ARK",
@@ -1794,6 +1917,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
@@ -1822,6 +1948,9 @@
      "tv": "FS1",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
@@ -1850,6 +1979,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "238",
       "abbr": "VAN",
@@ -1878,6 +2010,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
@@ -1906,6 +2041,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "99",
       "abbr": "LSU",
@@ -1934,6 +2072,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -1962,6 +2103,9 @@
      "tv": "ESPNU",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "344",
       "abbr": "MSST",
@@ -1990,6 +2134,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "259",
       "abbr": "VT",
@@ -2018,6 +2165,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 7:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "57",
       "abbr": "FLA",
@@ -2046,6 +2196,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
@@ -2074,6 +2227,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "120",
       "abbr": "MD",
@@ -2102,6 +2258,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "77",
       "abbr": "NU",
@@ -2130,6 +2289,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 9:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
@@ -2158,6 +2320,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 10:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "9",
       "abbr": "ASU",
@@ -2186,6 +2351,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/5 - 10:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
@@ -2214,6 +2382,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "9/6 - 4:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
@@ -2242,6 +2413,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "9/6 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "87",
       "abbr": "ND",
@@ -2270,6 +2444,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/6 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
@@ -2298,6 +2475,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/7 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "52",
       "abbr": "FSU",
@@ -2334,6 +2514,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/10 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2390",
       "abbr": "MIA",
@@ -2362,6 +2545,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/11 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "97",
       "abbr": "LOU",
@@ -2390,6 +2576,9 @@
      "tv": "ACCNX",
      "state": "pre",
      "completed": false,
+     "detail": "9/11 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
@@ -2418,6 +2607,9 @@
      "tv": "ESPNU",
      "state": "pre",
      "completed": false,
+     "detail": "9/11 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "152",
       "abbr": "NCSU",
@@ -2446,6 +2638,9 @@
      "tv": "ESPN2",
      "state": "pre",
      "completed": false,
+     "detail": "9/11 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "103",
       "abbr": "BC",
@@ -2474,6 +2669,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/11 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2305",
       "abbr": "KU",
@@ -2502,6 +2700,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "197",
       "abbr": "OKST",
@@ -2530,6 +2731,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "84",
       "abbr": "IU",
@@ -2558,6 +2762,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
@@ -2586,6 +2793,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -2614,6 +2824,9 @@
      "tv": "ESPN2",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "218",
       "abbr": "TEM",
@@ -2642,6 +2855,9 @@
      "tv": "TNT",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
@@ -2670,6 +2886,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "153",
       "abbr": "UNC",
@@ -2698,6 +2917,9 @@
      "tv": "CW",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "259",
       "abbr": "VT",
@@ -2726,6 +2948,9 @@
      "tv": "FS1",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2509",
       "abbr": "PUR",
@@ -2754,6 +2979,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 12:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "61",
       "abbr": "UGA",
@@ -2782,6 +3010,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 1:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "277",
       "abbr": "WVU",
@@ -2810,6 +3041,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
@@ -2838,6 +3072,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
@@ -2866,6 +3103,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
@@ -2894,6 +3134,9 @@
      "tv": "CBS",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "135",
       "abbr": "MINN",
@@ -2922,6 +3165,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
@@ -2950,6 +3196,9 @@
      "tv": "ESPN2",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "221",
       "abbr": "PITT",
@@ -2978,6 +3227,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "183",
       "abbr": "SYR",
@@ -3006,6 +3258,9 @@
      "tv": "FS1",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "356",
       "abbr": "ILL",
@@ -3034,6 +3289,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "127",
       "abbr": "MSU",
@@ -3062,6 +3320,9 @@
      "tv": "CBSSN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "41",
       "abbr": "CONN",
@@ -3090,6 +3351,9 @@
      "tv": "ACCNX",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 4:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2567",
       "abbr": "SMU",
@@ -3118,6 +3382,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 4:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "238",
       "abbr": "VAN",
@@ -3146,6 +3413,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 5:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "57",
       "abbr": "FLA",
@@ -3174,6 +3444,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "59",
       "abbr": "GT",
@@ -3202,6 +3475,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "248",
       "abbr": "HOU",
@@ -3230,6 +3506,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2579",
       "abbr": "SC",
@@ -3258,6 +3537,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2132",
       "abbr": "CIN",
@@ -3286,6 +3568,9 @@
      "tv": "FS1",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "158",
       "abbr": "NEB",
@@ -3314,6 +3599,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "26",
       "abbr": "UCLA",
@@ -3342,6 +3630,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "275",
       "abbr": "WIS",
@@ -3370,6 +3661,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "251",
       "abbr": "TEX",
@@ -3398,6 +3692,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "99",
       "abbr": "LSU",
@@ -3426,6 +3723,9 @@
      "tv": "CBS",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "204",
       "abbr": "ORST",
@@ -3454,6 +3754,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
@@ -3482,6 +3785,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "228",
       "abbr": "CLEM",
@@ -3510,6 +3816,9 @@
      "tv": "ESPN2",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
@@ -3538,6 +3847,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 7:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2",
       "abbr": "AUB",
@@ -3566,6 +3878,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "239",
       "abbr": "BAY",
@@ -3594,6 +3909,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -3622,6 +3940,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 10:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "254",
       "abbr": "UTAH",
@@ -3650,6 +3971,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/12 - 11:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "30",
       "abbr": "USC",
@@ -3686,6 +4010,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/17 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "221",
       "abbr": "PITT",
@@ -3714,6 +4041,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/18 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "154",
       "abbr": "WAKE",
@@ -3742,6 +4072,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/18 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
@@ -3770,6 +4103,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/18 - 10:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2483",
       "abbr": "ORE",
@@ -3798,6 +4134,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "194",
       "abbr": "OSU",
@@ -3826,6 +4165,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "8",
       "abbr": "ARK",
@@ -3854,6 +4196,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "213",
       "abbr": "PSU",
@@ -3882,6 +4227,9 @@
      "tv": "ESPN2",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
@@ -3910,6 +4258,9 @@
      "tv": "ESPNU",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -3938,6 +4289,9 @@
      "tv": "FS1",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2305",
       "abbr": "KU",
@@ -3966,6 +4320,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "59",
       "abbr": "GT",
@@ -3994,6 +4351,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "228",
       "abbr": "CLEM",
@@ -4022,6 +4382,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "135",
       "abbr": "MINN",
@@ -4050,6 +4413,9 @@
      "tv": "Peacock",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "275",
       "abbr": "WIS",
@@ -4078,6 +4444,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 12:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "238",
       "abbr": "VAN",
@@ -4106,6 +4475,9 @@
      "tv": "ACCNX",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 2:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "103",
       "abbr": "BC",
@@ -4134,6 +4506,9 @@
      "tv": "Peacock",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 2:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "356",
       "abbr": "ILL",
@@ -4162,6 +4537,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
@@ -4190,6 +4568,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "333",
       "abbr": "ALA",
@@ -4218,6 +4599,9 @@
      "tv": "CBS",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
@@ -4246,6 +4630,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -4274,6 +4661,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "97",
       "abbr": "LOU",
@@ -4302,6 +4692,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "254",
       "abbr": "UTAH",
@@ -4330,6 +4723,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2132",
       "abbr": "CIN",
@@ -4358,6 +4754,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
@@ -4386,6 +4785,9 @@
      "tv": "Peacock",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 4:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "84",
       "abbr": "IU",
@@ -4414,6 +4816,9 @@
      "tv": "FS1",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 4:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
@@ -4442,6 +4847,9 @@
      "tv": "CW",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 4:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "150",
       "abbr": "DUKE",
@@ -4470,6 +4878,9 @@
      "tv": "ESPNU",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 4:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "239",
       "abbr": "BAY",
@@ -4498,6 +4909,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 4:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2579",
       "abbr": "SC",
@@ -4526,6 +4940,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "142",
       "abbr": "MIZ",
@@ -4554,6 +4971,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2",
       "abbr": "AUB",
@@ -4582,6 +5002,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2116",
       "abbr": "UCF",
@@ -4610,6 +5033,9 @@
      "tv": "ESPN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "197",
       "abbr": "OKST",
@@ -4638,6 +5064,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
@@ -4666,6 +5095,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "158",
       "abbr": "NEB",
@@ -4694,6 +5126,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "87",
       "abbr": "ND",
@@ -4722,6 +5157,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
@@ -4750,6 +5188,9 @@
      "tv": "ESPN2",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "201",
       "abbr": "OU",
@@ -4778,6 +5219,9 @@
      "tv": "CBS",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "36",
       "abbr": "CSU",
@@ -4806,6 +5250,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "77",
       "abbr": "NU",
@@ -4834,6 +5281,9 @@
      "tv": "ACC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
@@ -4862,6 +5312,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "120",
       "abbr": "MD",
@@ -4890,6 +5343,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 7:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2633",
       "abbr": "TENN",
@@ -4918,6 +5374,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "251",
       "abbr": "TEX",
@@ -4946,6 +5405,9 @@
      "tv": "ESPNU",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -4974,6 +5436,9 @@
      "tv": "TNT",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 10:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
@@ -5002,6 +5467,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/19 - 11:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "26",
       "abbr": "UCLA",
@@ -5038,6 +5506,9 @@
      "tv": "BTN",
      "state": "pre",
      "completed": false,
+     "detail": "9/25 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
@@ -5066,6 +5537,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "9/25 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "84",
       "abbr": "IU",
@@ -5094,6 +5568,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/25 - 10:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
@@ -5122,6 +5599,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "194",
       "abbr": "OSU",
@@ -5150,6 +5630,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "30",
       "abbr": "USC",
@@ -5178,6 +5661,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "61",
       "abbr": "UGA",
@@ -5206,6 +5692,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2509",
       "abbr": "PUR",
@@ -5234,6 +5723,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "99",
       "abbr": "LSU",
@@ -5262,6 +5754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "57",
       "abbr": "FLA",
@@ -5290,6 +5785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
@@ -5318,6 +5816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "333",
       "abbr": "ALA",
@@ -5346,6 +5847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -5374,6 +5878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
@@ -5402,6 +5909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "213",
       "abbr": "PSU",
@@ -5430,6 +5940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2567",
       "abbr": "SMU",
@@ -5458,6 +5971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -5486,6 +6002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "290",
       "abbr": "GASO",
@@ -5514,6 +6033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "97",
       "abbr": "LOU",
@@ -5542,6 +6064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "344",
       "abbr": "MSST",
@@ -5570,6 +6095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2",
       "abbr": "AUB",
@@ -5598,6 +6126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "239",
       "abbr": "BAY",
@@ -5626,6 +6157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2132",
       "abbr": "CIN",
@@ -5654,6 +6188,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2116",
       "abbr": "UCF",
@@ -5682,6 +6219,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "277",
       "abbr": "WVU",
@@ -5710,6 +6250,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "52",
       "abbr": "FSU",
@@ -5738,6 +6281,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
@@ -5766,6 +6312,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "103",
       "abbr": "BC",
@@ -5794,6 +6343,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "120",
       "abbr": "MD",
@@ -5822,6 +6374,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "127",
       "abbr": "MSU",
@@ -5850,6 +6405,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "152",
       "abbr": "NCSU",
@@ -5878,6 +6436,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "9/26 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2633",
       "abbr": "TENN",
@@ -5906,6 +6467,9 @@
      "tv": "ACCNX",
      "state": "pre",
      "completed": false,
+     "detail": "9/26 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "221",
       "abbr": "PITT",
@@ -5934,6 +6498,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "9/26 - 12:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
@@ -5962,6 +6529,9 @@
      "tv": "ACCNX",
      "state": "pre",
      "completed": false,
+     "detail": "9/26 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "150",
       "abbr": "DUKE",
@@ -5990,6 +6560,9 @@
      "tv": "CW",
      "state": "pre",
      "completed": false,
+     "detail": "9/26 - 6:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2390",
       "abbr": "MIA",
@@ -6018,6 +6591,9 @@
      "tv": "CBS",
      "state": "pre",
      "completed": false,
+     "detail": "9/26 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "265",
       "abbr": "WSU",
@@ -6046,6 +6622,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "9/26 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "8",
       "abbr": "ARK",
@@ -6074,6 +6653,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "9/26 - 10:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "24",
       "abbr": "STAN",
@@ -6110,6 +6692,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "10/2 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "259",
       "abbr": "VT",
@@ -6138,6 +6723,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "10/2 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "77",
       "abbr": "NU",
@@ -6166,6 +6754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
@@ -6194,6 +6785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "61",
       "abbr": "UGA",
@@ -6222,6 +6816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "153",
       "abbr": "UNC",
@@ -6250,6 +6847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "228",
       "abbr": "CLEM",
@@ -6278,6 +6878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
@@ -6306,6 +6909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
@@ -6334,6 +6940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "344",
       "abbr": "MSST",
@@ -6362,6 +6971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -6390,6 +7002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "30",
       "abbr": "USC",
@@ -6418,6 +7033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "135",
       "abbr": "MINN",
@@ -6446,6 +7064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2567",
       "abbr": "SMU",
@@ -6474,6 +7095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2633",
       "abbr": "TENN",
@@ -6502,6 +7126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "248",
       "abbr": "HOU",
@@ -6530,6 +7157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "152",
       "abbr": "NCSU",
@@ -6558,6 +7188,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "142",
       "abbr": "MIZ",
@@ -6586,6 +7219,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2579",
       "abbr": "SC",
@@ -6614,6 +7250,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2305",
       "abbr": "KU",
@@ -6642,6 +7281,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "9",
       "abbr": "ASU",
@@ -6670,6 +7312,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
@@ -6698,6 +7343,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -6726,6 +7374,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "154",
       "abbr": "WAKE",
@@ -6754,6 +7405,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "52",
       "abbr": "FSU",
@@ -6782,6 +7436,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "356",
       "abbr": "ILL",
@@ -6810,6 +7467,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "158",
       "abbr": "NEB",
@@ -6838,6 +7498,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "275",
       "abbr": "WIS",
@@ -6866,6 +7529,9 @@
      "tv": "CBSSN",
      "state": "pre",
      "completed": false,
+     "detail": "10/3 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "41",
       "abbr": "CONN",
@@ -6894,6 +7560,9 @@
      "tv": "CBSSN",
      "state": "pre",
      "completed": false,
+     "detail": "10/3 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2439",
       "abbr": "UNLV",
@@ -6922,6 +7591,9 @@
      "tv": "SEC Network",
      "state": "pre",
      "completed": false,
+     "detail": "10/3 - 7:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "99",
       "abbr": "LSU",
@@ -6950,6 +7622,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "10/3 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
@@ -6986,6 +7661,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "10/9 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "97",
       "abbr": "LOU",
@@ -7014,6 +7692,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "10/9 - 9:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
@@ -7042,6 +7723,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "10/9 - 10:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
@@ -7070,6 +7754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "194",
       "abbr": "OSU",
@@ -7098,6 +7785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2483",
       "abbr": "ORE",
@@ -7126,6 +7816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "333",
       "abbr": "ALA",
@@ -7154,6 +7847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "158",
       "abbr": "NEB",
@@ -7182,6 +7878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "142",
       "abbr": "MIZ",
@@ -7210,6 +7909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "238",
       "abbr": "VAN",
@@ -7238,6 +7940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
@@ -7266,6 +7971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "213",
       "abbr": "PSU",
@@ -7294,6 +8002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "8",
       "abbr": "ARK",
@@ -7322,6 +8033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "254",
       "abbr": "UTAH",
@@ -7350,6 +8064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
@@ -7378,6 +8095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "57",
       "abbr": "FLA",
@@ -7406,6 +8126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "9",
       "abbr": "ASU",
@@ -7434,6 +8157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "277",
       "abbr": "WVU",
@@ -7462,6 +8188,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "197",
       "abbr": "OKST",
@@ -7490,6 +8219,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "59",
       "abbr": "GT",
@@ -7518,6 +8250,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "221",
       "abbr": "PITT",
@@ -7546,6 +8281,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
@@ -7574,6 +8312,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
@@ -7602,6 +8343,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "152",
       "abbr": "NCSU",
@@ -7630,6 +8374,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "127",
       "abbr": "MSU",
@@ -7658,6 +8405,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "77",
       "abbr": "NU",
@@ -7686,6 +8436,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2509",
       "abbr": "PUR",
@@ -7714,6 +8467,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "10/10 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "87",
       "abbr": "ND",
@@ -7742,6 +8498,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "10/10 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "201",
       "abbr": "OU",
@@ -7778,6 +8537,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "10/16 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2509",
       "abbr": "PUR",
@@ -7806,6 +8568,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "84",
       "abbr": "IU",
@@ -7834,6 +8599,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2483",
       "abbr": "ORE",
@@ -7862,6 +8630,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "61",
       "abbr": "UGA",
@@ -7890,6 +8661,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
@@ -7918,6 +8692,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "251",
       "abbr": "TEX",
@@ -7946,6 +8723,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2390",
       "abbr": "MIA",
@@ -7974,6 +8754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
@@ -8002,6 +8785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "201",
       "abbr": "OU",
@@ -8030,6 +8816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "99",
       "abbr": "LSU",
@@ -8058,6 +8847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
@@ -8086,6 +8878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2633",
       "abbr": "TENN",
@@ -8114,6 +8909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -8142,6 +8940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2567",
       "abbr": "SMU",
@@ -8170,6 +8971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
@@ -8198,6 +9002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "248",
       "abbr": "HOU",
@@ -8226,6 +9033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "183",
       "abbr": "SYR",
@@ -8254,6 +9064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "238",
       "abbr": "VAN",
@@ -8282,6 +9095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "277",
       "abbr": "WVU",
@@ -8310,6 +9126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
@@ -8338,6 +9157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "239",
       "abbr": "BAY",
@@ -8366,6 +9188,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "228",
       "abbr": "CLEM",
@@ -8394,6 +9219,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "259",
       "abbr": "VT",
@@ -8422,6 +9250,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "150",
       "abbr": "DUKE",
@@ -8450,6 +9281,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "103",
       "abbr": "BC",
@@ -8478,6 +9312,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
@@ -8506,6 +9343,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "120",
       "abbr": "MD",
@@ -8534,6 +9374,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "127",
       "abbr": "MSU",
@@ -8562,6 +9405,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "26",
       "abbr": "UCLA",
@@ -8590,6 +9436,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "10/17 - 1:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
@@ -8618,6 +9467,9 @@
      "tv": "ACCNX",
      "state": "pre",
      "completed": false,
+     "detail": "10/17 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "24",
       "abbr": "STAN",
@@ -8654,6 +9506,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "10/23 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
@@ -8682,6 +9537,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "10/23 - 10:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "24",
       "abbr": "STAN",
@@ -8710,6 +9568,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "356",
       "abbr": "ILL",
@@ -8738,6 +9599,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "251",
       "abbr": "TEX",
@@ -8766,6 +9630,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -8794,6 +9661,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2390",
       "abbr": "MIA",
@@ -8822,6 +9692,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "333",
       "abbr": "ALA",
@@ -8850,6 +9723,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "344",
       "abbr": "MSST",
@@ -8878,6 +9754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2132",
       "abbr": "CIN",
@@ -8906,6 +9785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2116",
       "abbr": "UCF",
@@ -8934,6 +9816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "275",
       "abbr": "WIS",
@@ -8962,6 +9847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2567",
       "abbr": "SMU",
@@ -8990,6 +9878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2579",
       "abbr": "SC",
@@ -9018,6 +9909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "254",
       "abbr": "UTAH",
@@ -9046,6 +9940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "135",
       "abbr": "MINN",
@@ -9074,6 +9971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
@@ -9102,6 +10002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2305",
       "abbr": "KU",
@@ -9130,6 +10033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "197",
       "abbr": "OKST",
@@ -9158,6 +10064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
@@ -9186,6 +10095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "9",
       "abbr": "ASU",
@@ -9214,6 +10126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -9242,6 +10157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "59",
       "abbr": "GT",
@@ -9270,6 +10188,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "153",
       "abbr": "UNC",
@@ -9298,6 +10219,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "228",
       "abbr": "CLEM",
@@ -9326,6 +10250,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "77",
       "abbr": "NU",
@@ -9354,6 +10281,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "26",
       "abbr": "UCLA",
@@ -9382,6 +10312,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "10/24 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2",
       "abbr": "AUB",
@@ -9418,6 +10351,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "10/30 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2116",
       "abbr": "UCF",
@@ -9446,6 +10382,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "30",
       "abbr": "USC",
@@ -9474,6 +10413,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2483",
       "abbr": "ORE",
@@ -9502,6 +10444,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "251",
       "abbr": "TEX",
@@ -9530,6 +10475,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "84",
       "abbr": "IU",
@@ -9558,6 +10506,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "153",
       "abbr": "UNC",
@@ -9586,6 +10537,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
@@ -9614,6 +10568,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "201",
       "abbr": "OU",
@@ -9642,6 +10599,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
@@ -9670,6 +10630,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
@@ -9698,6 +10661,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
@@ -9726,6 +10692,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "158",
       "abbr": "NEB",
@@ -9754,6 +10723,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "213",
       "abbr": "PSU",
@@ -9782,6 +10754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "183",
       "abbr": "SYR",
@@ -9810,6 +10785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2132",
       "abbr": "CIN",
@@ -9838,6 +10816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
@@ -9866,6 +10847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "97",
       "abbr": "LOU",
@@ -9894,6 +10878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "8",
       "abbr": "ARK",
@@ -9922,6 +10909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -9950,6 +10940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
@@ -9978,6 +10971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -10006,6 +11002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "152",
       "abbr": "NCSU",
@@ -10034,6 +11033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "150",
       "abbr": "DUKE",
@@ -10062,6 +11064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "52",
       "abbr": "FSU",
@@ -10090,6 +11095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "221",
       "abbr": "PITT",
@@ -10118,6 +11126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "154",
       "abbr": "WAKE",
@@ -10146,6 +11157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "120",
       "abbr": "MD",
@@ -10174,6 +11188,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "26",
       "abbr": "UCLA",
@@ -10202,6 +11219,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "10/31 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "61",
       "abbr": "UGA",
@@ -10238,6 +11258,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "11/6 - 7:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2567",
       "abbr": "SMU",
@@ -10266,6 +11289,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "11/6 - 8:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "356",
       "abbr": "ILL",
@@ -10294,6 +11320,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "11/6 - 10:15 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
@@ -10322,6 +11351,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "194",
       "abbr": "OSU",
@@ -10350,6 +11382,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
@@ -10378,6 +11413,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "142",
       "abbr": "MIZ",
@@ -10406,6 +11444,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2579",
       "abbr": "SC",
@@ -10434,6 +11475,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "57",
       "abbr": "FLA",
@@ -10462,6 +11506,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "99",
       "abbr": "LSU",
@@ -10490,6 +11537,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
@@ -10518,6 +11568,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "254",
       "abbr": "UTAH",
@@ -10546,6 +11599,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -10574,6 +11630,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
@@ -10602,6 +11661,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2633",
       "abbr": "TENN",
@@ -10630,6 +11692,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "77",
       "abbr": "NU",
@@ -10658,6 +11723,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "248",
       "abbr": "HOU",
@@ -10686,6 +11754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "59",
       "abbr": "GT",
@@ -10714,6 +11785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2",
       "abbr": "AUB",
@@ -10742,6 +11816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "344",
       "abbr": "MSST",
@@ -10770,6 +11847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2305",
       "abbr": "KU",
@@ -10798,6 +11878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "9",
       "abbr": "ASU",
@@ -10826,6 +11909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "239",
       "abbr": "BAY",
@@ -10854,6 +11940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
@@ -10882,6 +11971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "183",
       "abbr": "SYR",
@@ -10910,6 +12002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "152",
       "abbr": "NCSU",
@@ -10938,6 +12033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "103",
       "abbr": "BC",
@@ -10966,6 +12064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "135",
       "abbr": "MINN",
@@ -10994,6 +12095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2509",
       "abbr": "PUR",
@@ -11022,6 +12126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "275",
       "abbr": "WIS",
@@ -11050,6 +12157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "11/7 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "154",
       "abbr": "WAKE",
@@ -11078,6 +12188,9 @@
      "tv": "CBSSN",
      "state": "pre",
      "completed": false,
+     "detail": "11/7 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "41",
       "abbr": "CONN",
@@ -11106,6 +12219,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "11/7 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "87",
       "abbr": "ND",
@@ -11142,6 +12258,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "11/13 - 7:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "221",
       "abbr": "PITT",
@@ -11170,6 +12289,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "11/13 - 9:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "26",
       "abbr": "UCLA",
@@ -11198,6 +12320,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "11/13 - 10:15 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
@@ -11226,6 +12351,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "194",
       "abbr": "OSU",
@@ -11254,6 +12382,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2483",
       "abbr": "ORE",
@@ -11282,6 +12413,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "61",
       "abbr": "UGA",
@@ -11310,6 +12444,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "99",
       "abbr": "LSU",
@@ -11338,6 +12475,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "84",
       "abbr": "IU",
@@ -11366,6 +12506,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2390",
       "abbr": "MIA",
@@ -11394,6 +12537,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
@@ -11422,6 +12568,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "201",
       "abbr": "OU",
@@ -11450,6 +12599,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "197",
       "abbr": "OKST",
@@ -11478,6 +12630,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "238",
       "abbr": "VAN",
@@ -11506,6 +12661,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
@@ -11534,6 +12692,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "127",
       "abbr": "MSU",
@@ -11562,6 +12723,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "213",
       "abbr": "PSU",
@@ -11590,6 +12754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2567",
       "abbr": "SMU",
@@ -11618,6 +12785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
@@ -11646,6 +12816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
@@ -11674,6 +12847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "153",
       "abbr": "UNC",
@@ -11702,6 +12878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2116",
       "abbr": "UCF",
@@ -11730,6 +12909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -11758,6 +12940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "277",
       "abbr": "WVU",
@@ -11786,6 +12971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -11814,6 +13002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "8",
       "abbr": "ARK",
@@ -11842,6 +13033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
@@ -11870,6 +13064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "344",
       "abbr": "MSST",
@@ -11898,6 +13095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
@@ -11926,6 +13126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "228",
       "abbr": "CLEM",
@@ -11954,6 +13157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "259",
       "abbr": "VT",
@@ -11982,6 +13188,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "152",
       "abbr": "NCSU",
@@ -12010,6 +13219,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "120",
       "abbr": "MD",
@@ -12038,6 +13250,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
@@ -12066,6 +13281,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "11/14 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "87",
       "abbr": "ND",
@@ -12102,6 +13320,9 @@
      "tv": "FS1",
      "state": "pre",
      "completed": false,
+     "detail": "11/20 - 6:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2116",
       "abbr": "UCF",
@@ -12130,6 +13351,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "11/20 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "150",
       "abbr": "DUKE",
@@ -12158,6 +13382,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "11/20 - 8:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "127",
       "abbr": "MSU",
@@ -12186,6 +13413,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "158",
       "abbr": "NEB",
@@ -12214,6 +13444,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2579",
       "abbr": "SC",
@@ -12242,6 +13475,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "251",
       "abbr": "TEX",
@@ -12270,6 +13506,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
@@ -12298,6 +13537,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2390",
       "abbr": "MIA",
@@ -12326,6 +13568,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "201",
       "abbr": "OU",
@@ -12354,6 +13599,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2633",
       "abbr": "TENN",
@@ -12382,6 +13630,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "239",
       "abbr": "BAY",
@@ -12410,6 +13661,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2305",
       "abbr": "KU",
@@ -12438,6 +13692,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "30",
       "abbr": "USC",
@@ -12466,6 +13723,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -12494,6 +13754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "213",
       "abbr": "PSU",
@@ -12522,6 +13785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -12550,6 +13816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "356",
       "abbr": "ILL",
@@ -12578,6 +13847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "277",
       "abbr": "WVU",
@@ -12606,6 +13878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "97",
       "abbr": "LOU",
@@ -12634,6 +13909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "142",
       "abbr": "MIZ",
@@ -12662,6 +13940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "57",
       "abbr": "FLA",
@@ -12690,6 +13971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
@@ -12718,6 +14002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2132",
       "abbr": "CIN",
@@ -12746,6 +14033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "9",
       "abbr": "ASU",
@@ -12774,6 +14064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "52",
       "abbr": "FSU",
@@ -12802,6 +14095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
@@ -12830,6 +14126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
@@ -12858,6 +14157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "103",
       "abbr": "BC",
@@ -12886,6 +14188,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "59",
       "abbr": "GT",
@@ -12914,6 +14219,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "135",
       "abbr": "MINN",
@@ -12942,6 +14250,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2509",
       "abbr": "PUR",
@@ -12970,6 +14281,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "11/21 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
@@ -12998,6 +14312,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "11/21 - 1:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "344",
       "abbr": "MSST",
@@ -13026,6 +14343,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "11/21 - 2:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "333",
       "abbr": "ALA",
@@ -13054,6 +14374,9 @@
      "tv": "SECN+",
      "state": "pre",
      "completed": false,
+     "detail": "11/21 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2",
       "abbr": "AUB",
@@ -13082,6 +14405,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "11/21 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "87",
       "abbr": "ND",
@@ -13118,6 +14444,9 @@
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
+     "detail": "11/26 - 8:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
@@ -13146,6 +14475,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "11/27 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
@@ -13174,6 +14506,9 @@
      "tv": "CBS",
      "state": "pre",
      "completed": false,
+     "detail": "11/27 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
@@ -13202,6 +14537,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "11/27 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "52",
       "abbr": "FSU",
@@ -13230,6 +14568,9 @@
      "tv": "ABC",
      "state": "pre",
      "completed": false,
+     "detail": "11/27 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
@@ -13258,6 +14599,9 @@
      "tv": "NBC",
      "state": "pre",
      "completed": false,
+     "detail": "11/27 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "275",
       "abbr": "WIS",
@@ -13286,6 +14630,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "11/27 - 9:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "254",
       "abbr": "UTAH",
@@ -13314,6 +14661,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2483",
       "abbr": "ORE",
@@ -13342,6 +14692,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "61",
       "abbr": "UGA",
@@ -13370,6 +14723,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "183",
       "abbr": "SYR",
@@ -13398,6 +14754,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "84",
       "abbr": "IU",
@@ -13426,6 +14785,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "2390",
       "abbr": "MIA",
@@ -13454,6 +14816,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "142",
       "abbr": "MIZ",
@@ -13482,6 +14847,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "8",
       "abbr": "ARK",
@@ -13510,6 +14878,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "333",
       "abbr": "ALA",
@@ -13538,6 +14909,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
@@ -13566,6 +14940,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "26",
       "abbr": "UCLA",
@@ -13594,6 +14971,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "120",
       "abbr": "MD",
@@ -13622,6 +15002,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "24",
       "abbr": "STAN",
@@ -13650,6 +15033,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "238",
       "abbr": "VAN",
@@ -13678,6 +15064,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "248",
       "abbr": "HOU",
@@ -13706,6 +15095,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
@@ -13734,6 +15126,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "228",
       "abbr": "CLEM",
@@ -13762,6 +15157,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
@@ -13790,6 +15188,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
@@ -13818,6 +15219,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "197",
       "abbr": "OKST",
@@ -13846,6 +15250,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -13874,6 +15281,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "154",
       "abbr": "WAKE",
@@ -13902,6 +15312,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "153",
       "abbr": "UNC",
@@ -13930,6 +15343,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
@@ -13958,6 +15374,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "259",
       "abbr": "VT",
@@ -13986,6 +15405,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "77",
       "abbr": "NU",
@@ -14014,6 +15436,9 @@
      "tv": "",
      "state": "pre",
      "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
@@ -14042,6 +15467,9 @@
      "tv": "FOX",
      "state": "pre",
      "completed": false,
+     "detail": "11/28 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
      "home": {
       "id": "194",
       "abbr": "OSU",

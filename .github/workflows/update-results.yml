@@ -11,6 +11,9 @@ on:
     # Sunday or Monday game. Pacific runs behind UTC, so a Wednesday-evening PT
     # kickoff falls inside the Thursday UTC window too.
     - cron: '0 * * * 4,5,6,0,1'
+    # Saturday is the busy day, so refresh on the half hour too. UTC Saturday and
+    # Sunday together cover the whole of Pacific Saturday.
+    - cron: '30 * * * 6,0'
     # Tuesday and Wednesday, once a day, just to catch kickoff times moving.
     - cron: '15 14 * * 2,3'
   workflow_dispatch:
