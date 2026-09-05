@@ -146,6 +146,21 @@ shipped under a version that is already cached is invisible to anyone who has lo
 page before, no matter how many times they refresh. That happened twice before this
 script existed.
 
+## Live scores
+
+The committed `schedule.json` only refreshes when the results job runs, so during a
+Saturday it can be up to half an hour behind. The page therefore also polls ESPN
+directly, every 60 seconds, and merges score, clock and result into memory.
+
+- **Only `cdn.espn.com` works from a browser.** It is the one ESPN host that sends
+  `Access-Control-Allow-Origin: *`. `site.api.espn.com` sends no CORS header at all,
+  so a browser cannot call it whatever the IP.
+- **It only polls when something is happening**: a game in the viewed week is live, or
+  kicks off within 15 minutes. It also stops while the tab is hidden.
+- **~115 KB gzipped per poll.** Worth knowing on cell data during a long Saturday.
+- **Nothing depends on it.** If the call fails the committed data stays on screen. The
+  Action is still the record of truth, and pick locking is enforced in Postgres.
+
 ## ESPN, and why the code talks to two hosts
 
 `site.api.espn.com` is the clean endpoint and it is what runs locally. It has two

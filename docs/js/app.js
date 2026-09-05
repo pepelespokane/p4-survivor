@@ -419,6 +419,96 @@ function weekBar(container, selected, onPick) {
   }
 }
 
+/* ---------------- live scores ---------------- */
+
+/* The committed schedule.json only refreshes when the results job runs, so on a
+ * Saturday it can be up to half an hour behind. This polls ESPN directly for the
+ * week being viewed and merges the score, clock and result straight into memory.
+ *
+ * cdn.espn.com is the only ESPN host that sends Access-Control-Allow-Origin, so
+ * it is the one a browser is allowed to call. If it fails we simply keep showing
+ * the committed data; nothing depends on this poll succeeding. The Action remains
+ * the record of truth, and pick locking is enforced in Postgres regardless.
+ */
+const LIVE = { timer: null, last: null, busy: false };
+const LIVE_MS = 60000;
+
+/** Only poll when something is actually happening in the week being viewed. */
+function liveWorthPolling() {
+  const wk = weekData(state.boardWeek);
+  if (!wk) return false;
+  const soon = Date.now() + 15 * 60 * 1000;
+  return wk.games.some((g) =>
+    g.state === 'in' || (g.state !== 'post' && kickoff(g).getTime() <= soon));
+}
+
+function renderLiveStamp() {
+  const el0 = $('#liveStamp');
+  if (!el0) return;
+  if (!LIVE.last) { el0.innerHTML = ''; return; }
+  const t = LIVE.last.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit', second: '2-digit' });
+  el0.innerHTML = `<span class="pill live">live</span> <span class="muted">updated ${esc(t)}</span>`;
+}
+
+async function pollLive() {
+  if (LIVE.busy || document.hidden || !state.sched || !liveWorthPolling()) return;
+  LIVE.busy = true;
+  try {
+    const wk = weekData(state.boardWeek);
+    const url = 'https://cdn.espn.com/core/college-football/schedule?xhr=1'
+      + `&year=${state.sched.season}&week=${wk.week}&seasontype=2`;
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) return;
+    const data = await res.json();
+
+    const byId = new Map();
+    const days = (data.content || {}).schedule || {};
+    for (const day of Object.values(days)) {
+      for (const g of (day.games || [])) byId.set(String(g.id), g);
+    }
+
+    let changed = 0;
+    for (const g of wk.games) {
+      const fresh = byId.get(String(g.id));
+      if (!fresh || !fresh.competitions || !fresh.competitions[0]) continue;
+      const comp = fresh.competitions[0];
+      const type = (comp.status || {}).type || {};
+      const before = [g.state, g.detail, g.home.score, g.away.score].join('|');
+
+      g.state = type.state || g.state;
+      g.completed = !!type.completed;
+      g.detail = type.shortDetail || g.detail;
+      for (const c of (comp.competitors || [])) {
+        const side = c.homeAway === 'home' ? g.home : g.away;
+        if (c.score !== undefined) side.score = c.score;
+        if (c.winner !== undefined) side.winner = c.winner;
+      }
+      if (before !== [g.state, g.detail, g.home.score, g.away.score].join('|')) changed++;
+    }
+
+    LIVE.last = new Date();
+    if (changed) {
+      renderScoreboard();
+      renderBoard();
+      renderSchedule();
+    }
+    renderLiveStamp();
+  } catch (e) {
+    // ESPN hiccup or offline. Keep the committed data and try again next tick.
+  } finally {
+    LIVE.busy = false;
+  }
+}
+
+function startLive() {
+  if (LIVE.timer) return;
+  LIVE.timer = setInterval(pollLive, LIVE_MS);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) pollLive();
+  });
+  pollLive();
+}
+
 /* ---------------- view: live scoreboard ---------------- */
 
 /** Games this week that somebody's pick is riding on, in the order that matters:
@@ -1050,6 +1140,7 @@ async function boot() {
 
   renderAll();
   showTab('board');
+  startLive();
 }
 
 boot();
