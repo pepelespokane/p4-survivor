@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-06T06:08:25+00:00",
+ "generated": "2026-09-06T10:15:36+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2349,26 +2349,26 @@
      "neutral": false,
      "venue": "California Memorial Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "7:13 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "7:13",
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
       "name": "California",
       "rank": 99,
       "score": "24",
-      "winner": null
+      "winner": false
      },
      "away": {
       "id": "26",
       "abbr": "UCLA",
       "name": "UCLA",
       "rank": 99,
-      "score": "31",
-      "winner": null
+      "score": "45",
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "big10",
