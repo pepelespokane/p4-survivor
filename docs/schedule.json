@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-06T01:08:36+00:00",
+ "generated": "2026-09-06T05:30:01+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -1915,18 +1915,18 @@
      "neutral": false,
      "venue": "Kyle Field",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
       "name": "Texas A&M",
       "rank": 8,
-      "score": "19",
-      "winner": null
+      "score": "50",
+      "winner": true
      },
      "away": {
       "id": "2623",
@@ -1934,7 +1934,7 @@
       "name": "Missouri State",
       "rank": 99,
       "score": "0",
-      "winner": null
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": null,
@@ -1946,26 +1946,26 @@
      "neutral": false,
      "venue": "Galaxy Stadium",
      "tv": "FS1",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
       "name": "Texas Tech",
       "rank": 12,
-      "score": "17",
-      "winner": null
+      "score": "33",
+      "winner": true
      },
      "away": {
       "id": "2000",
       "abbr": "ACU",
       "name": "Abilene Christian",
       "rank": 99,
-      "score": "3",
-      "winner": null
+      "score": "10",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": null,
@@ -1977,18 +1977,18 @@
      "neutral": false,
      "venue": "FirstBank Stadium",
      "tv": "SECN+",
-     "state": "in",
-     "completed": false,
-     "detail": "11:21 - 3rd",
-     "period": 3,
-     "clock": "11:21",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "238",
       "abbr": "VAN",
       "name": "Vanderbilt",
       "rank": 99,
-      "score": "15",
-      "winner": null
+      "score": "28",
+      "winner": true
      },
      "away": {
       "id": "2046",
@@ -1996,7 +1996,7 @@
       "name": "Austin Peay",
       "rank": 99,
       "score": "9",
-      "winner": null
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": null,
@@ -2008,18 +2008,18 @@
      "neutral": false,
      "venue": "Bill Snyder Family Stadium",
      "tv": "ESPN+",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
       "name": "Kansas State",
       "rank": 99,
-      "score": "36",
-      "winner": null
+      "score": "71",
+      "winner": true
      },
      "away": {
       "id": "2447",
@@ -2027,7 +2027,7 @@
       "name": "Nicholls",
       "rank": 99,
       "score": "3",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": null,
@@ -2039,26 +2039,26 @@
      "neutral": false,
      "venue": "Michigan Stadium",
      "tv": "NBC",
-     "state": "in",
-     "completed": false,
-     "detail": "2:00 - 2nd",
-     "period": 2,
-     "clock": "2:00",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
       "name": "Michigan",
       "rank": 16,
-      "score": "7",
-      "winner": null
+      "score": "13",
+      "winner": true
      },
      "away": {
       "id": "2711",
       "abbr": "WMU",
       "name": "Western Michigan",
       "rank": 99,
-      "score": "3",
-      "winner": null
+      "score": "12",
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": null,
@@ -2070,26 +2070,26 @@
      "neutral": false,
      "venue": "Davis Wade Stadium",
      "tv": "ESPNU",
-     "state": "in",
-     "completed": false,
-     "detail": "6:17 - 2nd",
-     "period": 2,
-     "clock": "6:17",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "344",
       "abbr": "MSST",
       "name": "Mississippi State",
       "rank": 99,
-      "score": "31",
-      "winner": null
+      "score": "62",
+      "winner": true
      },
      "away": {
       "id": "2433",
       "abbr": "ULM",
       "name": "UL Monroe",
       "rank": 99,
-      "score": "3",
-      "winner": null
+      "score": "13",
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": null,
@@ -2101,26 +2101,26 @@
      "neutral": false,
      "venue": "Lane Stadium",
      "tv": "ACC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "2:48 - 2nd",
-     "period": 2,
-     "clock": "2:48",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "259",
       "abbr": "VT",
       "name": "Virginia Tech",
       "rank": 99,
-      "score": "38",
-      "winner": null
+      "score": "73",
+      "winner": true
      },
      "away": {
       "id": "2678",
       "abbr": "VMI",
       "name": "VMI",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "3",
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": null,
@@ -2132,26 +2132,26 @@
      "neutral": false,
      "venue": "Ben Hill Griffin Stadium",
      "tv": "SEC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "13:06 - 2nd",
-     "period": 2,
-     "clock": "13:06",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "57",
       "abbr": "FLA",
       "name": "Florida",
       "rank": 99,
-      "score": "17",
-      "winner": null
+      "score": "66",
+      "winner": true
      },
      "away": {
       "id": "2226",
       "abbr": "FAU",
       "name": "Florida Atlantic",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "21",
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": null,
@@ -2163,26 +2163,26 @@
      "neutral": false,
      "venue": "LaVell Edwards Stadium",
      "tv": "ESPN+",
-     "state": "in",
-     "completed": false,
-     "detail": "13:41 - 2nd",
-     "period": 2,
-     "clock": "13:41",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
       "name": "BYU",
       "rank": 14,
-      "score": "21",
-      "winner": null
+      "score": "63",
+      "winner": true
      },
      "away": {
       "id": "3101",
       "abbr": "UTU",
       "name": "Utah Tech",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "7",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": null,
@@ -2194,18 +2194,18 @@
      "neutral": false,
      "venue": "SECU Stadium",
      "tv": "BTN",
-     "state": "in",
-     "completed": false,
-     "detail": "14:48 - 2nd",
-     "period": 2,
-     "clock": "14:48",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "120",
       "abbr": "MD",
       "name": "Maryland",
       "rank": 99,
-      "score": "17",
-      "winner": null
+      "score": "62",
+      "winner": true
      },
      "away": {
       "id": "2261",
@@ -2213,7 +2213,7 @@
       "name": "Hampton",
       "rank": 99,
       "score": "0",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": null,
@@ -2225,26 +2225,26 @@
      "neutral": false,
      "venue": "Northwestern Medicine Field at Martin Stadium",
      "tv": "BTN",
-     "state": "in",
-     "completed": false,
-     "detail": "12:01 - 2nd",
-     "period": 2,
-     "clock": "12:01",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "77",
       "abbr": "NU",
       "name": "Northwestern",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "34",
+      "winner": true
      },
      "away": {
       "id": "2571",
       "abbr": "SDST",
       "name": "South Dakota State",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "18",
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": null,
@@ -2256,26 +2256,26 @@
      "neutral": false,
      "venue": "Casino Del Sol Stadium",
      "tv": "ESPN+",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/5 - 9:30 PM EDT",
-     "period": 0,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
       "name": "Arizona",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "35",
+      "winner": true
      },
      "away": {
       "id": "2464",
       "abbr": "NAU",
       "name": "Northern Arizona",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "7",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": null,
@@ -2287,26 +2287,26 @@
      "neutral": false,
      "venue": "Tiger Stadium (LA)",
      "tv": "ABC",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/5 - 9:40 PM EDT",
-     "period": 0,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "99",
       "abbr": "LSU",
       "name": "LSU",
       "rank": 11,
-      "score": "0",
-      "winner": null
+      "score": "51",
+      "winner": true
      },
      "away": {
       "id": "228",
       "abbr": "CLEM",
       "name": "Clemson",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "10",
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": "acc",
@@ -2318,26 +2318,26 @@
      "neutral": false,
      "venue": "Mountain America Stadium",
      "tv": "ESPN+",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/5 - 10:00 PM EDT",
-     "period": 0,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "9",
       "abbr": "ASU",
       "name": "Arizona State",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "70",
+      "winner": true
      },
      "away": {
       "id": "2415",
       "abbr": "MORG",
       "name": "Morgan State",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "7",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": null,
@@ -2349,17 +2349,17 @@
      "neutral": false,
      "venue": "California Memorial Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/5 - 10:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "1:42 - 3rd",
+     "period": 3,
+     "clock": "1:42",
      "home": {
       "id": "25",
       "abbr": "CAL",
       "name": "California",
       "rank": 99,
-      "score": "0",
+      "score": "24",
       "winner": null
      },
      "away": {
@@ -2367,7 +2367,7 @@
       "abbr": "UCLA",
       "name": "UCLA",
       "rank": 99,
-      "score": "0",
+      "score": "24",
       "winner": null
      },
      "homeConf": "acc",
