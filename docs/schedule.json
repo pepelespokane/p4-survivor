@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-06T21:30:18+00:00",
+ "generated": "2026-09-06T22:59:33+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2382,9 +2382,9 @@
      "tv": "NBC",
      "state": "in",
      "completed": false,
-     "detail": "9:58 - 2nd",
-     "period": 2,
-     "clock": "9:58",
+     "detail": "13:24 - 4th",
+     "period": 4,
+     "clock": "13:24",
      "home": {
       "id": "264",
       "abbr": "WASH",
