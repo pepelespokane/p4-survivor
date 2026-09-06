@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-06T05:30:01+00:00",
+ "generated": "2026-09-06T06:08:25+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2351,9 +2351,9 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "1:42 - 3rd",
-     "period": 3,
-     "clock": "1:42",
+     "detail": "7:13 - 4th",
+     "period": 4,
+     "clock": "7:13",
      "home": {
       "id": "25",
       "abbr": "CAL",
@@ -2367,7 +2367,7 @@
       "abbr": "UCLA",
       "name": "UCLA",
       "rank": 99,
-      "score": "24",
+      "score": "31",
       "winner": null
      },
      "homeConf": "acc",
