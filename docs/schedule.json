@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-07T01:09:44+00:00",
+ "generated": "2026-09-07T02:51:44+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2413,15 +2413,15 @@
      "tv": "NBC",
      "state": "in",
      "completed": false,
-     "detail": "13:09 - 2nd",
-     "period": 2,
-     "clock": "13:09",
+     "detail": "End of 3rd",
+     "period": 3,
+     "clock": "0:00",
      "home": {
       "id": "87",
       "abbr": "ND",
       "name": "Notre Dame",
       "rank": 4,
-      "score": "10",
+      "score": "27",
       "winner": null
      },
      "away": {
@@ -2429,7 +2429,7 @@
       "abbr": "WIS",
       "name": "Wisconsin",
       "rank": 99,
-      "score": "3",
+      "score": "13",
       "winner": null
      },
      "homeConf": null,
@@ -2444,15 +2444,15 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "9:30 - 2nd",
-     "period": 2,
-     "clock": "9:30",
+     "detail": "0:57 - 3rd",
+     "period": 3,
+     "clock": "0:57",
      "home": {
       "id": "145",
       "abbr": "MISS",
       "name": "Ole Miss",
       "rank": 9,
-      "score": "10",
+      "score": "24",
       "winner": null
      },
      "away": {
@@ -2460,7 +2460,7 @@
       "abbr": "LOU",
       "name": "Louisville",
       "rank": 24,
-      "score": "3",
+      "score": "16",
       "winner": null
      },
      "homeConf": "sec",
