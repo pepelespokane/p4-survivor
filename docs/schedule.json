@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-07T07:56:13+00:00",
+ "generated": "2026-09-07T23:59:29+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2473,9 +2473,9 @@
      "neutral": false,
      "venue": "Doak Campbell Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/7 - 7:30 PM EDT",
+     "detail": "Delayed",
      "period": 0,
      "clock": "0:00",
      "home": {
