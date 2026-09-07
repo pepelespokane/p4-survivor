@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-07T02:51:44+00:00",
+ "generated": "2026-09-07T07:56:13+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2411,18 +2411,18 @@
      "neutral": true,
      "venue": "Lambeau Field",
      "tv": "NBC",
-     "state": "in",
-     "completed": false,
-     "detail": "End of 3rd",
-     "period": 3,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "87",
       "abbr": "ND",
       "name": "Notre Dame",
       "rank": 4,
-      "score": "27",
-      "winner": null
+      "score": "41",
+      "winner": true
      },
      "away": {
       "id": "275",
@@ -2430,7 +2430,7 @@
       "name": "Wisconsin",
       "rank": 99,
       "score": "13",
-      "winner": null
+      "winner": false
      },
      "homeConf": null,
      "awayConf": "big10",
@@ -2442,26 +2442,26 @@
      "neutral": true,
      "venue": "Nissan Stadium",
      "tv": "ABC",
-     "state": "in",
-     "completed": false,
-     "detail": "0:57 - 3rd",
-     "period": 3,
-     "clock": "0:57",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
       "name": "Ole Miss",
       "rank": 9,
-      "score": "24",
-      "winner": null
+      "score": "41",
+      "winner": true
      },
      "away": {
       "id": "97",
       "abbr": "LOU",
       "name": "Louisville",
       "rank": 24,
-      "score": "16",
-      "winner": null
+      "score": "38",
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": "acc",
