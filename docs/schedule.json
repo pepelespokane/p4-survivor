@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-07T23:59:29+00:00",
+ "generated": "2026-09-08T17:55:44+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2473,26 +2473,26 @@
      "neutral": false,
      "venue": "Doak Campbell Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "Delayed",
-     "period": 0,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "52",
       "abbr": "FSU",
       "name": "Florida State",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "24",
+      "winner": false
      },
      "away": {
       "id": "2567",
       "abbr": "SMU",
       "name": "SMU",
       "rank": 19,
-      "score": "0",
-      "winner": null
+      "score": "27",
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -3871,37 +3871,6 @@
      "day": "Sat"
     },
     {
-     "id": "401856784",
-     "kickoff": "2026-09-13T00:00Z",
-     "neutral": false,
-     "venue": "McLane Stadium",
-     "tv": "ESPN+",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/12 - 8:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "239",
-      "abbr": "BAY",
-      "name": "Baylor",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2504",
-      "abbr": "PV",
-      "name": "Prairie View A&M",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": null,
-     "day": "Sat"
-    },
-    {
      "id": "401856789",
      "kickoff": "2026-09-13T00:00Z",
      "neutral": false,
@@ -3924,6 +3893,37 @@
       "id": "2755",
       "abbr": "GRAM",
       "name": "Grambling",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": null,
+     "day": "Sat"
+    },
+    {
+     "id": "401856784",
+     "kickoff": "2026-09-13T00:08Z",
+     "neutral": false,
+     "venue": "McLane Stadium",
+     "tv": "ESPN+",
+     "state": "pre",
+     "completed": false,
+     "detail": "9/12 - 8:08 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "239",
+      "abbr": "BAY",
+      "name": "Baylor",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2504",
+      "abbr": "PV",
+      "name": "Prairie View A&M",
       "rank": 99,
       "score": "0",
       "winner": null
