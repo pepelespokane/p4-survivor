@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-09T17:50:37+00:00",
+ "generated": "2026-09-10T03:02:23+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -12026,6 +12026,37 @@
      "day": "Sat"
     },
     {
+     "id": "401858290",
+     "kickoff": "2026-11-07T05:00Z",
+     "neutral": false,
+     "venue": "Allegacy Federal Credit Union Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "TBD",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "154",
+      "abbr": "WAKE",
+      "name": "Wake Forest",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2771",
+      "abbr": "MRMK",
+      "name": "Merrimack",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": null,
+     "day": "Sat"
+    },
+    {
      "id": "401858511",
      "kickoff": "2026-11-07T05:00Z",
      "neutral": false,
@@ -12147,37 +12178,6 @@
      },
      "homeConf": "big10",
      "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
-     "id": "401858290",
-     "kickoff": "2026-11-07T17:00Z",
-     "neutral": false,
-     "venue": "Allegacy Federal Credit Union Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/7 - 12:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "154",
-      "abbr": "WAKE",
-      "name": "Wake Forest",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2771",
-      "abbr": "MRMK",
-      "name": "Merrimack",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": null,
      "day": "Sat"
     },
     {
