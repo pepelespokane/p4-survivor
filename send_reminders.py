@@ -342,7 +342,9 @@ def main():
 
 
 def run_for_week(sched, wk, opens, now, forced):
-    players = sb("GET", "survivor_players", params={"select": "id,name,email"})
+    # `pin` is fetched so the reminder can carry it. This is a service-key read;
+    # the publishable key still cannot see PINs (migration_email.sql revoked that).
+    players = sb("GET", "survivor_players", params={"select": "id,name,email,pin"})
     all_picks = sb("GET", "survivor_picks",
                    params={"select": "player_id,week,conf,team_id,team_name"})
     log = sb("GET", "survivor_reminders",
@@ -412,6 +414,11 @@ def run_for_week(sched, wk, opens, now, forced):
             "Make your picks: " + SITE,
             "",
         ]
+        # Week 2 is the first time anyone has to RECALL a PIN rather than set one,
+        # so the reminder carries it. It lands exactly when they go to sign in,
+        # which beats a reset flow that only helps people who already hit the wall.
+        if p.get("pin"):
+            lines_ += ["Sign in with your name and PIN " + str(p["pin"]) + ".", ""]
         body = chr(10).join(lines_)
         subject = ("Week " + str(wk["poolWeek"]) + " picks: " + str(len(missing))
                    + " league" + ("" if len(missing) == 1 else "s") + " still open")
