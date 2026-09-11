@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-11T05:37:26+00:00",
+ "generated": "2026-09-11T23:53:05+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2543,17 +2543,17 @@
      "neutral": false,
      "venue": "L&N Federal Credit Union Stadium",
      "tv": "ACC Network",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/11 - 7:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "13:24 - 2nd",
+     "period": 2,
+     "clock": "13:24",
      "home": {
       "id": "97",
       "abbr": "LOU",
       "name": "Louisville",
       "rank": 24,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "away": {
@@ -2561,7 +2561,7 @@
       "abbr": "VILL",
       "name": "Villanova",
       "rank": 99,
-      "score": "0",
+      "score": "10",
       "winner": null
      },
      "homeConf": "acc",
@@ -2574,17 +2574,17 @@
      "neutral": false,
      "venue": "Scott Stadium",
      "tv": "ACCNX",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/11 - 7:00 PM EDT",
-     "period": 0,
+     "detail": "End of 1st",
+     "period": 1,
      "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
       "name": "Virginia",
       "rank": 25,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "away": {
@@ -2605,17 +2605,17 @@
      "neutral": false,
      "venue": "Carter-Finley Stadium",
      "tv": "ESPNU",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/11 - 7:00 PM EDT",
-     "period": 0,
+     "detail": "End of 1st",
+     "period": 1,
      "clock": "0:00",
      "home": {
       "id": "152",
       "abbr": "NCSU",
       "name": "NC State",
       "rank": 99,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "away": {
@@ -2636,11 +2636,11 @@
      "neutral": false,
      "venue": "Alumni Stadium (Chestnut Hill, MA)",
      "tv": "ESPN2",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/11 - 7:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "11:18 - 1st",
+     "period": 1,
+     "clock": "11:18",
      "home": {
       "id": "103",
       "abbr": "BC",
