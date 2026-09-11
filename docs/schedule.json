@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-10T03:02:23+00:00",
+ "generated": "2026-09-11T00:51:22+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2512,17 +2512,17 @@
      "neutral": false,
      "venue": "Hard Rock Stadium",
      "tv": "ACC Network",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/10 - 8:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "3:47 - 1st",
+     "period": 1,
+     "clock": "3:47",
      "home": {
       "id": "2390",
       "abbr": "MIA",
       "name": "Miami",
       "rank": 7,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "away": {
