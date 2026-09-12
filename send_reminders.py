@@ -54,6 +54,18 @@ LEAD_HOURS = 8
 
 CONFS = [("acc", "ACC"), ("big10", "Big Ten"), ("big12", "Big 12"), ("sec", "SEC")]
 
+# Commissioner digests. Both are gated in Python rather than by cron, because a
+# fixed UTC cron silently slides an hour when Pacific leaves daylight time on
+# Nov 1 2026, which is mid-season.
+#   kind, weekday (Mon=0), hour Pacific, always send, label
+# Thursday always sends: no email has to mean "nothing to chase", never "the job
+# failed". Saturday only sends when somebody is still missing, so a quiet Saturday
+# inbox means everyone is in.
+DIGESTS = [
+    ("digest-thu", 3, 16, True,  "Thursday 4pm Pacific"),
+    ("digest-sat", 5, 7,  False, "Saturday 7am Pacific"),
+]
+
 SITE = os.environ.get("SITE_URL", "https://pepelespokane.github.io/p4-survivor/")
 SB_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
 SB_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
@@ -144,6 +156,20 @@ def reminder_time(opens):
     return min(thursday.astimezone(timezone.utc), opens - timedelta(hours=LEAD_HOURS))
 
 
+def digest_time(opens, dow, hour):
+    """The (weekday, hour) Pacific slot belonging to the pool week whose first
+    kickoff is `opens`. Anchored on that week's Thursday so both digests land in
+    the same week regardless of when the week actually opens."""
+    tz = pacific()
+    local = opens.astimezone(tz)
+    back = (local.weekday() - 3) % 7          # 3 = Thursday
+    thu = (local - timedelta(days=back)).replace(
+        hour=0, minute=0, second=0, microsecond=0)
+    if thu > local:
+        thu -= timedelta(days=7)
+    return (thu + timedelta(days=(dow - 3) % 7)).replace(hour=hour).astimezone(timezone.utc)
+
+
 def current_week(sched, now):
     for wk in sched["weeks"]:
         if any(kick(g) > now for g in wk["games"]):
@@ -231,7 +257,7 @@ def send(to_addr, subject, body):
 
 
 # ------------------------------------------------------------------ digest
-def run_digest(sched, wk, opens, now):
+def run_digest(sched, wk, opens, now, kind, label, always):
     """One email to the commissioner: who still has an open pick, and where.
     Saturday morning, when there is still time to chase people."""
     to = (os.environ.get("DIGEST_TO") or os.environ.get("SMTP_USER", "")).strip()
@@ -244,9 +270,9 @@ def run_digest(sched, wk, opens, now):
                    params={"select": "player_id,week,conf,team_id,team_name"})
     log = sb("GET", "survivor_reminders",
              params={"select": "player_id", "week": "eq." + str(wk["week"]),
-                     "kind": "eq.digest"})
+                     "kind": "eq." + kind})
     if log and not ONLY:
-        print("Digest already sent for week " + str(wk["poolWeek"]) + ".")
+        print(label + " digest already sent for week " + str(wk["poolWeek"]) + ".")
         return
 
     by_player = {}
@@ -267,6 +293,9 @@ def run_digest(sched, wk, opens, now):
             lines.append("  " + p["name"] + " - missing " + ", ".join(missing))
 
     NL = chr(10)
+    if not chased and not always:
+        print(label + " digest: nobody missing, nothing to send.")
+        return
     if not chased:
         body = ("Everyone still alive has all their picks in for week "
                 + str(wk["poolWeek"]) + ". Nothing to chase." + NL)
@@ -276,6 +305,7 @@ def run_digest(sched, wk, opens, now):
                 + str(wk["poolWeek"]) + ":" + NL + NL
                 + NL.join(lines) + NL + NL
                 + "First kickoff of the week: " + fmt_local(opens) + NL
+                + "(" + label + " check)" + NL
                 + "A missing pick ends that player's run in that league." + NL + NL
                 + SITE + NL)
         subject = ("Week " + str(wk["poolWeek"]) + " picks: "
@@ -290,7 +320,7 @@ def run_digest(sched, wk, opens, now):
                    if (p.get("email") or "").lower() == to.lower()), None)
         if me:
             sb("POST", "survivor_reminders",
-               body={"week": wk["week"], "player_id": me["id"], "kind": "digest"})
+               body={"week": wk["week"], "player_id": me["id"], "kind": kind})
 
 
 # --------------------------------------------------------------------- main
@@ -321,7 +351,13 @@ def main():
 
     if MODE == "digest":
         print("Digest mode, pool week " + str(wk["poolWeek"]) + ".")
-        run_digest(sched, wk, opens, now)
+        for kind, dow, hour, always, label in DIGESTS:
+            due = digest_time(opens, dow, hour)
+            if now < due and not ONLY:
+                print("  " + label + ": not due until "
+                      + due.strftime("%a %Y-%m-%d %H:%M UTC") + ".")
+                continue
+            run_digest(sched, wk, opens, now, kind, label, always)
         return 0
 
     due = reminder_time(opens)

@@ -197,6 +197,60 @@ or delete the pool.
 The app falls back to the old direct-table path when those functions are missing, so a
 deploy can never outrun a migration.
 
+### Later migrations
+
+Run these in Supabase -> SQL Editor, in any order. Both are safe to re-run.
+
+**`migration_partial_save.sql`** - one bad league no longer discards the other three.
+
+`survivor_save_picks` used to run all four leagues in a single transaction, so if one
+pick was invalid the other three rolled back with it. The browser then showed only the
+one team's error, which reads like three saved and one did not. Nothing had saved. A
+player could close the tab believing he was in and be eliminated everywhere.
+
+Each league is now its own subtransaction, and the function returns
+`{"saved": [...], "failed": [...]}` instead of a count, so the page can name exactly
+what went in and what did not.
+
+**`migration_pick_visibility.sql`** - see THAT a pick is in, not WHAT it is.
+
+`survivor_picks_read` used to drop hidden picks entirely, so the standings grid could
+not tell "has not picked" from "picked, hidden" and drew a dash for both. Answering
+"is everyone in?" meant reading the picks table with the service key.
+
+It now returns a row for every pick with `team_id` and `team_name` nulled out and a
+`hidden` flag set while the pick is still private. The grid shows **pick in** or
+**no pick** before kickoff and the team name after. Who has picked is public; what
+they picked is not, which is the same guarantee as before.
+
+It also returns `submitted_at`, which is what distinguishes "the reminder went out
+before they picked" from "the pick never saved".
+
+### Commissioner digests
+
+Two a week, both to `DIGEST_TO` (defaults to `SMTP_USER`):
+
+| When | Sends |
+|---|---|
+| **Thursday 4:00pm Pacific** | Always, even when everyone is in, so silence never has to be interpreted |
+| **Saturday 7:00am Pacific** | Only if somebody is still missing |
+
+The times are enforced in `send_reminders.py`, not in cron. A fixed UTC cron slides an
+hour when Pacific drops to standard time on Nov 1, mid-season. The workflow just runs
+hourly Thursday through Saturday and the script decides; each send is logged under its
+own `kind` so the extra runs are no-ops.
+
+### Troubleshooting picks
+
+`diagnose_picks.py` prints every player's picks for the current week with submit
+timestamps, flags any that landed after the last digest ran, and lists who is genuinely
+missing. Read-only, and it needs the service key because the publishable key cannot see
+the picks table:
+
+    set SUPABASE_SERVICE_KEY=<service_role key>
+    python diagnose_picks.py
+    python diagnose_picks.py sean-b bo-j     # drill into specific players, all weeks
+
 ## Rules the code enforces
 
 - One pick per conference per week.

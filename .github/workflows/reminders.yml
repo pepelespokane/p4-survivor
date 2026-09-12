@@ -9,9 +9,12 @@ on:
     # Wednesday through Saturday, hourly. Covers every kickoff pattern in the
     # season, including Thursday night openers.
     - cron: '5 * * * 3,4,5,6'
-    # Saturday 7:00am Pacific: one digest to the commissioner naming anyone who
-    # still has an open pick, while there is time to chase them.
-    - cron: '0 14 * * 6'
+    # Commissioner digests, hourly Thursday through Saturday. send_reminders.py
+    # gates these to Thursday 4pm and Saturday 7am Pacific and logs each one, so
+    # the extra runs are no-ops. Gating in Python instead of cron is deliberate:
+    # a fixed UTC cron slides an hour when Pacific drops to standard time on
+    # Nov 1 2026, in the middle of the season.
+    - cron: '20 * * * 4,5,6'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -59,7 +62,7 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
           TEST_WEEK: ${{ inputs.test_week }}
           ONLY: ${{ inputs.only }}
-          # The 14:00 UTC cron is the Saturday digest; every other trigger nags players.
-          MODE: ${{ inputs.mode || (github.event.schedule == '0 14 * * 6' && 'digest' || '') }}
+          # The :20 cron carries the commissioner digests; every other trigger nags players.
+          MODE: ${{ inputs.mode || (github.event.schedule == '20 * * * 4,5,6' && 'digest' || '') }}
           DIGEST_TO: ${{ secrets.SMTP_USER }}
         run: python send_reminders.py

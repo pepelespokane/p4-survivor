@@ -445,3 +445,13 @@ tbody tr.dead td:first-child, tbody tr.dead td:nth-child(2) { opacity: .75; }
   header h1 { font-size: 17px; }
   .panel { padding: 12px; }
 }
+
+/* Save feedback. A partial save has to look different from a clean one, or the
+   message gets skimmed as "Saved." and a missing league goes unnoticed. */
+.savegood { color: #63d67f; font-size: 13px; }
+.savebad  { color: #ff8a95; font-size: 13px; font-weight: 600; }
+
+/* Pick status, visible before kickoff. "pick in" and "no pick" have to read
+   differently at a glance; the whole point is spotting the gaps. */
+.pill.in   { background: rgba(46,160,67,.16); color: #63d67f; }
+.pill.none { background: rgba(209,57,74,.16); color: #ff8a95; font-weight: 600; }

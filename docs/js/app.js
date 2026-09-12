@@ -120,6 +120,10 @@ function confLocked(playerId, w, conf) {
 /** Can this pick be shown to everyone yet? Hidden until that team kicks off, so
  *  a Friday-night pick never leaks a Saturday one. Your own picks always show. */
 function pickVisible(pick) {
+  // Since migration_pick_visibility.sql the database sends a row for every pick
+  // and masks the team on the ones you are not allowed to see yet. `hidden` is
+  // authoritative; the checks below are the pre-migration fallback.
+  if (pick.hidden) return false;
   if (!POOL.hidePicksUntilKickoff) return true;
   if (state.me && pick.player_id === state.me.id) return true;
   const g = gameFor(pick.week, pick.team_id);
@@ -176,7 +180,9 @@ const pickAt = (playerId, w, conf) =>
 /** Teams a player has already burned, teamId -> week. */
 function usedBy(playerId) {
   const m = {};
-  for (const x of picksOf(playerId)) m[x.team_id] = x.week;
+  for (const x of picksOf(playerId)) {
+    if (x.team_id) m[x.team_id] = x.week;   // masked picks have no team to record
+  }
   return m;
 }
 
@@ -203,6 +209,8 @@ function elimConf(playerId, conf) {
     const pk = pickAt(playerId, w, conf);
 
     if (pk) {
+      // Hidden means the team has not kicked off, so by definition still riding.
+      if (pk.hidden) return null;
       const o = outcome(w, pk.team_id);
       if (o === 'loss') return { week: w, reason: lossDetail(w, pk.team_id) };
       if (o === 'pending') return null;      // still riding on this one
@@ -684,9 +692,14 @@ function renderBoard() {
   if (!state.players.length) return;
 
   const opens = weekOpens(w);
+  // migration_pick_visibility.sql sends a row for every pick with a `hidden`
+  // flag. If no row carries the flag, that migration has not run and we cannot
+  // distinguish "no pick" from "hidden pick".
+  const knowsHidden = state.picks.some((x) => 'hidden' in x);
   if (POOL.hidePicksUntilKickoff && opens !== null && Date.now() < opens) {
     g.append(el('div', 'notice',
-      'Each pick stays hidden until that team kicks off. Your own picks always show.'));
+      'Teams stay hidden until they kick off, but you can see who has a pick in ' +
+      'and who does not. Your own picks always show.'));
   }
 
   const tb = el('table', 'board');
@@ -701,9 +714,16 @@ function renderBoard() {
     let w_ = 0, l_ = 0;
     for (const c of POOL.conferences) {
       const pk = pickAt(p.id, w, c.key);
-      if (!pk) { cells += `<td class="pk muted">-</td>`; continue; }
+      if (!pk) {
+        // Only claim "no pick" when the database is actually telling us about
+        // hidden picks. Before that migration an empty cell is just unknown.
+        cells += knowsHidden
+          ? `<td class="pk"><span class="pill none">no pick</span></td>`
+          : `<td class="pk muted">-</td>`;
+        continue;
+      }
       if (!pickVisible(pk)) {
-        cells += `<td class="pk"><span class="pill">submitted</span>` +
+        cells += `<td class="pk"><span class="pill in">pick in</span>` +
           `<small>hidden until kickoff</small></td>`;
         continue;
       }
@@ -890,7 +910,7 @@ async function savePicks() {
   }
   if (!rows.length) {
     await loadPool();
-    return;                       // every league unchanged, which is not an error
+    return { saved: [], failed: [], nothing: true };
   }
 
   // Every rule is re-checked in Postgres. The browser checks above only exist to
@@ -901,29 +921,48 @@ async function savePicks() {
   }
 
   const payload = rows.map((r) => ({ conf: r.conf, team_id: r.team_id }));
-  const { error } = await sb.rpc('survivor_save_picks', {
+  // Since migration_partial_save.sql each league is its own subtransaction, so
+  // the good ones commit even when one fails. `error` is now only for problems
+  // that kill the whole call; per-league problems come back in data.failed.
+  const { data, error } = await sb.rpc('survivor_save_picks', {
     p_token: state.token, p_week: w, p_picks: payload,
   });
 
   if (error) {
     const m = String(error.message || '');
-    const named = (tag) => (m.split(tag)[1] || '').trim();
-    if (m.includes('LOCKED:')) {
-      throw new Error(`${named('LOCKED:')} has already kicked off, so that league is ` +
-        `locked for the week.`);
-    }
-    if (m.includes('KICKED_OFF:')) throw new Error(`${named('KICKED_OFF:')} has already kicked off.`);
-    if (m.includes('ALREADY_USED:')) throw new Error(`${named('ALREADY_USED:')} is already used this season.`);
-    if (m.includes('NO_GAME:')) throw new Error('That team is not playing this week.');
-    if (m.includes('WRONG_CONF:')) throw new Error(`${named('WRONG_CONF:')} is not in that conference.`);
     if (m.includes('BAD_TOKEN')) {
       state.me = null; state.token = null; saveSession();
       throw new Error('Your session expired. Sign in again.');
     }
+    if (m.includes('BAD_WEEK')) throw new Error('That week is not open for picks.');
     throw error;
   }
 
   await loadPool();
+  if (typeof data === 'number' || !data || !data.saved) {
+    // migration_partial_save.sql has not run yet: the old function returns a
+    // count and is all-or-nothing, so reaching here means everything saved.
+    return { saved: rows.map((r) => ({ conf: r.conf, team_name: r.team_name, changed: true })),
+             failed: [] };
+  }
+  return { saved: data.saved, failed: data.failed || [] };
+}
+
+/* Turn one failed league into a sentence a player can act on. The codes are
+   raised by survivor_save_picks; `detail` is the team name where there is one. */
+function failText(f) {
+  const c = POOL.conferences.find((x) => x.key === f.conf);
+  const league = c ? c.name : f.conf;
+  const team = (f.detail || '').trim() || 'that team';
+  switch (f.code) {
+    case 'ALREADY_USED': return `${league}: ${team} was already used this season.`;
+    case 'KICKED_OFF':   return `${league}: ${team} has already kicked off.`;
+    case 'LOCKED':       return `${league}: ${team} already kicked off, so that league is locked for the week.`;
+    case 'NO_GAME':      return `${league}: that team is not playing this week.`;
+    case 'WRONG_CONF':   return `${league}: ${team} is not in that conference.`;
+    case 'BAD_CONF':     return `${league}: not a valid league.`;
+    default:             return `${league}: ${f.code}${f.detail ? ' ' + f.detail : ''}`;
+  }
 }
 
 /* ---------------- view: used teams ---------------- */
@@ -1125,13 +1164,33 @@ async function boot() {
 
   $('#saveBtn').onclick = async () => {
     const msg = $('#saveMsg');
+    msg.className = 'muted';
     msg.textContent = 'Saving...';
     try {
-      await savePicks();
-      msg.textContent = 'Saved.';
+      const res = await savePicks();
       state.draft = {};
       renderAll();
+
+      const wrote = res.saved.filter((s) => s.changed);
+      if (res.failed.length) {
+        // Partial save. Name what went in, then why the rest did not, so nobody
+        // walks away thinking a league is covered when it is not.
+        msg.className = 'savebad';
+        msg.textContent =
+          (wrote.length
+            ? `Saved ${wrote.map((s) => s.team_name).join(', ')}. `
+            : 'Nothing saved. ') +
+          res.failed.map(failText).join(' ');
+      } else if (wrote.length) {
+        msg.className = 'savegood';
+        msg.textContent = `Saved ${wrote.length} pick${wrote.length === 1 ? '' : 's'}: ` +
+          wrote.map((s) => s.team_name).join(', ') + '.';
+      } else {
+        msg.className = 'muted';
+        msg.textContent = 'Nothing to save; those picks were already in.';
+      }
     } catch (err) {
+      msg.className = 'savebad';
       msg.textContent = err.message;
     }
   };
