@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-12T03:05:07+00:00",
+ "generated": "2026-09-12T04:47:51+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2538,37 +2538,6 @@
      "day": "Thu"
     },
     {
-     "id": "401858222",
-     "kickoff": "2026-09-11T23:00Z",
-     "neutral": false,
-     "venue": "Carter-Finley Stadium",
-     "tv": "ESPNU",
-     "state": "in",
-     "completed": false,
-     "detail": "1:42 - 3rd",
-     "period": 3,
-     "clock": "1:42",
-     "home": {
-      "id": "152",
-      "abbr": "NCSU",
-      "name": "NC State",
-      "rank": 99,
-      "score": "63",
-      "winner": null
-     },
-     "away": {
-      "id": "257",
-      "abbr": "RICH",
-      "name": "Richmond",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": null,
-     "day": "Fri"
-    },
-    {
      "id": "401858215",
      "kickoff": "2026-09-11T23:00Z",
      "neutral": false,
@@ -2631,31 +2600,62 @@
      "day": "Fri"
     },
     {
+     "id": "401858222",
+     "kickoff": "2026-09-11T23:00Z",
+     "neutral": false,
+     "venue": "Carter-Finley Stadium",
+     "tv": "ESPNU",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
+     "home": {
+      "id": "152",
+      "abbr": "NCSU",
+      "name": "NC State",
+      "rank": 99,
+      "score": "73",
+      "winner": true
+     },
+     "away": {
+      "id": "257",
+      "abbr": "RICH",
+      "name": "Richmond",
+      "rank": 99,
+      "score": "0",
+      "winner": false
+     },
+     "homeConf": "acc",
+     "awayConf": null,
+     "day": "Fri"
+    },
+    {
      "id": "401858214",
      "kickoff": "2026-09-11T23:30Z",
      "neutral": false,
      "venue": "Alumni Stadium (Chestnut Hill, MA)",
      "tv": "ESPN2",
-     "state": "in",
-     "completed": false,
-     "detail": "7:06 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "7:06",
+     "clock": "0:00",
      "home": {
       "id": "103",
       "abbr": "BC",
       "name": "Boston College",
       "rank": 99,
       "score": "28",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "164",
       "abbr": "RUTG",
       "name": "Rutgers",
       "rank": 99,
-      "score": "14",
-      "winner": null
+      "score": "21",
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "big10",
@@ -2667,26 +2667,26 @@
      "neutral": false,
      "venue": "David Booth Kansas Memorial Stadium",
      "tv": "FOX",
-     "state": "in",
-     "completed": false,
-     "detail": "3:46 - 3rd",
-     "period": 3,
-     "clock": "3:46",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2305",
       "abbr": "KU",
       "name": "Kansas",
       "rank": 99,
-      "score": "14",
-      "winner": null
+      "score": "21",
+      "winner": false
      },
      "away": {
       "id": "142",
       "abbr": "MIZ",
       "name": "Missouri",
       "rank": 23,
-      "score": "28",
-      "winner": null
+      "score": "38",
+      "winner": true
      },
      "homeConf": "big12",
      "awayConf": "sec",
