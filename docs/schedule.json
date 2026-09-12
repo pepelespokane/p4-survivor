@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-12T16:25:04+00:00",
+ "generated": "2026-09-12T18:18:02+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2700,15 +2700,15 @@
      "tv": "BTN",
      "state": "in",
      "completed": false,
-     "detail": "12:56 - 1st",
-     "period": 1,
-     "clock": "12:56",
+     "detail": "6:03 - 3rd",
+     "period": 3,
+     "clock": "6:03",
      "home": {
       "id": "84",
       "abbr": "IU",
       "name": "Indiana",
       "rank": 5,
-      "score": "7",
+      "score": "55",
       "winner": null
      },
      "away": {
@@ -2724,53 +2724,22 @@
      "day": "Sat"
     },
     {
-     "id": "401856782",
-     "kickoff": "2026-09-12T16:00Z",
-     "neutral": false,
-     "venue": "Boone Pickens Stadium",
-     "tv": "Disney+",
-     "state": "in",
-     "completed": false,
-     "detail": "Delayed",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "197",
-      "abbr": "OKST",
-      "name": "Oklahoma State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2483",
-      "abbr": "ORE",
-      "name": "Oregon",
-      "rank": 6,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401856683",
      "kickoff": "2026-09-12T16:00Z",
      "neutral": false,
      "venue": "Kyle Field",
      "tv": "ABC",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/12 - 12:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "10:19 - 3rd",
+     "period": 3,
+     "clock": "10:19",
      "home": {
       "id": "245",
       "abbr": "TA&M",
       "name": "Texas A&M",
       "rank": 10,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "away": {
@@ -2778,7 +2747,7 @@
       "abbr": "ASU",
       "name": "Arizona State",
       "rank": 99,
-      "score": "0",
+      "score": "13",
       "winner": null
      },
      "homeConf": "sec",
@@ -2791,17 +2760,17 @@
      "neutral": false,
      "venue": "Michigan Stadium",
      "tv": "FOX",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/12 - 12:00 PM EDT",
-     "period": 0,
+     "detail": "Halftime",
+     "period": 2,
      "clock": "0:00",
      "home": {
       "id": "130",
       "abbr": "MICH",
       "name": "Michigan",
       "rank": 99,
-      "score": "0",
+      "score": "10",
       "winner": null
      },
      "away": {
@@ -2824,15 +2793,15 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "13:43 - 1st",
-     "period": 1,
-     "clock": "13:43",
+     "detail": "4:42 - 3rd",
+     "period": 3,
+     "clock": "4:42",
      "home": {
       "id": "218",
       "abbr": "TEM",
       "name": "Temple",
       "rank": 99,
-      "score": "0",
+      "score": "3",
       "winner": null
      },
      "away": {
@@ -2840,7 +2809,7 @@
       "abbr": "PSU",
       "name": "Penn State",
       "rank": 16,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "homeConf": null,
@@ -2855,15 +2824,15 @@
      "tv": "TNT",
      "state": "in",
      "completed": false,
-     "detail": "13:03 - 1st",
-     "period": 1,
-     "clock": "13:03",
+     "detail": "Delayed",
+     "period": 2,
+     "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
       "name": "Kansas State",
       "rank": 99,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "away": {
@@ -2871,7 +2840,7 @@
       "abbr": "WSU",
       "name": "Washington State",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "big12",
@@ -2886,15 +2855,15 @@
      "tv": "ACC Network",
      "state": "in",
      "completed": false,
-     "detail": "14:08 - 1st",
-     "period": 1,
-     "clock": "14:08",
+     "detail": "6:35 - 3rd",
+     "period": 3,
+     "clock": "6:35",
      "home": {
       "id": "153",
       "abbr": "UNC",
       "name": "North Carolina",
       "rank": 99,
-      "score": "0",
+      "score": "28",
       "winner": null
      },
      "away": {
@@ -2915,17 +2884,17 @@
      "neutral": false,
      "venue": "Lane Stadium",
      "tv": "CW",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/12 - 12:00 PM EDT",
-     "period": 0,
+     "detail": "Halftime",
+     "period": 2,
      "clock": "0:00",
      "home": {
       "id": "259",
       "abbr": "VT",
       "name": "Virginia Tech",
       "rank": 99,
-      "score": "0",
+      "score": "34",
       "winner": null
      },
      "away": {
@@ -2933,7 +2902,7 @@
       "abbr": "ODU",
       "name": "Old Dominion",
       "rank": 99,
-      "score": "0",
+      "score": "6",
       "winner": null
      },
      "homeConf": "acc",
@@ -2948,15 +2917,15 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "13:15 - 1st",
-     "period": 1,
-     "clock": "13:15",
+     "detail": "3:39 - 3rd",
+     "period": 3,
+     "clock": "3:39",
      "home": {
       "id": "2509",
       "abbr": "PUR",
       "name": "Purdue",
       "rank": 99,
-      "score": "0",
+      "score": "13",
       "winner": null
      },
      "away": {
@@ -2964,7 +2933,7 @@
       "abbr": "WAKE",
       "name": "Wake Forest",
       "rank": 99,
-      "score": "0",
+      "score": "20",
       "winner": null
      },
      "homeConf": "big10",
@@ -2977,17 +2946,17 @@
      "neutral": false,
      "venue": "Sanford Stadium",
      "tv": "SEC Network",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/12 - 12:45 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "4:54 - 2nd",
+     "period": 2,
+     "clock": "4:54",
      "home": {
       "id": "61",
       "abbr": "UGA",
       "name": "Georgia",
       "rank": 2,
-      "score": "0",
+      "score": "49",
       "winner": null
      },
      "away": {
@@ -3008,17 +2977,17 @@
      "neutral": false,
      "venue": "Milan Puskar Stadium",
      "tv": "ESPN+",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/12 - 1:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "5:41 - 2nd",
+     "period": 2,
+     "clock": "5:41",
      "home": {
       "id": "277",
       "abbr": "WVU",
       "name": "West Virginia",
       "rank": 99,
-      "score": "0",
+      "score": "28",
       "winner": null
      },
      "away": {
@@ -3031,6 +3000,37 @@
      },
      "homeConf": "big12",
      "awayConf": null,
+     "day": "Sat"
+    },
+    {
+     "id": "401856782",
+     "kickoff": "2026-09-12T17:30Z",
+     "neutral": false,
+     "venue": "Boone Pickens Stadium",
+     "tv": "Disney+",
+     "state": "in",
+     "completed": false,
+     "detail": "End of 1st",
+     "period": 1,
+     "clock": "0:00",
+     "home": {
+      "id": "197",
+      "abbr": "OKST",
+      "name": "Oklahoma State",
+      "rank": 99,
+      "score": "3",
+      "winner": null
+     },
+     "away": {
+      "id": "2483",
+      "abbr": "ORE",
+      "name": "Oregon",
+      "rank": 6,
+      "score": "7",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big10",
      "day": "Sat"
     },
     {
