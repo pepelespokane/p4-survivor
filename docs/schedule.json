@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-12T21:31:10+00:00",
+ "generated": "2026-09-12T23:12:05+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -3041,15 +3041,15 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "End of 2nd",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "7:37 - 4th",
+     "period": 4,
+     "clock": "7:37",
      "home": {
       "id": "96",
       "abbr": "UK",
       "name": "Kentucky",
       "rank": 99,
-      "score": "14",
+      "score": "17",
       "winner": null
      },
      "away": {
@@ -3057,7 +3057,7 @@
       "abbr": "ALA",
       "name": "Alabama",
       "rank": 12,
-      "score": "13",
+      "score": "38",
       "winner": null
      },
      "homeConf": "sec",
@@ -3072,15 +3072,15 @@
      "tv": "FOX",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "2:00 - 4th",
+     "period": 4,
+     "clock": "2:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
       "name": "BYU",
       "rank": 15,
-      "score": "14",
+      "score": "28",
       "winner": null
      },
      "away": {
@@ -3103,15 +3103,15 @@
      "tv": "BTN",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "detail": "End of 4th",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
       "name": "Washington",
       "rank": 19,
-      "score": "10",
+      "score": "16",
       "winner": null
      },
      "away": {
@@ -3119,7 +3119,7 @@
       "abbr": "USU",
       "name": "Utah State",
       "rank": 99,
-      "score": "7",
+      "score": "14",
       "winner": null
      },
      "homeConf": "big10",
@@ -3134,15 +3134,15 @@
      "tv": "CBS",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "2:00 - 4th",
+     "period": 4,
+     "clock": "2:00",
      "home": {
       "id": "135",
       "abbr": "MINN",
       "name": "Minnesota",
       "rank": 99,
-      "score": "6",
+      "score": "13",
       "winner": null
      },
      "away": {
@@ -3150,7 +3150,7 @@
       "abbr": "MSST",
       "name": "Mississippi State",
       "rank": 99,
-      "score": "28",
+      "score": "38",
       "winner": null
      },
      "homeConf": "big10",
@@ -3165,15 +3165,15 @@
      "tv": "ESPN+",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "6:13 - 4th",
+     "period": 4,
+     "clock": "6:13",
      "home": {
       "id": "38",
       "abbr": "COLO",
       "name": "Colorado",
       "rank": 99,
-      "score": "42",
+      "score": "52",
       "winner": null
      },
      "away": {
@@ -3181,7 +3181,7 @@
       "abbr": "WEB",
       "name": "Weber State",
       "rank": 99,
-      "score": "14",
+      "score": "21",
       "winner": null
      },
      "homeConf": "big12",
@@ -3196,15 +3196,15 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "12:48 - 2nd",
-     "period": 2,
-     "clock": "12:48",
+     "detail": "1:21 - 3rd",
+     "period": 3,
+     "clock": "1:21",
      "home": {
       "id": "221",
       "abbr": "PITT",
       "name": "Pittsburgh",
       "rank": 99,
-      "score": "3",
+      "score": "12",
       "winner": null
      },
      "away": {
@@ -3227,15 +3227,15 @@
      "tv": "ACC Network",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "6:59 - 4th",
+     "period": 4,
+     "clock": "6:59",
      "home": {
       "id": "183",
       "abbr": "SYR",
       "name": "Syracuse",
       "rank": 99,
-      "score": "12",
+      "score": "18",
       "winner": null
      },
      "away": {
@@ -3243,7 +3243,7 @@
       "abbr": "CAL",
       "name": "California",
       "rank": 99,
-      "score": "7",
+      "score": "14",
       "winner": null
      },
      "homeConf": "acc",
@@ -3258,15 +3258,15 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "4:21 - 4th",
+     "period": 4,
+     "clock": "4:21",
      "home": {
       "id": "356",
       "abbr": "ILL",
       "name": "Illinois",
       "rank": 99,
-      "score": "24",
+      "score": "27",
       "winner": null
      },
      "away": {
@@ -3274,7 +3274,7 @@
       "abbr": "DUKE",
       "name": "Duke",
       "rank": 99,
-      "score": "21",
+      "score": "31",
       "winner": null
      },
      "homeConf": "big10",
@@ -3287,18 +3287,18 @@
      "neutral": false,
      "venue": "Spartan Stadium",
      "tv": "BTN",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "127",
       "abbr": "MSU",
       "name": "Michigan State",
       "rank": 99,
-      "score": "14",
-      "winner": null
+      "score": "35",
+      "winner": true
      },
      "away": {
       "id": "2199",
@@ -3306,7 +3306,7 @@
       "name": "Eastern Michigan",
       "rank": 99,
       "score": "7",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": null,
@@ -3318,26 +3318,26 @@
      "neutral": false,
      "venue": "Pratt & Whitney Stadium",
      "tv": "CBSSN",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "41",
       "abbr": "CONN",
       "name": "UConn",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "14",
+      "winner": false
      },
      "away": {
       "id": "120",
       "abbr": "MD",
       "name": "Maryland",
       "rank": 99,
-      "score": "17",
-      "winner": null
+      "score": "38",
+      "winner": true
      },
      "homeConf": null,
      "awayConf": "big10",
@@ -3351,15 +3351,15 @@
      "tv": "ACCNX",
      "state": "in",
      "completed": false,
-     "detail": "2:00 - 2nd",
-     "period": 2,
-     "clock": "2:00",
+     "detail": "9:01 - 4th",
+     "period": 4,
+     "clock": "9:01",
      "home": {
       "id": "2567",
       "abbr": "SMU",
       "name": "SMU",
       "rank": 17,
-      "score": "28",
+      "score": "56",
       "winner": null
      },
      "away": {
@@ -3367,7 +3367,7 @@
       "abbr": "UCD",
       "name": "UC Davis",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "acc",
@@ -3382,15 +3382,15 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "8:50 - 2nd",
-     "period": 2,
-     "clock": "8:50",
+     "detail": "0:47 - 3rd",
+     "period": 3,
+     "clock": "0:47",
      "home": {
       "id": "238",
       "abbr": "VAN",
       "name": "Vanderbilt",
       "rank": 99,
-      "score": "14",
+      "score": "28",
       "winner": null
      },
      "away": {
@@ -3398,7 +3398,7 @@
       "abbr": "DEL",
       "name": "Delaware",
       "rank": 99,
-      "score": "3",
+      "score": "17",
       "winner": null
      },
      "homeConf": "sec",
@@ -3411,17 +3411,17 @@
      "neutral": false,
      "venue": "Ben Hill Griffin Stadium",
      "tv": "SECN+",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/12 - 5:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "2:04 - 2nd",
+     "period": 2,
+     "clock": "2:04",
      "home": {
       "id": "57",
       "abbr": "FLA",
       "name": "Florida",
       "rank": 99,
-      "score": "0",
+      "score": "38",
       "winner": null
      },
      "away": {
@@ -3429,7 +3429,7 @@
       "abbr": "CAM",
       "name": "Campbell",
       "rank": 99,
-      "score": "0",
+      "score": "3",
       "winner": null
      },
      "homeConf": "sec",
