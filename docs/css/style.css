@@ -453,5 +453,18 @@ tbody tr.dead td:first-child, tbody tr.dead td:nth-child(2) { opacity: .75; }
 
 /* Pick status, visible before kickoff. "pick in" and "no pick" have to read
    differently at a glance; the whole point is spotting the gaps. */
-.pill.in   { background: rgba(46,160,67,.16); color: #63d67f; }
-.pill.none { background: rgba(209,57,74,.16); color: #ff8a95; font-weight: 600; }
+/* Amber, because the other three pill colours are already spoken for:
+   green .win = came in and won, blue .pend = still playing, red .loss = lost.
+   "pick in" is none of those, it is a submission with no result yet, so it gets
+   the site accent (#f5a623, same as .notice) rather than a fifth invented hue. */
+.pill.in { background: rgba(245,166,35,.16); color: #ffc75a; }
+
+/* Hollow and dashed so an absence does not look like a result. Solid red is a
+   pick that lost; this is a pick that was never made. */
+.pill.none {
+  background: transparent;
+  color: #ff8a95;
+  border: 1px dashed rgba(209,57,74,.6);
+  padding: 3px 6px;
+  font-weight: 700;
+}
