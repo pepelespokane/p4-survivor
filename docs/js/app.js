@@ -124,6 +124,10 @@ function pickVisible(pick) {
   // and masks the team on the ones you are not allowed to see yet. `hidden` is
   // authoritative; the checks below are the pre-migration fallback.
   if (pick.hidden) return false;
+  // A masked row has no team, whatever the flag says. Checking the payload
+  // itself rather than trusting the flag is what keeps a null `hidden` from
+  // rendering an empty pill where a team name should be.
+  if (!pick.team_id) return false;
   if (!POOL.hidePicksUntilKickoff) return true;
   if (state.me && pick.player_id === state.me.id) return true;
   const g = gameFor(pick.week, pick.team_id);
@@ -210,7 +214,7 @@ function elimConf(playerId, conf) {
 
     if (pk) {
       // Hidden means the team has not kicked off, so by definition still riding.
-      if (pk.hidden) return null;
+      if (pk.hidden || !pk.team_id) return null;
       const o = outcome(w, pk.team_id);
       if (o === 'loss') return { week: w, reason: lossDetail(w, pk.team_id) };
       if (o === 'pending') return null;      // still riding on this one

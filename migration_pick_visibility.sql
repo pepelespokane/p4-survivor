@@ -46,11 +46,15 @@ as $$
   left join survivor_games g
     on g.week = k.week and g.team_id = k.team_id
   cross join lateral (
-    select (
+    -- coalesce is load bearing. With no token the subquery yields NULL, so
+    -- `k.player_id = NULL` is NULL, and `false or false or NULL` is NULL rather
+    -- than false. That made `not reveal` NULL, so every hidden pick came back
+    -- with hidden = null, which is falsy in JavaScript and read as "visible".
+    select coalesce(
          g.kickoff is null          -- no game row, nothing to protect
       or g.kickoff <= now()         -- kicked off, so it is public
       or k.player_id = (select p.id from survivor_players p where p.token = p_token)
-    ) as reveal
+    , false) as reveal
   ) v;
 $$;
 
