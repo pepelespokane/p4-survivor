@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-12T18:18:02+00:00",
+ "generated": "2026-09-12T18:32:43+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2700,9 +2700,9 @@
      "tv": "BTN",
      "state": "in",
      "completed": false,
-     "detail": "6:03 - 3rd",
+     "detail": "2:00 - 3rd",
      "period": 3,
-     "clock": "6:03",
+     "clock": "2:00",
      "home": {
       "id": "84",
       "abbr": "IU",
@@ -2731,9 +2731,9 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "10:19 - 3rd",
+     "detail": "8:07 - 3rd",
      "period": 3,
-     "clock": "10:19",
+     "clock": "8:07",
      "home": {
       "id": "245",
       "abbr": "TA&M",
@@ -2762,9 +2762,9 @@
      "tv": "FOX",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "13:31 - 3rd",
+     "period": 3,
+     "clock": "13:31",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -2793,9 +2793,9 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "4:42 - 3rd",
+     "detail": "0:08 - 3rd",
      "period": 3,
-     "clock": "4:42",
+     "clock": "0:08",
      "home": {
       "id": "218",
       "abbr": "TEM",
@@ -2809,7 +2809,7 @@
       "abbr": "PSU",
       "name": "Penn State",
       "rank": 16,
-      "score": "17",
+      "score": "20",
       "winner": null
      },
      "homeConf": null,
@@ -2855,15 +2855,15 @@
      "tv": "ACC Network",
      "state": "in",
      "completed": false,
-     "detail": "6:35 - 3rd",
+     "detail": "3:30 - 3rd",
      "period": 3,
-     "clock": "6:35",
+     "clock": "3:30",
      "home": {
       "id": "153",
       "abbr": "UNC",
       "name": "North Carolina",
       "rank": 99,
-      "score": "28",
+      "score": "35",
       "winner": null
      },
      "away": {
@@ -2917,9 +2917,9 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "3:39 - 3rd",
+     "detail": "1:24 - 3rd",
      "period": 3,
-     "clock": "3:39",
+     "clock": "1:24",
      "home": {
       "id": "2509",
       "abbr": "PUR",
@@ -2948,9 +2948,9 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "4:54 - 2nd",
+     "detail": "2:00 - 2nd",
      "period": 2,
-     "clock": "4:54",
+     "clock": "2:00",
      "home": {
       "id": "61",
       "abbr": "UGA",
@@ -2979,9 +2979,9 @@
      "tv": "ESPN+",
      "state": "in",
      "completed": false,
-     "detail": "5:41 - 2nd",
+     "detail": "3:00 - 2nd",
      "period": 2,
-     "clock": "5:41",
+     "clock": "3:00",
      "home": {
       "id": "277",
       "abbr": "WVU",
@@ -3010,9 +3010,9 @@
      "tv": "Disney+",
      "state": "in",
      "completed": false,
-     "detail": "End of 1st",
-     "period": 1,
-     "clock": "0:00",
+     "detail": "13:31 - 2nd",
+     "period": 2,
+     "clock": "13:31",
      "home": {
       "id": "197",
       "abbr": "OKST",
