@@ -240,16 +240,42 @@ hour when Pacific drops to standard time on Nov 1, mid-season. The workflow just
 hourly Thursday through Saturday and the script decides; each send is logged under its
 own `kind` so the extra runs are no-ops.
 
-### Troubleshooting picks
+### Commissioner tools
 
-`diagnose_picks.py` prints every player's picks for the current week with submit
-timestamps, flags any that landed after the last digest ran, and lists who is genuinely
-missing. Read-only, and it needs the service key because the publishable key cannot see
-the picks table:
+Both need the service key (Supabase -> Project Settings -> API Keys -> `service_role`),
+because the publishable key cannot see the players or picks tables:
 
     set SUPABASE_SERVICE_KEY=<service_role key>
+
+**`diagnose_picks.py`** - read-only. Prints every player's picks for the current week
+with submit timestamps, flags any that landed after the last digest ran, and lists who
+is genuinely missing. The timestamps are the point: they separate "the reminder went out
+before they picked" from "the save never landed".
+
     python diagnose_picks.py
     python diagnose_picks.py sean-b bo-j     # drill into specific players, all weeks
+
+**`add_picks.py`** - enter a player's picks for them, by team name, for when somebody
+cannot get the site to work and texts them in instead.
+
+    python add_picks.py bo-j Colorado Washington "South Carolina"            # shows the plan
+    python add_picks.py bo-j Colorado Washington "South Carolina" --commit   # submits
+
+It does **not** write to `survivor_picks` directly. It reads that player's token and
+calls `survivor_save_picks`, the same function the browser calls, so the database applies
+exactly the checks it would if they had clicked Save themselves: the team plays that week
+in that conference, its game has not kicked off, the league is not already committed, and
+the team has not been used earlier in the season. A pick that breaks a rule is reported
+and skipped, and the rest still save. The conference is derived from the team, so you pass
+team names only.
+
+It defaults to a dry run. Nothing is written without `--commit`.
+
+**A pick entered this way is a normal pick**, stamped at the moment it is submitted. That
+is deliberate: the tool cannot be used to backdate anything, because a team whose game has
+started is rejected the same as it would be in the browser. If you enter picks for someone,
+say so in the group - the pool should see the commissioner writing to another player's
+account as a thing that happened, not something discovered later.
 
 ## Rules the code enforces
 
