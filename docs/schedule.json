@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-12T21:12:54+00:00",
+ "generated": "2026-09-12T21:31:10+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -3007,19 +3007,19 @@
      "kickoff": "2026-09-12T17:30Z",
      "neutral": false,
      "venue": "Boone Pickens Stadium",
-     "tv": "Disney+",
-     "state": "in",
-     "completed": false,
-     "detail": "3:11 - 4th",
+     "tv": "ESPNEWS",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "3:11",
+     "clock": "0:00",
      "home": {
       "id": "197",
       "abbr": "OKST",
       "name": "Oklahoma State",
       "rank": 99,
       "score": "39",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "2483",
@@ -3027,7 +3027,7 @@
       "name": "Oregon",
       "rank": 6,
       "score": "31",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big10",
@@ -3041,9 +3041,9 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "2:09 - 2nd",
+     "detail": "End of 2nd",
      "period": 2,
-     "clock": "2:09",
+     "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
@@ -3072,9 +3072,9 @@
      "tv": "FOX",
      "state": "in",
      "completed": false,
-     "detail": "2:07 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "2:07",
+     "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
@@ -3088,7 +3088,7 @@
       "abbr": "ARIZ",
       "name": "Arizona",
       "rank": 99,
-      "score": "10",
+      "score": "17",
       "winner": null
      },
      "homeConf": "big12",
@@ -3103,9 +3103,9 @@
      "tv": "BTN",
      "state": "in",
      "completed": false,
-     "detail": "0:10 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "0:10",
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
@@ -3134,15 +3134,15 @@
      "tv": "CBS",
      "state": "in",
      "completed": false,
-     "detail": "2:00 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "2:00",
+     "clock": "0:00",
      "home": {
       "id": "135",
       "abbr": "MINN",
       "name": "Minnesota",
       "rank": 99,
-      "score": "3",
+      "score": "6",
       "winner": null
      },
      "away": {
@@ -3165,15 +3165,15 @@
      "tv": "ESPN+",
      "state": "in",
      "completed": false,
-     "detail": "2:37 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "2:37",
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
       "name": "Colorado",
       "rank": 99,
-      "score": "35",
+      "score": "42",
       "winner": null
      },
      "away": {
@@ -3196,15 +3196,15 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "6:08 - 1st",
-     "period": 1,
-     "clock": "6:08",
+     "detail": "12:48 - 2nd",
+     "period": 2,
+     "clock": "12:48",
      "home": {
       "id": "221",
       "abbr": "PITT",
       "name": "Pittsburgh",
       "rank": 99,
-      "score": "0",
+      "score": "3",
       "winner": null
      },
      "away": {
@@ -3227,9 +3227,9 @@
      "tv": "ACC Network",
      "state": "in",
      "completed": false,
-     "detail": "2:00 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "2:00",
+     "clock": "0:00",
      "home": {
       "id": "183",
       "abbr": "SYR",
@@ -3258,15 +3258,15 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "1:52 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "1:52",
+     "clock": "0:00",
      "home": {
       "id": "356",
       "abbr": "ILL",
       "name": "Illinois",
       "rank": 99,
-      "score": "17",
+      "score": "24",
       "winner": null
      },
      "away": {
@@ -3274,7 +3274,7 @@
       "abbr": "DUKE",
       "name": "Duke",
       "rank": 99,
-      "score": "14",
+      "score": "21",
       "winner": null
      },
      "homeConf": "big10",
@@ -3289,9 +3289,9 @@
      "tv": "BTN",
      "state": "in",
      "completed": false,
-     "detail": "1:50 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "1:50",
+     "clock": "0:00",
      "home": {
       "id": "127",
       "abbr": "MSU",
@@ -3320,9 +3320,9 @@
      "tv": "CBSSN",
      "state": "in",
      "completed": false,
-     "detail": "0:59 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "0:59",
+     "clock": "0:00",
      "home": {
       "id": "41",
       "abbr": "CONN",
@@ -3336,7 +3336,7 @@
       "abbr": "MD",
       "name": "Maryland",
       "rank": 99,
-      "score": "14",
+      "score": "17",
       "winner": null
      },
      "homeConf": null,
@@ -3351,9 +3351,9 @@
      "tv": "ACCNX",
      "state": "in",
      "completed": false,
-     "detail": "10:27 - 2nd",
+     "detail": "2:00 - 2nd",
      "period": 2,
-     "clock": "10:27",
+     "clock": "2:00",
      "home": {
       "id": "2567",
       "abbr": "SMU",
@@ -3382,15 +3382,15 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "End of 1st",
-     "period": 1,
-     "clock": "0:00",
+     "detail": "8:50 - 2nd",
+     "period": 2,
+     "clock": "8:50",
      "home": {
       "id": "238",
       "abbr": "VAN",
       "name": "Vanderbilt",
       "rank": 99,
-      "score": "13",
+      "score": "14",
       "winner": null
      },
      "away": {
@@ -3398,7 +3398,7 @@
       "abbr": "DEL",
       "name": "Delaware",
       "rank": 99,
-      "score": "0",
+      "score": "3",
       "winner": null
      },
      "homeConf": "sec",
