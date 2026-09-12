@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-11T23:53:05+00:00",
+ "generated": "2026-09-12T03:05:07+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -2538,68 +2538,6 @@
      "day": "Thu"
     },
     {
-     "id": "401858215",
-     "kickoff": "2026-09-11T23:00Z",
-     "neutral": false,
-     "venue": "L&N Federal Credit Union Stadium",
-     "tv": "ACC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "13:24 - 2nd",
-     "period": 2,
-     "clock": "13:24",
-     "home": {
-      "id": "97",
-      "abbr": "LOU",
-      "name": "Louisville",
-      "rank": 24,
-      "score": "17",
-      "winner": null
-     },
-     "away": {
-      "id": "222",
-      "abbr": "VILL",
-      "name": "Villanova",
-      "rank": 99,
-      "score": "10",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": null,
-     "day": "Fri"
-    },
-    {
-     "id": "401858220",
-     "kickoff": "2026-09-11T23:00Z",
-     "neutral": false,
-     "venue": "Scott Stadium",
-     "tv": "ACCNX",
-     "state": "in",
-     "completed": false,
-     "detail": "End of 1st",
-     "period": 1,
-     "clock": "0:00",
-     "home": {
-      "id": "258",
-      "abbr": "UVA",
-      "name": "Virginia",
-      "rank": 25,
-      "score": "21",
-      "winner": null
-     },
-     "away": {
-      "id": "2450",
-      "abbr": "NORF",
-      "name": "Norfolk State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": null,
-     "day": "Fri"
-    },
-    {
      "id": "401858222",
      "kickoff": "2026-09-11T23:00Z",
      "neutral": false,
@@ -2607,15 +2545,15 @@
      "tv": "ESPNU",
      "state": "in",
      "completed": false,
-     "detail": "End of 1st",
-     "period": 1,
-     "clock": "0:00",
+     "detail": "1:42 - 3rd",
+     "period": 3,
+     "clock": "1:42",
      "home": {
       "id": "152",
       "abbr": "NCSU",
       "name": "NC State",
       "rank": 99,
-      "score": "21",
+      "score": "63",
       "winner": null
      },
      "away": {
@@ -2631,6 +2569,68 @@
      "day": "Fri"
     },
     {
+     "id": "401858215",
+     "kickoff": "2026-09-11T23:00Z",
+     "neutral": false,
+     "venue": "L&N Federal Credit Union Stadium",
+     "tv": "ACC Network",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
+     "home": {
+      "id": "97",
+      "abbr": "LOU",
+      "name": "Louisville",
+      "rank": 24,
+      "score": "59",
+      "winner": true
+     },
+     "away": {
+      "id": "222",
+      "abbr": "VILL",
+      "name": "Villanova",
+      "rank": 99,
+      "score": "13",
+      "winner": false
+     },
+     "homeConf": "acc",
+     "awayConf": null,
+     "day": "Fri"
+    },
+    {
+     "id": "401858220",
+     "kickoff": "2026-09-11T23:00Z",
+     "neutral": false,
+     "venue": "Scott Stadium",
+     "tv": "ACCNX",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
+     "home": {
+      "id": "258",
+      "abbr": "UVA",
+      "name": "Virginia",
+      "rank": 25,
+      "score": "59",
+      "winner": true
+     },
+     "away": {
+      "id": "2450",
+      "abbr": "NORF",
+      "name": "Norfolk State",
+      "rank": 99,
+      "score": "3",
+      "winner": false
+     },
+     "homeConf": "acc",
+     "awayConf": null,
+     "day": "Fri"
+    },
+    {
      "id": "401858214",
      "kickoff": "2026-09-11T23:30Z",
      "neutral": false,
@@ -2638,15 +2638,15 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "11:18 - 1st",
-     "period": 1,
-     "clock": "11:18",
+     "detail": "7:06 - 4th",
+     "period": 4,
+     "clock": "7:06",
      "home": {
       "id": "103",
       "abbr": "BC",
       "name": "Boston College",
       "rank": 99,
-      "score": "0",
+      "score": "28",
       "winner": null
      },
      "away": {
@@ -2654,7 +2654,7 @@
       "abbr": "RUTG",
       "name": "Rutgers",
       "rank": 99,
-      "score": "0",
+      "score": "14",
       "winner": null
      },
      "homeConf": "acc",
@@ -2667,17 +2667,17 @@
      "neutral": false,
      "venue": "David Booth Kansas Memorial Stadium",
      "tv": "FOX",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/11 - 8:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "3:46 - 3rd",
+     "period": 3,
+     "clock": "3:46",
      "home": {
       "id": "2305",
       "abbr": "KU",
       "name": "Kansas",
       "rank": 99,
-      "score": "0",
+      "score": "14",
       "winner": null
      },
      "away": {
@@ -2685,7 +2685,7 @@
       "abbr": "MIZ",
       "name": "Missouri",
       "rank": 23,
-      "score": "0",
+      "score": "28",
       "winner": null
      },
      "homeConf": "big12",
