@@ -750,6 +750,21 @@ function renderBoard() {
   g.append(sc);
 }
 
+/* Leagues where the on-screen selection is not what the database holds.
+   Everything about unsaved state reads from this: the status line, the Save
+   button, and the leave-the-page warning. state.draft is seeded from the saved
+   picks in renderPicks(), so an untouched league compares equal and a league
+   with nothing selected is not counted. */
+function unsavedConfs() {
+  if (!state.me) return [];
+  return POOL.conferences.filter((c) => {
+    const want = state.draft[c.key];
+    if (!want) return false;
+    const pk = pickAt(state.me.id, state.week, c.key);
+    return !pk || pk.team_id !== want;
+  });
+}
+
 /* ---------------- view: make picks ---------------- */
 
 function renderPicks() {
@@ -867,16 +882,35 @@ function renderPicks() {
     grid.append(card);
   }
 
-  const chosen = POOL.conferences.filter((c) => state.draft[c.key]).length;
+  // This line used to count SELECTED leagues, which meant it read "4 of 4" for
+  // somebody who had selected four teams and saved none of them. It counts what
+  // the database actually holds now, and calls out unsaved work separately.
   const live = POOL.conferences.filter((c) => !outByConf[c.key]);
-  const liveChosen = live.filter((c) => state.draft[c.key]).length;
-  $('#saveBtn').disabled = chosen === 0;
-  $('#saveNote').textContent = live.length === 0
-    ? 'All four of your runs are over. Picks are just for fun now.'
-    : `${liveChosen} of ${live.length} live league${live.length === 1 ? '' : 's'} selected` +
-      (liveChosen < live.length
-        ? ' - skipping one ends your run in that league'
-        : '');
+  const liveSaved = live.filter((c) => pickAt(state.me.id, w, c.key)).length;
+  const unsaved = unsavedConfs();
+  const note = $('#saveNote');
+
+  $('#saveBtn').disabled = unsaved.length === 0;
+
+  if (live.length === 0) {
+    note.className = 'muted';
+    note.textContent = 'All four of your runs are over. Picks are just for fun now.';
+  } else {
+    const head = `${liveSaved} of ${live.length} live league` +
+      `${live.length === 1 ? '' : 's'} saved for week ${wk.poolWeek}`;
+    if (unsaved.length) {
+      note.className = 'savebad';
+      note.textContent = head + ` - ${unsaved.length} unsaved ` +
+        `selection${unsaved.length === 1 ? '' : 's'} (${unsaved.map((c) => c.short).join(', ')}). ` +
+        `Click Save picks.`;
+    } else if (liveSaved < live.length) {
+      note.className = 'savebad';
+      note.textContent = head + ' - skipping one ends your run in that league';
+    } else {
+      note.className = 'savegood';
+      note.textContent = head + '.';
+    }
+  }
 }
 
 async function savePicks() {
@@ -1198,6 +1232,15 @@ async function boot() {
       msg.textContent = err.message;
     }
   };
+
+  // Selecting a team highlights the row and prints "Selected: X", which looks
+  // like a completed action. Nothing was written until Save is clicked, so leaving
+  // with a pending selection has to be an explicit choice.
+  window.addEventListener('beforeunload', (e) => {
+    if (!unsavedConfs().length) return;
+    e.preventDefault();
+    e.returnValue = '';        // Chrome and Safari need this to show the prompt
+  });
 
   $('#teamsWho').onchange = renderTeams;
 
