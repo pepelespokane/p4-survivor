@@ -29,21 +29,20 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
       - name: Pull ESPN schedule and results
         run: python build_schedule.py
 
-      - name: Push kickoff times into the database
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-        run: python sync_games.py
-
+      # Committing BEFORE the database sync is deliberate. The two are
+      # independent: schedule.json is what the website reads, survivor_games is
+      # what enforces pick locking. When Supabase returned 504s on 9/12-9/13 2026
+      # the ESPN pull had already succeeded, but the commit never ran, so the site
+      # sat on stale scores over a Saturday for no reason.
       - name: Commit if the data changed
         run: |
           if git diff --quiet -- docs/schedule.json; then
@@ -55,3 +54,9 @@ jobs:
           git add docs/schedule.json
           git commit -m "Refresh schedule and results ($(date -u '+%Y-%m-%d %H:%M UTC'))"
           git push
+
+      - name: Push kickoff times into the database
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python sync_games.py

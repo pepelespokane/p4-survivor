@@ -32,6 +32,7 @@ import os
 import smtplib
 import ssl
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -51,6 +52,9 @@ REMINDER_DOW = 3          # Monday = 0, so 3 = Thursday
 REMINDER_HOUR = 8         # 8am
 REMINDER_TZ = "America/Los_Angeles"
 LEAD_HOURS = 8
+
+RETRY_CODES = (429, 500, 502, 503, 504)
+RETRIES = 4
 
 CONFS = [("acc", "ACC"), ("big10", "Big Ten"), ("big12", "Big 12"), ("sec", "SEC")]
 
@@ -86,13 +90,27 @@ def sb(method, path, body=None, params=None):
         "Content-Type": "application/json",
         "Prefer": "return=representation",
     })
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            raw = r.read().decode()
-            return json.loads(raw) if raw.strip() else []
-    except urllib.error.HTTPError as e:
-        detail = e.read().decode()[:300]
-        raise RuntimeError(method + " " + path + " -> " + str(e.code) + ": " + detail)
+
+    # Supabase throws the occasional 504. Without this a digest slips a whole hour
+    # to the next cron, which for the Thursday 4pm check means 5pm.
+    last = ""
+    for attempt in range(RETRIES):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                raw = r.read().decode()
+                return json.loads(raw) if raw.strip() else []
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode()[:300]        # body can only be read once
+            last = str(e.code) + ": " + detail
+            if e.code not in RETRY_CODES:
+                raise RuntimeError(method + " " + path + " -> " + last)
+        except (urllib.error.URLError, TimeoutError) as e:
+            last = "network: " + str(getattr(e, "reason", e))
+        if attempt < RETRIES - 1:
+            time.sleep(3 * (2 ** attempt))          # 3s, 6s, 12s
+
+    raise RuntimeError(method + " " + path + " -> gave up after "
+                       + str(RETRIES) + " attempts. Last: " + last)
 
 
 # ----------------------------------------------------------------- schedule

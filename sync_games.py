@@ -18,6 +18,7 @@ Environment:
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -26,7 +27,15 @@ from pathlib import Path
 
 SB_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
 SB_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
-BATCH = 500
+BATCH = 200
+
+# Supabase's gateway returns 504 on a large upsert now and then, most often on a
+# Saturday when every row is changing at once. Three failures on 9/12-9/13 2026
+# were all "POST survivor_games -> 504", and every one of them would have
+# succeeded on a second attempt. Retry the transient codes rather than failing
+# the whole workflow run.
+RETRY_CODES = (429, 500, 502, 503, 504)
+RETRIES = 4
 
 
 def sb(method, path, body=None, params=None, prefer=None):
@@ -41,13 +50,31 @@ def sb(method, path, body=None, params=None, prefer=None):
         "Prefer": prefer or "return=minimal",
     }
     req = urllib.request.Request(url, data=data, method=method, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=45) as r:
-            raw = r.read().decode()
-            return json.loads(raw) if raw.strip() else []
-    except urllib.error.HTTPError as e:
-        raise RuntimeError(method + " " + path + " -> " + str(e.code) + ": "
-                           + e.read().decode()[:400])
+
+    last = ""
+    for attempt in range(RETRIES):
+        try:
+            with urllib.request.urlopen(req, timeout=45) as r:
+                raw = r.read().decode()
+                return json.loads(raw) if raw.strip() else []
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode()[:400]        # body can only be read once
+            last = str(e.code) + ": " + detail
+            # 4xx other than 429 means we sent something wrong; retrying will not
+            # help and would just hide the real error.
+            if e.code not in RETRY_CODES:
+                raise RuntimeError(method + " " + path + " -> " + last)
+        except (urllib.error.URLError, TimeoutError) as e:
+            last = "network: " + str(getattr(e, "reason", e))
+
+        if attempt < RETRIES - 1:
+            wait = 3 * (2 ** attempt)               # 3s, 6s, 12s
+            print("  " + method + " " + path + " failed (" + last
+                  + "), retrying in " + str(wait) + "s")
+            time.sleep(wait)
+
+    raise RuntimeError(method + " " + path + " -> gave up after "
+                       + str(RETRIES) + " attempts. Last: " + last)
 
 
 def main():
