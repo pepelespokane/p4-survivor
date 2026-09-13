@@ -87,10 +87,12 @@ function timeLabel(g) {
  *  ESPN's week 1 bucket also holds the Aug 29 openers, a full week early. Anchor
  *  on the Saturday that carries the most games, then take the first kickoff from
  *  the three days before it, so Thursday and Friday games still close the week. */
-function weekOpens(w) {
+/** The Saturday a pool week is built around: the one carrying the most games.
+ *  ESPN parks stray Week 0 games in the week 1 bucket, so the busiest Saturday is
+ *  a steadier anchor than the earliest kickoff. Returns 'YYYY-MM-DD' or null. */
+function weekAnchor(w) {
   const wk = weekData(w);
   if (!wk || !wk.games.length) return null;
-
   const byDate = {};
   for (const g of wk.games) {
     if (g.day !== 'Sat') continue;
@@ -98,9 +100,53 @@ function weekOpens(w) {
     byDate[d] = (byDate[d] || 0) + 1;
   }
   const dates = Object.keys(byDate);
-  if (!dates.length) return Math.min(...wk.games.map((g) => kickoff(g).getTime()));
+  if (!dates.length) return null;
+  return dates.sort((a, b) => byDate[b] - byDate[a] || a.localeCompare(b))[0];
+}
 
-  const anchor = dates.sort((a, b) => byDate[b] - byDate[a] || a.localeCompare(b))[0];
+/** How far Pacific wall-clock runs behind UTC at an instant, in ms. Negative. */
+function ptOffset(t) {
+  const d = new Date(t);
+  const asUTC = new Date(d.toLocaleString('en-US', { timeZone: 'UTC' }));
+  const asPT = new Date(d.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
+  return asPT.getTime() - asUTC.getTime();
+}
+
+/** The UTC instant of a Pacific wall-clock hour on a 'YYYY-MM-DD' date. The
+ *  first guess uses the wrong offset, so correct once; that always converges
+ *  because noon is nowhere near the 2am DST switch. */
+function ptInstant(ymd, hour) {
+  const [y, m, d] = ymd.split('-').map(Number);
+  const naive = Date.UTC(y, m - 1, d, hour);
+  let t = naive;
+  for (let i = 0; i < 2; i++) t = naive - ptOffset(t);
+  return t;
+}
+
+/** A pool week stays current until NOON PACIFIC ON THE MONDAY after its games,
+ *  rather than flipping the moment the last Saturday game kicks off. The point is
+ *  that the weekend's results stay on screen long enough for people to look at
+ *  them. Falls back to the last kickoff when a week has no Saturday anchor. */
+function weekHoldsUntil(w) {
+  const anchor = weekAnchor(w);
+  const wk = weekData(w);
+  if (!anchor) {
+    return wk && wk.games.length
+      ? Math.max(...wk.games.map((g) => kickoff(g).getTime()))
+      : 0;
+  }
+  const [y, m, d] = anchor.split('-').map(Number);
+  const mon = new Date(Date.UTC(y, m - 1, d) + 2 * 86400000);
+  const ymd = mon.toISOString().slice(0, 10);
+  return ptInstant(ymd, 12);
+}
+
+function weekOpens(w) {
+  const wk = weekData(w);
+  if (!wk || !wk.games.length) return null;
+
+  const anchor = weekAnchor(w);
+  if (!anchor) return Math.min(...wk.games.map((g) => kickoff(g).getTime()));
   const floor = new Date(anchor + 'T00:00:00Z').getTime() - 3 * 86400000;
   const live = wk.games.filter((g) => kickoff(g).getTime() >= floor);
   const pool = live.length ? live : wk.games;
@@ -136,8 +182,9 @@ function pickVisible(pick) {
 
 /** The week to land people on: the first one with a game still to kick off. */
 function currentWeek() {
+  const now = Date.now();
   for (const wk of state.sched.weeks) {
-    if (wk.games.some((g) => !started(g))) return wk.week;
+    if (now < weekHoldsUntil(wk.week)) return wk.week;
   }
   return state.sched.weeks[state.sched.weeks.length - 1].week;
 }
@@ -798,7 +845,18 @@ function renderPicks() {
   for (const c of POOL.conferences) outByConf[c.key] = elimConf(state.me.id, c.key);
   const deadConfs = POOL.conferences.filter((c) => outByConf[c.key]);
 
-  const banner = deadConfs.length
+  // The site now holds on a week until Monday noon Pacific so the weekend's
+  // results stay up. That means Sunday visitors land on a week where every game
+  // has kicked off, which looks broken unless we say what is going on.
+  const nextWk = state.sched.weeks.find((x) => x.week > w && x.games.some((g) => !started(g)));
+  const allLocked = wk.games.every((g) => started(g));
+  const locked = (allLocked && nextWk)
+    ? `<div class="notice">Week ${wk.poolWeek} is done, every game has kicked off. ` +
+      `<b>Week ${nextWk.poolWeek} picks are open</b> - choose it in the week bar above. ` +
+      `This page moves on by itself at noon Pacific on Monday.</div>`
+    : '';
+
+  const banner = locked + (deadConfs.length
     ? `<div class="notice">You are out of ` +
       deadConfs.map((c) => `<b>${c.name}</b> (week ` +
         `${weekData(outByConf[c.key].week).poolWeek})`).join(', ') + `. ` +
@@ -809,7 +867,7 @@ function renderPicks() {
         ? 'You can keep picking in a dead league for bragging rights; it does not ' +
           'affect the standings.'
         : 'Picks are closed in those leagues.') + `</div>`
-    : '';
+    : '');
 
   $('#pickHead').innerHTML = banner +
     `<h2>Week ${wk.poolWeek} picks</h2>` +
