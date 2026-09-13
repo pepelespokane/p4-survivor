@@ -181,10 +181,23 @@ function pickVisible(pick) {
 }
 
 /** The week to land people on: the first one with a game still to kick off. */
-function currentWeek() {
+/** The week the STANDINGS sit on. Holds until noon Pacific on the Monday after
+ *  the week's games so the weekend's results stay up long enough to read. */
+function boardWeek() {
   const now = Date.now();
   for (const wk of state.sched.weeks) {
     if (now < weekHoldsUntil(wk.week)) return wk.week;
+  }
+  return state.sched.weeks[state.sched.weeks.length - 1].week;
+}
+
+/** The week MAKE PICKS lands on: the first one with a game still to kick off.
+ *  Deliberately NOT the held week. Once Saturday is over there is nothing left
+ *  to pick in that week, so landing there just wastes a click for everyone
+ *  trying to get next week's picks in early. */
+function pickWeek() {
+  for (const wk of state.sched.weeks) {
+    if (wk.games.some((g) => !started(g))) return wk.week;
   }
   return state.sched.weeks[state.sched.weeks.length - 1].week;
 }
@@ -851,9 +864,9 @@ function renderPicks() {
   const nextWk = state.sched.weeks.find((x) => x.week > w && x.games.some((g) => !started(g)));
   const allLocked = wk.games.every((g) => started(g));
   const locked = (allLocked && nextWk)
-    ? `<div class="notice">Week ${wk.poolWeek} is done, every game has kicked off. ` +
-      `<b>Week ${nextWk.poolWeek} picks are open</b> - choose it in the week bar above. ` +
-      `This page moves on by itself at noon Pacific on Monday.</div>`
+    ? `<div class="notice">Week ${wk.poolWeek} is done, every game has kicked off, ` +
+      `so nothing here can be changed. <b>Week ${nextWk.poolWeek} picks are open</b> - ` +
+      `choose it in the week bar above.</div>`
     : '';
 
   const banner = locked + (deadConfs.length
@@ -1222,8 +1235,10 @@ async function boot() {
     $('#boot').textContent = 'Could not load schedule.json. ' + e.message;
     return;
   }
-  state.week = currentWeek();
-  state.boardWeek = state.week;
+  // These two move independently between Saturday night and Monday noon: the
+  // standings hold on the finished week, the picks page has already moved on.
+  state.week = pickWeek();
+  state.boardWeek = boardWeek();
   restoreSession();
 
   try {
