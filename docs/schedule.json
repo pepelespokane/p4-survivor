@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-16T18:12:28+00:00",
+ "generated": "2026-09-17T23:55:15+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -4008,11 +4008,11 @@
      "neutral": false,
      "venue": "Acrisure Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/17 - 7:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "6:42 - 1st",
+     "period": 1,
+     "clock": "6:42",
      "home": {
       "id": "221",
       "abbr": "PITT",
