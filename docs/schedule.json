@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-19T01:08:12+00:00",
+ "generated": "2026-09-19T04:48:09+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -4039,26 +4039,26 @@
      "neutral": false,
      "venue": "Allegacy Federal Credit Union Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "7:03 - 2nd",
-     "period": 2,
-     "clock": "7:03",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "154",
       "abbr": "WAKE",
       "name": "Wake Forest",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "20",
+      "winner": false
      },
      "away": {
       "id": "2390",
       "abbr": "MIA",
       "name": "Miami",
       "rank": 5,
-      "score": "21",
-      "winner": null
+      "score": "33",
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -4070,26 +4070,26 @@
      "neutral": false,
      "venue": "Galaxy Stadium",
      "tv": "FOX",
-     "state": "in",
-     "completed": false,
-     "detail": "2:28 - 1st",
-     "period": 1,
-     "clock": "2:28",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
       "name": "Texas Tech",
       "rank": 13,
-      "score": "0",
-      "winner": null
+      "score": "28",
+      "winner": true
      },
      "away": {
       "id": "248",
       "abbr": "HOU",
       "name": "Houston",
       "rank": 22,
-      "score": "10",
-      "winner": null
+      "score": "26",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -4101,17 +4101,17 @@
      "neutral": false,
      "venue": "Autzen Stadium",
      "tv": "BTN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/18 - 10:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "9:21 - 3rd",
+     "period": 3,
+     "clock": "9:21",
      "home": {
       "id": "2483",
       "abbr": "ORE",
       "name": "Oregon",
       "rank": 21,
-      "score": "0",
+      "score": "56",
       "winner": null
      },
      "away": {
