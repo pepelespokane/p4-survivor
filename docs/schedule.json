@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-19T17:22:05+00:00",
+ "generated": "2026-09-19T19:10:00+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -4134,15 +4134,15 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "2:00 - 2nd",
-     "period": 2,
-     "clock": "2:00",
+     "detail": "6:32 - 4th",
+     "period": 4,
+     "clock": "6:32",
      "home": {
       "id": "8",
       "abbr": "ARK",
       "name": "Arkansas",
       "rank": 99,
-      "score": "0",
+      "score": "10",
       "winner": null
      },
      "away": {
@@ -4150,7 +4150,7 @@
       "abbr": "UGA",
       "name": "Georgia",
       "rank": 2,
-      "score": "14",
+      "score": "38",
       "winner": null
      },
      "homeConf": "sec",
@@ -4165,15 +4165,15 @@
      "tv": "FOX",
      "state": "in",
      "completed": false,
-     "detail": "7:35 - 2nd",
-     "period": 2,
-     "clock": "7:35",
+     "detail": "14:19 - 4th",
+     "period": 4,
+     "clock": "14:19",
      "home": {
       "id": "194",
       "abbr": "OSU",
       "name": "Ohio State",
       "rank": 6,
-      "score": "28",
+      "score": "56",
       "winner": null
      },
      "away": {
@@ -4196,15 +4196,15 @@
      "tv": "BTN",
      "state": "in",
      "completed": false,
-     "detail": "8:25 - 2nd",
-     "period": 2,
-     "clock": "8:25",
+     "detail": "7:40 - 4th",
+     "period": 4,
+     "clock": "7:40",
      "home": {
       "id": "213",
       "abbr": "PSU",
       "name": "Penn State",
       "rank": 14,
-      "score": "27",
+      "score": "55",
       "winner": null
      },
      "away": {
@@ -4212,7 +4212,7 @@
       "abbr": "BUFF",
       "name": "Buffalo",
       "rank": 99,
-      "score": "3",
+      "score": "6",
       "winner": null
      },
      "homeConf": "big10",
@@ -4227,15 +4227,15 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "3:50 - 2nd",
-     "period": 2,
-     "clock": "3:50",
+     "detail": "2:42 - 4th",
+     "period": 4,
+     "clock": "2:42",
      "home": {
       "id": "2306",
       "abbr": "KSU",
       "name": "Kansas State",
       "rank": 99,
-      "score": "10",
+      "score": "31",
       "winner": null
      },
      "away": {
@@ -4243,7 +4243,7 @@
       "abbr": "TULN",
       "name": "Tulane",
       "rank": 99,
-      "score": "7",
+      "score": "20",
       "winner": null
      },
      "homeConf": "big12",
@@ -4258,15 +4258,15 @@
      "tv": "ESPNU",
      "state": "in",
      "completed": false,
-     "detail": "12:14 - 2nd",
-     "period": 2,
-     "clock": "12:14",
+     "detail": "9:55 - 4th",
+     "period": 4,
+     "clock": "9:55",
      "home": {
       "id": "66",
       "abbr": "ISU",
       "name": "Iowa State",
       "rank": 99,
-      "score": "21",
+      "score": "45",
       "winner": null
      },
      "away": {
@@ -4289,9 +4289,9 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "7:12 - 2nd",
-     "period": 2,
-     "clock": "7:12",
+     "detail": "11:36 - 4th",
+     "period": 4,
+     "clock": "11:36",
      "home": {
       "id": "2305",
       "abbr": "KU",
@@ -4305,7 +4305,7 @@
       "abbr": "ASU",
       "name": "Arizona State",
       "rank": 99,
-      "score": "3",
+      "score": "24",
       "winner": null
      },
      "homeConf": "big12",
@@ -4320,15 +4320,15 @@
      "tv": "ACC Network",
      "state": "in",
      "completed": false,
-     "detail": "3:26 - 2nd",
-     "period": 2,
-     "clock": "3:26",
+     "detail": "5:33 - 4th",
+     "period": 4,
+     "clock": "5:33",
      "home": {
       "id": "59",
       "abbr": "GT",
       "name": "Georgia Tech",
       "rank": 99,
-      "score": "14",
+      "score": "44",
       "winner": null
      },
      "away": {
@@ -4336,7 +4336,7 @@
       "abbr": "MER",
       "name": "Mercer",
       "rank": 99,
-      "score": "3",
+      "score": "11",
       "winner": null
      },
      "homeConf": "acc",
@@ -4351,15 +4351,15 @@
      "tv": "Disney+",
      "state": "in",
      "completed": false,
-     "detail": "7:05 - 2nd",
-     "period": 2,
-     "clock": "7:05",
+     "detail": "Delayed",
+     "period": 4,
+     "clock": "8:11",
      "home": {
       "id": "228",
       "abbr": "CLEM",
       "name": "Clemson",
       "rank": 99,
-      "score": "3",
+      "score": "15",
       "winner": null
      },
      "away": {
@@ -4382,15 +4382,15 @@
      "tv": "BTN",
      "state": "in",
      "completed": false,
-     "detail": "6:59 - 2nd",
-     "period": 2,
-     "clock": "6:59",
+     "detail": "9:38 - 4th",
+     "period": 4,
+     "clock": "9:38",
      "home": {
       "id": "135",
       "abbr": "MINN",
       "name": "Minnesota",
       "rank": 99,
-      "score": "17",
+      "score": "41",
       "winner": null
      },
      "away": {
@@ -4413,15 +4413,15 @@
      "tv": "Peacock",
      "state": "in",
      "completed": false,
-     "detail": "End of 1st",
-     "period": 1,
-     "clock": "0:00",
+     "detail": "0:24 - 3rd",
+     "period": 3,
+     "clock": "0:24",
      "home": {
       "id": "275",
       "abbr": "WIS",
       "name": "Wisconsin",
       "rank": 99,
-      "score": "3",
+      "score": "41",
       "winner": null
      },
      "away": {
@@ -4444,15 +4444,15 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "4:24 - 1st",
-     "period": 1,
-     "clock": "4:24",
+     "detail": "8:06 - 3rd",
+     "period": 3,
+     "clock": "8:06",
      "home": {
       "id": "238",
       "abbr": "VAN",
       "name": "Vanderbilt",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "away": {
@@ -4460,7 +4460,7 @@
       "abbr": "NCSU",
       "name": "NC State",
       "rank": 99,
-      "score": "7",
+      "score": "24",
       "winner": null
      },
      "homeConf": "sec",
@@ -4473,17 +4473,17 @@
      "neutral": false,
      "venue": "Alumni Stadium (Chestnut Hill, MA)",
      "tv": "ACCNX",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/19 - 2:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "7:46 - 2nd",
+     "period": 2,
+     "clock": "7:46",
      "home": {
       "id": "103",
       "abbr": "BC",
       "name": "Boston College",
       "rank": 99,
-      "score": "0",
+      "score": "16",
       "winner": null
      },
      "away": {
@@ -4504,17 +4504,17 @@
      "neutral": false,
      "venue": "Gies Memorial Stadium",
      "tv": "Peacock",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/19 - 2:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "9:44 - 2nd",
+     "period": 2,
+     "clock": "9:44",
      "home": {
       "id": "356",
       "abbr": "ILL",
       "name": "Illinois",
       "rank": 99,
-      "score": "0",
+      "score": "28",
       "winner": null
      },
      "away": {
@@ -4522,42 +4522,11 @@
       "abbr": "SIU",
       "name": "Southern Illinois",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "big10",
      "awayConf": null,
-     "day": "Sat"
-    },
-    {
-     "id": "401856694",
-     "kickoff": "2026-09-19T19:30Z",
-     "neutral": false,
-     "venue": "Kyle Field",
-     "tv": "ESPN",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/19 - 3:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "245",
-      "abbr": "TA&M",
-      "name": "Texas A&M",
-      "rank": 9,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "96",
-      "abbr": "UK",
-      "name": "Kentucky",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "sec",
      "day": "Sat"
     },
     {
@@ -4775,6 +4744,37 @@
      },
      "homeConf": "acc",
      "awayConf": null,
+     "day": "Sat"
+    },
+    {
+     "id": "401856694",
+     "kickoff": "2026-09-19T19:40Z",
+     "neutral": false,
+     "venue": "Kyle Field",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "9/19 - 3:40 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "245",
+      "abbr": "TA&M",
+      "name": "Texas A&M",
+      "rank": 9,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "96",
+      "abbr": "UK",
+      "name": "Kentucky",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "sec",
      "day": "Sat"
     },
     {
