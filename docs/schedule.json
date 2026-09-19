@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-19T07:02:07+00:00",
+ "generated": "2026-09-19T16:14:23+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -4127,16 +4127,140 @@
      "day": "Fri"
     },
     {
+     "id": "401858456",
+     "kickoff": "2026-09-19T16:00Z",
+     "neutral": false,
+     "venue": "Beaver Stadium",
+     "tv": "BTN",
+     "state": "in",
+     "completed": false,
+     "detail": "11:53 - 1st",
+     "period": 1,
+     "clock": "11:53",
+     "home": {
+      "id": "213",
+      "abbr": "PSU",
+      "name": "Penn State",
+      "rank": 14,
+      "score": "3",
+      "winner": null
+     },
+     "away": {
+      "id": "2084",
+      "abbr": "BUFF",
+      "name": "Buffalo",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": null,
+     "day": "Sat"
+    },
+    {
+     "id": "401856792",
+     "kickoff": "2026-09-19T16:00Z",
+     "neutral": false,
+     "venue": "Bill Snyder Family Stadium",
+     "tv": "ESPN2",
+     "state": "in",
+     "completed": false,
+     "detail": "12:33 - 1st",
+     "period": 1,
+     "clock": "12:33",
+     "home": {
+      "id": "2306",
+      "abbr": "KSU",
+      "name": "Kansas State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2655",
+      "abbr": "TULN",
+      "name": "Tulane",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": null,
+     "day": "Sat"
+    },
+    {
+     "id": "401858228",
+     "kickoff": "2026-09-19T16:00Z",
+     "neutral": false,
+     "venue": "Bobby Dodd Stadium",
+     "tv": "ACC Network",
+     "state": "in",
+     "completed": false,
+     "detail": "12:05 - 1st",
+     "period": 1,
+     "clock": "12:05",
+     "home": {
+      "id": "59",
+      "abbr": "GT",
+      "name": "Georgia Tech",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2382",
+      "abbr": "MER",
+      "name": "Mercer",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": null,
+     "day": "Sat"
+    },
+    {
+     "id": "401858451",
+     "kickoff": "2026-09-19T16:00Z",
+     "neutral": false,
+     "venue": "Huntington Bank Stadium",
+     "tv": "BTN",
+     "state": "in",
+     "completed": false,
+     "detail": "12:14 - 1st",
+     "period": 1,
+     "clock": "12:14",
+     "home": {
+      "id": "135",
+      "abbr": "MINN",
+      "name": "Minnesota",
+      "rank": 99,
+      "score": "7",
+      "winner": null
+     },
+     "away": {
+      "id": "2006",
+      "abbr": "AKR",
+      "name": "Akron",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": null,
+     "day": "Sat"
+    },
+    {
      "id": "401856686",
      "kickoff": "2026-09-19T16:00Z",
      "neutral": false,
      "venue": "Donald W. Reynolds Razorback Stadium",
      "tv": "ABC",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/19 - 12:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "14:59 - 1st",
+     "period": 1,
+     "clock": "14:59",
      "home": {
       "id": "8",
       "abbr": "ARK",
@@ -4189,78 +4313,16 @@
      "day": "Sat"
     },
     {
-     "id": "401858456",
-     "kickoff": "2026-09-19T16:00Z",
-     "neutral": false,
-     "venue": "Beaver Stadium",
-     "tv": "BTN",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/19 - 12:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "213",
-      "abbr": "PSU",
-      "name": "Penn State",
-      "rank": 14,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2084",
-      "abbr": "BUFF",
-      "name": "Buffalo",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": null,
-     "day": "Sat"
-    },
-    {
-     "id": "401856792",
-     "kickoff": "2026-09-19T16:00Z",
-     "neutral": false,
-     "venue": "Bill Snyder Family Stadium",
-     "tv": "ESPN2",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/19 - 12:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2306",
-      "abbr": "KSU",
-      "name": "Kansas State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2655",
-      "abbr": "TULN",
-      "name": "Tulane",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": null,
-     "day": "Sat"
-    },
-    {
      "id": "401856798",
      "kickoff": "2026-09-19T16:00Z",
      "neutral": false,
      "venue": "Jack Trice Stadium",
      "tv": "ESPNU",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/19 - 12:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "14:55 - 1st",
+     "period": 1,
+     "clock": "14:55",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -4313,47 +4375,16 @@
      "day": "Sat"
     },
     {
-     "id": "401858228",
-     "kickoff": "2026-09-19T16:00Z",
-     "neutral": false,
-     "venue": "Bobby Dodd Stadium",
-     "tv": "ACC Network",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/19 - 12:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "59",
-      "abbr": "GT",
-      "name": "Georgia Tech",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2382",
-      "abbr": "MER",
-      "name": "Mercer",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": null,
-     "day": "Sat"
-    },
-    {
      "id": "401858229",
      "kickoff": "2026-09-19T16:00Z",
      "neutral": false,
      "venue": "Memorial Stadium (Clemson, SC)",
-     "tv": "ESPN",
-     "state": "pre",
+     "tv": "Disney+",
+     "state": "in",
      "completed": false,
-     "detail": "9/19 - 12:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "14:56 - 1st",
+     "period": 1,
+     "clock": "14:56",
      "home": {
       "id": "228",
       "abbr": "CLEM",
@@ -4372,37 +4403,6 @@
      },
      "homeConf": "acc",
      "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858451",
-     "kickoff": "2026-09-19T16:00Z",
-     "neutral": false,
-     "venue": "Huntington Bank Stadium",
-     "tv": "BTN",
-     "state": "pre",
-     "completed": false,
-     "detail": "9/19 - 12:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "135",
-      "abbr": "MINN",
-      "name": "Minnesota",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2006",
-      "abbr": "AKR",
-      "name": "Akron",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": null,
      "day": "Sat"
     },
     {
