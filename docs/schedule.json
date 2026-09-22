@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-22T01:26:31+00:00",
+ "generated": "2026-09-22T18:05:45+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -6871,42 +6871,11 @@
      "day": "Sat"
     },
     {
-     "id": "401856821",
-     "kickoff": "2026-10-03T04:00Z",
-     "neutral": false,
-     "venue": "Folsom Field",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "38",
-      "abbr": "COLO",
-      "name": "Colorado",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2641",
-      "abbr": "TTU",
-      "name": "Texas Tech",
-      "rank": 11,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
      "id": "401858474",
      "kickoff": "2026-10-03T16:00Z",
      "neutral": false,
      "venue": "Huntington Bank Stadium",
-     "tv": "",
+     "tv": "FOX",
      "state": "pre",
      "completed": false,
      "detail": "10/3 - 12:00 PM EDT",
@@ -7123,7 +7092,7 @@
      "kickoff": "2026-10-03T16:30Z",
      "neutral": false,
      "venue": "Camp Randall Stadium",
-     "tv": "",
+     "tv": "BTN",
      "state": "pre",
      "completed": false,
      "detail": "10/3 - 12:30 PM EDT",
@@ -7154,7 +7123,7 @@
      "kickoff": "2026-10-03T19:30Z",
      "neutral": false,
      "venue": "Kinnick Stadium",
-     "tv": "",
+     "tv": "CBS",
      "state": "pre",
      "completed": false,
      "detail": "10/3 - 3:30 PM EDT",
@@ -7402,7 +7371,7 @@
      "kickoff": "2026-10-03T20:15Z",
      "neutral": false,
      "venue": "Gies Memorial Stadium",
-     "tv": "",
+     "tv": "BTN",
      "state": "pre",
      "completed": false,
      "detail": "10/3 - 4:15 PM EDT",
@@ -7491,11 +7460,42 @@
      "day": "Sat"
     },
     {
+     "id": "401856821",
+     "kickoff": "2026-10-03T23:30Z",
+     "neutral": false,
+     "venue": "Folsom Field",
+     "tv": "FOX",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/3 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "38",
+      "abbr": "COLO",
+      "name": "Colorado",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2641",
+      "abbr": "TTU",
+      "name": "Texas Tech",
+      "rank": 11,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
      "id": "401858478",
      "kickoff": "2026-10-03T23:30Z",
      "neutral": false,
      "venue": "Los Angeles Memorial Coliseum",
-     "tv": "",
+     "tv": "NBC",
      "state": "pre",
      "completed": false,
      "detail": "10/3 - 7:30 PM EDT",
@@ -7557,7 +7557,7 @@
      "kickoff": "2026-10-04T00:00Z",
      "neutral": false,
      "venue": "SHI Stadium",
-     "tv": "",
+     "tv": "BTN",
      "state": "pre",
      "completed": false,
      "detail": "10/3 - 8:00 PM EDT",
