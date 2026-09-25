@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-22T18:05:45+00:00",
+ "generated": "2026-09-25T23:48:57+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -5504,17 +5504,17 @@
      "neutral": false,
      "venue": "SHI Stadium",
      "tv": "BTN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/25 - 7:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "15:00 - 2nd",
+     "period": 2,
+     "clock": "15:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
       "name": "Rutgers",
       "rank": 99,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "away": {
@@ -5522,7 +5522,7 @@
       "abbr": "HOW",
       "name": "Howard",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "big10",
