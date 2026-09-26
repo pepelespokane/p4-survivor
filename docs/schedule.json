@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-26T03:28:53+00:00",
+ "generated": "2026-09-26T05:12:38+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -5535,26 +5535,26 @@
      "neutral": false,
      "venue": "Memorial Stadium (Bloomington, IN)",
      "tv": "FOX",
-     "state": "in",
-     "completed": false,
-     "detail": "1:56 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "1:56",
+     "clock": "0:00",
      "home": {
       "id": "84",
       "abbr": "IU",
       "name": "Indiana",
       "rank": 5,
       "score": "29",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "77",
       "abbr": "NU",
       "name": "Northwestern",
       "rank": 99,
-      "score": "20",
-      "winner": null
+      "score": "23",
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": "big10",
@@ -5568,15 +5568,15 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "End of 1st",
-     "period": 1,
-     "clock": "0:00",
+     "detail": "2:34 - 3rd",
+     "period": 3,
+     "clock": "2:34",
      "home": {
       "id": "25",
       "abbr": "CAL",
       "name": "California",
       "rank": 99,
-      "score": "7",
+      "score": "10",
       "winner": null
      },
      "away": {
@@ -5584,7 +5584,7 @@
       "abbr": "CLEM",
       "name": "Clemson",
       "rank": 99,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "homeConf": "acc",
