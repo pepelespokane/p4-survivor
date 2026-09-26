@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-25T23:48:57+00:00",
+ "generated": "2026-09-26T03:28:53+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -5504,18 +5504,18 @@
      "neutral": false,
      "venue": "SHI Stadium",
      "tv": "BTN",
-     "state": "in",
-     "completed": false,
-     "detail": "15:00 - 2nd",
-     "period": 2,
-     "clock": "15:00",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
       "name": "Rutgers",
       "rank": 99,
-      "score": "21",
-      "winner": null
+      "score": "58",
+      "winner": true
      },
      "away": {
       "id": "47",
@@ -5523,7 +5523,7 @@
       "name": "Howard",
       "rank": 99,
       "score": "7",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": null,
@@ -5535,17 +5535,17 @@
      "neutral": false,
      "venue": "Memorial Stadium (Bloomington, IN)",
      "tv": "FOX",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/25 - 8:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "1:56 - 4th",
+     "period": 4,
+     "clock": "1:56",
      "home": {
       "id": "84",
       "abbr": "IU",
       "name": "Indiana",
       "rank": 5,
-      "score": "0",
+      "score": "29",
       "winner": null
      },
      "away": {
@@ -5553,7 +5553,7 @@
       "abbr": "NU",
       "name": "Northwestern",
       "rank": 99,
-      "score": "0",
+      "score": "20",
       "winner": null
      },
      "homeConf": "big10",
@@ -5566,17 +5566,17 @@
      "neutral": false,
      "venue": "California Memorial Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "9/25 - 10:30 PM EDT",
-     "period": 0,
+     "detail": "End of 1st",
+     "period": 1,
      "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
       "name": "California",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "away": {
