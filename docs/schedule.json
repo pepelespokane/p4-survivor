@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-27T06:12:27+00:00",
+ "generated": "2026-09-27T06:42:40+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -6620,18 +6620,18 @@
      "neutral": false,
      "venue": "Stanford Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "0:59 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "0:59",
+     "clock": "0:00",
      "home": {
       "id": "24",
       "abbr": "STAN",
       "name": "Stanford",
       "rank": 99,
       "score": "34",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "59",
@@ -6639,7 +6639,7 @@
       "name": "Georgia Tech",
       "rank": 99,
       "score": "27",
-      "winner": null
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -6651,18 +6651,18 @@
      "neutral": false,
      "venue": "Husky Stadium",
      "tv": "FOX",
-     "state": "in",
-     "completed": false,
-     "detail": "3:58 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "3:58",
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
       "name": "Washington",
       "rank": 99,
-      "score": "17",
-      "winner": null
+      "score": "24",
+      "winner": false
      },
      "away": {
       "id": "135",
@@ -6670,7 +6670,7 @@
       "name": "Minnesota",
       "rank": 99,
       "score": "27",
-      "winner": null
+      "winner": true
      },
      "homeConf": "big10",
      "awayConf": "big10",
