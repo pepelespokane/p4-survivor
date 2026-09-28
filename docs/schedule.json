@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-28T18:26:47+00:00",
+ "generated": "2026-09-28T23:42:10+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -7651,7 +7651,7 @@
    "week": 6,
    "poolWeek": 6,
    "start": "2026-10-09",
-   "end": "2026-10-10",
+   "end": "2026-10-11",
    "games": [
     {
      "id": "401858254",
@@ -7747,68 +7747,6 @@
      "day": "Fri"
     },
     {
-     "id": "401856712",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Bryant-Denny Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "333",
-      "abbr": "ALA",
-      "name": "Alabama",
-      "rank": 7,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "61",
-      "abbr": "UGA",
-      "name": "Georgia",
-      "rank": 2,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "sec",
-     "day": "Sat"
-    },
-    {
-     "id": "401858483",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Ohio Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "194",
-      "abbr": "OSU",
-      "name": "Ohio State",
-      "rank": 5,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "120",
-      "abbr": "MD",
-      "name": "Maryland",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401858481",
      "kickoff": "2026-10-10T04:00Z",
      "neutral": false,
@@ -7871,99 +7809,6 @@
      "day": "Sat"
     },
     {
-     "id": "401856718",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "FirstBank Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "238",
-      "abbr": "VAN",
-      "name": "Vanderbilt",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "145",
-      "abbr": "MISS",
-      "name": "Ole Miss",
-      "rank": 9,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "sec",
-     "day": "Sat"
-    },
-    {
-     "id": "401856715",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Kroger Field",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "96",
-      "abbr": "UK",
-      "name": "Kentucky",
-      "rank": 24,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "99",
-      "abbr": "LSU",
-      "name": "LSU",
-      "rank": 11,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "sec",
-     "day": "Sat"
-    },
-    {
-     "id": "401856827",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Rice-Eccles Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "254",
-      "abbr": "UTAH",
-      "name": "Utah",
-      "rank": 13,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2305",
-      "abbr": "KU",
-      "name": "Kansas",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
      "id": "401858484",
      "kickoff": "2026-10-10T04:00Z",
      "neutral": false,
@@ -7995,37 +7840,6 @@
      "day": "Sat"
     },
     {
-     "id": "401856713",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Donald W. Reynolds Razorback Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "8",
-      "abbr": "ARK",
-      "name": "Arkansas",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2633",
-      "abbr": "TENN",
-      "name": "Tennessee",
-      "rank": 17,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "sec",
-     "day": "Sat"
-    },
-    {
      "id": "401858485",
      "kickoff": "2026-10-10T04:00Z",
      "neutral": false,
@@ -8054,68 +7868,6 @@
      },
      "homeConf": "big10",
      "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
-     "id": "401856824",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Boone Pickens Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "197",
-      "abbr": "OKST",
-      "name": "Oklahoma State",
-      "rank": 19,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2116",
-      "abbr": "UCF",
-      "name": "UCF",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401856825",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Bill Snyder Family Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2306",
-      "abbr": "KSU",
-      "name": "Kansas State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "248",
-      "abbr": "HOU",
-      "name": "Houston",
-      "rank": 20,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
      "day": "Sat"
     },
     {
@@ -8178,192 +7930,6 @@
      },
      "homeConf": "big12",
      "awayConf": null,
-     "day": "Sat"
-    },
-    {
-     "id": "401856823",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Milan Puskar Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "277",
-      "abbr": "WVU",
-      "name": "West Virginia",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "12",
-      "abbr": "ARIZ",
-      "name": "Arizona",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401858255",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Bobby Dodd Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "59",
-      "abbr": "GT",
-      "name": "Georgia Tech",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "150",
-      "abbr": "DUKE",
-      "name": "Duke",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858256",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Acrisure Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "221",
-      "abbr": "PITT",
-      "name": "Pittsburgh",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "153",
-      "abbr": "UNC",
-      "name": "North Carolina",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858258",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Scott Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "258",
-      "abbr": "UVA",
-      "name": "Virginia",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "183",
-      "abbr": "SYR",
-      "name": "Syracuse",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858259",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "California Memorial Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "25",
-      "abbr": "CAL",
-      "name": "California",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "259",
-      "abbr": "VT",
-      "name": "Virginia Tech",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858260",
-     "kickoff": "2026-10-10T04:00Z",
-     "neutral": false,
-     "venue": "Carter-Finley Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "152",
-      "abbr": "NCSU",
-      "name": "NC State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "154",
-      "abbr": "WAKE",
-      "name": "Wake Forest",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
      "day": "Sat"
     },
     {
@@ -8460,11 +8026,135 @@
      "day": "Sat"
     },
     {
+     "id": "401856824",
+     "kickoff": "2026-10-10T16:00Z",
+     "neutral": false,
+     "venue": "Boone Pickens Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "197",
+      "abbr": "OKST",
+      "name": "Oklahoma State",
+      "rank": 19,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2116",
+      "abbr": "UCF",
+      "name": "UCF",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
+     "id": "401856823",
+     "kickoff": "2026-10-10T16:00Z",
+     "neutral": false,
+     "venue": "Milan Puskar Stadium",
+     "tv": "TNT",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "277",
+      "abbr": "WVU",
+      "name": "West Virginia",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "12",
+      "abbr": "ARIZ",
+      "name": "Arizona",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
+     "id": "401858256",
+     "kickoff": "2026-10-10T16:00Z",
+     "neutral": false,
+     "venue": "Acrisure Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "221",
+      "abbr": "PITT",
+      "name": "Pittsburgh",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "153",
+      "abbr": "UNC",
+      "name": "North Carolina",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858260",
+     "kickoff": "2026-10-10T16:00Z",
+     "neutral": false,
+     "venue": "Carter-Finley Stadium",
+     "tv": "CW",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "152",
+      "abbr": "NCSU",
+      "name": "NC State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "154",
+      "abbr": "WAKE",
+      "name": "Wake Forest",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
      "id": "401856717",
      "kickoff": "2026-10-10T19:30Z",
      "neutral": true,
      "venue": "Cotton Bowl",
-     "tv": "",
+     "tv": "ABC",
      "state": "pre",
      "completed": false,
      "detail": "10/10 - 3:30 PM EDT",
@@ -8519,6 +8209,316 @@
      },
      "homeConf": null,
      "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401856718",
+     "kickoff": "2026-10-10T19:30Z",
+     "neutral": false,
+     "venue": "FirstBank Stadium",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "238",
+      "abbr": "VAN",
+      "name": "Vanderbilt",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "145",
+      "abbr": "MISS",
+      "name": "Ole Miss",
+      "rank": 9,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401856825",
+     "kickoff": "2026-10-10T19:30Z",
+     "neutral": false,
+     "venue": "Bill Snyder Family Stadium",
+     "tv": "FOX",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2306",
+      "abbr": "KSU",
+      "name": "Kansas State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "248",
+      "abbr": "HOU",
+      "name": "Houston",
+      "rank": 20,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
+     "id": "401858255",
+     "kickoff": "2026-10-10T19:30Z",
+     "neutral": false,
+     "venue": "Bobby Dodd Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "59",
+      "abbr": "GT",
+      "name": "Georgia Tech",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "150",
+      "abbr": "DUKE",
+      "name": "Duke",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858259",
+     "kickoff": "2026-10-10T19:30Z",
+     "neutral": false,
+     "venue": "California Memorial Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "25",
+      "abbr": "CAL",
+      "name": "California",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "259",
+      "abbr": "VT",
+      "name": "Virginia Tech",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858483",
+     "kickoff": "2026-10-10T20:15Z",
+     "neutral": false,
+     "venue": "Ohio Stadium",
+     "tv": "BTN",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 4:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "194",
+      "abbr": "OSU",
+      "name": "Ohio State",
+      "rank": 5,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "120",
+      "abbr": "MD",
+      "name": "Maryland",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
+     "id": "401856713",
+     "kickoff": "2026-10-10T20:15Z",
+     "neutral": false,
+     "venue": "Donald W. Reynolds Razorback Stadium",
+     "tv": "SEC Network",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 4:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "8",
+      "abbr": "ARK",
+      "name": "Arkansas",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2633",
+      "abbr": "TENN",
+      "name": "Tennessee",
+      "rank": 17,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401856715",
+     "kickoff": "2026-10-10T23:00Z",
+     "neutral": false,
+     "venue": "Kroger Field",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "96",
+      "abbr": "UK",
+      "name": "Kentucky",
+      "rank": 24,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "99",
+      "abbr": "LSU",
+      "name": "LSU",
+      "rank": 11,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401856712",
+     "kickoff": "2026-10-10T23:30Z",
+     "neutral": false,
+     "venue": "Bryant-Denny Stadium",
+     "tv": "ABC",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "333",
+      "abbr": "ALA",
+      "name": "Alabama",
+      "rank": 7,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "61",
+      "abbr": "UGA",
+      "name": "Georgia",
+      "rank": 2,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401858258",
+     "kickoff": "2026-10-10T23:30Z",
+     "neutral": false,
+     "venue": "Scott Stadium",
+     "tv": "ACC Network",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "258",
+      "abbr": "UVA",
+      "name": "Virginia",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "183",
+      "abbr": "SYR",
+      "name": "Syracuse",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401856827",
+     "kickoff": "2026-10-11T02:15Z",
+     "neutral": false,
+     "venue": "Rice-Eccles Stadium",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 10:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "254",
+      "abbr": "UTAH",
+      "name": "Utah",
+      "rank": 13,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2305",
+      "abbr": "KU",
+      "name": "Kansas",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
      "day": "Sat"
     }
    ]
