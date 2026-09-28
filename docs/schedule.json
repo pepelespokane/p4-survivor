@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-28T03:35:53+00:00",
+ "generated": "2026-09-28T18:26:47+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -7154,7 +7154,7 @@
      "kickoff": "2026-10-03T19:30Z",
      "neutral": false,
      "venue": "Neyland Stadium",
-     "tv": "",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "10/3 - 3:30 PM EDT",
