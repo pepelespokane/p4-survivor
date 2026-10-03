@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-09-29T19:26:05+00:00",
+ "generated": "2026-10-03T00:09:09+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -6690,17 +6690,17 @@
      "neutral": false,
      "venue": "Lane Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/2 - 7:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "9:17 - 2nd",
+     "period": 2,
+     "clock": "9:17",
      "home": {
       "id": "259",
       "abbr": "VT",
       "name": "Virginia Tech",
       "rank": 99,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "away": {
@@ -6708,7 +6708,7 @@
       "abbr": "PITT",
       "name": "Pittsburgh",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "acc",
