@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-04T01:43:49+00:00",
+ "generated": "2026-10-04T02:22:51+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -7372,26 +7372,26 @@
      "neutral": false,
      "venue": "Amon G. Carter Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "7:48 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "7:48",
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
       "name": "TCU",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "10",
+      "winner": false
      },
      "away": {
       "id": "252",
       "abbr": "BYU",
       "name": "BYU",
       "rank": 10,
-      "score": "10",
-      "winner": null
+      "score": "17",
+      "winner": true
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -7403,18 +7403,18 @@
      "neutral": false,
      "venue": "Kyle Field",
      "tv": "ESPN2",
-     "state": "in",
-     "completed": false,
-     "detail": "10:31 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "10:31",
+     "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
       "name": "Texas A&M",
       "rank": 99,
       "score": "34",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "8",
@@ -7422,7 +7422,7 @@
       "name": "Arkansas",
       "rank": 99,
       "score": "7",
-      "winner": null
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": "sec",
@@ -7436,9 +7436,9 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "0:13 - 3rd",
+     "period": 3,
+     "clock": "0:13",
      "home": {
       "id": "228",
       "abbr": "CLEM",
@@ -7452,7 +7452,7 @@
       "abbr": "MIA",
       "name": "Miami",
       "rank": 4,
-      "score": "17",
+      "score": "24",
       "winner": null
      },
      "homeConf": "acc",
@@ -7467,9 +7467,9 @@
      "tv": "FOX",
      "state": "in",
      "completed": false,
-     "detail": "9:09 - 3rd",
-     "period": 3,
-     "clock": "9:09",
+     "detail": "11:52 - 4th",
+     "period": 4,
+     "clock": "11:52",
      "home": {
       "id": "38",
       "abbr": "COLO",
@@ -7483,7 +7483,7 @@
       "abbr": "TTU",
       "name": "Texas Tech",
       "rank": 12,
-      "score": "6",
+      "score": "15",
       "winner": null
      },
      "homeConf": "big12",
@@ -7498,15 +7498,15 @@
      "tv": "NBC",
      "state": "in",
      "completed": false,
-     "detail": "12:46 - 3rd",
-     "period": 3,
-     "clock": "12:46",
+     "detail": "14:16 - 4th",
+     "period": 4,
+     "clock": "14:16",
      "home": {
       "id": "30",
       "abbr": "USC",
       "name": "USC",
       "rank": 18,
-      "score": "10",
+      "score": "22",
       "winner": null
      },
      "away": {
@@ -7529,15 +7529,15 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "3:32 - 3rd",
+     "period": 3,
+     "clock": "3:32",
      "home": {
       "id": "99",
       "abbr": "LSU",
       "name": "LSU",
       "rank": 11,
-      "score": "35",
+      "score": "49",
       "winner": null
      },
      "away": {
@@ -7545,7 +7545,7 @@
       "abbr": "MCN",
       "name": "McNeese",
       "rank": 99,
-      "score": "0",
+      "score": "14",
       "winner": null
      },
      "homeConf": "sec",
@@ -7560,9 +7560,9 @@
      "tv": "BTN",
      "state": "in",
      "completed": false,
-     "detail": "Halftime",
-     "period": 2,
-     "clock": "0:00",
+     "detail": "5:27 - 3rd",
+     "period": 3,
+     "clock": "5:27",
      "home": {
       "id": "164",
       "abbr": "RUTG",
@@ -7576,7 +7576,7 @@
       "abbr": "IU",
       "name": "Indiana",
       "rank": 6,
-      "score": "23",
+      "score": "37",
       "winner": null
      },
      "homeConf": "big10",
