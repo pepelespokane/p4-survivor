@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-04T18:41:35+00:00",
+ "generated": "2026-10-04T22:23:35+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -8460,6 +8460,37 @@
      "day": "Sat"
     },
     {
+     "id": "401856808",
+     "kickoff": "2026-10-11T01:30Z",
+     "neutral": false,
+     "venue": "Mountain America Stadium",
+     "tv": "FS1",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 9:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "9",
+      "abbr": "ASU",
+      "name": "Arizona State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "62",
+      "abbr": "HAW",
+      "name": "Hawai'i",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": null,
+     "day": "Sat"
+    },
+    {
      "id": "401856827",
      "kickoff": "2026-10-11T02:15Z",
      "neutral": false,
@@ -8488,37 +8519,6 @@
      },
      "homeConf": "big12",
      "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401856808",
-     "kickoff": "2026-10-11T02:30Z",
-     "neutral": false,
-     "venue": "Mountain America Stadium",
-     "tv": "FS1",
-     "state": "pre",
-     "completed": false,
-     "detail": "10/10 - 10:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "9",
-      "abbr": "ASU",
-      "name": "Arizona State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "62",
-      "abbr": "HAW",
-      "name": "Hawai'i",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": null,
      "day": "Sat"
     }
    ]
