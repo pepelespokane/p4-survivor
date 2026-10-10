@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-10T02:03:38+00:00",
+ "generated": "2026-10-10T06:05:09+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -7659,26 +7659,26 @@
      "neutral": false,
      "venue": "L&N Federal Credit Union Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "8:37 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "8:37",
+     "clock": "0:00",
      "home": {
       "id": "97",
       "abbr": "LOU",
       "name": "Louisville",
       "rank": 99,
-      "score": "35",
-      "winner": null
+      "score": "44",
+      "winner": true
      },
      "away": {
       "id": "52",
       "abbr": "FSU",
       "name": "Florida State",
       "rank": 99,
-      "score": "14",
-      "winner": null
+      "score": "20",
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -7690,26 +7690,26 @@
      "neutral": false,
      "venue": "Husky Stadium",
      "tv": "Fox",
-     "state": "in",
-     "completed": false,
-     "detail": "9:05 - 2nd",
-     "period": 2,
-     "clock": "9:05",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "264",
       "abbr": "WASH",
       "name": "Washington",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "24",
+      "winner": false
      },
      "away": {
       "id": "2294",
       "abbr": "IOWA",
       "name": "Iowa",
       "rank": 20,
-      "score": "20",
-      "winner": null
+      "score": "41",
+      "winner": true
      },
      "homeConf": "big10",
      "awayConf": "big10",
@@ -7721,26 +7721,26 @@
      "neutral": false,
      "venue": "LaVell Edwards Stadium",
      "tv": "ESPN",
-     "state": "pre",
-     "completed": false,
-     "detail": "10/9 - 10:30 PM EDT",
-     "period": 0,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "252",
       "abbr": "BYU",
       "name": "BYU",
       "rank": 8,
-      "score": "0",
-      "winner": null
+      "score": "24",
+      "winner": true
      },
      "away": {
       "id": "66",
       "abbr": "ISU",
       "name": "Iowa State",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "10",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -8429,6 +8429,37 @@
      "day": "Sat"
     },
     {
+     "id": "401856827",
+     "kickoff": "2026-10-11T00:00Z",
+     "neutral": false,
+     "venue": "Rice-Eccles Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/10 - 8:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "254",
+      "abbr": "UTAH",
+      "name": "Utah",
+      "rank": 12,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2305",
+      "abbr": "KU",
+      "name": "Kansas",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
      "id": "401858486",
      "kickoff": "2026-10-11T00:00Z",
      "neutral": false,
@@ -8457,37 +8488,6 @@
      },
      "homeConf": "big10",
      "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
-     "id": "401856827",
-     "kickoff": "2026-10-11T02:15Z",
-     "neutral": false,
-     "venue": "Rice-Eccles Stadium",
-     "tv": "ESPN",
-     "state": "pre",
-     "completed": false,
-     "detail": "10/10 - 10:15 PM EDT",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "254",
-      "abbr": "UTAH",
-      "name": "Utah",
-      "rank": 12,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2305",
-      "abbr": "KU",
-      "name": "Kansas",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
      "day": "Sat"
     },
     {
