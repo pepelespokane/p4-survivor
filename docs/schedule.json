@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-09T17:57:11+00:00",
+ "generated": "2026-10-10T02:03:38+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -7659,17 +7659,17 @@
      "neutral": false,
      "venue": "L&N Federal Credit Union Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/9 - 7:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "8:37 - 4th",
+     "period": 4,
+     "clock": "8:37",
      "home": {
       "id": "97",
       "abbr": "LOU",
       "name": "Louisville",
       "rank": 99,
-      "score": "0",
+      "score": "35",
       "winner": null
      },
      "away": {
@@ -7677,7 +7677,7 @@
       "abbr": "FSU",
       "name": "Florida State",
       "rank": 99,
-      "score": "0",
+      "score": "14",
       "winner": null
      },
      "homeConf": "acc",
@@ -7690,11 +7690,11 @@
      "neutral": false,
      "venue": "Husky Stadium",
      "tv": "Fox",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/9 - 9:00 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "9:05 - 2nd",
+     "period": 2,
+     "clock": "9:05",
      "home": {
       "id": "264",
       "abbr": "WASH",
@@ -7708,7 +7708,7 @@
       "abbr": "IOWA",
       "name": "Iowa",
       "rank": 20,
-      "score": "0",
+      "score": "20",
       "winner": null
      },
      "homeConf": "big10",
@@ -7717,13 +7717,13 @@
     },
     {
      "id": "401856826",
-     "kickoff": "2026-10-10T02:15Z",
+     "kickoff": "2026-10-10T02:30Z",
      "neutral": false,
      "venue": "LaVell Edwards Stadium",
      "tv": "ESPN",
      "state": "pre",
      "completed": false,
-     "detail": "10/9 - 10:15 PM EDT",
+     "detail": "10/9 - 10:30 PM EDT",
      "period": 0,
      "clock": "0:00",
      "home": {
