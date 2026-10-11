@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-11T03:55:59+00:00",
+ "generated": "2026-10-11T07:23:46+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -8496,26 +8496,26 @@
      "neutral": false,
      "venue": "Mountain America Stadium",
      "tv": "FS1",
-     "state": "in",
-     "completed": false,
-     "detail": "1:26 - 2nd",
-     "period": 2,
-     "clock": "1:26",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "9",
       "abbr": "ASU",
       "name": "Arizona State",
       "rank": 99,
-      "score": "14",
-      "winner": null
+      "score": "30",
+      "winner": true
      },
      "away": {
       "id": "62",
       "abbr": "HAW",
       "name": "Hawai'i",
       "rank": 99,
-      "score": "3",
-      "winner": null
+      "score": "12",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": null,
@@ -8623,42 +8623,11 @@
      "day": "Sat"
     },
     {
-     "id": "401858269",
-     "kickoff": "2026-10-17T04:00Z",
-     "neutral": false,
-     "venue": "California Memorial Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "25",
-      "abbr": "CAL",
-      "name": "California",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "154",
-      "abbr": "WAKE",
-      "name": "Wake Forest",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
      "id": "401856724",
      "kickoff": "2026-10-17T16:00Z",
      "neutral": false,
      "venue": "DKR-Texas Memorial Stadium",
-     "tv": "",
+     "tv": "ABC",
      "state": "pre",
      "completed": false,
      "detail": "10/17 - 12:00 PM EDT",
@@ -8720,7 +8689,7 @@
      "kickoff": "2026-10-17T16:00Z",
      "neutral": false,
      "venue": "Tiger Stadium (LA)",
-     "tv": "",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "10/17 - 12:00 PM EDT",
@@ -8999,7 +8968,7 @@
      "kickoff": "2026-10-17T19:30Z",
      "neutral": false,
      "venue": "Sanford Stadium",
-     "tv": "",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "10/17 - 3:30 PM EDT",
@@ -9030,7 +8999,7 @@
      "kickoff": "2026-10-17T19:30Z",
      "neutral": false,
      "venue": "Neyland Stadium",
-     "tv": "",
+     "tv": "ABC",
      "state": "pre",
      "completed": false,
      "detail": "10/17 - 3:30 PM EDT",
@@ -9061,7 +9030,7 @@
      "kickoff": "2026-10-17T19:30Z",
      "neutral": false,
      "venue": "Vaught-Hemingway Stadium",
-     "tv": "",
+     "tv": "SEC Network",
      "state": "pre",
      "completed": false,
      "detail": "10/17 - 3:30 PM EDT",
@@ -9464,7 +9433,7 @@
      "kickoff": "2026-10-18T02:15Z",
      "neutral": false,
      "venue": "Folsom Field",
-     "tv": "",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "10/17 - 10:15 PM EDT",
@@ -9488,6 +9457,37 @@
      },
      "homeConf": "big12",
      "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
+     "id": "401858269",
+     "kickoff": "2026-10-18T02:30Z",
+     "neutral": false,
+     "venue": "California Memorial Stadium",
+     "tv": "ESPN2",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/17 - 10:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "25",
+      "abbr": "CAL",
+      "name": "California",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "154",
+      "abbr": "WAKE",
+      "name": "Wake Forest",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
      "day": "Sat"
     }
    ]
