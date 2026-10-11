@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-11T07:23:46+00:00",
+ "generated": "2026-10-11T16:32:44+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -8561,68 +8561,6 @@
      "day": "Fri"
     },
     {
-     "id": "401858492",
-     "kickoff": "2026-10-17T04:00Z",
-     "neutral": false,
-     "venue": "Autzen Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2483",
-      "abbr": "ORE",
-      "name": "Oregon",
-      "rank": 13,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "158",
-      "abbr": "NEB",
-      "name": "Nebraska",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
-     "id": "401858494",
-     "kickoff": "2026-10-17T04:00Z",
-     "neutral": false,
-     "venue": "Rose Bowl",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "26",
-      "abbr": "UCLA",
-      "name": "UCLA",
-      "rank": 21,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "275",
-      "abbr": "WIS",
-      "name": "Wisconsin",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401856724",
      "kickoff": "2026-10-17T16:00Z",
      "neutral": false,
@@ -9336,6 +9274,37 @@
      "day": "Sat"
     },
     {
+     "id": "401858494",
+     "kickoff": "2026-10-17T23:30Z",
+     "neutral": false,
+     "venue": "Rose Bowl",
+     "tv": "NBC",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/17 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "26",
+      "abbr": "UCLA",
+      "name": "UCLA",
+      "rank": 21,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "275",
+      "abbr": "WIS",
+      "name": "Wisconsin",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
      "id": "401856722",
      "kickoff": "2026-10-17T23:30Z",
      "neutral": false,
@@ -9488,6 +9457,37 @@
      },
      "homeConf": "acc",
      "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858492",
+     "kickoff": "2026-10-18T03:00Z",
+     "neutral": false,
+     "venue": "Autzen Stadium",
+     "tv": "Fox",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/17 - 11:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2483",
+      "abbr": "ORE",
+      "name": "Oregon",
+      "rank": 13,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "158",
+      "abbr": "NEB",
+      "name": "Nebraska",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
      "day": "Sat"
     }
    ]
