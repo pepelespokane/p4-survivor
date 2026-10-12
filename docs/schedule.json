@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-11T19:02:46+00:00",
+ "generated": "2026-10-12T00:12:47+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9092,7 +9092,7 @@
      "kickoff": "2026-10-17T19:30Z",
      "neutral": false,
      "venue": "Michigan Stadium",
-     "tv": "",
+     "tv": "CBS",
      "state": "pre",
      "completed": false,
      "detail": "10/17 - 3:30 PM EDT",
