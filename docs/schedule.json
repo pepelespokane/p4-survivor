@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-12T00:12:47+00:00",
+ "generated": "2026-10-12T16:33:52+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -10181,37 +10181,6 @@
      "day": "Sat"
     },
     {
-     "id": "401858273",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Bobby Dodd Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "59",
-      "abbr": "GT",
-      "name": "Georgia Tech",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "103",
-      "abbr": "BC",
-      "name": "Boston College",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
      "id": "401858275",
      "kickoff": "2026-10-24T04:00Z",
      "neutral": false,
@@ -10333,6 +10302,37 @@
      },
      "homeConf": "sec",
      "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401858273",
+     "kickoff": "2026-10-24T19:30Z",
+     "neutral": false,
+     "venue": "Bobby Dodd Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "59",
+      "abbr": "GT",
+      "name": "Georgia Tech",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "103",
+      "abbr": "BC",
+      "name": "Boston College",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
      "day": "Sat"
     }
    ]
