@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-12T23:29:04+00:00",
+ "generated": "2026-10-13T20:14:59+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9561,37 +9561,6 @@
      "day": "Fri"
     },
     {
-     "id": "401858496",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Michigan Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "130",
-      "abbr": "MICH",
-      "name": "Michigan",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "84",
-      "abbr": "IU",
-      "name": "Indiana",
-      "rank": 5,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401856835",
      "kickoff": "2026-10-24T04:00Z",
      "neutral": false,
@@ -9775,68 +9744,6 @@
      },
      "homeConf": "big12",
      "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401858500",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Camp Randall Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "275",
-      "abbr": "WIS",
-      "name": "Wisconsin",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "30",
-      "abbr": "USC",
-      "name": "USC",
-      "rank": 19,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
-     "id": "401858498",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Ryan Field",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "77",
-      "abbr": "NU",
-      "name": "Northwestern",
-      "rank": 25,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "164",
-      "abbr": "RUTG",
-      "name": "Rutgers",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
      "day": "Sat"
     },
     {
@@ -10026,6 +9933,37 @@
      "day": "Sat"
     },
     {
+     "id": "401858496",
+     "kickoff": "2026-10-24T16:00Z",
+     "neutral": false,
+     "venue": "Michigan Stadium",
+     "tv": "Fox",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "130",
+      "abbr": "MICH",
+      "name": "Michigan",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "84",
+      "abbr": "IU",
+      "name": "Indiana",
+      "rank": 5,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
      "id": "401856728",
      "kickoff": "2026-10-24T16:00Z",
      "neutral": false,
@@ -10085,6 +10023,37 @@
      },
      "homeConf": "acc",
      "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858498",
+     "kickoff": "2026-10-24T16:00Z",
+     "neutral": false,
+     "venue": "Ryan Field",
+     "tv": "Peacock",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 12:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "77",
+      "abbr": "NU",
+      "name": "Northwestern",
+      "rank": 25,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "164",
+      "abbr": "RUTG",
+      "name": "Rutgers",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
      "day": "Sat"
     },
     {
@@ -10302,6 +10271,37 @@
      },
      "homeConf": "sec",
      "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401858500",
+     "kickoff": "2026-10-24T23:30Z",
+     "neutral": false,
+     "venue": "Camp Randall Stadium",
+     "tv": "NBC",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "275",
+      "abbr": "WIS",
+      "name": "Wisconsin",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "30",
+      "abbr": "USC",
+      "name": "USC",
+      "rank": 19,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
      "day": "Sat"
     },
     {
