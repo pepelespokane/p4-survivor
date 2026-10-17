@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-17T22:28:46+00:00",
+ "generated": "2026-10-17T22:52:21+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -8909,15 +8909,15 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "8:14 - 4th",
+     "detail": "1:18 - 4th",
      "period": 4,
-     "clock": "8:14",
+     "clock": "1:18",
      "home": {
       "id": "61",
       "abbr": "UGA",
       "name": "Georgia",
       "rank": 1,
-      "score": "17",
+      "score": "24",
       "winner": null
      },
      "away": {
@@ -8940,9 +8940,9 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "1:24 - 3rd",
-     "period": 3,
-     "clock": "1:24",
+     "detail": "5:54 - 4th",
+     "period": 4,
+     "clock": "5:54",
      "home": {
       "id": "2633",
       "abbr": "TENN",
@@ -8971,15 +8971,15 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "11:58 - 4th",
+     "detail": "1:15 - 4th",
      "period": 4,
-     "clock": "11:58",
+     "clock": "1:15",
      "home": {
       "id": "145",
       "abbr": "MISS",
       "name": "Ole Miss",
       "rank": 9,
-      "score": "28",
+      "score": "31",
       "winner": null
      },
      "away": {
@@ -9002,15 +9002,15 @@
      "tv": "Fox",
      "state": "in",
      "completed": false,
-     "detail": "5:12 - 4th",
+     "detail": "6:31 - 4th",
      "period": 4,
-     "clock": "5:12",
+     "clock": "6:31",
      "home": {
       "id": "2641",
       "abbr": "TTU",
       "name": "Texas Tech",
       "rank": 10,
-      "score": "43",
+      "score": "53",
       "winner": null
      },
      "away": {
@@ -9018,7 +9018,7 @@
       "abbr": "ASU",
       "name": "Arizona State",
       "rank": 99,
-      "score": "17",
+      "score": "23",
       "winner": null
      },
      "homeConf": "big12",
@@ -9031,18 +9031,18 @@
      "neutral": false,
      "venue": "Lane Stadium",
      "tv": "ACC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "5:14 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "5:14",
+     "clock": "0:00",
      "home": {
       "id": "259",
       "abbr": "VT",
       "name": "Virginia Tech",
       "rank": 99,
       "score": "34",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "59",
@@ -9050,7 +9050,7 @@
       "name": "Georgia Tech",
       "rank": 99,
       "score": "24",
-      "winner": null
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -9064,15 +9064,15 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "11:17 - 4th",
+     "detail": "4:34 - 4th",
      "period": 4,
-     "clock": "11:17",
+     "clock": "4:34",
      "home": {
       "id": "150",
       "abbr": "DUKE",
       "name": "Duke",
       "rank": 99,
-      "score": "10",
+      "score": "20",
       "winner": null
      },
      "away": {
@@ -9095,15 +9095,15 @@
      "tv": "CBS",
      "state": "in",
      "completed": false,
-     "detail": "11:40 - 4th",
+     "detail": "2:58 - 4th",
      "period": 4,
-     "clock": "11:40",
+     "clock": "2:58",
      "home": {
       "id": "130",
       "abbr": "MICH",
       "name": "Michigan",
       "rank": 99,
-      "score": "14",
+      "score": "21",
       "winner": null
      },
      "away": {
