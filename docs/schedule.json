@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-17T01:02:20+00:00",
+ "generated": "2026-10-17T04:43:12+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -8535,26 +8535,26 @@
      "neutral": false,
      "venue": "Ross-Ade Stadium",
      "tv": "Fox",
-     "state": "in",
-     "completed": false,
-     "detail": "10:28 - 2nd",
-     "period": 2,
-     "clock": "10:28",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2509",
       "abbr": "PUR",
       "name": "Purdue",
       "rank": 99,
-      "score": "3",
-      "winner": null
+      "score": "26",
+      "winner": false
      },
      "away": {
       "id": "264",
       "abbr": "WASH",
       "name": "Washington",
       "rank": 99,
-      "score": "10",
-      "winner": null
+      "score": "38",
+      "winner": true
      },
      "homeConf": "big10",
      "awayConf": "big10",
