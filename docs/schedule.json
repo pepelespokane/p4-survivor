@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-18T04:49:40+00:00",
+ "generated": "2026-10-18T05:24:51+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9405,15 +9405,15 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "9:45 - 3rd",
-     "period": 3,
-     "clock": "9:45",
+     "detail": "10:57 - 4th",
+     "period": 4,
+     "clock": "10:57",
      "home": {
       "id": "38",
       "abbr": "COLO",
       "name": "Colorado",
       "rank": 99,
-      "score": "14",
+      "score": "17",
       "winner": null
      },
      "away": {
@@ -9421,7 +9421,7 @@
       "abbr": "UTAH",
       "name": "Utah",
       "rank": 11,
-      "score": "13",
+      "score": "20",
       "winner": null
      },
      "homeConf": "big12",
@@ -9436,9 +9436,9 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "11:08 - 3rd",
-     "period": 3,
-     "clock": "11:08",
+     "detail": "13:34 - 4th",
+     "period": 4,
+     "clock": "13:34",
      "home": {
       "id": "25",
       "abbr": "CAL",
@@ -9452,7 +9452,7 @@
       "abbr": "WAKE",
       "name": "Wake Forest",
       "rank": 21,
-      "score": "34",
+      "score": "41",
       "winner": null
      },
      "homeConf": "acc",
@@ -9467,15 +9467,15 @@
      "tv": "Fox",
      "state": "in",
      "completed": false,
-     "detail": "15:00 - 3rd",
+     "detail": "9:05 - 3rd",
      "period": 3,
-     "clock": "15:00",
+     "clock": "9:05",
      "home": {
       "id": "2483",
       "abbr": "ORE",
       "name": "Oregon",
       "rank": 99,
-      "score": "0",
+      "score": "3",
       "winner": null
      },
      "away": {
