@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-18T09:44:32+00:00",
+ "generated": "2026-10-18T17:26:50+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9496,7 +9496,7 @@
    "week": 8,
    "poolWeek": 8,
    "start": "2026-10-23",
-   "end": "2026-10-24",
+   "end": "2026-10-25",
    "games": [
     {
      "id": "401858271",
@@ -9623,99 +9623,6 @@
      "day": "Sat"
     },
     {
-     "id": "401856837",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Rice-Eccles Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "254",
-      "abbr": "UTAH",
-      "name": "Utah",
-      "rank": 11,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "248",
-      "abbr": "HOU",
-      "name": "Houston",
-      "rank": 20,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401858499",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Rose Bowl",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "26",
-      "abbr": "UCLA",
-      "name": "UCLA",
-      "rank": 12,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "127",
-      "abbr": "MSU",
-      "name": "Michigan State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
-     "id": "401858497",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Huntington Bank Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "135",
-      "abbr": "MINN",
-      "name": "Minnesota",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2294",
-      "abbr": "IOWA",
-      "name": "Iowa",
-      "rank": 17,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401856836",
      "kickoff": "2026-10-24T04:00Z",
      "neutral": false,
@@ -9778,135 +9685,11 @@
      "day": "Sat"
     },
     {
-     "id": "401856838",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Casino Del Sol Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "12",
-      "abbr": "ARIZ",
-      "name": "Arizona",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "66",
-      "abbr": "ISU",
-      "name": "Iowa State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401856839",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Mountain America Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "9",
-      "abbr": "ASU",
-      "name": "Arizona State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2306",
-      "abbr": "KSU",
-      "name": "Kansas State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401858276",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Memorial Stadium (Clemson, SC)",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "228",
-      "abbr": "CLEM",
-      "name": "Clemson",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "259",
-      "abbr": "VT",
-      "name": "Virginia Tech",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858495",
-     "kickoff": "2026-10-24T04:00Z",
-     "neutral": false,
-     "venue": "Gies Memorial Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "356",
-      "abbr": "ILL",
-      "name": "Illinois",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2483",
-      "abbr": "ORE",
-      "name": "Oregon",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401858274",
      "kickoff": "2026-10-24T16:00Z",
      "neutral": false,
      "venue": "Hard Rock Stadium",
-     "tv": "",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "10/24 - 12:00 PM EDT",
@@ -9968,7 +9751,7 @@
      "kickoff": "2026-10-24T16:00Z",
      "neutral": false,
      "venue": "Jordan-Hare Stadium",
-     "tv": "",
+     "tv": "ABC",
      "state": "pre",
      "completed": false,
      "detail": "10/24 - 12:00 PM EDT",
@@ -10088,6 +9871,37 @@
      "day": "Sat"
     },
     {
+     "id": "401858495",
+     "kickoff": "2026-10-24T19:00Z",
+     "neutral": false,
+     "venue": "Gies Memorial Stadium",
+     "tv": "BTN",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 3:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "356",
+      "abbr": "ILL",
+      "name": "Illinois",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2483",
+      "abbr": "ORE",
+      "name": "Oregon",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
      "id": "401856727",
      "kickoff": "2026-10-24T19:30Z",
      "neutral": false,
@@ -10119,11 +9933,42 @@
      "day": "Sat"
     },
     {
+     "id": "401858499",
+     "kickoff": "2026-10-24T19:30Z",
+     "neutral": false,
+     "venue": "Rose Bowl",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "26",
+      "abbr": "UCLA",
+      "name": "UCLA",
+      "rank": 12,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "127",
+      "abbr": "MSU",
+      "name": "Michigan State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
      "id": "401856731",
      "kickoff": "2026-10-24T19:30Z",
      "neutral": false,
      "venue": "Williams-Brice Stadium",
-     "tv": "",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "10/24 - 3:30 PM EDT",
@@ -10154,7 +9999,7 @@
      "kickoff": "2026-10-24T19:30Z",
      "neutral": false,
      "venue": "Davis Wade Stadium",
-     "tv": "",
+     "tv": "SEC Network",
      "state": "pre",
      "completed": false,
      "detail": "10/24 - 3:30 PM EDT",
@@ -10181,6 +10026,37 @@
      "day": "Sat"
     },
     {
+     "id": "401858497",
+     "kickoff": "2026-10-24T19:30Z",
+     "neutral": false,
+     "venue": "Huntington Bank Stadium",
+     "tv": "FS1",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "135",
+      "abbr": "MINN",
+      "name": "Minnesota",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2294",
+      "abbr": "IOWA",
+      "name": "Iowa",
+      "rank": 17,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
      "id": "401858273",
      "kickoff": "2026-10-24T19:30Z",
      "neutral": false,
@@ -10203,6 +10079,68 @@
       "id": "103",
       "abbr": "BC",
       "name": "Boston College",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401856839",
+     "kickoff": "2026-10-24T19:45Z",
+     "neutral": false,
+     "venue": "Mountain America Stadium",
+     "tv": "ESPN2",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 3:45 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "9",
+      "abbr": "ASU",
+      "name": "Arizona State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2306",
+      "abbr": "KSU",
+      "name": "Kansas State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
+     "id": "401858276",
+     "kickoff": "2026-10-24T23:00Z",
+     "neutral": false,
+     "venue": "Memorial Stadium (Clemson, SC)",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 7:00 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "228",
+      "abbr": "CLEM",
+      "name": "Clemson",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "259",
+      "abbr": "VT",
+      "name": "Virginia Tech",
       "rank": 99,
       "score": "0",
       "winner": null
@@ -10305,6 +10243,37 @@
      "day": "Sat"
     },
     {
+     "id": "401856838",
+     "kickoff": "2026-10-24T23:30Z",
+     "neutral": false,
+     "venue": "Casino Del Sol Stadium",
+     "tv": "ESPN2",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 7:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "12",
+      "abbr": "ARIZ",
+      "name": "Arizona",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "66",
+      "abbr": "ISU",
+      "name": "Iowa State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
      "id": "401858275",
      "kickoff": "2026-10-24T23:30Z",
      "neutral": false,
@@ -10333,6 +10302,37 @@
      },
      "homeConf": "acc",
      "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401856837",
+     "kickoff": "2026-10-25T02:15Z",
+     "neutral": false,
+     "venue": "Rice-Eccles Stadium",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/24 - 10:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "254",
+      "abbr": "UTAH",
+      "name": "Utah",
+      "rank": 11,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "248",
+      "abbr": "HOU",
+      "name": "Houston",
+      "rank": 20,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
      "day": "Sat"
     }
    ]
