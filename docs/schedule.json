@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-18T05:24:51+00:00",
+ "generated": "2026-10-18T09:44:32+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9403,26 +9403,26 @@
      "neutral": false,
      "venue": "Folsom Field",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "10:57 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "10:57",
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
       "name": "Colorado",
       "rank": 99,
-      "score": "17",
-      "winner": null
+      "score": "24",
+      "winner": false
      },
      "away": {
       "id": "254",
       "abbr": "UTAH",
       "name": "Utah",
       "rank": 11,
-      "score": "20",
-      "winner": null
+      "score": "27",
+      "winner": true
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -9434,18 +9434,18 @@
      "neutral": false,
      "venue": "California Memorial Stadium",
      "tv": "ESPN2",
-     "state": "in",
-     "completed": false,
-     "detail": "13:34 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "13:34",
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
       "name": "California",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "7",
+      "winner": false
      },
      "away": {
       "id": "154",
@@ -9453,7 +9453,7 @@
       "name": "Wake Forest",
       "rank": 21,
       "score": "41",
-      "winner": null
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -9465,26 +9465,26 @@
      "neutral": false,
      "venue": "Autzen Stadium",
      "tv": "Fox",
-     "state": "in",
-     "completed": false,
-     "detail": "9:05 - 3rd",
-     "period": 3,
-     "clock": "9:05",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2483",
       "abbr": "ORE",
       "name": "Oregon",
       "rank": 99,
-      "score": "3",
-      "winner": null
+      "score": "17",
+      "winner": true
      },
      "away": {
       "id": "158",
       "abbr": "NEB",
       "name": "Nebraska",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "14",
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": "big10",
