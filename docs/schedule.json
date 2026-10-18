@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-18T00:08:43+00:00",
+ "generated": "2026-10-18T00:37:43+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9126,9 +9126,9 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "8:19 - 2nd",
+     "detail": "1:40 - 2nd",
      "period": 2,
-     "clock": "8:19",
+     "clock": "1:40",
      "home": {
       "id": "2390",
       "abbr": "MIA",
@@ -9142,7 +9142,7 @@
       "abbr": "FSU",
       "name": "Florida State",
       "rank": 99,
-      "score": "7",
+      "score": "14",
       "winner": null
      },
      "homeConf": "acc",
@@ -9157,15 +9157,15 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "3:46 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "3:46",
+     "clock": "0:00",
      "home": {
       "id": "238",
       "abbr": "VAN",
       "name": "Vanderbilt",
       "rank": 99,
-      "score": "7",
+      "score": "14",
       "winner": null
      },
      "away": {
@@ -9173,7 +9173,7 @@
       "abbr": "ARK",
       "name": "Arkansas",
       "rank": 99,
-      "score": "7",
+      "score": "14",
       "winner": null
      },
      "homeConf": "sec",
@@ -9188,15 +9188,15 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "8:13 - 2nd",
+     "detail": "0:09 - 2nd",
      "period": 2,
-     "clock": "8:13",
+     "clock": "0:09",
      "home": {
       "id": "239",
       "abbr": "BAY",
       "name": "Baylor",
       "rank": 99,
-      "score": "3",
+      "score": "6",
       "winner": null
      },
      "away": {
@@ -9219,9 +9219,9 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "5:06 - 1st",
-     "period": 1,
-     "clock": "5:06",
+     "detail": "9:47 - 2nd",
+     "period": 2,
+     "clock": "9:47",
      "home": {
       "id": "252",
       "abbr": "BYU",
@@ -9235,7 +9235,7 @@
       "abbr": "ND",
       "name": "Notre Dame",
       "rank": 2,
-      "score": "3",
+      "score": "10",
       "winner": null
      },
      "homeConf": "big12",
@@ -9250,15 +9250,15 @@
      "tv": "NBC",
      "state": "in",
      "completed": false,
-     "detail": "End of 2nd",
+     "detail": "4:43 - 2nd",
      "period": 2,
-     "clock": "0:00",
+     "clock": "4:43",
      "home": {
       "id": "26",
       "abbr": "UCLA",
       "name": "UCLA",
       "rank": 12,
-      "score": "3",
+      "score": "10",
       "winner": null
      },
      "away": {
@@ -9281,9 +9281,9 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "1:33 - 1st",
-     "period": 1,
-     "clock": "1:33",
+     "detail": "4:24 - 2nd",
+     "period": 2,
+     "clock": "4:24",
      "home": {
       "id": "201",
       "abbr": "OU",
@@ -9312,9 +9312,9 @@
      "tv": "Fox",
      "state": "in",
      "completed": false,
-     "detail": "0:53 - 1st",
-     "period": 1,
-     "clock": "0:53",
+     "detail": "7:14 - 2nd",
+     "period": 2,
+     "clock": "7:14",
      "home": {
       "id": "248",
       "abbr": "HOU",
@@ -9343,15 +9343,15 @@
      "tv": "ACCNX",
      "state": "in",
      "completed": false,
-     "detail": "14:56 - 2nd",
+     "detail": "4:36 - 2nd",
      "period": 2,
-     "clock": "14:56",
+     "clock": "4:36",
      "home": {
       "id": "24",
       "abbr": "STAN",
       "name": "Stanford",
       "rank": 99,
-      "score": "7",
+      "score": "14",
       "winner": null
      },
      "away": {
@@ -9374,15 +9374,15 @@
      "tv": "ACC Network",
      "state": "in",
      "completed": false,
-     "detail": "5:16 - 1st",
-     "period": 1,
-     "clock": "5:16",
+     "detail": "10:08 - 2nd",
+     "period": 2,
+     "clock": "10:08",
      "home": {
       "id": "183",
       "abbr": "SYR",
       "name": "Syracuse",
       "rank": 99,
-      "score": "10",
+      "score": "16",
       "winner": null
      },
      "away": {
@@ -9390,7 +9390,7 @@
       "abbr": "LOU",
       "name": "Louisville",
       "rank": 99,
-      "score": "7",
+      "score": "14",
       "winner": null
      },
      "homeConf": "acc",
