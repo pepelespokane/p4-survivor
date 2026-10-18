@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-18T19:31:07+00:00",
+ "generated": "2026-10-18T22:29:49+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9875,7 +9875,7 @@
      "kickoff": "2026-10-24T19:30Z",
      "neutral": false,
      "venue": "Rose Bowl",
-     "tv": "",
+     "tv": "CBS",
      "state": "pre",
      "completed": false,
      "detail": "10/24 - 3:30 PM EDT",
