@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-19T22:52:14+00:00",
+ "generated": "2026-10-21T18:37:03+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -10375,37 +10375,6 @@
      "day": "Fri"
     },
     {
-     "id": "401858508",
-     "kickoff": "2026-10-31T04:00Z",
-     "neutral": false,
-     "venue": "Rose Bowl",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "26",
-      "abbr": "UCLA",
-      "name": "UCLA",
-      "rank": 9,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2440",
-      "abbr": "NEV",
-      "name": "Nevada",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": null,
-     "day": "Sat"
-    },
-    {
      "id": "401858505",
      "kickoff": "2026-10-31T04:00Z",
      "neutral": false,
@@ -10961,6 +10930,37 @@
      },
      "homeConf": "acc",
      "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858508",
+     "kickoff": "2026-10-31T20:15Z",
+     "neutral": false,
+     "venue": "Rose Bowl",
+     "tv": "BTN",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/31 - 4:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "26",
+      "abbr": "UCLA",
+      "name": "UCLA",
+      "rank": 9,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2440",
+      "abbr": "NEV",
+      "name": "Nevada",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": null,
      "day": "Sat"
     },
     {
