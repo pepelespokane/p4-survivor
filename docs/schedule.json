@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-23T23:48:18+00:00",
+ "generated": "2026-10-24T03:14:10+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9504,26 +9504,26 @@
      "neutral": false,
      "venue": "Scott Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "14:54 - 2nd",
-     "period": 2,
-     "clock": "14:54",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "258",
       "abbr": "UVA",
       "name": "Virginia",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "16",
+      "winner": false
      },
      "away": {
       "id": "150",
       "abbr": "DUKE",
       "name": "Duke",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "19",
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -9535,17 +9535,17 @@
      "neutral": false,
      "venue": "Stanford Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/23 - 10:30 PM EDT",
-     "period": 0,
+     "detail": "End of 1st",
+     "period": 1,
      "clock": "0:00",
      "home": {
       "id": "24",
       "abbr": "STAN",
       "name": "Stanford",
       "rank": 99,
-      "score": "0",
+      "score": "14",
       "winner": null
      },
      "away": {
@@ -9553,7 +9553,7 @@
       "abbr": "NCSU",
       "name": "NC State",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "acc",
