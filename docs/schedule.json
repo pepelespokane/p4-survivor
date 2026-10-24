@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-24T22:36:03+00:00",
+ "generated": "2026-10-24T22:52:58+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9847,9 +9847,9 @@
      "tv": "Fox",
      "state": "in",
      "completed": false,
-     "detail": "8:59 - 4th",
+     "detail": "1:42 - 4th",
      "period": 4,
-     "clock": "8:59",
+     "clock": "1:42",
      "home": {
       "id": "2116",
       "abbr": "UCF",
@@ -9878,9 +9878,9 @@
      "tv": "CBS",
      "state": "in",
      "completed": false,
-     "detail": "11:47 - 4th",
+     "detail": "4:36 - 4th",
      "period": 4,
-     "clock": "11:47",
+     "clock": "4:36",
      "home": {
       "id": "26",
       "abbr": "UCLA",
@@ -9894,7 +9894,7 @@
       "abbr": "MSU",
       "name": "Michigan State",
       "rank": 99,
-      "score": "7",
+      "score": "10",
       "winner": null
      },
      "homeConf": "big10",
@@ -9909,9 +9909,9 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "8:23 - 4th",
+     "detail": "2:31 - 4th",
      "period": 4,
-     "clock": "8:23",
+     "clock": "2:31",
      "home": {
       "id": "2579",
       "abbr": "SC",
@@ -9940,9 +9940,9 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "0:12 - 4th",
+     "detail": "3:41 - 4th",
      "period": 4,
-     "clock": "0:12",
+     "clock": "3:41",
      "home": {
       "id": "333",
       "abbr": "ALA",
@@ -9971,9 +9971,9 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "5:08 - 4th",
+     "detail": "0:39 - 4th",
      "period": 4,
-     "clock": "5:08",
+     "clock": "0:39",
      "home": {
       "id": "135",
       "abbr": "MINN",
@@ -9987,7 +9987,7 @@
       "abbr": "IOWA",
       "name": "Iowa",
       "rank": 15,
-      "score": "3",
+      "score": "10",
       "winner": null
      },
      "homeConf": "big10",
@@ -10002,15 +10002,15 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "3:25 - 4th",
+     "detail": "0:58 - 4th",
      "period": 4,
-     "clock": "3:25",
+     "clock": "0:58",
      "home": {
       "id": "344",
       "abbr": "MSST",
       "name": "Mississippi State",
       "rank": 99,
-      "score": "7",
+      "score": "15",
       "winner": null
      },
      "away": {
@@ -10033,15 +10033,15 @@
      "tv": "ACC Network",
      "state": "in",
      "completed": false,
-     "detail": "5:48 - 4th",
+     "detail": "2:00 - 4th",
      "period": 4,
-     "clock": "5:48",
+     "clock": "2:00",
      "home": {
       "id": "59",
       "abbr": "GT",
       "name": "Georgia Tech",
       "rank": 99,
-      "score": "20",
+      "score": "27",
       "winner": null
      },
      "away": {
@@ -10049,7 +10049,7 @@
       "abbr": "BC",
       "name": "Boston College",
       "rank": 99,
-      "score": "42",
+      "score": "49",
       "winner": null
      },
      "homeConf": "acc",
@@ -10064,15 +10064,15 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "End of 3rd",
-     "period": 3,
-     "clock": "0:00",
+     "detail": "9:52 - 4th",
+     "period": 4,
+     "clock": "9:52",
      "home": {
       "id": "9",
       "abbr": "ASU",
       "name": "Arizona State",
       "rank": 99,
-      "score": "14",
+      "score": "21",
       "winner": null
      },
      "away": {
