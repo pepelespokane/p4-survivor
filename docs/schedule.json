@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-24T17:11:34+00:00",
+ "generated": "2026-10-24T17:30:12+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9568,15 +9568,15 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "7:45 - 2nd",
+     "detail": "1:50 - 2nd",
      "period": 2,
-     "clock": "7:45",
+     "clock": "1:50",
      "home": {
       "id": "2390",
       "abbr": "MIA",
       "name": "Miami",
       "rank": 1,
-      "score": "17",
+      "score": "24",
       "winner": null
      },
      "away": {
@@ -9584,7 +9584,7 @@
       "abbr": "PITT",
       "name": "Pittsburgh",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "acc",
@@ -9599,9 +9599,9 @@
      "tv": "Fox",
      "state": "in",
      "completed": false,
-     "detail": "9:21 - 2nd",
+     "detail": "1:41 - 2nd",
      "period": 2,
-     "clock": "9:21",
+     "clock": "1:41",
      "home": {
       "id": "130",
       "abbr": "MICH",
@@ -9630,9 +9630,9 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "7:48 - 2nd",
+     "detail": "1:48 - 2nd",
      "period": 2,
-     "clock": "7:48",
+     "clock": "1:48",
      "home": {
       "id": "2132",
       "abbr": "CIN",
@@ -9661,15 +9661,15 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "9:48 - 2nd",
+     "detail": "4:29 - 2nd",
      "period": 2,
-     "clock": "9:48",
+     "clock": "4:29",
      "home": {
       "id": "2",
       "abbr": "AUB",
       "name": "Auburn",
       "rank": 99,
-      "score": "3",
+      "score": "10",
       "winner": null
      },
      "away": {
@@ -9677,7 +9677,7 @@
       "abbr": "LSU",
       "name": "LSU",
       "rank": 18,
-      "score": "17",
+      "score": "24",
       "winner": null
      },
      "homeConf": "sec",
@@ -9692,9 +9692,9 @@
      "tv": "CW",
      "state": "in",
      "completed": false,
-     "detail": "10:29 - 2nd",
+     "detail": "3:50 - 2nd",
      "period": 2,
-     "clock": "10:29",
+     "clock": "3:50",
      "home": {
       "id": "2567",
       "abbr": "SMU",
@@ -9708,7 +9708,7 @@
       "abbr": "CAL",
       "name": "California",
       "rank": 99,
-      "score": "14",
+      "score": "17",
       "winner": null
      },
      "homeConf": "acc",
@@ -9723,15 +9723,15 @@
      "tv": "Peacock",
      "state": "in",
      "completed": false,
-     "detail": "7:21 - 2nd",
+     "detail": "1:46 - 2nd",
      "period": 2,
-     "clock": "7:21",
+     "clock": "1:46",
      "home": {
       "id": "77",
       "abbr": "NU",
       "name": "Northwestern",
       "rank": 24,
-      "score": "21",
+      "score": "28",
       "winner": null
      },
      "away": {
@@ -9754,9 +9754,9 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "5:25 - 2nd",
+     "detail": "1:04 - 2nd",
      "period": 2,
-     "clock": "5:25",
+     "clock": "1:04",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -9785,15 +9785,15 @@
      "tv": "TNT",
      "state": "in",
      "completed": false,
-     "detail": "11:51 - 1st",
+     "detail": "4:10 - 1st",
      "period": 1,
-     "clock": "11:51",
+     "clock": "4:10",
      "home": {
       "id": "2305",
       "abbr": "KU",
       "name": "Kansas",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "away": {
