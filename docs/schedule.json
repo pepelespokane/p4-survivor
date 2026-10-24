@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-24T03:14:10+00:00",
+ "generated": "2026-10-24T04:50:07+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -9537,15 +9537,15 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "End of 1st",
-     "period": 1,
-     "clock": "0:00",
+     "detail": "6:24 - 3rd",
+     "period": 3,
+     "clock": "6:24",
      "home": {
       "id": "24",
       "abbr": "STAN",
       "name": "Stanford",
       "rank": 99,
-      "score": "14",
+      "score": "28",
       "winner": null
      },
      "away": {
@@ -9553,7 +9553,7 @@
       "abbr": "NCSU",
       "name": "NC State",
       "rank": 99,
-      "score": "7",
+      "score": "14",
       "winner": null
      },
      "homeConf": "acc",
