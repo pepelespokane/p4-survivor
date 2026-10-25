@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-25T00:48:11+00:00",
+ "generated": "2026-10-25T01:20:21+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -10095,15 +10095,15 @@
      "tv": "FS1",
      "state": "in",
      "completed": false,
-     "detail": "0:08 - 2nd",
-     "period": 2,
-     "clock": "0:08",
+     "detail": "14:07 - 3rd",
+     "period": 3,
+     "clock": "14:07",
      "home": {
       "id": "197",
       "abbr": "OKST",
       "name": "Oklahoma State",
       "rank": 99,
-      "score": "23",
+      "score": "30",
       "winner": null
      },
      "away": {
@@ -10126,15 +10126,15 @@
      "tv": "ESPN",
      "state": "in",
      "completed": false,
-     "detail": "13:29 - 3rd",
+     "detail": "0:03 - 3rd",
      "period": 3,
-     "clock": "13:29",
+     "clock": "0:03",
      "home": {
       "id": "228",
       "abbr": "CLEM",
       "name": "Clemson",
       "rank": 99,
-      "score": "3",
+      "score": "16",
       "winner": null
      },
      "away": {
@@ -10157,15 +10157,15 @@
      "tv": "ABC",
      "state": "in",
      "completed": false,
-     "detail": "11:43 - 2nd",
+     "detail": "1:51 - 2nd",
      "period": 2,
-     "clock": "11:43",
+     "clock": "1:51",
      "home": {
       "id": "251",
       "abbr": "TEX",
       "name": "Texas",
       "rank": 19,
-      "score": "17",
+      "score": "24",
       "winner": null
      },
      "away": {
@@ -10188,15 +10188,15 @@
      "tv": "SEC Network",
      "state": "in",
      "completed": false,
-     "detail": "3:00 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "3:00",
+     "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
       "name": "Kentucky",
       "rank": 12,
-      "score": "7",
+      "score": "14",
       "winner": null
      },
      "away": {
@@ -10219,15 +10219,15 @@
      "tv": "NBC",
      "state": "in",
      "completed": false,
-     "detail": "1:55 - 2nd",
-     "period": 2,
-     "clock": "1:55",
+     "detail": "14:47 - 3rd",
+     "period": 3,
+     "clock": "14:47",
      "home": {
       "id": "275",
       "abbr": "WIS",
       "name": "Wisconsin",
       "rank": 99,
-      "score": "3",
+      "score": "10",
       "winner": null
      },
      "away": {
@@ -10250,15 +10250,15 @@
      "tv": "ESPN2",
      "state": "in",
      "completed": false,
-     "detail": "4:50 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "4:50",
+     "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
       "name": "Arizona",
       "rank": 25,
-      "score": "18",
+      "score": "25",
       "winner": null
      },
      "away": {
@@ -10281,9 +10281,9 @@
      "tv": "ACC Network",
      "state": "in",
      "completed": false,
-     "detail": "2:40 - 2nd",
+     "detail": "Halftime",
      "period": 2,
-     "clock": "2:40",
+     "clock": "0:00",
      "home": {
       "id": "153",
       "abbr": "UNC",
@@ -10297,7 +10297,7 @@
       "abbr": "SYR",
       "name": "Syracuse",
       "rank": 99,
-      "score": "7",
+      "score": "10",
       "winner": null
      },
      "homeConf": "acc",
