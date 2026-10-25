@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-25T01:20:21+00:00",
+ "generated": "2026-10-25T05:39:44+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -10093,18 +10093,18 @@
      "neutral": false,
      "venue": "Boone Pickens Stadium",
      "tv": "FS1",
-     "state": "in",
-     "completed": false,
-     "detail": "14:07 - 3rd",
-     "period": 3,
-     "clock": "14:07",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "197",
       "abbr": "OKST",
       "name": "Oklahoma State",
       "rank": 99,
-      "score": "30",
-      "winner": null
+      "score": "57",
+      "winner": true
      },
      "away": {
       "id": "38",
@@ -10112,7 +10112,7 @@
       "name": "Colorado",
       "rank": 99,
       "score": "24",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -10124,26 +10124,26 @@
      "neutral": false,
      "venue": "Memorial Stadium (Clemson, SC)",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "0:03 - 3rd",
-     "period": 3,
-     "clock": "0:03",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "228",
       "abbr": "CLEM",
       "name": "Clemson",
       "rank": 99,
       "score": "16",
-      "winner": null
+      "winner": false
      },
      "away": {
       "id": "259",
       "abbr": "VT",
       "name": "Virginia Tech",
       "rank": 99,
-      "score": "10",
-      "winner": null
+      "score": "20",
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -10155,26 +10155,26 @@
      "neutral": false,
      "venue": "DKR-Texas Memorial Stadium",
      "tv": "ABC",
-     "state": "in",
-     "completed": false,
-     "detail": "1:51 - 2nd",
-     "period": 2,
-     "clock": "1:51",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "251",
       "abbr": "TEX",
       "name": "Texas",
       "rank": 19,
-      "score": "24",
-      "winner": null
+      "score": "34",
+      "winner": true
      },
      "away": {
       "id": "145",
       "abbr": "MISS",
       "name": "Ole Miss",
       "rank": 7,
-      "score": "3",
-      "winner": null
+      "score": "27",
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": "sec",
@@ -10186,26 +10186,26 @@
      "neutral": false,
      "venue": "Kroger Field",
      "tv": "SEC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "96",
       "abbr": "UK",
       "name": "Kentucky",
       "rank": 12,
-      "score": "14",
-      "winner": null
+      "score": "34",
+      "winner": true
      },
      "away": {
       "id": "238",
       "abbr": "VAN",
       "name": "Vanderbilt",
       "rank": 99,
-      "score": "10",
-      "winner": null
+      "score": "17",
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": "sec",
@@ -10217,18 +10217,18 @@
      "neutral": false,
      "venue": "Camp Randall Stadium",
      "tv": "NBC",
-     "state": "in",
-     "completed": false,
-     "detail": "14:47 - 3rd",
-     "period": 3,
-     "clock": "14:47",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "275",
       "abbr": "WIS",
       "name": "Wisconsin",
       "rank": 99,
-      "score": "10",
-      "winner": null
+      "score": "24",
+      "winner": true
      },
      "away": {
       "id": "30",
@@ -10236,7 +10236,7 @@
       "name": "USC",
       "rank": 16,
       "score": "7",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": "big10",
@@ -10248,18 +10248,18 @@
      "neutral": false,
      "venue": "Casino Del Sol Stadium",
      "tv": "ESPN2",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
       "name": "Arizona",
       "rank": 25,
-      "score": "25",
-      "winner": null
+      "score": "39",
+      "winner": true
      },
      "away": {
       "id": "66",
@@ -10267,7 +10267,7 @@
       "name": "Iowa State",
       "rank": 99,
       "score": "3",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -10279,26 +10279,26 @@
      "neutral": false,
      "venue": "Kenan Stadium",
      "tv": "ACC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final/OT",
+     "period": 5,
      "clock": "0:00",
      "home": {
       "id": "153",
       "abbr": "UNC",
       "name": "North Carolina",
       "rank": 99,
-      "score": "13",
-      "winner": null
+      "score": "30",
+      "winner": false
      },
      "away": {
       "id": "183",
       "abbr": "SYR",
       "name": "Syracuse",
       "rank": 99,
-      "score": "10",
-      "winner": null
+      "score": "31",
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -10310,17 +10310,17 @@
      "neutral": false,
      "venue": "Rice-Eccles Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/24 - 10:15 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "2:00 - 4th",
+     "period": 4,
+     "clock": "2:00",
      "home": {
       "id": "254",
       "abbr": "UTAH",
       "name": "Utah",
       "rank": 10,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "away": {
@@ -10328,7 +10328,7 @@
       "abbr": "HOU",
       "name": "Houston",
       "rank": 14,
-      "score": "0",
+      "score": "13",
       "winner": null
      },
      "homeConf": "big12",
@@ -10375,73 +10375,11 @@
      "day": "Fri"
     },
     {
-     "id": "401858505",
-     "kickoff": "2026-10-31T04:00Z",
-     "neutral": false,
-     "venue": "Autzen Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2483",
-      "abbr": "ORE",
-      "name": "Oregon",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "77",
-      "abbr": "NU",
-      "name": "Northwestern",
-      "rank": 24,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
-     "id": "401858506",
-     "kickoff": "2026-10-31T04:00Z",
-     "neutral": false,
-     "venue": "Beaver Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "213",
-      "abbr": "PSU",
-      "name": "Penn State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2509",
-      "abbr": "PUR",
-      "name": "Purdue",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401856842",
      "kickoff": "2026-10-31T16:00Z",
      "neutral": false,
      "venue": "Galaxy Stadium",
-     "tv": "",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "10/31 - 12:00 PM EDT",
@@ -10840,6 +10778,37 @@
      "day": "Sat"
     },
     {
+     "id": "401858505",
+     "kickoff": "2026-10-31T19:30Z",
+     "neutral": false,
+     "venue": "Autzen Stadium",
+     "tv": "Peacock",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/31 - 3:30 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2483",
+      "abbr": "ORE",
+      "name": "Oregon",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "77",
+      "abbr": "NU",
+      "name": "Northwestern",
+      "rank": 24,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
      "id": "401856845",
      "kickoff": "2026-10-31T19:30Z",
      "neutral": false,
@@ -10875,7 +10844,7 @@
      "kickoff": "2026-10-31T19:45Z",
      "neutral": false,
      "venue": "Nippert Stadium",
-     "tv": "",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "10/31 - 3:45 PM EDT",
@@ -10906,7 +10875,7 @@
      "kickoff": "2026-10-31T19:45Z",
      "neutral": false,
      "venue": "Allegacy Federal Credit Union Stadium",
-     "tv": "",
+     "tv": "ESPN2",
      "state": "pre",
      "completed": false,
      "detail": "10/31 - 3:45 PM EDT",
@@ -10995,6 +10964,37 @@
      "day": "Sat"
     },
     {
+     "id": "401858506",
+     "kickoff": "2026-10-31T20:15Z",
+     "neutral": false,
+     "venue": "Beaver Stadium",
+     "tv": "BTN",
+     "state": "pre",
+     "completed": false,
+     "detail": "10/31 - 4:15 PM EDT",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "213",
+      "abbr": "PSU",
+      "name": "Penn State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2509",
+      "abbr": "PUR",
+      "name": "Purdue",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
      "id": "401856847",
      "kickoff": "2026-10-31T23:00Z",
      "neutral": false,
@@ -11061,7 +11061,7 @@
      "kickoff": "2026-10-31T23:30Z",
      "neutral": false,
      "venue": "Kenan Stadium",
-     "tv": "",
+     "tv": "ABC",
      "state": "pre",
      "completed": false,
      "detail": "10/31 - 7:30 PM EDT",
@@ -11123,7 +11123,7 @@
      "kickoff": "2026-10-31T23:30Z",
      "neutral": false,
      "venue": "DKR-Texas Memorial Stadium",
-     "tv": "",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "10/31 - 7:30 PM EDT",
