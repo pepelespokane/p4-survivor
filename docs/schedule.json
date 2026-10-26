@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-25T19:48:13+00:00",
+ "generated": "2026-10-26T16:28:36+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -11592,37 +11592,6 @@
      "day": "Sat"
     },
     {
-     "id": "401858290",
-     "kickoff": "2026-11-07T05:00Z",
-     "neutral": false,
-     "venue": "Allegacy Federal Credit Union Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "154",
-      "abbr": "WAKE",
-      "name": "Wake Forest",
-      "rank": 14,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2771",
-      "abbr": "MRMK",
-      "name": "Merrimack",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": null,
-     "day": "Sat"
-    },
-    {
      "id": "401856739",
      "kickoff": "2026-11-07T05:00Z",
      "neutral": false,
@@ -11964,130 +11933,6 @@
      "day": "Sat"
     },
     {
-     "id": "401858285",
-     "kickoff": "2026-11-07T05:00Z",
-     "neutral": false,
-     "venue": "JMA Wireless Dome",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "183",
-      "abbr": "SYR",
-      "name": "Syracuse",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "228",
-      "abbr": "CLEM",
-      "name": "Clemson",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858286",
-     "kickoff": "2026-11-07T05:00Z",
-     "neutral": false,
-     "venue": "Carter-Finley Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "152",
-      "abbr": "NCSU",
-      "name": "NC State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "150",
-      "abbr": "DUKE",
-      "name": "Duke",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858287",
-     "kickoff": "2026-11-07T05:00Z",
-     "neutral": false,
-     "venue": "Bobby Dodd Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "59",
-      "abbr": "GT",
-      "name": "Georgia Tech",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "97",
-      "abbr": "LOU",
-      "name": "Louisville",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858289",
-     "kickoff": "2026-11-07T05:00Z",
-     "neutral": false,
-     "venue": "Alumni Stadium (Chestnut Hill, MA)",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "103",
-      "abbr": "BC",
-      "name": "Boston College",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "52",
-      "abbr": "FSU",
-      "name": "Florida State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
      "id": "401858511",
      "kickoff": "2026-11-07T05:00Z",
      "neutral": false,
@@ -12181,6 +12026,68 @@
      "day": "Sat"
     },
     {
+     "id": "401858285",
+     "kickoff": "2026-11-07T17:00Z",
+     "neutral": false,
+     "venue": "JMA Wireless Dome",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/7 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "183",
+      "abbr": "SYR",
+      "name": "Syracuse",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "228",
+      "abbr": "CLEM",
+      "name": "Clemson",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858289",
+     "kickoff": "2026-11-07T17:00Z",
+     "neutral": false,
+     "venue": "Alumni Stadium (Chestnut Hill, MA)",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/7 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "103",
+      "abbr": "BC",
+      "name": "Boston College",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "52",
+      "abbr": "FSU",
+      "name": "Florida State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
      "id": "401858292",
      "kickoff": "2026-11-07T17:00Z",
      "neutral": false,
@@ -12212,6 +12119,68 @@
      "day": "Sat"
     },
     {
+     "id": "401858286",
+     "kickoff": "2026-11-07T17:30Z",
+     "neutral": false,
+     "venue": "Carter-Finley Stadium",
+     "tv": "CW",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/7 - 12:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "152",
+      "abbr": "NCSU",
+      "name": "NC State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "150",
+      "abbr": "DUKE",
+      "name": "Duke",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858290",
+     "kickoff": "2026-11-07T20:30Z",
+     "neutral": false,
+     "venue": "Allegacy Federal Credit Union Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/7 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "154",
+      "abbr": "WAKE",
+      "name": "Wake Forest",
+      "rank": 14,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2771",
+      "abbr": "MRMK",
+      "name": "Merrimack",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": null,
+     "day": "Sat"
+    },
+    {
      "id": "401858291",
      "kickoff": "2026-11-08T00:30Z",
      "neutral": false,
@@ -12239,6 +12208,37 @@
       "winner": null
      },
      "homeConf": null,
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858287",
+     "kickoff": "2026-11-08T00:30Z",
+     "neutral": false,
+     "venue": "Bobby Dodd Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/7 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "59",
+      "abbr": "GT",
+      "name": "Georgia Tech",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "97",
+      "abbr": "LOU",
+      "name": "Louisville",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
      "awayConf": "acc",
      "day": "Sat"
     }
