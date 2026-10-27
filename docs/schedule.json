@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-26T21:20:02+00:00",
+ "generated": "2026-10-27T19:25:55+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -11344,37 +11344,6 @@
      "day": "Fri"
     },
     {
-     "id": "401858514",
-     "kickoff": "2026-11-07T05:00Z",
-     "neutral": false,
-     "venue": "Ohio Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "194",
-      "abbr": "OSU",
-      "name": "Ohio State",
-      "rank": 2,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2483",
-      "abbr": "ORE",
-      "name": "Oregon",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401858512",
      "kickoff": "2026-11-07T05:00Z",
      "neutral": false,
@@ -11937,7 +11906,7 @@
      "kickoff": "2026-11-07T20:00Z",
      "neutral": false,
      "venue": "Williams-Brice Stadium",
-     "tv": "ESPN2",
+     "tv": "ESPN",
      "state": "pre",
      "completed": false,
      "detail": "11/7 - 3:00 PM EST",
@@ -11961,6 +11930,37 @@
      },
      "homeConf": "sec",
      "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401858514",
+     "kickoff": "2026-11-07T20:30Z",
+     "neutral": false,
+     "venue": "Ohio Stadium",
+     "tv": "CBS",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/7 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "194",
+      "abbr": "OSU",
+      "name": "Ohio State",
+      "rank": 2,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2483",
+      "abbr": "ORE",
+      "name": "Oregon",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
      "day": "Sat"
     },
     {
