@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-27T19:25:55+00:00",
+ "generated": "2026-10-29T18:00:08+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -10999,7 +10999,7 @@
      "kickoff": "2026-10-31T23:00Z",
      "neutral": false,
      "venue": "Jack Trice Stadium",
-     "tv": "FS1",
+     "tv": "Fox",
      "state": "pre",
      "completed": false,
      "detail": "10/31 - 7:00 PM EDT",
