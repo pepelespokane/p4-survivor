@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-31T01:25:12+00:00",
+ "generated": "2026-10-31T05:59:43+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -10349,26 +10349,26 @@
      "neutral": false,
      "venue": "Acrisure Bounce House",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "2116",
       "abbr": "UCF",
       "name": "UCF",
       "rank": 99,
-      "score": "6",
-      "winner": null
+      "score": "9",
+      "winner": false
      },
      "away": {
       "id": "239",
       "abbr": "BAY",
       "name": "Baylor",
       "rank": 99,
-      "score": "20",
-      "winner": null
+      "score": "41",
+      "winner": true
      },
      "homeConf": "big12",
      "awayConf": "big12",
