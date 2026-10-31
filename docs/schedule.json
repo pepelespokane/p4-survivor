@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-10-31T19:05:12+00:00",
+ "generated": "2026-10-31T21:45:51+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -10380,26 +10380,26 @@
      "neutral": false,
      "venue": "Galaxy Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "7:17 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "7:17",
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
       "name": "Texas Tech",
       "rank": 13,
-      "score": "27",
-      "winner": null
+      "score": "34",
+      "winner": true
      },
      "away": {
       "id": "12",
       "abbr": "ARIZ",
       "name": "Arizona",
       "rank": 22,
-      "score": "23",
-      "winner": null
+      "score": "26",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -10411,18 +10411,18 @@
      "neutral": false,
      "venue": "JMA Wireless Dome",
      "tv": "ESPN2",
-     "state": "in",
-     "completed": false,
-     "detail": "9:03 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "9:03",
+     "clock": "0:00",
      "home": {
       "id": "183",
       "abbr": "SYR",
       "name": "Syracuse",
       "rank": 99,
-      "score": "20",
-      "winner": null
+      "score": "30",
+      "winner": true
      },
      "away": {
       "id": "2567",
@@ -10430,7 +10430,7 @@
       "name": "SMU",
       "rank": 19,
       "score": "27",
-      "winner": null
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -10442,18 +10442,18 @@
      "neutral": false,
      "venue": "Kinnick Stadium",
      "tv": "Fox",
-     "state": "in",
-     "completed": false,
-     "detail": "4:01 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "4:01",
+     "clock": "0:00",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
       "name": "Iowa",
       "rank": 99,
       "score": "30",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "275",
@@ -10461,7 +10461,7 @@
       "name": "Wisconsin",
       "rank": 25,
       "score": "0",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": "big10",
@@ -10473,18 +10473,18 @@
      "neutral": false,
      "venue": "Carter-Finley Stadium",
      "tv": "ACC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "5:43 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "5:43",
+     "clock": "0:00",
      "home": {
       "id": "152",
       "abbr": "NCSU",
       "name": "NC State",
       "rank": 99,
       "score": "31",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "25",
@@ -10492,7 +10492,7 @@
       "name": "California",
       "rank": 99,
       "score": "10",
-      "winner": null
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -10504,18 +10504,18 @@
      "neutral": false,
      "venue": "Wallace Wade Stadium",
      "tv": "CW",
-     "state": "in",
-     "completed": false,
-     "detail": "9:10 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "9:10",
+     "clock": "0:00",
      "home": {
       "id": "150",
       "abbr": "DUKE",
       "name": "Duke",
       "rank": 99,
-      "score": "44",
-      "winner": null
+      "score": "47",
+      "winner": true
      },
      "away": {
       "id": "103",
@@ -10523,7 +10523,7 @@
       "name": "Boston College",
       "rank": 99,
       "score": "2",
-      "winner": null
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -10535,26 +10535,26 @@
      "neutral": false,
      "venue": "SECU Stadium",
      "tv": "FS1",
-     "state": "in",
-     "completed": false,
-     "detail": "2:00 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "2:00",
+     "clock": "0:00",
      "home": {
       "id": "120",
       "abbr": "MD",
       "name": "Maryland",
       "rank": 99,
       "score": "17",
-      "winner": null
+      "winner": false
      },
      "away": {
       "id": "356",
       "abbr": "ILL",
       "name": "Illinois",
       "rank": 99,
-      "score": "17",
-      "winner": null
+      "score": "20",
+      "winner": true
      },
      "homeConf": "big10",
      "awayConf": "big10",
@@ -10566,26 +10566,26 @@
      "neutral": false,
      "venue": "SHI Stadium",
      "tv": "BTN",
-     "state": "in",
-     "completed": false,
-     "detail": "13:08 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "13:08",
+     "clock": "0:00",
      "home": {
       "id": "164",
       "abbr": "RUTG",
       "name": "Rutgers",
       "rank": 99,
-      "score": "13",
-      "winner": null
+      "score": "21",
+      "winner": false
      },
      "away": {
       "id": "130",
       "abbr": "MICH",
       "name": "Michigan",
       "rank": 99,
-      "score": "21",
-      "winner": null
+      "score": "28",
+      "winner": true
      },
      "homeConf": "big10",
      "awayConf": "big10",
@@ -10597,18 +10597,18 @@
      "neutral": false,
      "venue": "Vaught-Hemingway Stadium",
      "tv": "SEC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "6:20 - 3rd",
-     "period": 3,
-     "clock": "6:20",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
       "name": "Ole Miss",
       "rank": 12,
-      "score": "17",
-      "winner": null
+      "score": "45",
+      "winner": true
      },
      "away": {
       "id": "2",
@@ -10616,7 +10616,7 @@
       "name": "Auburn",
       "rank": 99,
       "score": "15",
-      "winner": null
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": "sec",
@@ -10628,26 +10628,26 @@
      "neutral": false,
      "venue": "Folsom Field",
      "tv": "TNT",
-     "state": "in",
-     "completed": false,
-     "detail": "2:25 - 2nd",
-     "period": 2,
-     "clock": "2:25",
+     "state": "post",
+     "completed": true,
+     "detail": "Final/OT",
+     "period": 5,
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
       "name": "Colorado",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "27",
+      "winner": true
      },
      "away": {
       "id": "2306",
       "abbr": "KSU",
       "name": "Kansas State",
       "rank": 99,
-      "score": "7",
-      "winner": null
+      "score": "24",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -10659,17 +10659,17 @@
      "neutral": false,
      "venue": "L&N Federal Credit Union Stadium",
      "tv": "ACC Network",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 3:15 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "9:35 - 3rd",
+     "period": 3,
+     "clock": "9:35",
      "home": {
       "id": "97",
       "abbr": "LOU",
       "name": "Louisville",
       "rank": 99,
-      "score": "0",
+      "score": "31",
       "winner": null
      },
      "away": {
@@ -10677,7 +10677,7 @@
       "abbr": "STAN",
       "name": "Stanford",
       "rank": 99,
-      "score": "0",
+      "score": "24",
       "winner": null
      },
      "homeConf": "acc",
@@ -10690,17 +10690,17 @@
      "neutral": true,
      "venue": "Mercedes-Benz Stadium",
      "tv": "ABC",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 3:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "10:35 - 3rd",
+     "period": 3,
+     "clock": "10:35",
      "home": {
       "id": "61",
       "abbr": "UGA",
       "name": "Georgia",
       "rank": 3,
-      "score": "0",
+      "score": "24",
       "winner": null
      },
      "away": {
@@ -10721,17 +10721,17 @@
      "neutral": false,
      "venue": "Memorial Stadium (Bloomington, IN)",
      "tv": "CBS",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 3:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "10:20 - 3rd",
+     "period": 3,
+     "clock": "10:20",
      "home": {
       "id": "84",
       "abbr": "IU",
       "name": "Indiana",
       "rank": 4,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "away": {
@@ -10739,7 +10739,7 @@
       "abbr": "MINN",
       "name": "Minnesota",
       "rank": 99,
-      "score": "0",
+      "score": "10",
       "winner": null
      },
      "homeConf": "big10",
@@ -10752,17 +10752,17 @@
      "neutral": false,
      "venue": "LaVell Edwards Stadium",
      "tv": "Fox",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 3:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "9:08 - 3rd",
+     "period": 3,
+     "clock": "9:08",
      "home": {
       "id": "252",
       "abbr": "BYU",
       "name": "BYU",
       "rank": 8,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "away": {
@@ -10770,7 +10770,7 @@
       "abbr": "ASU",
       "name": "Arizona State",
       "rank": 99,
-      "score": "0",
+      "score": "3",
       "winner": null
      },
      "homeConf": "big12",
@@ -10783,17 +10783,17 @@
      "neutral": false,
      "venue": "Autzen Stadium",
      "tv": "Peacock",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 3:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "8:46 - 3rd",
+     "period": 3,
+     "clock": "8:46",
      "home": {
       "id": "2483",
       "abbr": "ORE",
       "name": "Oregon",
       "rank": 99,
-      "score": "0",
+      "score": "20",
       "winner": null
      },
      "away": {
@@ -10801,7 +10801,7 @@
       "abbr": "NU",
       "name": "Northwestern",
       "rank": 20,
-      "score": "0",
+      "score": "23",
       "winner": null
      },
      "homeConf": "big10",
@@ -10814,11 +10814,11 @@
      "neutral": false,
      "venue": "Amon G. Carter Stadium",
      "tv": "FS1",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 3:30 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "9:32 - 3rd",
+     "period": 3,
+     "clock": "9:32",
      "home": {
       "id": "2628",
       "abbr": "TCU",
@@ -10832,7 +10832,7 @@
       "abbr": "KU",
       "name": "Kansas",
       "rank": 99,
-      "score": "0",
+      "score": "13",
       "winner": null
      },
      "homeConf": "big12",
@@ -10845,17 +10845,17 @@
      "neutral": false,
      "venue": "Nippert Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 3:45 PM EDT",
-     "period": 0,
+     "detail": "Halftime",
+     "period": 2,
      "clock": "0:00",
      "home": {
       "id": "2132",
       "abbr": "CIN",
       "name": "Cincinnati",
       "rank": 99,
-      "score": "0",
+      "score": "6",
       "winner": null
      },
      "away": {
@@ -10863,7 +10863,7 @@
       "abbr": "UTAH",
       "name": "Utah",
       "rank": 6,
-      "score": "0",
+      "score": "42",
       "winner": null
      },
      "homeConf": "big12",
@@ -10876,17 +10876,17 @@
      "neutral": false,
      "venue": "Allegacy Federal Credit Union Stadium",
      "tv": "ESPN2",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 3:45 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "9:59 - 3rd",
+     "period": 3,
+     "clock": "9:59",
      "home": {
       "id": "154",
       "abbr": "WAKE",
       "name": "Wake Forest",
       "rank": 14,
-      "score": "0",
+      "score": "23",
       "winner": null
      },
      "away": {
@@ -10907,17 +10907,17 @@
      "neutral": false,
      "venue": "Rose Bowl",
      "tv": "BTN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 4:15 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "0:06 - 2nd",
+     "period": 2,
+     "clock": "0:06",
      "home": {
       "id": "26",
       "abbr": "UCLA",
       "name": "UCLA",
       "rank": 7,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "away": {
@@ -10938,17 +10938,17 @@
      "neutral": false,
      "venue": "Memorial Stadium (Norman, OK)",
      "tv": "SEC Network",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 4:15 PM EDT",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "3:07 - 2nd",
+     "period": 2,
+     "clock": "3:07",
      "home": {
       "id": "201",
       "abbr": "OU",
       "name": "Oklahoma",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "away": {
@@ -10956,7 +10956,7 @@
       "abbr": "SC",
       "name": "South Carolina",
       "rank": 99,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "homeConf": "sec",
@@ -10969,17 +10969,17 @@
      "neutral": false,
      "venue": "Beaver Stadium",
      "tv": "BTN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "10/31 - 4:15 PM EDT",
-     "period": 0,
+     "detail": "End of 2nd",
+     "period": 2,
      "clock": "0:00",
      "home": {
       "id": "213",
       "abbr": "PSU",
       "name": "Penn State",
       "rank": 99,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "away": {
@@ -10987,7 +10987,7 @@
       "abbr": "PUR",
       "name": "Purdue",
       "rank": 99,
-      "score": "0",
+      "score": "14",
       "winner": null
      },
      "homeConf": "big10",
