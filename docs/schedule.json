@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-01T04:19:19+00:00",
+ "generated": "2026-11-01T07:42:34+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -11530,37 +11530,6 @@
      "day": "Sat"
     },
     {
-     "id": "401856854",
-     "kickoff": "2026-11-07T17:00Z",
-     "neutral": false,
-     "venue": "Bill Snyder Family Stadium",
-     "tv": "TNT",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2306",
-      "abbr": "KSU",
-      "name": "Kansas State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "197",
-      "abbr": "OKST",
-      "name": "Oklahoma State",
-      "rank": 24,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
      "id": "401856849",
      "kickoff": "2026-11-07T17:00Z",
      "neutral": false,
@@ -11620,6 +11589,37 @@
      },
      "homeConf": "sec",
      "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401856854",
+     "kickoff": "2026-11-07T17:00Z",
+     "neutral": false,
+     "venue": "Bill Snyder Family Stadium",
+     "tv": "TNT",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/7 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2306",
+      "abbr": "KSU",
+      "name": "Kansas State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "197",
+      "abbr": "OKST",
+      "name": "Oklahoma State",
+      "rank": 24,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
      "day": "Sat"
     },
     {
