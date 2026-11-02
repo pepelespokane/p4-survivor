@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-01T19:48:50+00:00",
+ "generated": "2026-11-02T19:10:14+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -12344,37 +12344,6 @@
      "day": "Fri"
     },
     {
-     "id": "401858296",
-     "kickoff": "2026-11-14T05:00Z",
-     "neutral": false,
-     "venue": "Hard Rock Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2390",
-      "abbr": "MIA",
-      "name": "Miami",
-      "rank": 1,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "150",
-      "abbr": "DUKE",
-      "name": "Duke",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
      "id": "401856883",
      "kickoff": "2026-11-14T05:00Z",
      "neutral": false,
@@ -12685,37 +12654,6 @@
      "day": "Sat"
     },
     {
-     "id": "401858301",
-     "kickoff": "2026-11-14T05:00Z",
-     "neutral": false,
-     "venue": "Gerald J. Ford Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2567",
-      "abbr": "SMU",
-      "name": "SMU",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "154",
-      "abbr": "WAKE",
-      "name": "Wake Forest",
-      "rank": 14,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
      "id": "401856888",
      "kickoff": "2026-11-14T05:00Z",
      "neutral": false,
@@ -12964,68 +12902,6 @@
      "day": "Sat"
     },
     {
-     "id": "401858295",
-     "kickoff": "2026-11-14T05:00Z",
-     "neutral": false,
-     "venue": "Scott Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "258",
-      "abbr": "UVA",
-      "name": "Virginia",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "25",
-      "abbr": "CAL",
-      "name": "California",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858297",
-     "kickoff": "2026-11-14T05:00Z",
-     "neutral": false,
-     "venue": "Memorial Stadium (Clemson, SC)",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "228",
-      "abbr": "CLEM",
-      "name": "Clemson",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "59",
-      "abbr": "GT",
-      "name": "Georgia Tech",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
      "id": "401858298",
      "kickoff": "2026-11-14T05:00Z",
      "neutral": false,
@@ -13079,37 +12955,6 @@
       "id": "24",
       "abbr": "STAN",
       "name": "Stanford",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858300",
-     "kickoff": "2026-11-14T05:00Z",
-     "neutral": false,
-     "venue": "Carter-Finley Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "152",
-      "abbr": "NCSU",
-      "name": "NC State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "183",
-      "abbr": "SYR",
-      "name": "Syracuse",
       "rank": 99,
       "score": "0",
       "winner": null
@@ -13274,6 +13119,130 @@
      "day": "Sat"
     },
     {
+     "id": "401858296",
+     "kickoff": "2026-11-14T17:00Z",
+     "neutral": false,
+     "venue": "Hard Rock Stadium",
+     "tv": "ABC",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/14 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2390",
+      "abbr": "MIA",
+      "name": "Miami",
+      "rank": 1,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "150",
+      "abbr": "DUKE",
+      "name": "Duke",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858301",
+     "kickoff": "2026-11-14T17:00Z",
+     "neutral": false,
+     "venue": "Gerald J. Ford Stadium",
+     "tv": "",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/14 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2567",
+      "abbr": "SMU",
+      "name": "SMU",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "154",
+      "abbr": "WAKE",
+      "name": "Wake Forest",
+      "rank": 14,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858300",
+     "kickoff": "2026-11-14T17:00Z",
+     "neutral": false,
+     "venue": "Carter-Finley Stadium",
+     "tv": "ACC Network",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/14 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "152",
+      "abbr": "NCSU",
+      "name": "NC State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "183",
+      "abbr": "SYR",
+      "name": "Syracuse",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858297",
+     "kickoff": "2026-11-14T17:30Z",
+     "neutral": false,
+     "venue": "Memorial Stadium (Clemson, SC)",
+     "tv": "CW",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/14 - 12:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "228",
+      "abbr": "CLEM",
+      "name": "Clemson",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "59",
+      "abbr": "GT",
+      "name": "Georgia Tech",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
      "id": "401858294",
      "kickoff": "2026-11-14T20:30Z",
      "neutral": false,
@@ -13301,6 +13270,37 @@
       "winner": null
      },
      "homeConf": null,
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858295",
+     "kickoff": "2026-11-14T20:30Z",
+     "neutral": false,
+     "venue": "Scott Stadium",
+     "tv": "ACC Network",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/14 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "258",
+      "abbr": "UVA",
+      "name": "Virginia",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "25",
+      "abbr": "CAL",
+      "name": "California",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
      "awayConf": "acc",
      "day": "Sat"
     }
