@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-07T06:17:29+00:00",
+ "generated": "2026-11-07T08:18:05+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -11318,26 +11318,26 @@
      "neutral": false,
      "venue": "Casino Del Sol Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "14:08 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "14:08",
+     "clock": "0:00",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
       "name": "Arizona",
       "rank": 22,
-      "score": "20",
-      "winner": null
+      "score": "29",
+      "winner": true
      },
      "away": {
       "id": "2628",
       "abbr": "TCU",
       "name": "TCU",
       "rank": 99,
-      "score": "21",
-      "winner": null
+      "score": "28",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
