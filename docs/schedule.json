@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-04T20:49:19+00:00",
+ "generated": "2026-11-07T01:38:21+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -11256,17 +11256,17 @@
      "neutral": false,
      "venue": "Gerald J. Ford Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/6 - 7:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "0:03 - 2nd",
+     "period": 2,
+     "clock": "0:03",
      "home": {
       "id": "2567",
       "abbr": "SMU",
       "name": "SMU",
       "rank": 99,
-      "score": "0",
+      "score": "23",
       "winner": null
      },
      "away": {
@@ -11274,7 +11274,7 @@
       "abbr": "VT",
       "name": "Virginia Tech",
       "rank": 99,
-      "score": "0",
+      "score": "14",
       "winner": null
      },
      "homeConf": "acc",
@@ -11287,11 +11287,11 @@
      "neutral": false,
      "venue": "Gies Memorial Stadium",
      "tv": "Fox",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/6 - 8:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "3:09 - 1st",
+     "period": 1,
+     "clock": "3:09",
      "home": {
       "id": "356",
       "abbr": "ILL",
