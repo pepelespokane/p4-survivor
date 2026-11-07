@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-07T01:38:21+00:00",
+ "generated": "2026-11-07T06:17:29+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -11256,26 +11256,26 @@
      "neutral": false,
      "venue": "Gerald J. Ford Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "0:03 - 2nd",
-     "period": 2,
-     "clock": "0:03",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2567",
       "abbr": "SMU",
       "name": "SMU",
       "rank": 99,
-      "score": "23",
-      "winner": null
+      "score": "51",
+      "winner": true
      },
      "away": {
       "id": "259",
       "abbr": "VT",
       "name": "Virginia Tech",
       "rank": 99,
-      "score": "14",
-      "winner": null
+      "score": "28",
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -11287,26 +11287,26 @@
      "neutral": false,
      "venue": "Gies Memorial Stadium",
      "tv": "Fox",
-     "state": "in",
-     "completed": false,
-     "detail": "3:09 - 1st",
-     "period": 1,
-     "clock": "3:09",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "356",
       "abbr": "ILL",
       "name": "Illinois",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "24",
+      "winner": true
      },
      "away": {
       "id": "158",
       "abbr": "NEB",
       "name": "Nebraska",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "13",
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": "big10",
@@ -11318,17 +11318,17 @@
      "neutral": false,
      "venue": "Casino Del Sol Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/6 - 10:15 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "14:08 - 4th",
+     "period": 4,
+     "clock": "14:08",
      "home": {
       "id": "12",
       "abbr": "ARIZ",
       "name": "Arizona",
       "rank": 22,
-      "score": "0",
+      "score": "20",
       "winner": null
      },
      "away": {
@@ -11336,7 +11336,7 @@
       "abbr": "TCU",
       "name": "TCU",
       "rank": 99,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "homeConf": "big12",
