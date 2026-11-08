@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-08T04:23:52+00:00",
+ "generated": "2026-11-08T09:15:24+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -11995,37 +11995,6 @@
      "day": "Sat"
     },
     {
-     "id": "401858511",
-     "kickoff": "2026-11-08T00:30Z",
-     "neutral": false,
-     "venue": "Michigan Stadium",
-     "tv": "Peacock",
-     "state": "post",
-     "completed": true,
-     "detail": "Final",
-     "period": 4,
-     "clock": "0:00",
-     "home": {
-      "id": "130",
-      "abbr": "MICH",
-      "name": "Michigan",
-      "rank": 99,
-      "score": "6",
-      "winner": false
-     },
-     "away": {
-      "id": "127",
-      "abbr": "MSU",
-      "name": "Michigan State",
-      "rank": 99,
-      "score": "15",
-      "winner": true
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401858291",
      "kickoff": "2026-11-08T00:30Z",
      "neutral": false,
@@ -12181,6 +12150,37 @@
      "day": "Sat"
     },
     {
+     "id": "401858511",
+     "kickoff": "2026-11-08T00:30Z",
+     "neutral": false,
+     "venue": "Michigan Stadium",
+     "tv": "Peacock",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
+     "home": {
+      "id": "130",
+      "abbr": "MICH",
+      "name": "Michigan",
+      "rank": 99,
+      "score": "6",
+      "winner": false
+     },
+     "away": {
+      "id": "127",
+      "abbr": "MSU",
+      "name": "Michigan State",
+      "rank": 99,
+      "score": "15",
+      "winner": true
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
      "id": "401856739",
      "kickoff": "2026-11-08T00:45Z",
      "neutral": false,
@@ -12217,26 +12217,26 @@
      "neutral": false,
      "venue": "Galaxy Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "Halftime",
-     "period": 2,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
       "name": "Texas Tech",
       "rank": 15,
-      "score": "41",
-      "winner": null
+      "score": "53",
+      "winner": true
      },
      "away": {
       "id": "277",
       "abbr": "WVU",
       "name": "West Virginia",
       "rank": 99,
-      "score": "27",
-      "winner": null
+      "score": "48",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -12589,37 +12589,6 @@
      },
      "homeConf": "big12",
      "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401858519",
-     "kickoff": "2026-11-14T05:00Z",
-     "neutral": false,
-     "venue": "Kinnick Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2294",
-      "abbr": "IOWA",
-      "name": "Iowa",
-      "rank": 19,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2509",
-      "abbr": "PUR",
-      "name": "Purdue",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
      "day": "Sat"
     },
     {
@@ -13247,7 +13216,7 @@
      "kickoff": "2026-11-15T00:00Z",
      "neutral": false,
      "venue": "Beaver Stadium",
-     "tv": "",
+     "tv": "FS1",
      "state": "pre",
      "completed": false,
      "detail": "11/14 - 7:00 PM EST",
@@ -13265,6 +13234,37 @@
       "id": "135",
       "abbr": "MINN",
       "name": "Minnesota",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
+     "id": "401858519",
+     "kickoff": "2026-11-15T00:30Z",
+     "neutral": false,
+     "venue": "Kinnick Stadium",
+     "tv": "NBC",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/14 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2294",
+      "abbr": "IOWA",
+      "name": "Iowa",
+      "rank": 19,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2509",
+      "abbr": "PUR",
+      "name": "Purdue",
       "rank": 99,
       "score": "0",
       "winner": null
