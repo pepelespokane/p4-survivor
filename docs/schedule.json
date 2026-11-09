@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-08T21:39:58+00:00",
+ "generated": "2026-11-09T01:02:55+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -12344,37 +12344,6 @@
      "day": "Fri"
     },
     {
-     "id": "401856858",
-     "kickoff": "2026-11-14T05:00Z",
-     "neutral": false,
-     "venue": "LaVell Edwards Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/14 - 3:30 PM EST",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "252",
-      "abbr": "BYU",
-      "name": "BYU",
-      "rank": 9,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "239",
-      "abbr": "BAY",
-      "name": "Baylor",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big12",
-     "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
      "id": "401858296",
      "kickoff": "2026-11-14T17:00Z",
      "neutral": false,
@@ -12809,6 +12778,37 @@
      "day": "Sat"
     },
     {
+     "id": "401856858",
+     "kickoff": "2026-11-14T20:30Z",
+     "neutral": false,
+     "venue": "LaVell Edwards Stadium",
+     "tv": "Fox",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/14 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "252",
+      "abbr": "BYU",
+      "name": "BYU",
+      "rank": 9,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "239",
+      "abbr": "BAY",
+      "name": "Baylor",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big12",
+     "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
      "id": "401858294",
      "kickoff": "2026-11-14T20:30Z",
      "neutral": false,
@@ -12996,13 +12996,13 @@
     },
     {
      "id": "401856861",
-     "kickoff": "2026-11-14T22:00Z",
+     "kickoff": "2026-11-14T22:30Z",
      "neutral": false,
      "venue": "Milan Puskar Stadium",
      "tv": "ESPNU",
      "state": "pre",
      "completed": false,
-     "detail": "11/14 - 5:00 PM EST",
+     "detail": "11/14 - 5:30 PM EST",
      "period": 0,
      "clock": "0:00",
      "home": {
