@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-10T03:08:59+00:00",
+ "generated": "2026-11-10T20:48:23+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -13747,37 +13747,6 @@
      "day": "Sat"
     },
     {
-     "id": "401858532",
-     "kickoff": "2026-11-21T05:00Z",
-     "neutral": false,
-     "venue": "Beaver Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "213",
-      "abbr": "PSU",
-      "name": "Penn State",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "164",
-      "abbr": "RUTG",
-      "name": "Rutgers",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401856749",
      "kickoff": "2026-11-21T17:00Z",
      "neutral": false,
@@ -14240,6 +14209,37 @@
      },
      "homeConf": "acc",
      "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858532",
+     "kickoff": "2026-11-21T20:30Z",
+     "neutral": false,
+     "venue": "Beaver Stadium",
+     "tv": "FS1",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/21 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "213",
+      "abbr": "PSU",
+      "name": "Penn State",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "164",
+      "abbr": "RUTG",
+      "name": "Rutgers",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
      "day": "Sat"
     },
     {
