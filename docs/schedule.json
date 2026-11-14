@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-14T06:47:44+00:00",
+ "generated": "2026-11-14T07:20:04+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -12318,18 +12318,18 @@
      "neutral": false,
      "venue": "Folsom Field",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "1:40 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "1:40",
+     "clock": "0:00",
      "home": {
       "id": "38",
       "abbr": "COLO",
       "name": "Colorado",
       "rank": 99,
       "score": "42",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "248",
@@ -12337,7 +12337,7 @@
       "name": "Houston",
       "rank": 14,
       "score": "32",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
