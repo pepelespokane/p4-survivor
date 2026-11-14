@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-14T14:21:29+00:00",
+ "generated": "2026-11-14T14:44:45+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -12875,7 +12875,7 @@
      "kickoff": "2026-11-14T21:15Z",
      "neutral": false,
      "venue": "Davis Wade Stadium",
-     "tv": "",
+     "tv": "SEC Network",
      "state": "pre",
      "completed": false,
      "detail": "11/14 - 4:15 PM EST",
