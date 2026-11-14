@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-14T07:20:04+00:00",
+ "generated": "2026-11-14T14:21:29+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -12813,7 +12813,7 @@
      "kickoff": "2026-11-14T20:30Z",
      "neutral": false,
      "venue": "Milan Puskar Stadium",
-     "tv": "",
+     "tv": "ESPN2",
      "state": "pre",
      "completed": false,
      "detail": "11/14 - 3:30 PM EST",
@@ -12906,7 +12906,7 @@
      "kickoff": "2026-11-14T22:30Z",
      "neutral": false,
      "venue": "Acrisure Bounce House",
-     "tv": "",
+     "tv": "ESPNU",
      "state": "pre",
      "completed": false,
      "detail": "11/14 - 5:30 PM EST",
@@ -13272,15 +13272,7 @@
      "homeConf": "big12",
      "awayConf": "big12",
      "day": "Sat"
-    }
-   ]
-  },
-  {
-   "week": 12,
-   "poolWeek": 12,
-   "start": "2026-11-15",
-   "end": "2026-11-22",
-   "games": [
+    },
     {
      "id": "401856887",
      "kickoff": "2026-11-15T18:00Z",
@@ -13311,7 +13303,15 @@
      "homeConf": "sec",
      "awayConf": "sec",
      "day": "Sun"
-    },
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "poolWeek": 12,
+   "start": "2026-11-20",
+   "end": "2026-11-22",
+   "games": [
     {
      "id": "401856869",
      "kickoff": "2026-11-20T23:00Z",
