@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-15T17:53:07+00:00",
+ "generated": "2026-11-15T19:14:12+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -13279,17 +13279,17 @@
      "neutral": false,
      "venue": "Memorial Stadium (Norman, OK)",
      "tv": "SEC Network",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/15 - 1:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "2:20 - 2nd",
+     "period": 2,
+     "clock": "2:20",
      "home": {
       "id": "201",
       "abbr": "OU",
       "name": "Oklahoma",
       "rank": 99,
-      "score": "0",
+      "score": "14",
       "winner": null
      },
      "away": {
@@ -13297,7 +13297,7 @@
       "abbr": "MISS",
       "name": "Ole Miss",
       "rank": 19,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "sec",
