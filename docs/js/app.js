@@ -287,6 +287,23 @@ function elimConf(playerId, conf) {
   return null;
 }
 
+/** True when a player was already knocked out of a league BEFORE week w, so any
+ *  pick they make there is a zombie pick that cannot change anything. The week
+ *  they went out still counts: that losing pick is the story of the week. */
+function outBefore(playerId, w, conf) {
+  const out = elimConf(playerId, conf);
+  return !!out && out.week < w;
+}
+
+/** Whether OTHER people should see this pick on the scoreboard and picks grid.
+ *  Your own picks always show, zombie or not; everyone else's only while they
+ *  still matter. Stephen kept reading "Tracy is going to lose that pick!" for
+ *  players already out of that league. */
+function pickMatters(pk) {
+  if (state.me && pk.player_id === state.me.id) return true;
+  return !outBefore(pk.player_id, pk.week, pk.conf);
+}
+
 /** Weeks fully survived in one conference. */
 function survivedConf(playerId, conf, out) {
   if (out) return out.week - 1;
@@ -595,7 +612,7 @@ function renderScoreboard() {
   // game id -> { game, byTeam: { teamId: [names] } }
   const byGame = new Map();
   for (const pk of state.picks) {
-    if (pk.week !== w || !pickVisible(pk)) continue;
+    if (pk.week !== w || !pickVisible(pk) || !pickMatters(pk)) continue;
     const g = gameFor(w, pk.team_id);
     if (!g) continue;
     if (!byGame.has(g.id)) byGame.set(g.id, { g, byTeam: {} });
@@ -773,11 +790,26 @@ function renderBoard() {
   const body = el('tbody');
 
   for (const p of state.players) {
+    const isMe = state.me && p.id === state.me.id;
+    // Out of every league before this week: nothing they pick can matter, so
+    // the row is noise to everyone but them.
+    const deadIn = POOL.conferences.filter((c) => outBefore(p.id, w, c.key));
+    if (!isMe && deadIn.length === POOL.conferences.length) continue;
+
     const tr = el('tr');
     let cells = `<td><b>${esc(p.name)}</b></td>`;
     let w_ = 0, l_ = 0;
     for (const c of POOL.conferences) {
       const pk = pickAt(p.id, w, c.key);
+      const zombie = deadIn.includes(c);
+      if (zombie && !isMe) {
+        cells += `<td class="pk muted">out</td>`;
+        continue;
+      }
+      if (zombie && !pk) {
+        cells += `<td class="pk muted">out</td>`;
+        continue;
+      }
       if (!pk) {
         // Only claim "no pick" when the database is actually telling us about
         // hidden picks. Before that migration an empty cell is just unknown.
