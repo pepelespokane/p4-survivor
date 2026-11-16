@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-15T23:00:41+00:00",
+ "generated": "2026-11-16T02:54:13+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -13406,68 +13406,6 @@
      "day": "Fri"
     },
     {
-     "id": "401858302",
-     "kickoff": "2026-11-21T05:00Z",
-     "neutral": false,
-     "venue": "Hard Rock Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2390",
-      "abbr": "MIA",
-      "name": "Miami",
-      "rank": 7,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "259",
-      "abbr": "VT",
-      "name": "Virginia Tech",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858306",
-     "kickoff": "2026-11-21T05:00Z",
-     "neutral": false,
-     "venue": "L&N Federal Credit Union Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "97",
-      "abbr": "LOU",
-      "name": "Louisville",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "221",
-      "abbr": "PITT",
-      "name": "Pittsburgh",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
      "id": "401856866",
      "kickoff": "2026-11-21T17:00Z",
      "neutral": false,
@@ -13596,7 +13534,7 @@
      "kickoff": "2026-11-21T17:00Z",
      "neutral": false,
      "venue": "Ben Hill Griffin Stadium",
-     "tv": "",
+     "tv": "SEC Network",
      "state": "pre",
      "completed": false,
      "detail": "11/21 - 12:00 PM EST",
@@ -13614,37 +13552,6 @@
       "id": "238",
       "abbr": "VAN",
       "name": "Vanderbilt",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "sec",
-     "day": "Sat"
-    },
-    {
-     "id": "401856752",
-     "kickoff": "2026-11-21T17:00Z",
-     "neutral": false,
-     "venue": "Memorial Stadium (Norman, OK)",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/21 - 12:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "201",
-      "abbr": "OU",
-      "name": "Oklahoma",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "245",
-      "abbr": "TA&M",
-      "name": "Texas A&M",
       "rank": 99,
       "score": "0",
       "winner": null
@@ -14181,6 +14088,37 @@
      "day": "Sat"
     },
     {
+     "id": "401856752",
+     "kickoff": "2026-11-21T20:45Z",
+     "neutral": false,
+     "venue": "Memorial Stadium (Norman, OK)",
+     "tv": "ESPN2",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/21 - 3:45 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "201",
+      "abbr": "OU",
+      "name": "Oklahoma",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "245",
+      "abbr": "TA&M",
+      "name": "Texas A&M",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
      "id": "401858534",
      "kickoff": "2026-11-21T23:15Z",
      "neutral": false,
@@ -14209,6 +14147,37 @@
      },
      "homeConf": "big10",
      "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
+     "id": "401858302",
+     "kickoff": "2026-11-22T00:00Z",
+     "neutral": false,
+     "venue": "Hard Rock Stadium",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/21 - 7:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2390",
+      "abbr": "MIA",
+      "name": "Miami",
+      "rank": 7,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "259",
+      "abbr": "VT",
+      "name": "Virginia Tech",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
      "day": "Sat"
     },
     {
@@ -14333,6 +14302,37 @@
      },
      "homeConf": "sec",
      "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401858306",
+     "kickoff": "2026-11-22T00:30Z",
+     "neutral": false,
+     "venue": "L&N Federal Credit Union Stadium",
+     "tv": "ESPN2",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/21 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "97",
+      "abbr": "LOU",
+      "name": "Louisville",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "221",
+      "abbr": "PITT",
+      "name": "Pittsburgh",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
      "day": "Sat"
     },
     {
