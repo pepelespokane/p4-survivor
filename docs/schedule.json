@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-18T21:54:33+00:00",
+ "generated": "2026-11-21T01:57:45+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -13318,17 +13318,17 @@
      "neutral": false,
      "venue": "Acrisure Bounce House",
      "tv": "FS1",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/20 - 6:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "12:59 - 4th",
+     "period": 4,
+     "clock": "12:59",
      "home": {
       "id": "2116",
       "abbr": "UCF",
       "name": "UCF",
       "rank": 99,
-      "score": "0",
+      "score": "38",
       "winner": null
      },
      "away": {
@@ -13336,7 +13336,7 @@
       "abbr": "ISU",
       "name": "Iowa State",
       "rank": 99,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "homeConf": "big12",
@@ -13349,11 +13349,11 @@
      "neutral": false,
      "venue": "Wallace Wade Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/20 - 7:30 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "1:05 - 2nd",
+     "period": 2,
+     "clock": "1:05",
      "home": {
       "id": "150",
       "abbr": "DUKE",
@@ -13380,11 +13380,11 @@
      "neutral": false,
      "venue": "Spartan Stadium",
      "tv": "Fox",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/20 - 8:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "11:09 - 2nd",
+     "period": 2,
+     "clock": "11:09",
      "home": {
       "id": "127",
       "abbr": "MSU",
@@ -13398,7 +13398,7 @@
       "abbr": "ORE",
       "name": "Oregon",
       "rank": 13,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "big10",
