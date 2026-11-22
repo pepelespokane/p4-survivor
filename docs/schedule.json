@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-22T02:48:10+00:00",
+ "generated": "2026-11-22T08:22:40+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -14155,18 +14155,18 @@
      "neutral": false,
      "venue": "Hard Rock Stadium",
      "tv": "ESPN",
-     "state": "in",
-     "completed": false,
-     "detail": "13:11 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "13:11",
+     "clock": "0:00",
      "home": {
       "id": "2390",
       "abbr": "MIA",
       "name": "Miami",
       "rank": 7,
-      "score": "21",
-      "winner": null
+      "score": "28",
+      "winner": true
      },
      "away": {
       "id": "259",
@@ -14174,7 +14174,7 @@
       "name": "Virginia Tech",
       "rank": 99,
       "score": "20",
-      "winner": null
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -14186,26 +14186,26 @@
      "neutral": false,
      "venue": "Bill Snyder Family Stadium",
      "tv": "FS1",
-     "state": "in",
-     "completed": false,
-     "detail": "2:01 - 3rd",
-     "period": 3,
-     "clock": "2:01",
+     "state": "post",
+     "completed": true,
+     "detail": "Final/OT",
+     "period": 5,
+     "clock": "0:00",
      "home": {
       "id": "2306",
       "abbr": "KSU",
       "name": "Kansas State",
       "rank": 99,
-      "score": "21",
-      "winner": null
+      "score": "28",
+      "winner": false
      },
      "away": {
       "id": "12",
       "abbr": "ARIZ",
       "name": "Arizona",
       "rank": 19,
-      "score": "17",
-      "winner": null
+      "score": "35",
+      "winner": true
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -14217,26 +14217,26 @@
      "neutral": false,
      "venue": "Williams-Brice Stadium",
      "tv": "ABC",
-     "state": "in",
-     "completed": false,
-     "detail": "9:41 - 3rd",
-     "period": 3,
-     "clock": "9:41",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2579",
       "abbr": "SC",
       "name": "South Carolina",
       "rank": 21,
       "score": "6",
-      "winner": null
+      "winner": false
      },
      "away": {
       "id": "61",
       "abbr": "UGA",
       "name": "Georgia",
       "rank": 1,
-      "score": "17",
-      "winner": null
+      "score": "34",
+      "winner": true
      },
      "homeConf": "sec",
      "awayConf": "sec",
@@ -14248,18 +14248,18 @@
      "neutral": false,
      "venue": "Notre Dame Stadium",
      "tv": "NBC",
-     "state": "in",
-     "completed": false,
-     "detail": "10:07 - 3rd",
-     "period": 3,
-     "clock": "10:07",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "87",
       "abbr": "ND",
       "name": "Notre Dame",
       "rank": 6,
       "score": "24",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "2567",
@@ -14267,7 +14267,7 @@
       "name": "SMU",
       "rank": 99,
       "score": "3",
-      "winner": null
+      "winner": false
      },
      "homeConf": null,
      "awayConf": "acc",
@@ -14279,26 +14279,26 @@
      "neutral": false,
      "venue": "Memorial Stadium",
      "tv": "SEC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "4:30 - 3rd",
-     "period": 3,
-     "clock": "4:30",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "142",
       "abbr": "MIZ",
       "name": "Missouri",
       "rank": 99,
       "score": "28",
-      "winner": null
+      "winner": true
      },
      "away": {
       "id": "96",
       "abbr": "UK",
       "name": "Kentucky",
       "rank": 16,
-      "score": "6",
-      "winner": null
+      "score": "14",
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": "sec",
@@ -14310,18 +14310,18 @@
      "neutral": false,
      "venue": "L&N Federal Credit Union Stadium",
      "tv": "ESPN2",
-     "state": "in",
-     "completed": false,
-     "detail": "0:35 - 2nd",
-     "period": 2,
-     "clock": "0:35",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "97",
       "abbr": "LOU",
       "name": "Louisville",
       "rank": 23,
-      "score": "14",
-      "winner": null
+      "score": "42",
+      "winner": true
      },
      "away": {
       "id": "221",
@@ -14329,7 +14329,7 @@
       "name": "Pittsburgh",
       "rank": 99,
       "score": "10",
-      "winner": null
+      "winner": false
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -14341,26 +14341,26 @@
      "neutral": false,
      "venue": "California Memorial Stadium",
      "tv": "ACC Network",
-     "state": "in",
-     "completed": false,
-     "detail": "9:09 - 3rd",
-     "period": 3,
-     "clock": "9:09",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "25",
       "abbr": "CAL",
       "name": "California",
       "rank": 99,
-      "score": "14",
-      "winner": null
+      "score": "28",
+      "winner": false
      },
      "away": {
       "id": "24",
       "abbr": "STAN",
       "name": "Stanford",
       "rank": 99,
-      "score": "30",
-      "winner": null
+      "score": "44",
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "acc",
@@ -14372,26 +14372,26 @@
      "neutral": false,
      "venue": "Amon G. Carter Stadium",
      "tv": "Fox",
-     "state": "in",
-     "completed": false,
-     "detail": "7:02 - 1st",
-     "period": 1,
-     "clock": "7:02",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2628",
       "abbr": "TCU",
       "name": "TCU",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "17",
+      "winner": false
      },
      "away": {
       "id": "254",
       "abbr": "UTAH",
       "name": "Utah",
       "rank": 2,
-      "score": "3",
-      "winner": null
+      "score": "38",
+      "winner": true
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -14399,30 +14399,30 @@
     },
     {
      "id": "401856870",
-     "kickoff": "2026-11-22T03:15Z",
+     "kickoff": "2026-11-22T03:30Z",
      "neutral": false,
      "venue": "Mountain America Stadium",
      "tv": "ESPN",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/21 - 10:15 PM EST",
-     "period": 0,
+     "state": "post",
+     "completed": true,
+     "detail": "Final/OT",
+     "period": 5,
      "clock": "0:00",
      "home": {
       "id": "9",
       "abbr": "ASU",
       "name": "Arizona State",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "27",
+      "winner": false
      },
      "away": {
       "id": "197",
       "abbr": "OKST",
       "name": "Oklahoma State",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "30",
+      "winner": true
      },
      "homeConf": "big12",
      "awayConf": "big12",
@@ -14654,316 +14654,6 @@
      "day": "Fri"
     },
     {
-     "id": "401856760",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "Sanford Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "61",
-      "abbr": "UGA",
-      "name": "Georgia",
-      "rank": 1,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "59",
-      "abbr": "GT",
-      "name": "Georgia Tech",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401856757",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "Bryant-Denny Stadium",
-     "tv": "ABC",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "333",
-      "abbr": "ALA",
-      "name": "Alabama",
-      "rank": 3,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2",
-      "abbr": "AUB",
-      "name": "Auburn",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "sec",
-     "day": "Sat"
-    },
-    {
-     "id": "401858538",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "Memorial Stadium (Bloomington, IN)",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "84",
-      "abbr": "IU",
-      "name": "Indiana",
-      "rank": 8,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2509",
-      "abbr": "PUR",
-      "name": "Purdue",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
-     "id": "401856765",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "FirstBank Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "238",
-      "abbr": "VAN",
-      "name": "Vanderbilt",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2633",
-      "abbr": "TENN",
-      "name": "Tennessee",
-      "rank": 9,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "sec",
-     "day": "Sat"
-    },
-    {
-     "id": "401858312",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "Allegacy Federal Credit Union Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "154",
-      "abbr": "WAKE",
-      "name": "Wake Forest",
-      "rank": 11,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "150",
-      "abbr": "DUKE",
-      "name": "Duke",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401858541",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "Autzen Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2483",
-      "abbr": "ORE",
-      "name": "Oregon",
-      "rank": 13,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "264",
-      "abbr": "WASH",
-      "name": "Washington",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
-     "id": "401856761",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "Kroger Field",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "96",
-      "abbr": "UK",
-      "name": "Kentucky",
-      "rank": 16,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "97",
-      "abbr": "LOU",
-      "name": "Louisville",
-      "rank": 23,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
-     "id": "401856764",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "Memorial Stadium (Clemson, SC)",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "228",
-      "abbr": "CLEM",
-      "name": "Clemson",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2579",
-      "abbr": "SC",
-      "name": "South Carolina",
-      "rank": 21,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "sec",
-     "day": "Sat"
-    },
-    {
-     "id": "401856758",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "Donald W. Reynolds Razorback Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "8",
-      "abbr": "ARK",
-      "name": "Arkansas",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "99",
-      "abbr": "LSU",
-      "name": "LSU",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "sec",
-     "awayConf": "sec",
-     "day": "Sat"
-    },
-    {
-     "id": "401858316",
-     "kickoff": "2026-11-28T05:00Z",
-     "neutral": false,
-     "venue": "Stanford Stadium",
-     "tv": "",
-     "state": "pre",
-     "completed": false,
-     "detail": "TBD",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "24",
-      "abbr": "STAN",
-      "name": "Stanford",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2567",
-      "abbr": "SMU",
-      "name": "SMU",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
-     "day": "Sat"
-    },
-    {
      "id": "401858314",
      "kickoff": "2026-11-28T17:00Z",
      "neutral": false,
@@ -15057,6 +14747,37 @@
      "day": "Sat"
     },
     {
+     "id": "401856761",
+     "kickoff": "2026-11-28T17:00Z",
+     "neutral": false,
+     "venue": "Kroger Field",
+     "tv": "ESPN2",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "96",
+      "abbr": "UK",
+      "name": "Kentucky",
+      "rank": 16,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "97",
+      "abbr": "LOU",
+      "name": "Louisville",
+      "rank": 23,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
      "id": "401858313",
      "kickoff": "2026-11-28T17:00Z",
      "neutral": false,
@@ -15116,6 +14837,37 @@
      },
      "homeConf": "big10",
      "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
+     "id": "401856758",
+     "kickoff": "2026-11-28T17:45Z",
+     "neutral": false,
+     "venue": "Donald W. Reynolds Razorback Stadium",
+     "tv": "SEC Network",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 12:45 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "8",
+      "abbr": "ARK",
+      "name": "Arkansas",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "99",
+      "abbr": "LSU",
+      "name": "LSU",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "sec",
      "day": "Sat"
     },
     {
@@ -15181,6 +14933,37 @@
      "day": "Sat"
     },
     {
+     "id": "401856764",
+     "kickoff": "2026-11-28T20:00Z",
+     "neutral": false,
+     "venue": "Memorial Stadium (Clemson, SC)",
+     "tv": "ESPN2",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 3:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "228",
+      "abbr": "CLEM",
+      "name": "Clemson",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2579",
+      "abbr": "SC",
+      "name": "South Carolina",
+      "rank": 21,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
      "id": "401858317",
      "kickoff": "2026-11-28T20:00Z",
      "neutral": false,
@@ -15208,6 +14991,37 @@
       "winner": null
      },
      "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401856760",
+     "kickoff": "2026-11-28T20:30Z",
+     "neutral": false,
+     "venue": "Sanford Stadium",
+     "tv": "ABC",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "61",
+      "abbr": "UGA",
+      "name": "Georgia",
+      "rank": 1,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "59",
+      "abbr": "GT",
+      "name": "Georgia Tech",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
      "awayConf": "acc",
      "day": "Sat"
     },
@@ -15271,6 +15085,68 @@
      },
      "homeConf": "big12",
      "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
+     "id": "401858312",
+     "kickoff": "2026-11-28T20:30Z",
+     "neutral": false,
+     "venue": "Allegacy Federal Credit Union Stadium",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "154",
+      "abbr": "WAKE",
+      "name": "Wake Forest",
+      "rank": 11,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "150",
+      "abbr": "DUKE",
+      "name": "Duke",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858316",
+     "kickoff": "2026-11-28T20:30Z",
+     "neutral": false,
+     "venue": "Stanford Stadium",
+     "tv": "ACC Network",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "24",
+      "abbr": "STAN",
+      "name": "Stanford",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2567",
+      "abbr": "SMU",
+      "name": "SMU",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
      "day": "Sat"
     },
     {
@@ -15395,6 +15271,130 @@
      },
      "homeConf": "big12",
      "awayConf": "big12",
+     "day": "Sat"
+    },
+    {
+     "id": "401858538",
+     "kickoff": "2026-11-29T00:00Z",
+     "neutral": false,
+     "venue": "Memorial Stadium (Bloomington, IN)",
+     "tv": "FS1",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 7:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "84",
+      "abbr": "IU",
+      "name": "Indiana",
+      "rank": 8,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2509",
+      "abbr": "PUR",
+      "name": "Purdue",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
+     "day": "Sat"
+    },
+    {
+     "id": "401856765",
+     "kickoff": "2026-11-29T00:00Z",
+     "neutral": false,
+     "venue": "FirstBank Stadium",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 7:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "238",
+      "abbr": "VAN",
+      "name": "Vanderbilt",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2633",
+      "abbr": "TENN",
+      "name": "Tennessee",
+      "rank": 9,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401856757",
+     "kickoff": "2026-11-29T00:30Z",
+     "neutral": false,
+     "venue": "Bryant-Denny Stadium",
+     "tv": "ABC",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "333",
+      "abbr": "ALA",
+      "name": "Alabama",
+      "rank": 3,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2",
+      "abbr": "AUB",
+      "name": "Auburn",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "sec",
+     "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401858541",
+     "kickoff": "2026-11-29T00:30Z",
+     "neutral": false,
+     "venue": "Autzen Stadium",
+     "tv": "NBC",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 7:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2483",
+      "abbr": "ORE",
+      "name": "Oregon",
+      "rank": 13,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "264",
+      "abbr": "WASH",
+      "name": "Washington",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
      "day": "Sat"
     },
     {
