@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-22T08:22:40+00:00",
+ "generated": "2026-11-25T23:05:05+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -14451,7 +14451,7 @@
       "id": "2641",
       "abbr": "TTU",
       "name": "Texas Tech",
-      "rank": 12,
+      "rank": 11,
       "score": "0",
       "winner": null
      },
@@ -14482,7 +14482,7 @@
       "id": "2294",
       "abbr": "IOWA",
       "name": "Iowa",
-      "rank": 15,
+      "rank": 13,
       "score": "0",
       "winner": null
      },
@@ -14490,7 +14490,7 @@
       "id": "158",
       "abbr": "NEB",
       "name": "Nebraska",
-      "rank": 99,
+      "rank": 25,
       "score": "0",
       "winner": null
      },
@@ -14513,7 +14513,7 @@
       "id": "145",
       "abbr": "MISS",
       "name": "Ole Miss",
-      "rank": 25,
+      "rank": 22,
       "score": "0",
       "winner": null
      },
@@ -14552,7 +14552,7 @@
       "id": "57",
       "abbr": "FLA",
       "name": "Florida",
-      "rank": 24,
+      "rank": 20,
       "score": "0",
       "winner": null
      },
@@ -14583,7 +14583,7 @@
       "id": "251",
       "abbr": "TEX",
       "name": "Texas",
-      "rank": 5,
+      "rank": 3,
       "score": "0",
       "winner": null
      },
@@ -14676,7 +14676,7 @@
       "id": "87",
       "abbr": "ND",
       "name": "Notre Dame",
-      "rank": 6,
+      "rank": 4,
       "score": "0",
       "winner": null
      },
@@ -14716,37 +14716,6 @@
      "day": "Sat"
     },
     {
-     "id": "401858540",
-     "kickoff": "2026-11-28T17:00Z",
-     "neutral": false,
-     "venue": "Ohio Stadium",
-     "tv": "Fox",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/28 - 12:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "194",
-      "abbr": "OSU",
-      "name": "Ohio State",
-      "rank": 14,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "130",
-      "abbr": "MICH",
-      "name": "Michigan",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401856761",
      "kickoff": "2026-11-28T17:00Z",
      "neutral": false,
@@ -14761,7 +14730,7 @@
       "id": "96",
       "abbr": "UK",
       "name": "Kentucky",
-      "rank": 16,
+      "rank": 99,
       "score": "0",
       "winner": null
      },
@@ -14769,12 +14738,43 @@
       "id": "97",
       "abbr": "LOU",
       "name": "Louisville",
-      "rank": 23,
+      "rank": 19,
       "score": "0",
       "winner": null
      },
      "homeConf": "sec",
      "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401858540",
+     "kickoff": "2026-11-28T17:00Z",
+     "neutral": false,
+     "venue": "Ohio Stadium",
+     "tv": "Fox",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 12:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "194",
+      "abbr": "OSU",
+      "name": "Ohio State",
+      "rank": 21,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "130",
+      "abbr": "MICH",
+      "name": "Michigan",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
      "day": "Sat"
     },
     {
@@ -14955,7 +14955,7 @@
       "id": "2579",
       "abbr": "SC",
       "name": "South Carolina",
-      "rank": 21,
+      "rank": 99,
       "score": "0",
       "winner": null
      },
@@ -15026,6 +15026,37 @@
      "day": "Sat"
     },
     {
+     "id": "401858312",
+     "kickoff": "2026-11-28T20:30Z",
+     "neutral": false,
+     "venue": "Allegacy Federal Credit Union Stadium",
+     "tv": "ESPN",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 3:30 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "154",
+      "abbr": "WAKE",
+      "name": "Wake Forest",
+      "rank": 8,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "150",
+      "abbr": "DUKE",
+      "name": "Duke",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
      "id": "401858543",
      "kickoff": "2026-11-28T20:30Z",
      "neutral": false,
@@ -15040,7 +15071,7 @@
       "id": "26",
       "abbr": "UCLA",
       "name": "UCLA",
-      "rank": 4,
+      "rank": 9,
       "score": "0",
       "winner": null
      },
@@ -15048,7 +15079,7 @@
       "id": "30",
       "abbr": "USC",
       "name": "USC",
-      "rank": 18,
+      "rank": 15,
       "score": "0",
       "winner": null
      },
@@ -15085,37 +15116,6 @@
      },
      "homeConf": "big12",
      "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401858312",
-     "kickoff": "2026-11-28T20:30Z",
-     "neutral": false,
-     "venue": "Allegacy Federal Credit Union Stadium",
-     "tv": "ESPN",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/28 - 3:30 PM EST",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "154",
-      "abbr": "WAKE",
-      "name": "Wake Forest",
-      "rank": 11,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "150",
-      "abbr": "DUKE",
-      "name": "Duke",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "acc",
      "day": "Sat"
     },
     {
@@ -15195,7 +15195,7 @@
       "id": "142",
       "abbr": "MIZ",
       "name": "Missouri",
-      "rank": 99,
+      "rank": 23,
       "score": "0",
       "winner": null
      },
@@ -15203,7 +15203,7 @@
       "id": "201",
       "abbr": "OU",
       "name": "Oklahoma",
-      "rank": 22,
+      "rank": 17,
       "score": "0",
       "winner": null
      },
@@ -15274,37 +15274,6 @@
      "day": "Sat"
     },
     {
-     "id": "401858538",
-     "kickoff": "2026-11-29T00:00Z",
-     "neutral": false,
-     "venue": "Memorial Stadium (Bloomington, IN)",
-     "tv": "FS1",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/28 - 7:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "84",
-      "abbr": "IU",
-      "name": "Indiana",
-      "rank": 8,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2509",
-      "abbr": "PUR",
-      "name": "Purdue",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Sat"
-    },
-    {
      "id": "401856765",
      "kickoff": "2026-11-29T00:00Z",
      "neutral": false,
@@ -15327,12 +15296,43 @@
       "id": "2633",
       "abbr": "TENN",
       "name": "Tennessee",
-      "rank": 9,
+      "rank": 5,
       "score": "0",
       "winner": null
      },
      "homeConf": "sec",
      "awayConf": "sec",
+     "day": "Sat"
+    },
+    {
+     "id": "401858538",
+     "kickoff": "2026-11-29T00:00Z",
+     "neutral": false,
+     "venue": "Memorial Stadium (Bloomington, IN)",
+     "tv": "FS1",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 7:00 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "84",
+      "abbr": "IU",
+      "name": "Indiana",
+      "rank": 14,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2509",
+      "abbr": "PUR",
+      "name": "Purdue",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
      "day": "Sat"
     },
     {
@@ -15350,7 +15350,7 @@
       "id": "333",
       "abbr": "ALA",
       "name": "Alabama",
-      "rank": 3,
+      "rank": 6,
       "score": "0",
       "winner": null
      },
@@ -15381,7 +15381,7 @@
       "id": "2483",
       "abbr": "ORE",
       "name": "Oregon",
-      "rank": 13,
+      "rank": 12,
       "score": "0",
       "winner": null
      },
@@ -15389,7 +15389,7 @@
       "id": "264",
       "abbr": "WASH",
       "name": "Washington",
-      "rank": 99,
+      "rank": 24,
       "score": "0",
       "winner": null
      },
@@ -15443,7 +15443,7 @@
       "id": "12",
       "abbr": "ARIZ",
       "name": "Arizona",
-      "rank": 19,
+      "rank": 16,
       "score": "0",
       "winner": null
      },
@@ -15474,7 +15474,7 @@
       "id": "248",
       "abbr": "HOU",
       "name": "Houston",
-      "rank": 20,
+      "rank": 18,
       "score": "0",
       "winner": null
      },
