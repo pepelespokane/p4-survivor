@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-27T01:28:32+00:00",
+ "generated": "2026-11-27T10:30:31+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -14441,62 +14441,31 @@
      "kickoff": "2026-11-27T01:00Z",
      "neutral": false,
      "venue": "Galaxy Stadium",
-     "tv": "ESPN2",
-     "state": "in",
-     "completed": false,
-     "detail": "5:57 - 1st",
-     "period": 1,
-     "clock": "5:57",
+     "tv": "ESPN",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
+     "clock": "0:00",
      "home": {
       "id": "2641",
       "abbr": "TTU",
       "name": "Texas Tech",
       "rank": 11,
-      "score": "0",
-      "winner": null
+      "score": "48",
+      "winner": true
      },
      "away": {
       "id": "2628",
       "abbr": "TCU",
       "name": "TCU",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "27",
+      "winner": false
      },
      "homeConf": "big12",
      "awayConf": "big12",
      "day": "Thu"
-    },
-    {
-     "id": "401858536",
-     "kickoff": "2026-11-27T17:00Z",
-     "neutral": false,
-     "venue": "Kinnick Stadium",
-     "tv": "CBS",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/27 - 12:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "2294",
-      "abbr": "IOWA",
-      "name": "Iowa",
-      "rank": 13,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "158",
-      "abbr": "NEB",
-      "name": "Nebraska",
-      "rank": 25,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "big10",
-     "awayConf": "big10",
-     "day": "Fri"
     },
     {
      "id": "401856762",
@@ -14527,6 +14496,37 @@
      },
      "homeConf": "sec",
      "awayConf": "sec",
+     "day": "Fri"
+    },
+    {
+     "id": "401858536",
+     "kickoff": "2026-11-27T17:08Z",
+     "neutral": false,
+     "venue": "Kinnick Stadium",
+     "tv": "CBS",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/27 - 12:08 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "2294",
+      "abbr": "IOWA",
+      "name": "Iowa",
+      "rank": 13,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "158",
+      "abbr": "NEB",
+      "name": "Nebraska",
+      "rank": 25,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "big10",
+     "awayConf": "big10",
      "day": "Fri"
     },
     {
