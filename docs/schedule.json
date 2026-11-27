@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-27T10:30:31+00:00",
+ "generated": "2026-11-27T19:47:35+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -14473,17 +14473,17 @@
      "neutral": false,
      "venue": "Vaught-Hemingway Stadium",
      "tv": "ABC",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/27 - 12:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "11:19 - 4th",
+     "period": 4,
+     "clock": "11:19",
      "home": {
       "id": "145",
       "abbr": "MISS",
       "name": "Ole Miss",
       "rank": 22,
-      "score": "0",
+      "score": "20",
       "winner": null
      },
      "away": {
@@ -14491,7 +14491,7 @@
       "abbr": "MSST",
       "name": "Mississippi State",
       "rank": 99,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "homeConf": "sec",
@@ -14504,17 +14504,17 @@
      "neutral": false,
      "venue": "Kinnick Stadium",
      "tv": "CBS",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/27 - 12:08 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "10:33 - 4th",
+     "period": 4,
+     "clock": "10:33",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
       "name": "Iowa",
       "rank": 13,
-      "score": "0",
+      "score": "24",
       "winner": null
      },
      "away": {
@@ -14522,7 +14522,7 @@
       "abbr": "NEB",
       "name": "Nebraska",
       "rank": 25,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "homeConf": "big10",
