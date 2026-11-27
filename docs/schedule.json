@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-25T23:05:05+00:00",
+ "generated": "2026-11-27T01:28:32+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -14441,12 +14441,12 @@
      "kickoff": "2026-11-27T01:00Z",
      "neutral": false,
      "venue": "Galaxy Stadium",
-     "tv": "ESPN",
-     "state": "pre",
+     "tv": "ESPN2",
+     "state": "in",
      "completed": false,
-     "detail": "11/26 - 8:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "5:57 - 1st",
+     "period": 1,
+     "clock": "5:57",
      "home": {
       "id": "2641",
       "abbr": "TTU",
