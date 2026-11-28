@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-28T08:10:24+00:00",
+ "generated": "2026-11-28T19:31:23+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -14659,17 +14659,17 @@
      "neutral": false,
      "venue": "JMA Wireless Dome",
      "tv": "ABC",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/28 - 12:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "4:07 - 3rd",
+     "period": 3,
+     "clock": "4:07",
      "home": {
       "id": "183",
       "abbr": "SYR",
       "name": "Syracuse",
       "rank": 99,
-      "score": "0",
+      "score": "10",
       "winner": null
      },
      "away": {
@@ -14677,7 +14677,7 @@
       "abbr": "ND",
       "name": "Notre Dame",
       "rank": 4,
-      "score": "0",
+      "score": "49",
       "winner": null
      },
      "homeConf": "acc",
@@ -14690,17 +14690,17 @@
      "neutral": false,
      "venue": "Hard Rock Stadium",
      "tv": "ESPN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/28 - 12:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "2:45 - 3rd",
+     "period": 3,
+     "clock": "2:45",
      "home": {
       "id": "2390",
       "abbr": "MIA",
       "name": "Miami",
       "rank": 7,
-      "score": "0",
+      "score": "38",
       "winner": null
      },
      "away": {
@@ -14708,7 +14708,7 @@
       "abbr": "BC",
       "name": "Boston College",
       "rank": 99,
-      "score": "0",
+      "score": "11",
       "winner": null
      },
      "homeConf": "acc",
@@ -14721,17 +14721,17 @@
      "neutral": false,
      "venue": "Kroger Field",
      "tv": "ESPN2",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/28 - 12:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "14:53 - 4th",
+     "period": 4,
+     "clock": "14:53",
      "home": {
       "id": "96",
       "abbr": "UK",
       "name": "Kentucky",
       "rank": 99,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "away": {
@@ -14739,7 +14739,7 @@
       "abbr": "LOU",
       "name": "Louisville",
       "rank": 19,
-      "score": "0",
+      "score": "13",
       "winner": null
      },
      "homeConf": "sec",
@@ -14752,17 +14752,17 @@
      "neutral": false,
      "venue": "Ohio Stadium",
      "tv": "Fox",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/28 - 12:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "4:25 - 3rd",
+     "period": 3,
+     "clock": "4:25",
      "home": {
       "id": "194",
       "abbr": "OSU",
       "name": "Ohio State",
       "rank": 21,
-      "score": "0",
+      "score": "24",
       "winner": null
      },
      "away": {
@@ -14783,17 +14783,17 @@
      "neutral": false,
      "venue": "Kenan Stadium",
      "tv": "ACC Network",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/28 - 12:00 PM EST",
-     "period": 0,
+     "detail": "End of 3rd",
+     "period": 3,
      "clock": "0:00",
      "home": {
       "id": "153",
       "abbr": "UNC",
       "name": "North Carolina",
       "rank": 99,
-      "score": "0",
+      "score": "28",
       "winner": null
      },
      "away": {
@@ -14801,7 +14801,7 @@
       "abbr": "NCSU",
       "name": "NC State",
       "rank": 99,
-      "score": "0",
+      "score": "6",
       "winner": null
      },
      "homeConf": "acc",
@@ -14814,17 +14814,17 @@
      "neutral": false,
      "venue": "Ryan Field",
      "tv": "BTN",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/28 - 12:30 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "6:15 - 3rd",
+     "period": 3,
+     "clock": "6:15",
      "home": {
       "id": "77",
       "abbr": "NU",
       "name": "Northwestern",
       "rank": 99,
-      "score": "0",
+      "score": "17",
       "winner": null
      },
      "away": {
@@ -14832,7 +14832,7 @@
       "abbr": "ILL",
       "name": "Illinois",
       "rank": 99,
-      "score": "0",
+      "score": "10",
       "winner": null
      },
      "homeConf": "big10",
@@ -14845,17 +14845,17 @@
      "neutral": false,
      "venue": "Donald W. Reynolds Razorback Stadium",
      "tv": "SEC Network",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/28 - 12:45 PM EST",
-     "period": 0,
+     "detail": "Halftime",
+     "period": 2,
      "clock": "0:00",
      "home": {
       "id": "8",
       "abbr": "ARK",
       "name": "Arkansas",
       "rank": 99,
-      "score": "0",
+      "score": "10",
       "winner": null
      },
      "away": {
@@ -14863,7 +14863,7 @@
       "abbr": "LSU",
       "name": "LSU",
       "rank": 99,
-      "score": "0",
+      "score": "10",
       "winner": null
      },
      "homeConf": "sec",
@@ -14876,17 +14876,17 @@
      "neutral": false,
      "venue": "Folsom Field",
      "tv": "TNT",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/28 - 2:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "3:33 - 1st",
+     "period": 1,
+     "clock": "3:33",
      "home": {
       "id": "38",
       "abbr": "COLO",
       "name": "Colorado",
       "rank": 99,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "away": {
@@ -14907,11 +14907,11 @@
      "neutral": false,
      "venue": "Jack Trice Stadium",
      "tv": "ESPN+",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/28 - 2:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "5:42 - 1st",
+     "period": 1,
+     "clock": "5:42",
      "home": {
       "id": "66",
       "abbr": "ISU",
@@ -14930,37 +14930,6 @@
      },
      "homeConf": "big12",
      "awayConf": "big12",
-     "day": "Sat"
-    },
-    {
-     "id": "401856764",
-     "kickoff": "2026-11-28T20:00Z",
-     "neutral": false,
-     "venue": "Memorial Stadium (Clemson, SC)",
-     "tv": "ESPN2",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/28 - 3:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
-     "home": {
-      "id": "228",
-      "abbr": "CLEM",
-      "name": "Clemson",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "away": {
-      "id": "2579",
-      "abbr": "SC",
-      "name": "South Carolina",
-      "rank": 99,
-      "score": "0",
-      "winner": null
-     },
-     "homeConf": "acc",
-     "awayConf": "sec",
      "day": "Sat"
     },
     {
@@ -14992,6 +14961,37 @@
      },
      "homeConf": "acc",
      "awayConf": "acc",
+     "day": "Sat"
+    },
+    {
+     "id": "401856764",
+     "kickoff": "2026-11-28T20:10Z",
+     "neutral": false,
+     "venue": "Memorial Stadium (Clemson, SC)",
+     "tv": "ESPN2",
+     "state": "pre",
+     "completed": false,
+     "detail": "11/28 - 3:10 PM EST",
+     "period": 0,
+     "clock": "0:00",
+     "home": {
+      "id": "228",
+      "abbr": "CLEM",
+      "name": "Clemson",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "away": {
+      "id": "2579",
+      "abbr": "SC",
+      "name": "South Carolina",
+      "rank": 99,
+      "score": "0",
+      "winner": null
+     },
+     "homeConf": "acc",
+     "awayConf": "sec",
      "day": "Sat"
     },
     {
