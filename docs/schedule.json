@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "generated": "2026-11-27T19:47:35+00:00",
+ "generated": "2026-11-28T02:28:38+00:00",
  "poolWeeks": 13,
  "conferences": [
   {
@@ -14473,18 +14473,18 @@
      "neutral": false,
      "venue": "Vaught-Hemingway Stadium",
      "tv": "ABC",
-     "state": "in",
-     "completed": false,
-     "detail": "11:19 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "11:19",
+     "clock": "0:00",
      "home": {
       "id": "145",
       "abbr": "MISS",
       "name": "Ole Miss",
       "rank": 22,
-      "score": "20",
-      "winner": null
+      "score": "41",
+      "winner": true
      },
      "away": {
       "id": "344",
@@ -14492,7 +14492,7 @@
       "name": "Mississippi State",
       "rank": 99,
       "score": "17",
-      "winner": null
+      "winner": false
      },
      "homeConf": "sec",
      "awayConf": "sec",
@@ -14504,18 +14504,18 @@
      "neutral": false,
      "venue": "Kinnick Stadium",
      "tv": "CBS",
-     "state": "in",
-     "completed": false,
-     "detail": "10:33 - 4th",
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
      "period": 4,
-     "clock": "10:33",
+     "clock": "0:00",
      "home": {
       "id": "2294",
       "abbr": "IOWA",
       "name": "Iowa",
       "rank": 13,
-      "score": "24",
-      "winner": null
+      "score": "31",
+      "winner": true
      },
      "away": {
       "id": "158",
@@ -14523,7 +14523,7 @@
       "name": "Nebraska",
       "rank": 25,
       "score": "7",
-      "winner": null
+      "winner": false
      },
      "homeConf": "big10",
      "awayConf": "big10",
@@ -14535,26 +14535,26 @@
      "neutral": false,
      "venue": "Doak Campbell Stadium",
      "tv": "ABC",
-     "state": "pre",
-     "completed": false,
-     "detail": "11/27 - 3:30 PM EST",
-     "period": 0,
+     "state": "post",
+     "completed": true,
+     "detail": "Final",
+     "period": 4,
      "clock": "0:00",
      "home": {
       "id": "52",
       "abbr": "FSU",
       "name": "Florida State",
       "rank": 99,
-      "score": "0",
-      "winner": null
+      "score": "10",
+      "winner": false
      },
      "away": {
       "id": "57",
       "abbr": "FLA",
       "name": "Florida",
       "rank": 20,
-      "score": "0",
-      "winner": null
+      "score": "26",
+      "winner": true
      },
      "homeConf": "acc",
      "awayConf": "sec",
@@ -14566,17 +14566,17 @@
      "neutral": false,
      "venue": "Kyle Field",
      "tv": "ABC",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/27 - 7:30 PM EST",
-     "period": 0,
+     "detail": "Halftime",
+     "period": 2,
      "clock": "0:00",
      "home": {
       "id": "245",
       "abbr": "TA&M",
       "name": "Texas A&M",
       "rank": 99,
-      "score": "0",
+      "score": "3",
       "winner": null
      },
      "away": {
@@ -14584,7 +14584,7 @@
       "abbr": "TEX",
       "name": "Texas",
       "rank": 3,
-      "score": "0",
+      "score": "10",
       "winner": null
      },
      "homeConf": "sec",
@@ -14597,17 +14597,17 @@
      "neutral": false,
      "venue": "Camp Randall Stadium",
      "tv": "NBC",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/27 - 7:30 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "13:33 - 3rd",
+     "period": 3,
+     "clock": "13:33",
      "home": {
       "id": "275",
       "abbr": "WIS",
       "name": "Wisconsin",
       "rank": 99,
-      "score": "0",
+      "score": "21",
       "winner": null
      },
      "away": {
@@ -14615,7 +14615,7 @@
       "abbr": "MINN",
       "name": "Minnesota",
       "rank": 99,
-      "score": "0",
+      "score": "3",
       "winner": null
      },
      "homeConf": "big10",
@@ -14628,17 +14628,17 @@
      "neutral": false,
      "venue": "Rice-Eccles Stadium",
      "tv": "Fox",
-     "state": "pre",
+     "state": "in",
      "completed": false,
-     "detail": "11/27 - 9:00 PM EST",
-     "period": 0,
-     "clock": "0:00",
+     "detail": "11:00 - 1st",
+     "period": 1,
+     "clock": "11:00",
      "home": {
       "id": "254",
       "abbr": "UTAH",
       "name": "Utah",
       "rank": 2,
-      "score": "0",
+      "score": "7",
       "winner": null
      },
      "away": {
